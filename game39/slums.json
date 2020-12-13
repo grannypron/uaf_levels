@@ -4,7 +4,7 @@
       "width":"15",
       "overland":"0",
       "avStyle":"Any View",
-      "name":"Level 3",
+      "name":"Slums",
       "entryPoints":[
          {"index":"0","xy":[0,0],"facing":"North"},
          {"index":"1","xy":[0,1],"facing":"North"},

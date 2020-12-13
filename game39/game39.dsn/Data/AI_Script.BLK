@@ -1,0 +1,144 @@
+\ Computer Controlled AI Script 1.01 10/15/2014
+\
+: ReadyBestShield   Me 0 Shield.Next Shield.Ready! ;
+: TooFar? Me W:Range He C:Distance < ; 1 SP+-
+: TooNear? He C:Distance 5 < ; 1 SP+-
+: NotAdjacent? He C:Distance 8 > ; 1 SP+- 
+: Friendly? He C:Friendly ; 1 SP+-
+: Gone? He C:State C:S:Gone = ; 1 SP+-
+: Dead? He C:State C:S:Dead = ; 1 SP+-
+: Dying? He C:State C:S:Dying = ; 1 SP+-
+: Petrified? He C:State C:S:Petrified = ; 1 SP+-
+\ FGDP Friendly Gone Dead Dying or Petrified Targets should not be attacked
+: FGDP? Friendly? ?EXIT Gone? Dead? Dying? Petrified? OR OR OR ; 1 SP+-
+\
+: SpellCasterFilter \ Remove actions against invalid targets  
+    FGDP? ?EXIT TooFar? ; 1 SP+-
+\
+: SpellLikeAbilityFilter \ Remove actions against invalid targets 
+    FGDP? ?EXIT TooFar? ; 1 SP+-
+\
+: AdvanceFilter \ Remove actions against invalid targets 
+    He C:Friendly ?EXIT
+    Dead? ?EXIT
+    Dying? ?EXIT
+    Gone? ?EXIT
+    Petrified?  ; 1 SP+-
+\
+: RangedWeaponFilter \ Remove actions against invalid targets  
+    FGDP? ?EXIT TooFar? TooNear? OR ; 1 SP+-
+\
+: MeleeWeaponFilter \ Remove actions against invalid targets  
+    FGDP? ?EXIT TooFar? ; 1 SP+-
+\
+: JudoFilter \ Remove actions against invalid targets
+    FGDP? ?EXIT NotAdjacent? ; 1 SP+-
+\
+: TestSpellCaster \ Comparison Result [-1 0 1]
+    \ Spell caster items are used first if the monster has them
+    Me B W:Type A W:Type W:T:SpellCaster =
+    IF
+        W:T:SpellCaster =
+        IF 0 ELSE 1 THEN
+    ELSE
+        W:T:SpellCaster =
+        IF -1 ELSE 0 THEN
+    THEN ;  1 SP+-
+\
+: TestSpellLikeAbility \ Comparison Result [-1 0 1]
+    \ Spell-like abilities are used next - Dragon Breath, Medusa Gase, etc
+    Me B W:Type A W:Type W:T:SpellLikeAbility =
+    IF
+        W:T:SpellLikeAbility =
+        IF 0 ELSE 1 THEN
+    ELSE
+        W:T:SpellLikeAbility =
+        IF -1 ELSE 0 THEN
+    THEN ;  1 SP+-
+\
+: TestCasting \ Comparison Result [-1 0 1]
+    \ This functions prefers targets in the process of casting spells   
+    He B C:State   A C:State   C:S:Casting =
+    IF
+        C:S:Casting =
+        IF 0 ELSE 1 THEN
+    ELSE
+        C:S:Casting =
+        IF -1 ELSE 0 THEN 
+    THEN ; 1 SP+-
+\
+: TestRanged \ Comparison Result [-1 0 1]
+    \ Select the ranged weapon with the highest average damage from ammunition
+    Me A A:Type B A:Type A:T:RangedWeapon = 
+    IF 
+        A:T:RangedWeapon =
+        IF
+            A A:Damage B A:Damage -
+        ELSE -1 THEN 
+    ELSE 
+        A:T:RangedWeapon = 
+        IF 1 ELSE 0 THEN  
+    THEN ; 1 SP+- 
+\
+: TestMelee
+    \ Prefers use of melee weapons over other actions
+    B A:Type A:T:MeleeWeapon =    A A:Type A:T:MeleeWeapon =   - ; 1 SP+-
+\
+: TestMeleeVersusMelee
+    \ Of two melee weapon actions, selects the one with the higher average damage
+    Me A A:Type A:T:MeleeWeapon = B A:Type A:T:MeleeWeapon = AND
+    IF
+        A W:Damage B W:Damage -
+    ELSE 0 THEN ; 1 SP+-
+\
+: TestUnarmed   
+    \ Unarmed (Judo) attacks come next 
+    Me A A:Type B A:Type A:T:Judo = 
+    IF 
+        A:T:Judo =
+        IF 0 ELSE -1 THEN 
+    ELSE 
+        A:T:Judo = 
+        IF 1 ELSE 0 THEN  
+    THEN ; 1 SP+- 
+\
+: TestAdvance   
+    \ The action of advancing on an enemy comes next 
+    Me A A:Type B A:Type A:T:Advance = 
+    IF 
+        A:T:Advance =
+        IF 0 ELSE -1 THEN 
+    ELSE 
+        A:T:Advance = 
+        IF 1 ELSE 0 THEN  
+    THEN ; 1 SP+- 
+\
+: TestAdvanceVersusAdvance
+    \ Between two advancing actions, choose to advance on the closer target
+    He A A:Type A:T:Advance != B A:Type A:T:Advance != OR IF 0 EXIT THEN
+    B C:Distance A C:Distance - ; 1 SP+-
+\
+: THINK \ Return int <action A> minus <action B>
+    \ This is the main decision-making portion of the AI
+    \ Two actions, A and B, are given
+    \ If A - B if positive, action A is preferred
+    \ If A - B is negative, action B is preferred
+    \ If A - B is zero, the preference cannot be determined
+    \ Any attack using a SpellCaster item takes precedence over any attack
+    \ not using a SpellCaster item.
+    TestSpellCaster ?EXIT
+    TestSpellLikeAbility ?EXIT
+    \ Neither (or both) attacks is a SpellCaster item.  So we proceed.
+    \ Any action using a ranged weapon takes precedence over
+    \ a non-ranged attack action
+    TestRanged ?EXIT
+    \ Melee attacks come next
+    TestMelee ?EXIT
+    TestMeleeVersusMelee ?EXIT
+    \ Unarmed (Judo) attacks come next
+    TestUnarmed ?EXIT
+    \ Advancing on an enemy comes next
+    TestAdvance ?EXIT
+    TestAdvanceVersusAdvance ?EXIT
+    \ The only action left is to guard
+    0 ; 1 SP+-

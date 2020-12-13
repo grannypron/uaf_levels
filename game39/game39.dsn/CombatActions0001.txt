@@ -1,0 +1,46 @@
+2 Possible Actions for combatant 1  ***[Goblin]*****************
+Time = 0x00004b5a
+ x = 24
+ y = 25
+Action number 0  ;  Action Type = Melee Weapon
+  damage = 0
+  Target = combatant #0  [Warrior]
+    x = 25
+    y = 26
+    fleeing = 0
+    state = None
+    unfriendly
+    2*distance(squared) = 8
+    advance = 0
+  Weapon = weapon  #1
+    Weapon Type      = Hand Blunt  [Mace]
+    2*range squared  =     9
+    protection       =     0
+    damage(x10)      =    45
+    ROF              =     0
+    attackBonus(x10) =     0
+    priority         =     0
+  Ammo = ammo  #0    [No Ammo]
+Action number 1  ;  Action Type = Judo
+  damage = 0
+  Target = combatant #0  [Warrior]
+    x = 25
+    y = 26
+    fleeing = 0
+    state = None
+    unfriendly
+    2*distance(squared) = 8
+    advance = 0
+    Attack without weapon
+    No Spell
+    Damage = 60
+Action number 2  ;  Action Type = Advance
+  damage = 0
+  Target = combatant #0  [Warrior]
+    x = 25
+    y = 26
+    fleeing = 0
+    state = None
+    unfriendly
+    2*distance(squared) = 8
+    advance = 1

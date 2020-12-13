@@ -1,0 +1,58 @@
+// Ability database file
+// The line above **must** be the first line of the ability file!!! "// Ability database file"
+//
+// Names should not conflict with any of the names in the baseclass database, items 
+//	database, spells database, races database, or class database, all baseclasses start 
+//	with a lower case letter and classes with an upper case letter.
+//
+// Abbreviation is the three letter short form for an ability.
+//	eg:		Abbreviation = WIS
+//
+// Roll is the range and number and type of dice for ability. The first number is the 
+//	the minimum, the middle is the number and type of dice, and the final number is the max.
+//	eg:		Roll = 3 |< 3d6 >| 18
+//
+
+\(BEGIN)
+name = Strength
+Abbreviation = STR
+Roll = 3 |< 3d6 |< 3d6 + (Race_Halfling*-1) + ("Race_Half-Orc"*1) >| 19
+\(END)
+
+\(BEGIN)
+name = Intelligence
+Abbreviation = INT
+Roll = 3 |< 3d6 |< 3d6 >| 18
+\(END)
+
+\(BEGIN)
+name = Wisdom
+Abbreviation = WIS
+Roll = 3 |< 3d6 |< 3d6 >| 18
+\(END)
+
+\(BEGIN)
+name = Dexterity
+Abbreviation = DEX
+Roll = 3 |< 3d6 |< 3d6 + (Race_Elf*1) + (Race_Halfling*1) >| 19
+\(END)
+
+\(BEGIN)
+name = Constitution
+Abbreviation = CON
+Roll = 3 |< 3d6 |< 3d6 + (Race_Dwarf*1) + (Race_Elf*-1) + ("Race_Half-Orc"*1) >| 19
+\(END)
+
+\(BEGIN)
+name = Charisma
+Abbreviation = CHA
+Roll = 3 |< 3d6 |< 3d6 + (Race_Dwarf*-1) + ("Race_Half-Orc"*-2) >| 18
+\(END)
+
+\(BEGIN)
+name = $$Help
+Special Ability = Date,"October 13, 2016"
+Special Ability = Version,"2.53"
+Special Ability = Updates1_04,"fixed issue with Halfling DEX"
+Special Ability = Updates2_53,"corrected equations to allow for roll of 19"
+\(END)

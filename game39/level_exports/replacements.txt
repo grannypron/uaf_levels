@@ -1,0 +1,16 @@
+"block": "2"  /    "block": "Blocked"
+
+"block": "0",     /     *nothing*
+
+"block": "1"      /   "block": "OpenSecret"
+
+"block": "4"      /   "block": "FalseDoor"
+
+
+"used": "0",			/		"used": "false",
+"doorFirst": "0",		/		"doorFirst": "false",
+"drawAV": "0",			/		"drawAV": "0",
+
+"used": "1",			/  		"used": "true",
+"doorFirst": "1",		/		"doorFirst": "true",
+"drawAV": "1",			/		"drawAV": "true",

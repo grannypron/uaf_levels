@@ -1,0 +1,157 @@
+Opened Error Log on Fri Dec 11 11:50:54 2020
+0001f1db 127451 0000000000000000 Engine Version: 5.2600000000
+0001f1de      3 0000000000000000 Working directory = C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master
+0001f1ee     16 0000000000000000 Loading Config File = 'C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Data\config.txt'
+0001f1f2      4 0000000000000000 DisableScreenSaver = 1
+0001f1f2      0 0000000000000000 Force_SysMem = 1
+0001f1f2      0 0000000000000000 Error Log ON
+0001f1f7      5 0000000000000000 Total optional wall formats: 6
+0001f1f7      0 0000000000000000 CreateEx(0,0,640,480)
+0001f237     64 0000000000000000 CreateEx ClientRect = 0 0 640 480
+0001f3e0    425 0000000000000000 OS:  Workstation version 6.2  (Build 9200)
+0001f3e0      0 0000000000000000 DX: DirectX 8
+0001f3e0      0 0000000000000000 IE: IE version 3 or less
+0001f3e0      0 0000000000000000 InitGame ClientRect = 0 0 640 480
+0001f3fa     26 0000000000000000 CreateWindowed(197714,640,480,1)
+0001f3fa      0 0000000000000000 InitGraphics windowed at 640 x 480
+0001f3fa      0 0000000000000000 Init WallSlot image cache with size 4
+0001f3fa      0 0000000000000000 Init BgSlot image cache with size 4
+0001f772    888 0000000000000000 Loaded sound lib file Bass.dll, ver 1.6
+0001f772      0 0000000000000000 Sound playback rate = 22050
+0001f825    179 0000000000000000 Sound card 1 desc: Primary Sound Driver
+0001f826      1 0000000000000000 Sound card 2 desc: DigitalOutput (NVIDIA High Definition Audio)
+0001f826      0 0000000000000000 Sound Card Info: hwsize 0, hwfree 0, freesam 0, free3d 0, minrate 100, maxrate 200000, eax 0, a3d 0, dsver 8
+0001f826      0 0000000000000000 Sound Card Info: Continuous sample rates supported
+0001f826      0 0000000000000000 Sound Card Info: mono sample rates supported in hw
+0001f826      0 0000000000000000 Sound Card Info: stereo sample rates supported in hw
+0001f826      0 0000000000000000 Sound Card Info: 8-bit sample rates supported in hw
+0001f826      0 0000000000000000 Sound Card Info: 16-bit sample rates supported in hw
+0001f830     10 0000000000000000 First 8 bytes of 'game.dat' = FABCDEFABCDEFABF
+0001f831      1 0000000000000000 Loading design C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Data\game.dat, version 5.2600000000...
+0001f832      1 0000000000000000 EditorStatusMsg: Loading design data...
+0001f832      0 0000000000000000 Finished clearing old design
+0001f83c     10 0000000000000000 Loading special abilities DB
+0001f847     11 0000000000000000 Finished loading SpecialAbilitiesDB
+0001f84e      7 0000000000000000 Loading item DB version: 5.2600000
+0001f879     43 0000000000000000 Finished loading ItemDB
+0001f884     11 0000000000000000 Loading monster DB version: 5.2600000
+0001f896     18 0000000000000000 Finished loading MonsterDB
+0001f8a1     11 0000000000000000 Loading spell DB version: 5.2600000
+0001f90d    108 0000000000000000 Finished loading SpellDB
+0001f916      9 0000000000000000 Loaded 12 entries from C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Data\races.dat
+0001f920     10 0000000000000000 Loaded 9 entries from C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Data\baseclass.dat
+0001f92a     10 0000000000000000 Loaded 20 entries from C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Data\classes.dat
+0001f933      9 0000000000000000 Loaded 6 entries from C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Data\ability.dat
+0001f934      1 0000000000000000 Finished loading globalData
+0001f934      0 0000000000000000 EditorStatusMsg: Design data loaded.
+0001f934      0 0000000000000000 Design Tutorial version 1.04 loaded, version 5.2600000
+0001f934      0 0000000000000000 Design Version: 5.2600000
+0001f934      0 0000000000000000 PlayAs Version: 0.9140000
+0001f934      0 0000000000000000 GuidedTour Version: 0.9140000
+0001f934      0 0000000000000000 ItemUseEvent Version: 0.9140000
+0001f935      1 0000000000000000 SpecialItemKeyQty Version: 0.9140000
+0001f935      0 0000000000000000 Entering CreateSaveDirectory(C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Saves)
+0001f936      1 0000000000000000 Directory already exists
+0001f936      0 0000000000000000 Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\cursor_Arrows.png,32,32,15
+0001f938      2 0000000000000000 rval = 0 = Create(04b0f478,32,32) SurfaceID = 2
+0001f939      1 0000000000000000 Creating fonts from SYSTEM
+0001f9ea    177 0000000000000000 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\AreaViewArt.png,1)  SurfaceID = 13
+0001f9f0      6 0000000000000000 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Horizontal.png,1)  SurfaceID = 14
+0001f9f3      3 0000000000000000 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Vertical.png,1)  SurfaceID = 15
+0001fa01     14 0000000000000000 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Viewport.png,1)  SurfaceID = 16
+0001fa05      4 0000000000000000 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Viewport.png,1)  SurfaceID = 17
+0001fa0f     10 0000000000000000 Game initialized successfully
+0001fa37     40 000000000000001e rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\Title.png,1)  SurfaceID = 18
+0001fa39      2 000000000000001e !!FadeToSource m_pScreen=04b0f478
+0001fbd3    410 000000000000001e rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\Title.png,1)  SurfaceID = 20
+00020d1b   4424 0000000000000c12 Entering CreateSaveDirectory(C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Saves)
+00020d1b      0 0000000000000c12 Directory already exists
+00020d2c     17 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d2c      0 0000000000000c12 Restoring Spell "Protection From Evil".  No such spell in design
+00020d2d      1 0000000000000c12 Restoring Spell "Protection From Good".  No such spell in design
+00020d2d      0 0000000000000c12 Restoring Spell "Dispel Magic".  No such spell in design
+00020d2d      0 0000000000000c12 Restoring Spell "Protection From Evil 10' Radius".  No such spell in design
+00020d2d      0 0000000000000c12 Restoring Spell "Protection From Good 10' Radius".  No such spell in design
+00020d2e      1 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d2e      0 0000000000000c12 Restoring Spell "Dispel Magic".  No such spell in design
+00020d2e      0 0000000000000c12 Restoring Spell "Insect Plague".  No such spell in design
+00020d2f      1 0000000000000c12 Restoring Spell "Transmute Rock To Mud".  No such spell in design
+00020d2f      0 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d2f      0 0000000000000c12 Restoring Spell "Protection From Evil".  No such spell in design
+00020d30      1 0000000000000c12 Restoring Spell "Protection From Good".  No such spell in design
+00020d31      1 0000000000000c12 Restoring Spell "Dispel Magic".  No such spell in design
+00020d31      0 0000000000000c12 Restoring Spell "Protection From Evil 10' Radius".  No such spell in design
+00020d31      0 0000000000000c12 Restoring Spell "Protection From Good 10' Radius".  No such spell in design
+00020d32      1 0000000000000c12 Restoring Spell "Transmute Rock To Mud".  No such spell in design
+00020d33      1 0000000000000c12 Restoring Spell "Wall Of Stone".  No such spell in design
+00020d34      1 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d34      0 0000000000000c12 Restoring Spell "Protection From Evil".  No such spell in design
+00020d34      0 0000000000000c12 Restoring Spell "Find Traps".  No such spell in design
+00020d34      0 0000000000000c12 Restoring Spell "Dispel Magic".  No such spell in design
+00020d35      1 0000000000000c12 Restoring Spell "Protection From Evil 10' Radius".  No such spell in design
+00020d36      1 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d36      0 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d36      0 0000000000000c12 Restoring Spell "Protection From Evil".  No such spell in design
+00020d37      1 0000000000000c12 Restoring Spell "Protection From Good".  No such spell in design
+00020d38      1 0000000000000c12 Restoring Spell "Charm".  No such spell in design
+00020d39      1 0000000000000c12 Restoring Spell "Dispel Magic".  No such spell in design
+00020d39      0 0000000000000c12 Restoring Spell "Find Traps".  No such spell in design
+00020d39      0 0000000000000c12 Restoring Spell "Protection from Evil".  No such spell in design
+00020d39      0 0000000000000c12 Restoring Spell "Protection from Evil 10' Radius".  No such spell in design
+00020d3a      1 0000000000000c12 Restoring Spell "Protection from Good".  No such spell in design
+00020d3a      0 0000000000000c12 Restoring Spell "Silence".  No such spell in design
+00020d3b      1 0000000000000c12 Restoring Spell "Detect Magic".  No such spell in design
+00020d3b      0 0000000000000c12 Restoring Spell "Dispel Magic".  No such spell in design
+00020d3b      0 0000000000000c12 Restoring Spell "Iron Skin".  No such spell in design
+00020d3d      2 0000000000000c12 Restoring Spell "Protection from Evil 10' Radius".  No such spell in design
+00020d3d      0 0000000000000c12 Restoring Spell "Cold Ray".  No such spell in design
+00020f5f    546 0000000000000c12 EditorStatusMsg: Loading level data...
+00020f65      6 0000000000000c12 Start loading WallSetSurfaces
+00020f7a     21 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_TanBrick.png,1)  SurfaceID = 26
+00020f8f     21 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\door_DarkGreyWood.png,1)  SurfaceID = 27
+00020fa5     22 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_TanBrickArch.png,1)  SurfaceID = 28
+00020fba     21 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_GreyStone.png,1)  SurfaceID = 29
+00020fd0     22 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\overlay_Window.png,1)  SurfaceID = 30
+00020fe5     21 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_GreyStoneArch.png,1)  SurfaceID = 31
+00020ffa     21 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_GreyStoneStairsDown.png,1)  SurfaceID = 32
+00021012     24 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_GreyStoneStairsUp.png,1)  SurfaceID = 33
+00021023     17 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\overlay_Torch.png,1)  SurfaceID = 34
+00021037     20 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\overlay_Bulletin.png,1)  SurfaceID = 35
+0002104f     24 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_Rock.png,1)  SurfaceID = 36
+00021099     74 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_WoodArch.png,1)  SurfaceID = 37
+000210ad     20 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_Barrels.png,1)  SurfaceID = 38
+000210c2     21 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_EvergreenTrees.png,1)  SurfaceID = 39
+000210c7      5 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_IndoorGreyStone.png,1)  SurfaceID = 40
+000210cc      5 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_IndoorWood.png,1)  SurfaceID = 41
+000210d1      5 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_IndoorWood2.png,1)  SurfaceID = 42
+000210d5      4 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_OutdoorGrassDay.png,1)  SurfaceID = 43
+000210d9      4 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_OutdoorGrassNight.png,1)  SurfaceID = 44
+000210de      5 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_OutdoorPavedDay.png,1)  SurfaceID = 45
+000210e1      3 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\backdrop_OutdoorPavedNight.png,1)  SurfaceID = 46
+000210f1     16 0000000000000c12 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\portrait_NPC_OldMan.png,1)  SurfaceID = 47
+000210f2      1 0000000000000c12 EditorStatusMsg: Level data loaded.
+000210f2      0 0000000000000c12 Level 1 loaded, 10x10, ver 5.2600000
+000210f2      0 0000000000000c12 LoadTaskStack: Creating 1027 event
+000210f2      0 0000000000000c12 LoadTaskStack: Creating 1015 event
+000210f2      0 0000000000000c12 LoadTaskStack: Creating 1002 event
+000215e5   1267 000000000000113a (MB) Error: $SpellContext() called when no spell context exists
+Type=CLASS
+Name=Fighter
+SA = class_NoSpells
+Script=CanCastSpells
+
+0002196a    901 000000000000113a $SpellContext() called when no spell context exists
+Type=CLASS
+Name=Fighter
+SA = class_NoSpells
+Script=CanCastSpells0002196e      4 000000000000113a rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 53
+00021b86    536 00000000000013ce rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 54
+00021f8e   1032 00000000000017e8 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 55
+0002287e   2288 0000000000001f4a rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_EvergreenTrees.png,1)  SurfaceID = 57
+0002288f     17 0000000000001f4a rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_TanBrick.png,1)  SurfaceID = 58
+00022892      3 0000000000001f4a rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 59
+00022cb0   1054 0000000000002382 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\wall_GreyStone.png,1)  SurfaceID = 60
+00022cc1     17 0000000000002382 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\overlay_Window.png,1)  SurfaceID = 61
+00022cc4      3 0000000000002382 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 62
+00022e44    384 0000000000002526 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 63
+000230eb    679 00000000000027d8 rval = 1 = Create(04b0f478,C:\Users\Shadow\Downloads\Full_Release_191031\TutorialDesign.dsn.5.26-master\Resources\border_Compass.png,1)  SurfaceID = 64

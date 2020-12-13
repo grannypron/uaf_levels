@@ -1,0 +1,30 @@
+#VERSION +0005.2100000000 Remove this line to ignore version
+#EditorRunning YES
+00000000000006ae ff 00000000 00000000
+#SEEDMT 0162e40d 0000ae39
+##Remove one '#' from following line to replay fast
+##FASTPLAY 1
+#HASH data\config.txt = 4a4b9534
+#HASH data\game.dat = faac9706
+#HASH data\ability.dat = 353e59d0
+#HASH data\baseclass.dat = 29cb9a9a
+#HASH data\classes.dat = 938c79b3
+#HASH data\items.dat = bb445749
+#HASH data\monsters.dat = 51ddae4a
+#HASH data\races.dat = 2146bb32
+#HASH data\specialAbilities.dat = 527f56bd
+#HASH data\spells.dat = e3314243
+#HASH data\AI_Script.BLK = 95845e0c
+#HASH data\Level001 - Copy (2).lvl = fbc166ea
+#HASH data\Level001 - Copy (3).lvl = 6c6d7a9f
+#HASH data\Level001 - Copy.lvl = 93989ac3
+#HASH data\Level001.lvl = 39993a0b
+#HASH data\Level002.lvl = d79352da
+00000000000006ae 02 0159012d 0000ae39
+000000000000111c 02 00f500e5 0001c4d9
+000000000000189c 02 004c00df 00029305
+00000000000022ec 02 010e0111 0003a961
+0000000000002a12 02 001f01cf 00046e7f
+00000000000031b0 02 015700b7 0005407f
+00000000000039a8 02 00ad00a6 000615d5
+0000000000003c78 01 0000000d 0006659f

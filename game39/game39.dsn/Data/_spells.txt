@@ -1,0 +1,46 @@
+\(BEGIN)
+name = Highlight
+casting sound = none
+cast msg = /c draws attention to /t.
+missile sound = none
+coverage sound = none
+hit sound = none
+linger sound = none
+cast art = spell_cast_MU.png,200,2,48,48,0,1,0,1,0,0
+missile art = spell_missile_MU.png,123,4,48,48,0,1,0,1,0,0
+target cover art = none
+target hit art = none
+target linger art = none
+school = Magic User
+can target friend = no
+can target enemy = yes
+cumulative = yes
+can memorize = yes
+allow scribe = no
+auto scribe = no
+in camp = no
+in combat = yes
+can be dispelled = yes
+lingers = no
+linger affects once = no
+save versus = spell
+save result = negates
+targeting type = selectByCount
+target quantity = 1
+target range = 0
+level = 1
+casting time = 0
+casting time units = initiative
+duration = level
+duration units = rounds
+target duration = 0
+price = 0
+priority = 0
+spell effect 1 = $CHAR_AC,4,delta,target,yes
+savingThrowScript = 
+savingThrowSucceededScript = $SET_HOOK_PARAM(5,"/t is unaffected.");
+savingThrowFailedScript = 
+begin script = 
+end script = 
+\(END)
+

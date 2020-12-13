@@ -1,0 +1,390 @@
+// Class database file
+// The above line **Must** be the first line in the classes database. "// Class database file"
+//
+//	Each class is defined by the following fields:
+//	
+// name = (text)
+//	Names should not conflict with any of the names in the baseclass database,
+//	items database, spells database, races database, or abilities database,
+//	all baseclasses start with a lower case letter and classes with an upper case letter.
+//	eg:		name = Gray Elf
+//
+// HitDiceBonus (baseclass name, ability name, bonus1 - bonus25) 
+//	If a baseclass receives a Hit Point bonus for an ability, it is noted with this keyword
+//	If the class has more than one baseclass, each may have it's own
+//	bonus listed and that bonus will apply as levels are gained
+//	with that particular baseclass
+//	eg:		HitDiceBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+//
+// HitDiceBaseclass (*Average*/*Maximum*)
+//	HitDiceBaseclass may have a value of *Average* or *Maximum* and
+//	applies when more than one baseclass is part of a class. *Average* means
+//	that the average of all hit dice is taken, *Maximum* means the max number
+//	for that level is given.
+//	Default: *Average*
+//	eg:		HitDiceBaseclass = *Average*
+//
+// StrengthBonusDice (nDm)
+//	If the class allows a bonus for Strength of 18, it is determined here in the
+//	format of nDm, where n is the number of dice and m is the number of sides.
+//	default:	blank
+//	eg:		StrengthBonusDice = 1D100
+//
+// Starting Equipment (item name)
+//	If the class starts with any items they are listed with this keyword.
+//  Multiple items require multiple instances of the keyword
+//	eg:		Starting Equipment = Awl Pike
+//
+// baseclass (baseclass name)
+//	This is the baseclass that the class is based upon. There
+//	ust have at least one per class and there may be up to three.
+//	eg:		baseclass = fighter
+//
+// Special Ability (special ability name)
+//	Each Special Ability corresponds to the Special Ability
+//	database and list the name and parameter.
+//	One Special Ability per instance of the keyword, which
+//	may be listed multiple times.
+//	eg:		Special Ability = class_NoSpells,fighter
+//
+//	*****NOTES*****
+// Valid Classes per 1e rulebooks
+//  Dwarf: Assassin, Fighter, Thief, Fighter/Thief	
+//  Elf: Assassin, Cleric, Fighter, Magic User, Ranger, Thief Fighter/MU, Fighter/Thief, Fighter/MU/Thief, MU/Thief
+//  Gnome: Assassin, Cleric, Fighter, Magic User, Thief, Fighter/Thief, FighterMU, MU/Thief
+//  Half-elf: Assassin, Cleric, Druid, Fighter, Magic User, Ranger, Thief, Cleric/Fighter, Cleric/Ranger, Cleric/MU, Fighter/MU, Fighter/Thief, Fighter/MU/Cleric, Fighter/MU/Thief, Thief/MU    
+//  Halfling: Assassin, Cleric, Fighter, Thief, Fighter/Thief
+//	Half-orc: Assassin, Cleric, Fighter, Thief, Cleric/Assassin, Cleric/Fighter, Cleric/Thief, Fighter/Assassin, Fighter/Thief
+//  Human: Assassin, Cleric, Druid, Fighter, MU, Paladin, Ranger, Thief
+//
+// To suppress a class name at time of Character Creation, remove the "//" from:
+// // Special Ability = class_ClassSuppress,"Y"
+// in each Class as desired.
+//
+
+\(BEGIN)
+name = Assassin
+HitDiceLevelBonus = assassin,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Dagger
+Starting Equipment = Short Sword
+baseclass = assassin
+Special Ability = class_NoSpells,assassin
+Special Ability = class_baseName,$assassin
+Special Ability = class_ThievingSkills,$assassin
+Special Ability = ChangeClassAssassin
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Cleric
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Flail
+Starting Equipment = Shield
+baseclass = cleric
+Special Ability = class_baseName,$cleric
+Special Ability = ChangeClassCleric
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Druid
+HitDiceLevelBonus = druid,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Quarter Staff
+baseclass = druid
+Special Ability = class_baseName,$druid
+Special Ability = class_Druid,druid
+Special Ability = ChangeClassDruid
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Fighter
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = fighter
+Special Ability = class_NoSpells,fighter
+Special Ability = class_baseName,$fighter
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+Special Ability = ChangeClassFighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Magic User
+HitDiceLevelBonus = magicUser,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Dagger
+baseclass = magicUser
+Special Ability = class_MageScribe,magicUser
+Special Ability = class_baseName,$magicUser
+Special Ability = ChangeClassMagicUser
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Paladin
+HitDiceLevelBonus = paladin,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Mace
+Starting Equipment = Shield
+baseclass = paladin
+Special Ability = class_Paladin,paladin
+Special Ability = class_baseName,$paladin
+Special Ability = class_Sweep,paladin
+Special Ability = class_AttacksPerRound,paladin
+Special Ability = class_Leader,paladin
+Special Ability = ChangeClassPaladin
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name =  Ranger
+HitDiceLevelBonus = ranger,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Arrow,20
+Starting Equipment = Long Bow
+baseclass = ranger
+Special Ability = class_baseName,$ranger
+Special Ability = class_Unsurprised,$ranger
+Special Ability = class_Sweep,ranger
+Special Ability = class_AttacksPerRound,ranger
+Special Ability = class_AttacksPerRoundAdj,15
+Special Ability = ChangeClassRanger
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Thief
+HitDiceLevelBonus = thief,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Dagger
+Starting Equipment = Short Sword
+baseclass = thief
+Special Ability = class_NoSpells,thief
+Special Ability = class_baseName,$thief
+Special Ability = class_ThievingSkills,$thief
+Special Ability = ChangeClassThief
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+// multi-class
+
+\(BEGIN)
+name = Cleric/Assassin
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = assassin,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Shield
+Starting Equipment = Short Sword
+baseclass = cleric
+baseclass = assassin
+Special Ability = class_baseName,$cleric$assassin
+Special Ability = class_ThievingSkills,$assassin
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Cleric/Fighter
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = cleric
+baseclass = fighter
+Special Ability = class_baseName,$cleric$fighter
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Cleric/Fighter/Magic User
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceLevelBonus = magicUser,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = cleric
+baseclass = fighter
+baseclass = magicUser
+Special Ability = class_MageScribe,magicUser
+Special Ability = class_baseName,$cleric$fighter$magicUser
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Cleric/Magic User
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = magicUser,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Flail
+Starting Equipment = Shield
+baseclass = cleric
+baseclass = magicUser
+Special Ability = class_MageScribe,magicUser
+Special Ability = class_baseName,$cleric$magicUser
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = /#Cleric/Ranger
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = ranger,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Flail
+Starting Equipment = Shield
+baseclass = cleric
+baseclass = ranger
+Special Ability = class_baseName,$cleric$ranger
+Special Ability = class_Unsurprised,$ranger
+Special Ability = class_Sweep,ranger
+Special Ability = class_AttacksPerRound,ranger
+Special Ability = class_AttacksPerRoundAdj,15
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Cleric/Thief
+HitDiceLevelBonus = cleric,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = thief,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Flail
+Starting Equipment = Shield
+baseclass = cleric
+baseclass = thief
+Special Ability = class_baseName,$cleric$thief
+Special Ability = class_ThievingSkills,$thief
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Fighter/Assassin
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceLevelBonus = assassin,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = fighter
+baseclass = assassin
+Special Ability = class_NoSpells,$fighter$assassin
+Special Ability = class_baseName,$fighter$assassin
+Special Ability = class_ThievingSkills,$assassin
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Fighter/Magic User
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceLevelBonus = magicUser,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = fighter
+baseclass = magicUser
+Special Ability = class_MageScribe,magicUser
+Special Ability = class_baseName,$fighter$magicUser
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Fighter/Magic User/Thief
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceLevelBonus = magicUser,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = thief,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = fighter
+baseclass = magicUser
+baseclass = thief
+Special Ability = class_MageScribe,magicUser
+Special Ability = class_baseName,$fighter$magicUser$thief
+Special Ability = class_ThievingSkills,$thief
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Fighter/Thief
+HitDiceLevelBonus = fighter,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,3,4,5,5,6,6,6,7,7
+HitDiceLevelBonus = thief,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 1D100
+Starting Equipment = Long Sword
+Starting Equipment = Shield
+baseclass = fighter
+baseclass = thief
+Special Ability = class_NoSpells,$fighter$thief
+Special Ability = class_baseName,$fighter$thief
+Special Ability = class_ThievingSkills,$thief
+Special Ability = class_Sweep,fighter
+Special Ability = class_AttacksPerRound,fighter
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Magic User/Thief
+HitDiceBonus = Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = magicUser,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceLevelBonus = thief,Constitution,0,0,-2,-1,-1,-1,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+HitDiceBaseclass = *Average*
+StrengthBonusDice = 
+Starting Equipment = Dagger
+Starting Equipment = Short Sword
+baseclass = magicUser
+baseclass = thief
+Special Ability = class_MageScribe,magicUser
+Special Ability = class_baseName,$magicUser$thief
+Special Ability = class_ThievingSkills,$thief
+// Special Ability = class_ClassSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = $$Help
+Special Ability = Date,"January 29, 2017"
+Special Ability = Version,"1.09"
+Special Ability = Updates1_01,"added class_Druid SA to Druid"
+Special Ability = Updates1_02,"fixed class_MageScribe SA for all multi-class Magic Users"
+Special Ability = Updates1_03,"changed Cleric/Ranger to Ranger/Cleric to resolve display issue"
+Special Ability = Updates1_04,"added SA class_ThievingSkills to Assassin and Thief classes"
+Special Ability = Updates1_05,"added SA class_Unsurprised to Ranger classes"
+Special Ability = Updates1_06,"added SA class_Sweep to Fighter, Paladin and Ranger classes"
+Special Ability = Updates1_07,"added SA class_AttacksPerRound to Fighter, Paladin and Ranger classes, and class_AttacksPerRoundAdj to Ranger classes"
+Special Ability = Updates1_08,"added SA class_Leader to Paladin class"
+Special Ability = Updates1_09,"added starting equipment to all classes"
+Special Ability = Updates170920,"changed name of Ranger/Cleric to /#Cleric/Ranger"
+Special Ability = Updates170921,"added ChangeClassXXX SAs - where XXX is the name of a single class"
+\(END)
+

@@ -1,0 +1,6243 @@
+// Monster database file
+// The line above **must** be the first line of the monsters file!!!
+//
+//	Total validation is performed when reading this data. Nothing you do can cause the program to crash.  It may spit error messages and quit for lack of something decent to do but it will not crash or do unexpected things. It shouldn't anyway. If it does, please let us know.
+//
+//	The first item has the name "template" and will be ignored.  You can use it as a 'template'.  Copy it to the bottom of the file and edit the copy to add your item to the database.
+//
+//	Each line is of the form    name = value (value may be omitted)
+//	eg:   
+//		Special Ability = 
+//	This line will be interpreted as setting 'Special Ability' to the empty string.  This is commonly the default so in many cases it is the same as omitting the line entirely.
+//
+//	White space is a bit important.  Because names and values can contain blanks.  So the rule is....leading and trailing whitespace are ignored.  So, for example:
+//		attack bonus         =     3         <cr>
+//		attack bonus=3<cr>
+//	are equivalent.  But
+//		attack    bonus = 3
+//		attack bonus = 3
+//	are different.
+//
+//	Lines starting with two slashes are comment lines.  Like this one.
+//
+//	Attribute names are case-insensitive.  
+//		Name = Wimpy Axe
+//		namE = Wimpy Axe
+//		NAME = Wimpy Axe
+//	are equivalent.
+//	Text values retain their case.  Values with enumerated possibilities are case-insensitive.  Example  cLaSs = PaLaDiN     + FiGhTeR+ThIeF
+//
+//	File names can use the UNIX syntax with slashes because the backslash is used to escape special characters and it gets ugly to put double backslashes everywhere.  If you like to use backslashes you may. We will accept either.  Even mixed in a single filename.
+//	Example:    C:/UAF\\src\\guild of ravens/release1/beta\\art/barkeep.bmp
+//
+//	Item definitions are delimited by \(BEGIN) ........ \(END) which must start in column 1.  This ain't free format. You get what you pay for.  
+//
+//  ************ Now for the interesting part  ***********
+//	Each monster is defined by the following fields:
+//
+//	Name (text, required - monster record ignored if missing or blank).
+//	Each monster must have a uniue name.  You may add a qualifier to a name to make it unique.  For example:
+//		Kobald
+//		Kobald|Mean
+//		Kobald|Kind
+//	The qualifier is only used when editing a design.  The qualifier is discarded when the binary files for the design are created.  But the unique name is necessary during the design stage to allow unambiguous references to the monsters.  During gameplay they are identified by a binary integer 'key' so there is no confusion between the three Kobalds.
+//	Default - none.  Missing name will cause entire monster to be skipped.
+//	eg:		name = Blue legged pussycat
+//
+//	Icon  (icon image file used during combat, or "default",  or "none")
+//	A typical combat icon is 1x1 with 2 48x48 pixel frames. Both
+//	frames should face to the right and be on the same row. The
+//	left frame will be the 'ready' pose, and the right will be the 'attack' pose.
+//	comma-separated text format: 
+//		filename,delay,num frames, frame width, frame height, style
+//			filename can be blank to use DEFAULT or "none"
+//			delay in millisecs where 1 sec=1000 ms (should be 0 for monsters)
+//			num frames is total frames in image
+//			width is pixel width of single frame in image, should be 48 for monsters
+//			height is pixel height, should be 48 for monsters
+//			style is animation style, should be 0 for monsters
+//	The only values that actually change should be filename and num frames.
+//	Default - "DEFAULT"
+//	eg:		icon = icon_Kobold.png,0,2,48,48,0,0,0
+//
+// Hit Sound File (text, WAV file played when monster hits opponent, or Deault, or None)
+//	Default - DEFAULT
+//	eg:		hit sound = sound_Hit.wav
+//
+// Miss Sound File (text, WAV file played when monster misses opponent, or default, or None)
+//	Default - DEFAULT
+//	eg:		miss sound = DEFAULT
+//
+// Move Sound File (text, WAV file played when monster moves, or default, or None)
+//	Default - DEFAULT
+//	eg:		move sound = sound_MoveCrawl.wav
+//
+// Death Sound File (text, WAV file played when monster dies, or default, or None)
+//	Default - DEFAULT
+//	eg:		death sound = sound_LastGasp.wav
+//
+// Intelligence (integer)
+//	The intelligance ability score of the monster.
+//	Range is 0 to 25 (PCs are in the range 3-18)
+//	Default - 0
+//	eg:		intelligence = 10
+//
+// Armor class (integer)
+//	Armor Class (AC) represents the difficulty opponents
+//	have when attempting to hit this mosnter. The lower
+//	the AC value, the better the protection
+//	Default - 0
+//	eg:		armor class = -1
+//
+// Movement rate (integer)
+//	This is the number of squares that can be moved during
+//	combat by this monster.
+//	Max value for PCs is 12
+//	Default - 1
+//	eg:		movement rate = 3
+//
+// Hit dice (real number of dice)
+//	The number of Hit Dice that this creature has.
+//	Hit Dice are 8-sided dice.
+//	Default - 2.71828
+//	eg:		hit dice = 2
+//
+// Treat HD as hit points (yes/no)
+//	If true, the 'Hit Dice' value is treated as actual hit
+//	points value instead of how many dice to roll to determine hitpoints.
+//	Default - no
+//	eg:		treat HD as hit points = yes
+//
+// Hit dice bonus (integer)
+//	Bonus Hit Points added to the monsters score.
+//	Default - 0
+//	eg:		hit dice bonus = 2
+//
+// THACO (integer)
+//	THAC0 stands for "to hit armor class 0" and is the
+//	number needed for the monster to successfully attack
+//	an opponent with an Armor Class of 0
+//	Default - 10
+//	eg:		THAC0 = 14
+//
+// Magic Resistance (integer)
+//	Magic Resistance represents a percentage score
+//	that is the monsters immunity to all magic
+//	Default - 0
+//	eg:		magic resistance = 3
+//
+// Size (small, medium, large)
+//	This is the size class of the creature. Humans
+//	and other Player Character races are medium.
+//	Default - small
+//	eg:		size = medium
+//
+// Morale (integer)
+//	This score is the likelihood that the monster will
+//	stand its ground during combat.
+//	The range for this score is 0 to 50 and is
+//	added to the Combat Morale score defined
+//	in the Event Editor
+//	Default - 0
+//	eg:		morale = 30
+//
+// experience point value (integer)
+//	This is the number of XP awarded to the party for
+//	defeating the monster in combat.
+//	Default - 0
+//	eg:		experience point value = 2000
+//
+// Special Ability (SA name)
+//	each listed Special Ability corresponds to
+//	the Special Ability database.
+//	Each Special Ability is listed on a new line
+//	with a separate instance of the keyword.
+//	eg:		Special Ability = monsterPoisonousBite
+// 
+// Class (name of class)
+//	compared to classes permitted for each item to determine if
+//	an item can be readied by this monster, compared to legal
+//	classes from Class database
+//	Default - none
+//	eg:		Class = Fighter
+//
+// Race (name of race)
+//	Name corresponding to one of the races in the race database.
+//	Default - monster
+//	eg:		Race = Drow
+//
+// Form (combinable - none, mammal, animal, snake, giant, large (even if icon is 1x1)
+//	Default - mammal
+//	eg:		form = animal + giant + snake
+//
+// Penalty (combinable - none, DwarfAC, GnomeAC, DwarfTHACO, GnomeTHACO, RangerDmg)
+//	Default - none
+//	eg:		penalty = dwarfac + rangerdmg
+//
+// Immunity (combinable - none, poison, death magic, confusion, vorpal weapon)
+//	Default - none
+//	eg:		immunity = confusion + poison
+//
+// Misc Options (combinable - none, can be held/charmed, affected by dispel evil)
+//	Default = none
+//	eg:		misc options = affected by dispel evil
+//
+// item (name of item)
+//	The name of item that is added to monster's inventory.
+//	Add multiple items by using multiple 'item = <name>' lines
+//	Default - none
+//	eg:		item = Long Sword
+//
+// attack (text, attack dice)
+//	Attack dice formatted as: dice sides,nbr dice,bonus per
+//	roll, message the attack message is limited to 20 characters
+//	Add multiple attacks by using multiple 'attack = <data>' lines
+//	Default - none
+//	eg:		attack = 4,1,0,attacks
+//
+// Undead (name of undead type)
+//	Choose one of: none, Skeleton, Zombie, Ghoul, Shadow, Wight,
+//	Ghast, Wraith, Mummy, Spectre, Vampire, Ghost, Lich, Special
+//	The list of Undead is controlled by a Special Ability in
+//	the Special Abilty database.
+//	Default - none
+//	eg:		Undead = Skeleton
+//
+
+\(BEGIN)
+name = template
+icon file = DEFAULT
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 0
+armor class = 0
+movement rate = 0
+hit dice = 0.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 0
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = none
+item = none
+attack = none
+Undead = none
+\(END)
+
+\(BEGIN)
+name = Air Elemental
+icon file = icon_AirElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 36
+hit dice = 16.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3810
+Special Ability = monsterLevel,16
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 10,2,0,attacks,
+Undead = none
+\(END)
+// MM p37
+
+\(BEGIN)
+name = Ancient Fighter
+icon file = icon_AncientFighter.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 9
+movement rate = 12
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 14
+magic resistance = 0
+size = medium
+morale = 37
+experience point value = 1111
+Special Ability = monsterLevel,7
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Human
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,hits,
+Undead = none
+\(END)
+
+\(BEGIN)
+name = Azer
+icon file = icon_Azer.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 2
+movement rate = 12
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 16
+magic resistance = 15
+size = medium
+morale = 45
+experience point value = 145
+Special Ability = monsterLevel,4
+Special Ability = elemental_ImmuneFire
+Special Ability = elemental_VulnerableCold
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + affected by dispel evil
+item = Azer Mallet
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MMII p12
+
+\(BEGIN)
+name = Badger
+icon file = icon_Badger.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathSmall.wav
+intelligence = 3
+armor class = 4
+movement rate = 6
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 19
+magic resistance = 0
+size = small
+morale = 40
+experience point value = 32
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,attacks,
+attack = 2,1,0,attacks,
+attack = 3,1,0,bites,
+Undead = none
+\(END)
+// MM p9
+
+\(BEGIN)
+name = Baluchitherium
+icon file = icon_Baluchitherium.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 3
+armor class = 5
+movement rate = 12
+hit dice = 14.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 8
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 5008
+Special Ability = monsterLevel,14
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,5,0,attacks,
+attack = 4,5,0,attacks,
+Undead = none
+\(END)
+// MM p9
+
+\(BEGIN)
+name = Basilisk
+icon file = icon_Basilisk.png,0,2,96,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 4
+movement rate = 6
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 1200
+Special Ability = monsterLevel,7
+Class = Fighter/Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterBasiliskPetrifyGaze
+attack = 10,1,0,bites,
+Undead = none
+\(END)
+// MM p8
+
+\(BEGIN)
+name = Beholder
+icon file = icon_Beholder.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 16
+armor class = 0
+movement rate = 3
+hit dice = 65.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 8
+magic resistance = 245
+size = large
+morale = 50
+experience point value = 14200
+Special Ability = monsterLevel,15
+Special Ability = monster_BeholderAttacks,5
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter/Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = confusion + vorpal weapon
+Misc Options = none
+item = monsterBeholderCharm
+item = monsterBeholderFear
+item = monsterBeholderFleshToStone
+item = monsterBeholderSleep
+item = monsterBeholderSlow
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p10
+
+\(BEGIN)
+name = Black Dragon
+icon file = icon_BlackDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 10
+armor class = 3
+movement rate = 12
+hit dice = 35.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 930
+Special Ability = IsImmuneDragonBreathWeapon,$acid
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,7
+Special Ability = monster_AuraDragon,Black Dragon
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_DragonSavingThrow,second
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathAcid
+item = monsterDragonBreathAcid
+item = monsterDragonBreathAcid
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 6,3,0,bites,
+Undead = none
+\(END)
+// MM p31
+
+\(BEGIN)
+name = Black Pudding
+icon file = icon_BlackPudding.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveSuction.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 6
+movement rate = 6
+hit dice = 10.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 1910
+Special Ability = monsterLevel,10
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_ImmuneElectricity
+Special Ability = monster_WeaponImmunity,999
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = vorpal weapon
+Misc Options = none
+item = none
+attack = 8,3,0,attacks,monsterBlackPuddingAttack
+Undead = none
+\(END)
+// MM p10
+
+\(BEGIN)
+name = Blue Dragon
+icon file = icon_BlueDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 12
+armor class = 2
+movement rate = 9
+hit dice = 45.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 8
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 2140
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,9
+Special Ability = monster_AuraDragon,Blue Dragon
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = IsImmuneDragonBreathWeapon,$lightning
+Special Ability = monster_DragonSavingThrow,third
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathLightning
+item = monsterDragonBreathLightning
+item = monsterDragonBreathLightning
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 8,3,0,bites,
+Undead = none
+\(END)
+// MM p31
+
+\(BEGIN)
+name = Boobrie
+icon file = icon_Boobrie.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 5
+movement rate = 15
+hit dice = 9.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 1400
+Special Ability = IsImmunePoison
+Special Ability = monsterLevel,9
+Class = Fighter
+Race = Monster
+form = animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 8,2,0,attacks,
+Undead = none
+\(END)
+// MMII p20
+
+\(BEGIN)
+name = Boring Beetle
+icon file = icon_BoringBeetle.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveInsect.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 3
+movement rate = 6
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 190
+Special Ability = monsterLevel,5
+Class = Fighter
+Race = Monster
+form = animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,5,0,attacks,
+Undead = none
+\(END)
+// MM p9
+
+\(BEGIN)
+name = Brass Dragon
+icon file = icon_BrassDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 2
+movement rate = 12
+hit dice = 35
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 45
+experience point value = 2000
+Special Ability = IsSeeingInvisible,mdragon
+Special Ability = monsterLevel,7
+Special Ability = monster_AuraDragon,Brass Dragon
+Special Ability = monster_CombatantAlignment,good
+Special Ability = IsImmuneDragonBreathWeapon,$fear$sleep
+Special Ability = monster_DragonSavingThrow,second
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathSleepGas
+item = monsterDragonBreathSleepGas
+item = monsterDragonBreathFearGas
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 4,4,0,bites,
+Undead = none
+\(END)
+// MM p31
+
+\(BEGIN)
+name = Bronze Dragon
+icon file = icon_BronzeDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 16
+armor class = 0
+movement rate = 9
+hit dice = 45
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 11
+magic resistance = 0
+size = large
+morale = 45
+experience point value = 3000
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,9
+Special Ability = monster_AuraDragon,Bronze Dragon
+Special Ability = monster_CombatantAlignment,good
+Special Ability = IsImmuneDragonBreathWeapon,$lightning
+Special Ability = monster_DragonSavingThrow,third
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathLightning
+item = monsterDragonBreathLightning
+item = monsterDragonBreathLightning
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 6,4,0,bites,
+Undead = none
+\(END)
+// MM p32
+
+\(BEGIN)
+name = Brown Bear
+icon file = icon_BrownBear.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 6
+movement rate = 12
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 450
+Special Ability = monsterLevel,7
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,monsterBearHug1
+attack = 6,1,0,attacks,monsterBearHug2
+attack = 8,1,0,bites,
+Undead = none
+\(END)
+// MM p9
+
+\(BEGIN)
+name = Bugbear
+icon file = icon_BugBear.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 5
+movement rate = 9
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 16
+magic resistance = 0
+size = large
+morale = 30
+experience point value = 185
+Special Ability = monsterLevel,4
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = large
+penalty = GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Spear
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p12
+
+\(BEGIN)
+name = Bulette
+icon file = icon_Bulette.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 1
+armor class = -2
+movement rate = 14
+hit dice = 9.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 27
+experience point value = 2732
+Special Ability = monsterLevel,9
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 12,4,0,bites,
+attack = 6,3,0,attacks,
+attack = 6,3,0,attacks,
+Undead = none
+\(END)
+// MM p12
+
+\(BEGIN)
+name = Carrion Crawler
+icon file = icon_CarrionCrawler.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveInsect.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 3
+movement rate = 12
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 16
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 628
+Special Ability = monsterLevel,4
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+attack = 1,1,0,attacks,monsterParalysis
+Undead = none
+\(END)
+// MM p13
+
+\(BEGIN)
+name = Cat
+icon file = icon_Cat.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 6
+movement rate = 6
+hit dice = .625
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 8
+Special Ability = monsterLevel,1
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,claws,monsterRearClawRakeCat1
+attack = 1,1,0,attacks,monsterRearClawRakeCat2
+Undead = none
+\(END)
+// MMII p22
+
+\(BEGIN)
+name = Centaur
+icon file = icon_Centaur.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 5
+movement rate = 18
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 149
+Special Ability = monsterLevel,4
+Special Ability = IsWoodlandCreature
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+Undead = none
+\(END)
+// MM p14
+
+\(BEGIN)
+name = Cheetah
+icon file = icon_Cheetah.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 5
+movement rate = 15
+hit dice = 3
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 127
+Special Ability = monsterLevel,3
+Special Ability = monster_CheetahNotSurprised
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,claws,monsterRearClawRakeCat1
+attack = 2,1,0,claws,monsterRearClawRakeCat2
+attack = 4,2,0,bites,
+Undead = none
+\(END)
+// MMII p25
+
+\(BEGIN)
+name = Cloud Giant
+icon file = icon_CloudGiant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 10
+armor class = 0
+movement rate = 15
+hit dice = 12.000000
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 9
+magic resistance = 0
+size = large
+morale = 45
+experience point value = 5098
+Special Ability = monsterLevel,14
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,6,0,attacks,
+Undead = none
+\(END)
+// MM p44
+
+\(BEGIN)
+name = Cockatrice
+icon file = icon_Cockatrice.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 6
+movement rate = 6
+hit dice = 5
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 415
+Special Ability = monsterLevel,5
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,bites,Flesh to Stone
+Undead = none
+\(END)
+// MM p15
+
+\(BEGIN)
+name = Copper Dragon
+icon file = icon_CopperDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 1
+movement rate = 9
+hit dice = 40
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 15
+size = large
+morale = 45
+experience point value = 2500
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,8
+Special Ability = monster_AuraDragon,Copper Dragon
+Special Ability = monster_CombatantAlignment,good
+Special Ability = IsImmuneDragonBreathWeapon,$acid$slow
+Special Ability = monster_DragonSavingThrow,second
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathSlowGas
+item = monsterDragonBreathSlowGas
+item = monsterDragonBreathAcid
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 4,5,0,bites,
+Undead = none
+\(END)
+// MM p32
+
+\(BEGIN)
+name = Crysmal
+icon file = icon_Crysmal.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 13
+armor class = -4
+movement rate = 6
+hit dice = 6
+treat HD as hit points = yes
+hit dice bonus = 6
+THAC0 = 14
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 1155
+Special Ability = monsterLevel,8
+Special Ability = elemental_ImmuneAcid
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_ImmuneFire
+Special Ability = IsImmunePoison
+Special Ability = monster_CrysmalBluntWeapon
+Special Ability = monster_CrysmalElectricalResistance
+Special Ability = Summoned,inner
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,3,0,attacks,
+Undead = none
+\(END)
+// MMII p26
+
+\(BEGIN)
+name = Dao
+icon file = icon_Dao.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = 3
+movement rate = 9
+hit dice = 8
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 1242
+Special Ability = monsterLevel,9
+Special Ability = elemental_ImmuneStone
+Special Ability = IsDetectingGood
+Special Ability = IsDetectingMagic
+Special Ability = IsInvisible
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_DaoDoubleHolyWater
+Special Ability = Summoned,inner
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterWallOfStone
+item = monsterTransmuteRockToMud
+attack = 6,3,0,attacks,
+Undead = none
+\(END)
+// MMII p32
+
+\(BEGIN)
+name = Dire Wolf
+icon file = icon_DireWolf.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 18
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 120
+Special Ability = monsterLevel,4
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,2,0,bites,
+Undead = none
+\(END)
+// MM p101
+
+\(BEGIN)
+name = Displacer Beast
+icon file = icon_DisplacerBeast.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 4
+movement rate = 15
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 50
+experience point value = 667
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_Displacement,monster
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p28
+
+\(BEGIN)
+name = Djinni
+icon file = icon_Djinni.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = 4
+movement rate = 24
+hit dice = 7
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,good
+Special Ability = Summoned,inner
+Special Ability = IsInvisible
+Special Ability = monster_DjinniAirResistance,1
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterDjinniWhirlwind
+attack = 8,2,0,attacks,
+Undead = none
+\(END)
+// MM p28
+
+\(BEGIN)
+name = Dracolisk
+icon file = icon_Dracolisk.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 9
+armor class = 3
+movement rate = 9
+hit dice = 7
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 30
+experience point value = 2560
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = IsImmuneDragonBreathWeapon,$acid
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterDracoliskPetrifyGaze
+item = monsterDracoliskPetrifyGaze
+item = monsterDracoliskBreath
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 4,3,0,bites,
+Undead = none
+\(END)
+// MMII p55
+
+\(BEGIN)
+name = Drider|Female
+icon file = icon_Drider.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 3
+movement rate = 12
+hit dice = 6
+treat HD as hit points = yes
+hit dice bonus = 6
+THAC0 = 13
+magic resistance = 15
+size = large
+morale = 30
+experience point value = 1145
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = race_CharmResistant,drow
+Special Ability = race_ElvenAttackBonus,drow
+Special Ability = race_SleepResistant,drow
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterClericCauseLightWounds
+item = monsterClericCauseLightWounds
+item = monsterClericProtectionFromGood
+item = monsterClericHoldPerson
+item = monsterClericHoldPerson
+item = monsterClericSilence
+item = monsterClericCauseBlindness
+item = monsterClericCauseDisease
+item = monsterClericCauseSeriousWounds
+item = monsterClericCauseSeriousWounds
+item = monsterClericSticksToSnakes
+item = Drow Long Sword|1
+item = Long Bow
+item = Arrow,20
+attack = 4,1,0,bites,monsterDriderParalyzingBite
+Undead = none
+\(END)
+// MMII p60
+
+\(BEGIN)
+name = Drider|Male
+icon file = icon_Drider.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 3
+movement rate = 12
+hit dice = 6
+treat HD as hit points = yes
+hit dice bonus = 6
+THAC0 = 13
+magic resistance = 15
+size = large
+morale = 30
+experience point value = 1145
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = race_CharmResistant,drow
+Special Ability = race_ElvenAttackBonus,drow
+Special Ability = race_SleepResistant,drow
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterMageMagicMissile
+item = monsterMageMagicMissile
+item = monsterMageSleep
+item = monsterMageStinkingCloud
+item = monsterMageFireball
+item = monsterMageHoldPerson
+item = monsterMageCharmMonster
+item = monsterMageIceStorm
+item = Drow Long Sword|1
+item = Long Bow
+item = Arrow,20
+attack = 4,1,0,bites,monsterDriderParalyzingBite
+Undead = none
+\(END)
+// MMII p60
+
+\(BEGIN)
+name = Eagle
+icon file = icon_Eagle.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 6
+movement rate = 30
+hit dice = 1
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 49
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,attacks,
+attack = 2,1,0,attacks,
+attack = 2,1,0,attacks,
+Undead = none
+\(END)
+// MMII p62
+
+\(BEGIN)
+name = Earth Elemental
+icon file = icon_EarthElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 6
+hit dice = 16.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3810
+Special Ability = monsterLevel,16
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 8,4,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Efreeti
+icon file = icon_Efreet.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 2
+movement rate = 9
+hit dice = 10.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 2510
+Special Ability = monsterLevel,10
+Special Ability = monster_EfreetiFireResistance
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 8,3,0,attacks,
+Undead = none
+\(END)
+// MM p37
+
+\(BEGIN)
+name = Elephant
+icon file = icon_Elephant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 3
+armor class = 6
+movement rate = 12
+hit dice = 10.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 2060
+Special Ability = monsterLevel,10
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,2,0,attacks,
+attack = 6,2,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Ettin
+icon file = icon_Ettin.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 3
+movement rate = 12
+hit dice = 10.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 2510
+Special Ability = monsterLevel,10
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = giant
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = none
+attack = 8,2,0,attacks,
+attack = 6,3,0,attacks,
+Undead = none
+\(END)
+// MM p40
+
+\(BEGIN)
+name = Fire Bat
+icon file = icon_FireBat.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveWings.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 8
+movement rate = 30
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 44
+Special Ability = monsterLevel,2
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 4,2,0,bites,monsterFireBatAttack
+Undead = none
+\(END)
+// MMII p16
+
+\(BEGIN)
+name = Fire Elemental
+icon file = icon_FireElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 12
+hit dice = 16.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3810
+Special Ability = monsterLevel,16
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 8,3,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Fire Giant
+icon file = icon_FireGiant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 9
+armor class = 3
+movement rate = 12
+hit dice = 11
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 9
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 3472
+Special Ability = monsterLevel,13
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneFire
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,5,0,attacks,
+Undead = none
+\(END)
+// MM p44
+
+\(BEGIN)
+name = Flesh Golem
+icon file = icon_FleshGolem.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 3
+armor class = 9
+movement rate = 8
+hit dice = 40.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 50
+experience point value = 2380
+Special Ability = monsterLevel,9
+Special Ability = elemental_GrowthElectricity
+Special Ability = elemental_ImmuneFire
+Special Ability = elemental_SlowingFire
+Special Ability = elemental_SlowingCold
+Special Ability = monster_WeaponImmunity,1
+Special Ability = IsSeeingInvisible,flesh golem
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion + vorpal weapon
+Misc Options = none
+item = none
+attack = 8,2,0,attacks,
+attack = 8,2,0,attacks,
+Undead = none
+\(END)
+// MM p48
+
+\(BEGIN)
+name = Frost Giant
+icon file = icon_FrostGiant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 9
+armor class = 4
+movement rate = 12
+hit dice = 10.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 10
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 2838
+Special Ability = monsterLevel,11
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneCold
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,4,0,attacks,
+Undead = none
+\(END)
+// MM p44
+
+\(BEGIN)
+name = Galeb Duhr
+icon file = icon_GalebDuhr.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = -2
+movement rate = 6
+hit dice = 8
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 2432
+Special Ability = monsterLevel,8
+Special Ability = elemental_VulnerableCold
+Special Ability = elemental_ImmuneElectricity
+Special Ability = IsImmuneNormalFire
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterWallOfStone
+item = monsterWallOfStone
+attack = 8,2,0,attacks,
+attack = 8,2,0,attacks,
+Undead = none
+\(END)
+// MMII p68
+//item = monsterSummonBoulder
+// summon 1-2 boulders
+// AC 0; MV 3; HD 9; DM 4d6; INT 0
+
+\(BEGIN)
+name = Gargoyle
+icon file = icon_Gargoyle.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 5
+movement rate = 9
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 265
+Special Ability = monsterLevel,5
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 3,1,0,attacks,
+attack = 3,1,0,attacks,
+Undead = none
+\(END)
+// MM p42
+
+\(BEGIN)
+name = Gelatinous Cube
+icon file = icon_GelatinousCube.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveSuction.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 8
+movement rate = 6
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 25
+experience point value = 214
+Special Ability = monsterLevel,4
+Special Ability = elemental_ImmuneElectricity
+Special Ability = elemental_SlowingCold
+Special Ability = monster_ImmuneFear,monster
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = none
+item = none
+attack = 4,2,0,attacks,monsterParalysis
+Undead = none
+\(END)
+// MM p43
+
+\(BEGIN)
+name = Ghast
+icon file = icon_Ghoul.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 13
+armor class = 4
+movement rate = 15
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 254
+Special Ability = monsterLevel,4
+Special Ability = monster_AuraGhast
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneCharm
+Special Ability = monster_ImmuneSleep
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic
+Misc Options = none
+item = none
+attack = 4,1,0,attacks,monsterParalysis
+attack = 4,1,0,attacks,monsterParalysis
+attack = 8,1,0,bites,
+Undead = Ghast
+\(END)
+// MM p43
+
+\(BEGIN)
+name = Ghoul
+icon file = icon_Ghoul.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 6
+movement rate = 9
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 81
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneCharm
+Special Ability = monster_ImmuneSleep
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic
+Misc Options = none
+item = none
+attack = 6,1,0,bites,
+attack = 3,1,0,attacks,monsterParalysis
+attack = 3,1,0,attacks,monsterParalysis
+Undead = Ghoul
+\(END)
+// MM p43
+
+\(BEGIN)
+name = Giant Badger
+icon file = icon_GiantBadger.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 4
+movement rate = 6
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 17
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 44
+Special Ability = monsterLevel,3
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,attacks,
+attack = 3,1,0,attacks,
+attack = 6,1,0,bites,
+Undead = none
+\(END)
+// MM p8
+
+\(BEGIN)
+name = Giant Black Squirrel
+icon file = icon_GiantBlackSquirrel.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathSmall.wav
+intelligence = 3
+armor class = 6
+movement rate = 12
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = small
+morale = 0
+experience point value = 30
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,bites,
+Undead = none
+\(END)
+// MMII p114
+
+\(BEGIN)
+name = Giant Centipede
+icon file = icon_GiantCentipede.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveInsect.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 9
+movement rate = 15
+hit dice = 0.250000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 45
+experience point value = 32
+Special Ability = monsterLevel,1
+Special Ability = monster_Swept,1
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 1,1,0,bites,monsterPoisonCentipede
+Undead = none
+\(END)
+// MM p14
+
+\(BEGIN)
+name = Giant Crocodile
+icon file = icon_GiantCrocodile.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 1
+armor class = 4
+movement rate = 6
+hit dice = 7.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 624
+Special Ability = monsterLevel,7
+Class = Fighter
+Race = Monster
+form = animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,3,0,attacks,
+attack = 10,2,0,attacks,
+Undead = none
+\(END)
+// MM p15
+
+\(BEGIN)
+name = Giant Lynx
+icon file = icon_GiantLynx.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 11
+armor class = 6
+movement rate = 12
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 150
+Special Ability = monsterLevel,3
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,claws,monsterRearClawRake1
+attack = 2,1,0,claws,monsterRearClawRake2
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MM p64
+
+\(BEGIN)
+name = Giant Poisonous Snake
+icon file = icon_PoisonousSnake.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 5
+movement rate = 15
+hit dice = 4
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 480
+Special Ability = IsSnake,1
+Special Ability = monsterLevel,5
+Class = Fighter
+Race = Monster
+form = animal + snake + large
+penalty = none
+immunity = none
+Misc Options = none
+item = none
+attack = 3,1,0,bites,monsterPoisonSnake
+Undead = none
+\(END)
+// MM p88
+
+\(BEGIN)
+name = Giant Rat
+icon file = icon_GiantRat.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 12
+hit dice = 0.500000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 15
+experience point value = 9
+Special Ability = monsterLevel,1
+Special Ability = monster_Swept,1
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,attacks,
+Undead = none
+\(END)
+// MM p81
+
+\(BEGIN)
+name = Giant Scorpion
+icon file = icon_GiantScorpion.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveInsect.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 3
+movement rate = 15
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 800
+Special Ability = monsterLevel,7
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 10,1,0,attacks,
+attack = 10,1,0,attacks,
+attack = 4,1,0,stings,monsterPoison
+Undead = none
+\(END)
+// MM p85
+
+\(BEGIN)
+name = Giant Skeleton
+icon file = icon_GiantSkeleton.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 2
+movement rate = 12
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 50
+experience point value = 230
+Special Ability = monsterLevel,5
+Special Ability = elemental_ImmuneCold
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponResistanceType,slashing
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = none
+item = none
+attack = 6,4,0,attacks,
+Undead = Mummy
+\(END)
+
+\(BEGIN)
+name = Giant Slug
+icon file = icon_GiantSlug.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 8
+movement rate = 6
+hit dice = 12.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 9
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 2768
+Special Ability = monsterLevel,12
+Special Ability = monster_WeaponImmunityType,blunt
+Class = Fighter/Magic User
+Race = Monster
+form = animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterGiantSlugSpit
+attack = 1,1,0,spits,
+Undead = none
+\(END)
+// MM p88
+
+\(BEGIN)
+name = Giant Spider
+icon file = icon_GiantSpider.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveInsect.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 4
+movement rate = 3
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 32
+experience point value = 415
+Special Ability = monsterLevel,5
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,bites,monsterPoison
+Undead = none
+\(END)
+// MM p90
+
+\(BEGIN)
+name = Giant Weasel
+icon file = icon_GiantWeasel.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 6
+movement rate = 15
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 185
+Special Ability = monsterLevel,4
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,2,0,bites,monsterGiantWeaselAttack
+Undead = none
+\(END)
+// MM p100
+
+\(BEGIN)
+name = Gnoll
+icon file = icon_Gnoll.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 5
+movement rate = 9
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = large
+morale = 27
+experience point value = 44
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal + large
+penalty = GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Halberd
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p46
+
+\(BEGIN)
+name = Gnoll Leader
+icon file = icon_GnollLeader.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 5
+movement rate = 9
+hit dice = 16.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = large
+morale = 27
+experience point value = 83
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,3
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal + large
+penalty = GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Halberd
+item = Javelin,6
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p46
+
+\(BEGIN)
+name = Goat
+icon file = icon_Goat.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 7
+movement rate = 15
+hit dice = 1
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 36
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MMII p70
+
+\(BEGIN)
+name = Goblin
+icon file = icon_Goblin.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 7
+armor class = 10
+movement rate = 6
+hit dice = 0.900000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 25
+experience point value = 13
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_Swept,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = DwarfTHAC0 + GnomeTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Mace
+item = Buckler
+item = Leather Armor
+attack = 6,1,0,attacks,
+Undead = none
+\(END)
+// MM p47
+
+\(BEGIN)
+name = Goblin Leader
+icon file = icon_GoblinLeader.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 7
+armor class = 10
+movement rate = 6
+hit dice = 7.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 25
+experience point value = 17
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = none
+penalty = DwarfTHAC0 + GnomeTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Spear
+item = Javelin,6
+item = Leather Armor
+attack = 6,1,0,attacks,
+Undead = none
+\(END)
+// MM p47
+
+\(BEGIN)
+name = Gold Dragon
+icon file = icon_GoldDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 16
+armor class = -2
+movement rate = 12
+hit dice = 55.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 9
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 5980
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,11
+Special Ability = monster_AuraDragon,Gold Dragon
+Special Ability = monster_CombatantAlignment,good
+Special Ability = IsImmuneDragonBreathWeapon,$fire$poison
+Special Ability = monster_DragonSavingThrow,third
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathFire
+item = monsterDragonBreathFire
+item = monsterDragonBreathPoison
+attack = 8,1,0,attacks,
+attack = 8,1,0,attacks,
+attack = 6,6,0,bites,
+Undead = none
+\(END)
+// MM p32
+
+\(BEGIN)
+name = Green Dragon
+icon file = icon_GreenDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 11
+armor class = 2
+movement rate = 9
+hit dice = 40.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 1400
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,8
+Special Ability = monster_AuraDragon,Green Dragon
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = IsImmuneDragonBreathWeapon,$poison
+Special Ability = monster_DragonSavingThrow,second
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathPoison
+item = monsterDragonBreathPoison
+item = monsterDragonBreathPoison
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 10,2,0,bites,
+Undead = none
+\(END)
+// MM p33
+
+\(BEGIN)
+name = Green Slime
+icon file = icon_GreenSlime.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveSuction.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 9
+movement rate = 0
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 426
+Special Ability = monsterLevel,2
+Special Ability = monster_ImmuneSpellsGreenSlime,monster
+Special Ability = monster_SlimeWeakness,monster
+Special Ability = monster_WeaponImmunity,999
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = vorpal weapon
+Misc Options = none
+item = none
+attack = 6,1,0,*NoAttack*,monsterGreenSlimeAttack
+Undead = none
+\(END)
+// MM p49
+
+\(BEGIN)
+name = Griffon
+icon file = icon_Griffon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveWings.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 3
+armor class = 3
+movement rate = 21
+hit dice = 7.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 655
+Special Ability = monsterLevel,7
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 8,2,0,bites,
+Undead = none
+\(END)
+// MM p50
+
+\(BEGIN)
+name = Grippli
+icon file = icon_Grippli.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 14
+armor class = 9
+movement rate = 9
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 55
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MMII p71
+
+\(BEGIN)
+name = Grizzly Bear
+icon file = icon_GrizzlyBear.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 6
+movement rate = 12
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 45
+experience point value = 450
+Special Ability = monsterLevel,7
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,monsterBearHug1
+attack = 6,1,0,attacks,monsterBearHug2
+attack = 8,1,0,bites,
+Undead = none
+\(END)
+// MM p9
+
+\(BEGIN)
+name = Hell Hound
+icon file = icon_HellHound.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 5
+armor class = 4
+movement rate = 12
+hit dice = 7.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 474
+Special Ability = monsterLevel,7
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = IsSeeingInvisible,monster
+Special Ability = Summoned,plane
+Class = Fighter/Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + affected by dispel evil
+item = monsterHellHoundBreath
+attack = 10,1,0,bites,
+Undead = none
+\(END)
+// MM p51
+
+\(BEGIN)
+name = Hill Giant
+icon file = icon_HillGiant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 10
+armor class = 4
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 12
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 1796
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = giant
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 8,2,0,attacks,
+Undead = none
+\(END)
+// MM p45
+
+\(BEGIN)
+name = Hill Giant Shaman
+icon file = icon_HillGiantShaman.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 12
+armor class = 4
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 30
+experience point value = 1804
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Class = Cleric
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = monsterClericCauseLightWounds
+item = monsterClericCauseLightWounds
+item = monsterClericHoldPerson
+item = monsterClericHoldPerson
+attack = 8,2,0,attacks,
+Undead = none
+\(END)
+// MM p45
+
+\(BEGIN)
+name = Hippopotamus
+icon file = icon_Hippopotamus.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 1
+armor class = 6
+movement rate = 9
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 567
+Special Ability = monsterLevel,8
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,3,0,bites,
+Undead = none
+\(END)
+// MM p52
+
+\(BEGIN)
+name = Hobgoblin
+icon file = icon_Hobgoblin.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 10
+armor class = 10
+movement rate = 9
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 30
+experience point value = 30
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = DwarfTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Spear
+item = Buckler
+item = Scale Mail
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// MM p52
+
+\(BEGIN)
+name = Hobgoblin Leader
+icon file = icon_HobgoblinChief.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 10
+armor class = 10
+movement rate = 9
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 30
+experience point value = 60
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = DwarfTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Arrow,20
+item = Short Bow
+item = Broad Sword
+item = Chain Mail
+item = Shield
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// MM p52
+
+\(BEGIN)
+name = Hybsil
+icon file = icon_Hybsil.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = 7
+movement rate = 15
+hit dice = 1
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 26
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,good
+Special Ability = race_ShortSaveBonus,4
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = Short Bow
+item = Arrow,20
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MMII p76
+
+\(BEGIN)
+name = Ice Troll
+icon file = icon_IceTroll.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 8
+movement rate = 9
+hit dice = 2.000000
+treat HD as hit points = no
+hit dice bonus = 6
+THAC0 = 16
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 60
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneCold
+Special Ability = monster_ElementalVulnerabity,fire
+Special Ability = monster_WeaponImmunity,1
+Special Ability = monster_TrollGetUp,monster
+Special Ability = monster_TrollRegeneration,2
+Class = Fighter
+Race = Monster
+form = large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 8,1,0,attacks,
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// FF p80
+
+\(BEGIN)
+name = Imp
+icon file = icon_Imp.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveWings.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 2
+movement rate = 18
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 16
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 305
+Special Ability = monsterLevel,7
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_ImmuneElectricity
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_Regeneration,1
+Special Ability = monster_WeaponImmunity,1
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = confusion
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 4,1,0,attacks,monsterPoison
+Undead = none
+\(END)
+// MM p54
+
+\(BEGIN)
+name = Intellect Devourer
+icon file = icon_IntellectDevourer.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 13
+armor class = 4
+movement rate = 15
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 6
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 1750
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_WeaponDamageOnlyOne,monster
+Special Ability = monster_WeaponImmunity,3
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = vorpal weapon
+Misc Options = none
+item = none
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MM p54
+
+\(BEGIN)
+name = Invisible Stalker
+icon file = icon_InvisibleStalker.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 12
+armor class = 3
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 30
+size = large
+morale = 35
+experience point value = 1410
+Special Ability = monsterLevel,8
+Special Ability = monster_PlayerControl,yes
+Special Ability = IsInvisibleStalker,yes
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 4,4,0,attacks,
+Undead = none
+\(END)
+// MM p55
+
+\(BEGIN)
+name = Iron Golem
+icon file = icon_IronGolem.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 3
+movement rate = 6
+hit dice = 80.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 14550
+Special Ability = monsterLevel,18
+Special Ability = IsSeeingInvisible,iron golem
+Special Ability = elemental_GrowthFire
+Special Ability = elemental_SlowingElectricity
+Special Ability = monster_ImmuneSpellsIronGolem,monster
+Special Ability = monster_WeaponImmunity,3
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion + vorpal weapon
+Misc Options = none
+item = monsterPoisonCloud
+attack = 10,4,0,attacks,
+Undead = none
+\(END)
+// MM p48
+
+\(BEGIN)
+name = Juju Zombie
+icon file = icon_JujuZombie.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 6
+movement rate = 9
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 12
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 206
+Special Ability = monsterLevel,6
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_ImmuneElectricity
+Special Ability = elemental_ResistantFire
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_SpellImmunity,$Magic Missile$Death Spell$Cone of Cold$Ice Storm$Lightning Bolt
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Special Ability = monster_WeaponResistanceType,blunt
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion
+Misc Options = none
+item = none
+attack = 4,3,0,attacks,
+Undead = Spectre
+\(END)
+// MMII p131
+
+\(BEGIN)
+name = Killer Frog
+icon file = icon_KillerFrog.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 8
+movement rate = 6
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 19
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 52
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,attacks,
+attack = 2,1,0,attacks,
+attack = 4,1,1,bites,
+Undead = none
+\(END)
+// MM p41
+
+\(BEGIN)
+name = Kobold
+icon file = icon_Kobold.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 10
+movement rate = 6
+hit dice = 0.500000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 25
+experience point value = 7
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_Swept,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = GnomeTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Dagger
+item = Buckler
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MM p57
+
+\(BEGIN)
+name = Kuo-toa
+icon file = icon_KuoToa.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = 4
+movement rate = 9
+hit dice = 18
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 149
+Special Ability = elemental_ResistantElectricity
+Special Ability = IsImmunePoison,monster
+Special Ability = IsSeeingInvisible
+Special Ability = monsterLevel,3
+Special Ability = monster_KuoToaFireSave
+Special Ability = monster_KuoToaMagicMissile
+Special Ability = monster_LightSusceptible
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison
+Misc Options = none
+item = none
+attack = 4,1,1,attacks,
+Undead = none
+\(END)
+// FF p57
+
+\(BEGIN)
+name = Lamia
+icon file = icon_Lamia.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 13
+armor class = 3
+movement rate = 24
+hit dice = 9.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 2132
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = Dagger
+item = Dagger
+item = monsterMageMirrorImage
+item = monsterMageCharmPerson
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MM p59
+
+\(BEGIN)
+name = Lesser Air Elemental
+icon file = icon_LesserAirElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 36
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3330
+Special Ability = monsterLevel,8
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 10,2,0,attacks,
+Undead = none
+\(END)
+// MM p37
+
+\(BEGIN)
+name = Lesser Earth Elemental
+icon file = icon_LesserEarthElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 6
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3330
+Special Ability = monsterLevel,8
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 8,4,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Lesser Fire Elemental
+icon file = icon_LesserFireElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3330
+Special Ability = monsterLevel,8
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 8,3,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Lesser Water Elemental
+icon file = icon_LesserWaterElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 6
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3330
+Special Ability = monsterLevel,8
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 6,5,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Lich
+icon file = icon_Lich.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 19
+armor class = 0
+movement rate = 6
+hit dice = 11
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 11204
+Special Ability = monsterLevel,11
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_ImmuneElectricity
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Special Ability = rangeUndead,Lich
+Class = Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion
+Misc Options = none
+item = monsterMageCharmMonster
+item = monsterMageCharmPerson
+item = monsterMageFireball
+item = monsterMageHoldMonster
+item = monsterMageHoldPerson
+item = monsterMageIceStorm
+item = monsterMageMagicMissile
+item = monsterMageSleep
+attack = 10,1,0,attacks,monsterParalysis
+Undead = Lich
+\(END)
+// MM p61
+
+\(BEGIN)
+name = Lion
+icon file = icon_Lion.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 5
+movement rate = 12
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 432
+Special Ability = monsterLevel,6
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,claws,monsterRearClawRake1
+attack = 4,1,0,claws,monsterRearClawRake2
+attack = 10,1,0,bites,
+Undead = none
+\(END)
+// MM p61
+
+\(BEGIN)
+name = Lizard Man
+icon file = icon_LizardMan.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 6
+movement rate = 6
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 62
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,3
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = Javelin,6
+item = Shield
+item = Trident
+attack = 2,1,0,attacks,
+attack = 2,1,0,attacks,
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// MM p62
+
+\(BEGIN)
+name = Lizard Man King
+icon file = icon_LizardManKing.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 10
+armor class = 6
+movement rate = 9
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 870
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,3,2,attacks,
+Undead = none
+\(END)
+// MM p62
+
+\(BEGIN)
+name = Mandragora
+icon file = icon_Mandragora.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 6
+movement rate = 12
+hit dice = 2
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 18
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 150
+Special Ability = monsterLevel,3
+Special Ability = IsPlant
+Special Ability = IsImmuneSleep
+Special Ability = elemental_ResistantFire
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,attacks,
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MMII p82
+
+\(BEGIN)
+name = Manes
+icon file = icon_Manes.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 3
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = small
+morale = 40
+experience point value = 22
+Special Ability = elemental_ResistantCold
+Special Ability = elemental_ResistantElectricity
+Special Ability = elemental_ResistantFire
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_VulnerableToHolyWater
+Special Ability = monster_WeaponImmunity,1
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = death magic + confusion
+Misc Options = affected by dispel evil
+item = none
+attack = 2,1,0,hits,
+attack = 2,1,0,hits,
+attack = 4,1,0,bites,
+Undead = Special
+\(END)
+// MM p17
+
+\(BEGIN)
+name = Margoyle
+icon file = icon_Margoyle.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 5
+armor class = 2
+movement rate = 6
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 494
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MMII p83
+
+\(BEGIN)
+name = Marid
+icon file = icon_Marid.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 16
+armor class = 0
+movement rate = 24
+hit dice = 13
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 25
+size = large
+morale = 40
+experience point value = 5000
+Special Ability = monsterLevel,13
+Special Ability = elemental_ImmuneWater
+Special Ability = IsDetectingEvil
+Special Ability = IsDetectingGood
+Special Ability = IsDetectingMagic
+Special Ability = IsInvisible
+Special Ability = IsSeeingInvisible
+Special Ability = monster_MaridColdResistance,2
+Special Ability = monster_MaridFireVulnerability,1
+Special Ability = Summoned,inner
+Class = Fighter
+Race = Genie
+form = large
+penalty = none
+immunity = none
+Misc Options = none
+item = monsterMaridWaterJet
+item = monsterMaridWaterJet
+item = monsterMaridWaterJet
+attack = 4,8,0,attacks,
+Undead = none
+\(END)
+// MMII p84
+
+\(BEGIN)
+name = Medusa
+icon file = icon_Medusa.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 13
+armor class = 5
+movement rate = 9
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 869
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter/Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterMedusaPetrifyGaze
+attack = 4,1,0,attacks,monsterPoison
+attack = 1,1,0,gazes,
+Undead = none
+\(END)
+// MM p66
+
+\(BEGIN)
+name = Mind Flayer
+icon file = icon_MindFlayer.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 18
+armor class = 5
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 12
+magic resistance = 90
+size = medium
+morale = 45
+experience point value = 2232
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter/Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterMindFlayerMindBlast
+item = monsterMindFlayerMindBlast
+attack = 1,2,0,attacks,monsterMindFlayerTentacle
+attack = 1,2,0,attacks,monsterMindFlayerTentacle
+attack = 1,2,0,attacks,monsterMindFlayerTentacle
+attack = 1,2,0,attacks,monsterMindFlayerTentacle
+Undead = none
+\(END)
+// MM p70
+
+\(BEGIN)
+name = Minotaur
+icon file = icon_Minotaur.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 6
+movement rate = 12
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 32
+experience point value = 616
+Special Ability = monsterLevel,7
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = Bardiche
+attack = 4,2,0,attacks,
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p71
+
+\(BEGIN)
+name = Mobat
+icon file = icon_Mobat.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveWings.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 7
+movement rate = 15
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 30
+experience point value = 270
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal + animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,2,0,bites,
+Undead = none
+\(END)
+// MMII p15
+
+\(BEGIN)
+name = Modron Duodrone
+icon file = icon_ModronDuodrone.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 6
+movement rate = 9
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 80
+Special Ability = monsterLevel,3
+Special Ability = Summoned,plane
+Special Ability = monster_ImmuneCharm,modron
+Special Ability = monster_ImmuneFear,modron
+Special Ability = monster_ImmuneHold,modron
+Special Ability = monster_ImmuneSleep,modron
+Special Ability = monster_ModronElementalResistance,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = confusion + vorpal weapon
+Misc Options = none
+item = none
+attack = 4,1,1,hits,
+attack = 4,1,1,hits,
+Undead = none
+\(END)
+// MMII p87
+
+\(BEGIN)
+name = Modron Monodrone
+icon file = icon_ModronMonodrone.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 6
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 38
+Special Ability = monsterLevel,2
+Special Ability = Summoned,plane
+Special Ability = monster_ImmuneCharm,modron
+Special Ability = monster_ImmuneFear,modron
+Special Ability = monster_ImmuneHold,modron
+Special Ability = monster_ImmuneSleep,modron
+Special Ability = monster_ModronElementalResistance,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = confusion + vorpal weapon
+Misc Options = none
+item = none
+attack = 4,1,0,attacks,
+Undead = none
+\(END)
+// MMII p87
+
+\(BEGIN)
+name = Modron Quadrone
+icon file = icon_ModronQuadrone.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 11
+armor class = 4
+movement rate = 9
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 12
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 265
+Special Ability = monsterLevel,5
+Special Ability = Summoned,plane
+Special Ability = monster_ImmuneCharm,modron
+Special Ability = monster_ImmuneFear,modron
+Special Ability = monster_ImmuneHold,modron
+Special Ability = monster_ImmuneSleep,modron
+Special Ability = monster_ModronElementalResistance,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = confusion + vorpal weapon
+Misc Options = none
+item = none
+attack = 4,1,3,hits,
+attack = 4,1,3,hits,
+attack = 4,1,3,hits,
+attack = 4,1,3,hits,
+Undead = none
+\(END)
+// MMII p88
+
+\(BEGIN)
+name = Modron Tridrone
+icon file = icon_ModronTridrone.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 5
+movement rate = 12
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 145
+Special Ability = monsterLevel,4
+Special Ability = Summoned,plane
+Special Ability = monster_ImmuneCharm,modron
+Special Ability = monster_ImmuneFear,modron
+Special Ability = monster_ImmuneHold,modron
+Special Ability = monster_ImmuneSleep,modron
+Special Ability = monster_ModronElementalResistance,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = confusion + vorpal weapon
+Misc Options = none
+item = none
+attack = 4,1,2,hits,
+attack = 4,1,2,hits,
+attack = 4,1,2,hits,
+Undead = none
+\(END)
+// MMII p88
+
+\(BEGIN)
+name = Mummy
+icon file = icon_Mummy.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 3
+movement rate = 6
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 37
+experience point value = 1366
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_VulnerableFire
+Special Ability = IsImmuneDisease,mummy
+Special Ability = monsterLevel,7
+Special Ability = monster_AuraMummy
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Special Ability = monster_WeaponResistance,magical
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic
+Misc Options = none
+item = none
+attack = 12,1,0,attacks,monsterMummyRot
+Undead = Mummy
+\(END)
+// MM p72
+
+\(BEGIN)
+name = Myconid
+icon file = icon_Myconid.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 10
+movement rate = 9
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 86
+Special Ability = IsPlant,1
+Special Ability = monsterLevel,3
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,3,0,attacks,
+Undead = none
+\(END)
+// MMII 984
+
+\(BEGIN)
+name = Neo-Otyugh
+icon file = icon_NeoOtyugh.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 12
+armor class = 0
+movement rate = 6
+hit dice = 11.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = large
+morale = 45
+experience point value = 2160
+Special Ability = monsterLevel,11
+Special Ability = monster_ImmuneDisease,neo-otyugh
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,bites,Cause Disease
+attack = 6,2,0,attacks,
+attack = 6,2,0,attacks,
+Undead = none
+\(END)
+// MM p73
+
+\(BEGIN)
+name = Norker
+icon file = icon_Norker.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 10
+armor class = 3
+movement rate = 9
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 30
+experience point value = 32
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = DwarfTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Club
+attack = 6,1,0,attacks,
+attack = 3,1,0,bites,
+Undead = none
+\(END)
+// FF p68
+
+\(BEGIN)
+name = Northern Bear
+icon file = icon_NorthernBear.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 6
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 8
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 1380
+Special Ability = monsterLevel,10
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,2,0,bites,
+attack = 10,1,0,claws,monsterBearHug1
+attack = 10,1,0,claws,monsterBearHug2
+Undead = none
+\(END)
+// MMII p16
+
+\(BEGIN)
+name = Nupperibo
+icon file = icon_Nupperibo.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 9
+movement rate = 6
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 22
+Special Ability = elemental_ResistantCold
+Special Ability = elemental_ResistantFire
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_Regeneration,1
+Special Ability = monster_VulnerableToHolyWater
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = death magic + confusion
+Misc Options = affected by dispel evil
+item = none
+attack = 2,1,0,hits,
+attack = 2,1,0,hits,
+Undead = Special
+\(END)
+// MMII p49
+
+\(BEGIN)
+name = Ogre
+icon file = icon_Ogre.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 8
+armor class = 5
+movement rate = 9
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 50
+experience point value = 175
+Special Ability = monsterLevel,5
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 10,1,0,attacks,
+Undead = none
+\(END)
+// MM p75
+
+\(BEGIN)
+name = Ogre Mage
+icon file = icon_OgreMage.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 12
+armor class = 4
+movement rate = 9
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 1032
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_Regeneration1,OgreMage
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = monsterMageSleep
+item = monsterMageCharmPerson
+item = monsterOgreMageColdRay
+item = monsterOgreMageInvisibility
+attack = 12,1,0,attacks,
+Undead = none
+\(END)
+// MM p76
+
+\(BEGIN)
+name = Ogre Shaman
+icon file = icon_OgreShaman.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 10
+armor class = 5
+movement rate = 9
+hit dice = 4
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 200
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = monsterClericCauseLightWounds
+item = monsterClericCauseLightWounds
+item = monsterClericHoldPerson
+item = monsterClericSilence
+attack = 10,1,0,attacks,
+Undead = none
+\(END)
+// MM p75
+
+\(BEGIN)
+name = Orc
+icon file = icon_Orc.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 10
+movement rate = 12
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 30
+experience point value = 14
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,1
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = DwarfTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Spear
+item = Ring Mail
+item = Shield
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// MM p76
+
+\(BEGIN)
+name = Orc Chieftain
+icon file = icon_OrcChieftain.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 10
+armor class = 10
+movement rate = 9
+hit dice = 16.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 30
+experience point value = 83
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,3
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = DwarfTHAC0 + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Scale Mail
+item = Broad Sword
+item = Short Bow
+item = Arrow,20
+item = Shield
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p76
+
+\(BEGIN)
+name = Otyugh
+icon file = icon_Otyugh.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 8
+armor class = 3
+movement rate = 6
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 45
+experience point value = 892
+Special Ability = monsterLevel,6
+Special Ability = monster_ImmuneDisease,otyugh
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,1,bites,Cause Disease
+attack = 8,1,0,attacks,
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// MM p77
+
+\(BEGIN)
+name = Owl
+icon file = icon_Owl.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveWings.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 5
+movement rate = 27
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 34
+Special Ability = monsterLevel,1
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,attacks,
+attack = 2,1,0,attacks,
+attack = 1,1,0,bites,
+Undead = none
+\(END)
+// MMII p97
+
+\(BEGIN)
+name = Owlbear
+icon file = icon_Owlbear.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 4
+armor class = 5
+movement rate = 12
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 401
+Special Ability = monsterLevel,6
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,monsterBearHug1
+attack = 6,1,0,attacks,monsterBearHug2
+attack = 6,2,0,bites,
+Undead = none
+\(END)
+// MM p77
+
+\(BEGIN)
+name = Purple Worm
+icon file = icon_PurpleWorm.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 6
+movement rate = 9
+hit dice = 15.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 8
+magic resistance = 0
+size = large
+morale = 30
+experience point value = 6100
+Special Ability = monsterLevel,15
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 12,2,0,bites,monsterPurpleWormSwallow
+Undead = none
+\(END)
+// MM p80
+
+\(BEGIN)
+name = Pyrolisk
+icon file = icon_Pyrolisk.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 6
+movement rate = 6
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 360
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneFire
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = none
+item = monsterPyroliskImmolationGaze
+attack = 4,1,0,bites,
+Undead = none
+\(END)
+// MMII p102
+
+\(BEGIN)
+name = Rakshasa
+icon file = icon_Rakshasa.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = -4
+movement rate = 15
+hit dice = 7
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 25
+experience point value = 1149
+Special Ability = IsSeeingInvisible,rakshasa
+Special Ability = monsterLevel,7
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_RakshasaSpellImmunity
+Special Ability = monster_RakshasaVulnerability
+Special Ability = monster_WeaponImmunity,1
+Special Ability = monster_WeaponResistance,4
+Class = Cleric/Magic User
+Race = Monster
+form = none
+penalty = none
+immunity = confusion
+Misc Options = none
+item = monsterMageCharmPerson
+item = monsterMageFireball
+item = monsterMageHoldPerson
+item = monsterMageMagicMissile
+item = monsterMageMirrorImage
+item = monsterMageReduce
+item = monsterMageSleep
+item = monsterMageStinkingCloud
+item = monsterClericCauseLightWounds
+item = monsterClericProtectionFromGood
+attack = 3,1,0,hits,
+attack = 3,1,0,hits,
+attack = 4,1,1,bites,
+Undead = none
+\(END)
+// MM p81
+
+\(BEGIN)
+name = Raven
+icon file = icon_Raven.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveWings.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 7
+movement rate = 36
+hit dice = 0.250000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 1
+Special Ability = monsterLevel,1
+Special Ability = monster_Swept,1
+Class = Fighter
+Race = Monster
+form = animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 1,1,0,attacks,
+Undead = none
+\(END)
+// MMII p105
+
+\(BEGIN)
+name = Red Dragon
+icon file = icon_RedDragon.png,0,2,384,192,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = -1
+movement rate = 9
+hit dice = 50.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 6
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 4150
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,10
+Special Ability = monster_AuraDragon,Red Dragon
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = IsImmuneDragonBreathWeapon,$fire
+Special Ability = monster_DragonSavingThrow,third
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathFire
+item = monsterDragonBreathFire
+item = monsterDragonBreathFire
+attack = 8,1,0,attacks,
+attack = 8,1,0,attacks,
+attack = 10,3,0,bites,
+Undead = none
+\(END)
+// MM p33
+
+\(BEGIN)
+name = Red Slaad
+icon file = icon_RedSlaad.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 6
+movement rate = 6
+hit dice = 7.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 35
+size = large
+morale = 40
+experience point value = 1099
+Special Ability = monsterLevel,7
+Special Ability = monster_Regeneration,3
+Special Ability = monster_SummonSlaad,1
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 4,1,0,hits,
+attack = 4,1,0,hits,
+attack = 8,2,0,bites,
+Undead = Special
+\(END)
+// FF p82
+
+\(BEGIN)
+name = Remorhaz
+icon file = icon_Remorhaz.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 1
+armor class = 0
+movement rate = 12
+hit dice = 11.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 75
+size = large
+morale = 35
+experience point value = 2404
+Special Ability = monsterLevel,11
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,6,0,attacks,monsterRemorhazSwallow
+Undead = none
+\(END)
+// MM p82
+
+\(BEGIN)
+name = Rhinoceros
+icon file = icon_Rhinoceros.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 3
+armor class = 6
+movement rate = 12
+hit dice = 9.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 1332
+Special Ability = monsterLevel,9
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,2,0,attacks,
+Undead = none
+\(END)
+// MM p82
+
+\(BEGIN)
+name = Salamander
+icon file = icon_Salamander.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 3
+movement rate = 9
+hit dice = 7
+treat HD as hit points = yes
+hit dice bonus = 7
+THAC0 = 12
+magic resistance = 0
+size = medium
+morale = 30
+experience point value = 1175
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = affected by dispel evil
+item = none
+attack = 6,1,0,attacks,
+attack = 6,2,0,attacks,monsterSalamanderFireAttack
+Undead = none
+\(END)
+// MM p85
+
+\(BEGIN)
+name = Satyr
+icon file = icon_Satyr.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 13
+armor class = 5
+movement rate = 18
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 50
+size = medium
+morale = 35
+experience point value = 380
+Special Ability = monsterLevel,5
+Special Ability = IsWoodlandCreature
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p85
+
+\(BEGIN)
+name = Shadow
+icon file = icon_Shadow.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 7
+movement rate = 12
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 315
+Special Ability = elemental_ImmuneCold
+Special Ability = monsterLevel,4
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneCharm
+Special Ability = monster_ImmuneSleep
+Special Ability = monster_VulnerableToHolyWater
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion
+Misc Options = none
+item = none
+attack = 4,1,1,hits,monsterShadowDrainStrength
+Undead = Shadow
+\(END)
+// MM p86
+
+\(BEGIN)
+name = Shambling Mound
+icon file = icon_ShamblingMound.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 3
+armor class = 0
+movement rate = 6
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 45
+experience point value = 2120
+Special Ability = IsPlant,1
+Special Ability = monsterLevel,8
+Special Ability = elemental_GrowthElectricity
+Special Ability = elemental_ImmuneFire
+Special Ability = monster_Engulf,monster
+Special Ability = monster_WeaponResistance,normal
+Special Ability = spell_ColdResistant,monster
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = none
+item = none
+attack = 8,2,0,attacks,monsterEngulf1
+attack = 8,2,0,attacks,monsterEngulf2
+Undead = none
+\(END)
+// MM p87
+
+\(BEGIN)
+name = Silver Dragon
+icon file = icon_SilverDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = -1
+movement rate = 9
+hit dice = 50.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 6
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 4150
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,10
+Special Ability = monster_AuraDragon,Silver Dragon
+Special Ability = monster_CombatantAlignment,good
+Special Ability = IsImmuneDragonBreathWeapon,$cold$paralysis
+Special Ability = monster_DragonSavingThrow,third
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = monsterDragonBreathColdSilver
+item = monsterDragonBreathColdSilver
+item = monsterDragonBreathParalysis
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 6,5,0,bites,
+Undead = none
+\(END)
+// MM p34
+
+\(BEGIN)
+name = Skeletal Dog
+icon file = icon_SkeletalDog.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 8
+movement rate = 6
+hit dice = 0.800000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 13
+Special Ability = monsterLevel,1
+Special Ability = elemental_ImmuneCold
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_Swept,1
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponResistanceType,slashing
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = none
+item = none
+attack = 4,1,0,attacks,
+Undead = Skeleton
+\(END)
+// MMII p109
+
+\(BEGIN)
+name = Skeleton
+icon file = icon_Skeleton.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 7
+movement rate = 12
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 18
+Special Ability = monsterLevel,1
+Special Ability = elemental_ImmuneCold
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponResistanceType,slashing
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = none
+item = none
+attack = 6,1,0,attacks,
+Undead = Skeleton
+\(END)
+// MM p87
+
+\(BEGIN)
+name = Smilodon
+icon file = icon_Smilodon.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 5
+movement rate = 12
+hit dice = 7
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 850
+Special Ability = monsterLevel,8
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,1,claws,monsterRearClawRake1
+attack = 4,1,1,claws,monsterRearClawRake2
+attack = 6,2,0,bites,
+Undead = none
+\(END)
+// MM p94
+
+\(BEGIN)
+name = Spectre
+icon file = icon_Spectre.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 14
+armor class = 2
+movement rate = 15
+hit dice = 7
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 45
+experience point value = 1960
+Special Ability = elemental_ImmuneCold
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic
+Misc Options = none
+item = none
+attack = 8,1,0,attacks,monsterUndeadDrainLevel
+Undead = Spectre
+\(END)
+// MM p89
+
+\(BEGIN)
+name = Stirge
+icon file = icon_Stirge.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 8
+movement rate = 18
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 46
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,attacks,monsterStirgeAttack
+Undead = none
+\(END)
+// MM p92
+
+\(BEGIN)
+name = Stone Giant
+icon file = icon_StoneGiant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 10
+armor class = 0
+movement rate = 12
+hit dice = 9.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 2332
+Special Ability = monsterLevel,10
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,3,0,attacks,
+Undead = none
+\(END)
+// MM p 45
+
+\(BEGIN)
+name = Stone Golem
+icon file = icon_StoneGolem.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 5
+movement rate = 6
+hit dice = 60.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 9
+magic resistance = 0
+size = large
+morale = 50
+experience point value = 8950
+Special Ability = monsterLevel,14
+Special Ability = monster_WeaponImmunity,2
+Special Ability = IsSeeingInvisible,golem
+Special Ability = spell_ImmuneSpells,monster
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + confusion + vorpal weapon
+Misc Options = none
+item = none
+attack = 8,3,0,attacks,
+Undead = none
+\(END)
+// MM p48
+
+\(BEGIN)
+name = Storm Giant
+icon file = icon_StormGiant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 16
+armor class = 1
+movement rate = 15
+hit dice = 15.000000
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 7
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 7150
+Special Ability = monsterLevel,17
+Special Ability = elemental_ImmuneElectricity
+Special Ability = monster_CombatantAlignment,good
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = monsterStormGiantLightningBolt
+attack = 6,7,0,attacks,
+Undead = none
+\(END)
+// MM p45
+
+\(BEGIN)
+name = Tiger
+icon file = icon_Tiger.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 5
+movement rate = 12
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 375
+Special Ability = monsterLevel,7
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,1,claws,monsterRearClawRake1
+attack = 4,1,1,claws,monsterRearClawRake2
+attack = 10,1,0,bites,
+Undead = none
+\(END)
+// MM p94
+
+\(BEGIN)
+name = Titan
+icon file = icon_Titan.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 21
+armor class = -3
+movement rate = 21
+hit dice = 22.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 60
+size = large
+morale = 40
+experience point value = 9200
+Special Ability = monsterLevel,22
+Special Ability = monster_CombatantAlignment,good
+Class = Fighter
+Race = Monster
+form = giant + large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = monsterClericCauseBlindness
+item = monsterClericCauseDisease
+item = monsterClericCauseLightWounds
+item = monsterClericCauseSeriousWounds
+item = monsterClericFlameStrike
+item = monsterClericHoldPerson
+item = monsterClericSilence
+item = monsterClericSticksToSnakes
+item = monsterMageCharmMonster
+item = monsterMageCharmPerson
+item = monsterMageFireball
+item = monsterMageHoldMonster
+item = monsterMageHoldPerson
+item = monsterMageIceStorm
+item = monsterMageMagicMissile
+item = monsterMageMirrorImage
+item = monsterMageSleep
+item = monsterMageStinkingCloud
+attack = 6,8,0,attacks,
+Undead = none
+\(END)
+// MM p94
+
+\(BEGIN)
+name = Treant
+icon file = icon_Treant.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 13
+armor class = 0
+movement rate = 12
+hit dice = 10.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 10
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 2510
+Special Ability = IsPlant,1
+Special Ability = monsterLevel,10
+Special Ability = monster_CombatantAlignment,good
+Special Ability = elemental_VulnerableFire
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = none
+attack = 6,3,0,hits,
+attack = 6,3,0,hits,
+Undead = none
+\(END)
+// MM p96
+
+\(BEGIN)
+name = Troglodyte
+icon file = icon_Troglodyte.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 6
+armor class = 5
+movement rate = 12
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 52
+Special Ability = IsPerson,monster
+Special Ability = monsterLevel,2
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_Revulsion,6
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 3,1,0,attacks,
+attack = 3,1,0,attacks,
+attack = 4,1,1,bites,
+Undead = none
+\(END)
+// MM p97
+
+\(BEGIN)
+name = Troll
+icon file = icon_Troll.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 4
+movement rate = 12
+hit dice = 6.000000
+treat HD as hit points = no
+hit dice bonus = 6
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 765
+Special Ability = monsterLevel,8
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_TrollGetUp,monster
+Special Ability = monster_TrollRegeneration,3
+Class = Fighter
+Race = Monster
+form = large
+penalty = DwarfAC + GnomeAC + RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,4,attacks,
+attack = 4,1,4,attacks,
+attack = 6,2,0,attacks,
+Undead = none
+\(END)
+// MM p97
+
+\(BEGIN)
+name = Umber Hulk
+icon file = icon_UmberHulk.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 9
+armor class = 2
+movement rate = 6
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 8
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 1780
+Special Ability = monsterLevel,10
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = confusion
+Misc Options = can be held/charmed
+item = none
+attack = 4,3,0,attacks,
+attack = 4,3,0,attacks,
+attack = 5,2,0,attacks,
+attack = 1,1,0,gazes,monsterUmberHulkConfusionGaze
+Undead = none
+\(END)
+// MM p98
+
+\(BEGIN)
+name = Unicorn
+icon file = icon_Unicorn.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 9
+armor class = 3
+movement rate = 24
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 500
+Special Ability = monsterLevel,6
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_CombatantAlignment,good
+Special Ability = monster_UnicornSavingThrows
+Special Ability = IsWoodlandCreature
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = death magic
+Misc Options = none
+item = none
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 12,1,0,attacks,
+Undead = none
+\(END)
+// MM p98
+
+\(BEGIN)
+name = Vampire
+icon file = icon_Vampire.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 16
+armor class = 1
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 12
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 4220
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ResistantElectricity
+Special Ability = elemental_ResistantCold
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_Regeneration,3
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion
+Misc Options = none
+item = none
+attack = 6,1,4,attacks,monsterVampireDrainLevel
+attack = 1,1,0,gazes,monsterVampireCharmGaze
+Undead = Vampire
+\(END)
+// MM p99
+
+\(BEGIN)
+name = Vampiress
+icon file = icon_Vampiress.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 18
+armor class = 1
+movement rate = 15
+hit dice = 12
+treat HD as hit points = yes
+hit dice bonus = 5
+THAC0 = 9
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 5348
+Special Ability = monsterLevel,14
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ResistantElectricity
+Special Ability = elemental_ResistantCold
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_Regeneration,3
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + confusion
+Misc Options = none
+item = none
+attack = 6,1,4,attacks,monsterVampireDrainLevel
+attack = 1,1,0,gazes,monsterVampireCharmGaze
+Undead = Lich
+\(END)
+// MM p99
+
+\(BEGIN)
+name = Water Elemental
+icon file = icon_WaterElemental.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 2
+movement rate = 6
+hit dice = 16.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 7
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3810
+Special Ability = monsterLevel,16
+Special Ability = monster_WeaponImmunity,2
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = large
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 6,5,0,attacks,
+Undead = none
+\(END)
+// MM p38
+
+\(BEGIN)
+name = Wererat
+icon file = icon_Wererat.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = 6
+movement rate = 12
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 202
+Special Ability = monsterLevel,4
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 8,1,0,attacks,
+Undead = none
+\(END)
+// MM p63
+
+\(BEGIN)
+name = Werewolf
+icon file = icon_Werewolf.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 10
+armor class = 5
+movement rate = 15
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 300
+Special Ability = monsterLevel,5
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = mammal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,2,0,attacks,
+Undead = none
+\(END)
+// MM p64
+
+\(BEGIN)
+name = White Dragon
+icon file = icon_WhiteDragon.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 7
+armor class = 3
+movement rate = 12
+hit dice = 30.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = large
+morale = 40
+experience point value = 605
+Special Ability = IsSeeingInvisible,dragon
+Special Ability = monsterLevel,6
+Special Ability = monster_AuraDragon,White Dragon
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = IsImmuneDragonBreathWeapon,$cold
+Special Ability = monster_DragonSavingThrow,second
+Class = Fighter/Magic User
+Race = Monster
+form = large
+penalty = none
+immunity = vorpal weapon
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+attack = 8,2,0,bites,
+Undead = none
+\(END)
+// MM p34
+
+\(BEGIN)
+name = Wight
+icon file = icon_Wight.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 5
+movement rate = 12
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 635
+Special Ability = elemental_ImmuneCold
+Special Ability = monsterLevel,5
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneCharm
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneSleep
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic
+Misc Options = none
+item = none
+attack = 4,1,0,attacks,monsterUndeadDrainLevel
+Undead = Wight
+\(END)
+// MM p100
+
+\(BEGIN)
+name = Wild Boar
+icon file = icon_WildBoar.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 15
+hit dice = 3.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 145
+Special Ability = monsterLevel,4
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,3,0,attacks,
+Undead = none
+\(END)
+// MM p11
+
+\(BEGIN)
+name = Wild Cat
+icon file = icon_WildCat.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 1
+armor class = 
+movement rate = 18
+hit dice = 1
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 15
+Special Ability = monsterLevel,1
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 2,1,0,claws,monsterRearClawRakeCat1
+attack = 2,1,0,claws,monsterRearClawRakeCat2
+attack = 2,1,0,bites,
+Undead = none
+\(END)
+// MMII p22
+
+\(BEGIN)
+name = Wild Dog
+icon file = icon_WildDog.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 15
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 18
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 30
+Special Ability = monsterLevel,2
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,0,bites,
+Undead = none
+\(END)
+// MM p29
+
+\(BEGIN)
+name = Winter Wolf
+icon file = icon_WinterWolf.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 5
+movement rate = 18
+hit dice = 6.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 365
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_VulnerableFire
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterWinterWolfBreath
+attack = 4,2,0,bites,
+Undead = none
+\(END)
+// MM p101
+
+\(BEGIN)
+name = Wolf
+icon file = icon_Wolf.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 3
+armor class = 7
+movement rate = 18
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 2
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 65
+Special Ability = monsterLevel,3
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,1,1,bites,
+Undead = none
+\(END)
+// MM p101
+
+\(BEGIN)
+name = Woolly Mammoth
+icon file = icon_WoollyMammoth.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 0
+armor class = 5
+movement rate = 12
+hit dice = 13.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 9
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 3936
+Special Ability = monsterLevel,13
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,2,0,attacks,
+attack = 6,2,0,attacks,
+Undead = none
+\(END)
+// MM p65
+
+\(BEGIN)
+name = Worg
+icon file = icon_Worg.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 7
+armor class = 6
+movement rate = 18
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 410
+Special Ability = monsterLevel,5
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 4,2,0,bites,
+Undead = none
+\(END)
+// MM p101
+
+\(BEGIN)
+name = Wraith
+icon file = icon_Wraith.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 12
+armor class = 4
+movement rate = 12
+hit dice = 5.000000
+treat HD as hit points = yes
+hit dice bonus = 3
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 37
+experience point value = 713
+Special Ability = elemental_ImmuneCold
+Special Ability = monsterLevel,6
+Special Ability = monster_CombatantAlignment,evil
+Special Ability = monster_ImmuneCharm
+Special Ability = monster_ImmuneFear,monster
+Special Ability = monster_ImmuneSleep
+Special Ability = monster_VulnerableToHolyWater,monster
+Special Ability = monster_WeaponImmunity,1
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic + vorpal weapon
+Misc Options = none
+item = none
+attack = 6,1,0,attacks,monsterUndeadDrainLevel
+Undead = Wraith
+\(END)
+// MM p102
+
+\(BEGIN)
+name = Wyvern
+icon file = icon_Wyvern.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 6
+armor class = 3
+movement rate = 6
+hit dice = 7.000000
+treat HD as hit points = yes
+hit dice bonus = 7
+THAC0 = 12
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 1275
+Special Ability = monsterLevel,9
+Class = Fighter
+Race = Monster
+form = animal + large
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,stings,monsterPoisonWyvern
+attack = 8,2,0,bites,
+Undead = none
+\(END)
+// MM p102
+
+\(BEGIN)
+name = Xorn
+icon file = icon_Xorn.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = -2
+movement rate = 9
+hit dice = 7.000000
+treat HD as hit points = yes
+hit dice bonus = 7
+THAC0 = 12
+magic resistance = 0
+size = medium
+morale = 35
+experience point value = 1625
+Special Ability = monsterLevel,9
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_ImmuneFire
+Special Ability = elemental_ResistantElectricity
+Special Ability = Summoned,plane
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + affected by dispel evil
+item = none
+attack = 6,4,0,attacks,
+attack = 3,1,0,attacks,
+attack = 3,1,0,attacks,
+attack = 3,1,0,attacks,
+Undead = none
+\(END)
+// MM p102
+
+\(BEGIN)
+name = Xvart
+icon file = icon_Xvart.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 9
+armor class = 10
+movement rate = 6
+hit dice = 0.900000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = small
+morale = 35
+experience point value = 8
+Special Ability = monsterLevel,1
+Special Ability = monster_Swept,1
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = none
+penalty = RangerDmg
+immunity = none
+Misc Options = can be held/charmed
+item = Short Sword
+attack = 4,1,1,attacks,
+Undead = none
+\(END)
+// FF p96
+
+\(BEGIN)
+name = Yeti
+icon file = icon_Yeti.png,0,2,48,48,0,1,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathLarge.wav
+intelligence = 9
+armor class = 6
+movement rate = 15
+hit dice = 4.000000
+treat HD as hit points = yes
+hit dice bonus = 4
+THAC0 = 15
+magic resistance = 0
+size = large
+morale = 35
+experience point value = 535
+Special Ability = monsterLevel,5
+Special Ability = elemental_ImmuneCold
+Special Ability = elemental_VulnerableFire
+Class = Fighter
+Race = Monster
+form = mammal + animal
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = none
+attack = 6,1,0,claws,monsterYetiSqueeze
+attack = 6,1,0,claws,monsterYetiSqueeze
+Undead = none
+\(END)
+// MM p103
+
+\(BEGIN)
+name = Yuan Ti
+icon file = icon_YuanTi.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 17
+armor class = 0
+movement rate = 9
+hit dice = 9.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 12
+magic resistance = 20
+size = medium
+morale = 35
+experience point value = 2032
+Special Ability = monsterLevel,9
+Special Ability = monster_CombatantAlignment,evil
+Class = Fighter
+Race = Monster
+form = snake
+penalty = none
+immunity = none
+Misc Options = can be held/charmed
+item = monsterClericSticksToSnakes
+attack = 6,1,0,attacks,
+attack = 6,1,0,attacks,
+Undead = none
+\(END)
+// MMII p130
+
+\(BEGIN)
+name = Zombie
+icon file = icon_Zombie.png,0,2,48,48,0,1,2
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_MonsterMoveStep.wav
+death sound = sound_MonsterDeathMedium.wav
+intelligence = 0
+armor class = 8
+movement rate = 6
+hit dice = 2.000000
+treat HD as hit points = yes
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 36
+Special Ability = monsterLevel,2
+Special Ability = elemental_ImmuneCold
+Special Ability = monster_ImmuneCharm,monster
+Special Ability = monster_ImmuneHold,monster
+Special Ability = monster_ImmuneSleep,monster
+Special Ability = monster_VulnerableToHolyWater,monster
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = poison + death magic
+Misc Options = none
+item = none
+attack = 8,1,0,attacks,
+Undead = Zombie
+\(END)
+// MM p103
+
+\(BEGIN)
+name = Goblin Scout
+icon file = icon_Goblin.png,0,2,48,48,0,1,0,1,0,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_CharMove.wav
+death sound = sound_CharDeath.wav
+intelligence = 10
+armor class = 10
+movement rate = 12
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 25
+experience point value = 50
+Class = Fighter
+Race = Human
+form = none
+penalty = DwarfAC + GnomeAC + DwarfTHAC0 + GnomeTHAC0 + none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Goblin Knife,1
+attack = 2,1,0,hits,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = $$Help
+Special Ability = Date,"November 21, 2016"
+Special Ability = Version,"1.06"
+Special Ability = Updates1_01,"adjusted Arrow quantity to 10"
+Special Ability = Updates1_02,"monster_WeaponImmunity,normal became monster_WeaponImmunity,1"
+Special Ability = Updates1_03, "added IsWoodlandCreature to Centaur, Satyr and Unicorn"
+Special Ability = Updates1_04, "corrected number of javelins"
+Special Ability = Updates1_05,"updated modrons" 
+Special Ability = Updates1_06,"added cat, cheetah, crysmal, dao, djinni, eagle, goat, hybsil, marid, mandragora, wild cat. UPdated galeb duhr." 
+\(END)

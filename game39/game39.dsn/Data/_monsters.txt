@@ -1,0 +1,29 @@
+\(BEGIN)
+name = Goblin Scout
+icon file = icon_Goblin.png,0,2,48,48,0,1,0,1,0,0
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_CharMove.wav
+death sound = sound_CharDeath.wav
+intelligence = 10
+armor class = 10
+movement rate = 12
+hit dice = 1.000000
+treat HD as hit points = yes
+hit dice bonus = 1
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 25
+experience point value = 50
+Class = Fighter
+Race = Human
+form = none
+penalty = DwarfAC + GnomeAC + DwarfTHAC0 + GnomeTHAC0 + none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Goblin Knife,1
+attack = 2,1,0,hits,
+Undead = 
+\(END)
+

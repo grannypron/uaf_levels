@@ -180,7 +180,7 @@
 //	Special Abilities 
 //	eg:     Special Ability = SA_Bless,1
 //	
-//	Weapon Type (not weapon, hand held blunt, hand held cutting, hand held or thrown, sling, bow, crossbow, thrown only, ammo (bolts,etc), Spell Caster, Spell-like Ability)
+//	Weapon Type (not weapon, hand held blunt, hand held cutting, hand held or thrown, sling, bow, crossbow, thrown only, ammo (bolts,etc), SpellCaster, Spell-like Ability)
 //	default - not weapon
 //	eg:		weapon type = sling
 //		
@@ -3109,6 +3109,49 @@ bundle quantity = 1
 Special Ability = item_MagicalWeapon,5
 Special Ability = item_WeaponType,blunt
 weapon type = hand held blunt
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = none
+\(END)
+
+\(BEGIN)
+name = Flame Blade
+id name = Flame Blade
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 0
+hands to carry = 1
+baseclass = druid
+baseclass = ranger
+small/medium damage dice = 1D4 + 4
+large damage dice = 1D4 + 4
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 50
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_MagicalWeapon,fire
+Special Ability = DamageMagical,fire
+Special Ability = item_DoubleVsUndead
+Special Ability = item_WeaponType,slashing
+weapon type = hand held cutting
 ammo type = 
 usable = no
 not magical = no
@@ -15597,7 +15640,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = 
+Special Ability = item_Potion
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15607,8 +15650,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 1
-Examine Event ID = 19
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = EXAMINE
 recharge rate = never
 spell effect = none
 \(END)
@@ -15643,7 +15686,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = // item_Potion1
+Special Ability = item_Potion1
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15653,8 +15696,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 3
-Examine Event ID = 20
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -15689,7 +15732,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = // item_Potion1a
+Special Ability = item_Potion1a
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15699,8 +15742,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 3
-Examine Event ID = 21
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -15735,7 +15778,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = // item_Potion1b
+Special Ability = item_Potion1b
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15745,8 +15788,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 3
-Examine Event ID = 22
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -15781,7 +15824,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = none
+Special Ability = item_Potion2
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15791,8 +15834,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 1
-Examine Event ID = 23
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -15827,7 +15870,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = 
+Special Ability = item_Potion3
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15837,7 +15880,7 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 1
-Examine Event ID = 24
+Examine Event ID = 
 Examine Label = EXAMINE
 recharge rate = never
 spell effect = none
@@ -15868,7 +15911,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = 
+Special Ability = item_Potion4
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15878,8 +15921,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 1
-Examine Event ID = 25
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -15914,7 +15957,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = // item_Potion
+Special Ability = item_Potion5
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15924,8 +15967,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 1
-Examine Event ID = 26
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -15960,7 +16003,7 @@ encumbrance = 10
 cursed = no
 non lethal = no
 readied location = WEAPON
-Special Ability = // item_Potion6
+Special Ability = item_Potion6
 bundle quantity = 1
 weapon type = not weapon
 ammo type = 
@@ -15970,8 +16013,8 @@ scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 1
-Examine Event ID = 27
-Examine Label = DRINK
+Examine Event ID = 
+Examine Label = 
 recharge rate = never
 spell effect = none
 \(END)
@@ -20189,7 +20232,7 @@ spell effect = Harm|MonsterCleric
 
 \(BEGIN)
 name = monsterClericHeal
-id name = monsterClerHeal
+id name = monsterClericHeal
 launch sound = none
 hit sound = none
 miss sound = none
@@ -21315,7 +21358,7 @@ spell effect = monsterHellHoundBreathWeapon
 
 \(BEGIN)
 name = monsterMageBestowCurse
-id name =monsterMageBestowCurse
+id name = monsterMageBestowCurse
 launch sound = none
 hit sound = none
 miss sound = none
@@ -22562,8 +22605,8 @@ spell effect = Meteor Swarm|MonsterMage
 \(END)
 
 \(BEGIN)
-name = monsterMageMinGlobeofInvulnerability
-id name = monsterMageMinGlobeofInvulnerability
+name = monsterMageMinorGlobeofInvulnerability
+id name = monsterMageMinorGlobeofInvulnerability
 launch sound = none
 hit sound = none
 miss sound = none
@@ -22678,7 +22721,7 @@ recharge rate = never
 spell effect = Mirror Image|MonsterMage
 \(END)
 
-(BEGIN)
+\(BEGIN)
 name = monsterMageOttosIrresistibleDance
 id name = monsterMageOttosIrresistibleDance
 launch sound = none
@@ -22714,7 +22757,7 @@ number of charges = 1
 Examine Event ID = 0
 Examine Label = EXAMINE
 recharge rate = never
-spell effect = Otto's Irrisistible Dance|MonsterMage
+spell effect = Otto's Irresistible Dance|MonsterMage
 \(END)
 
 \(BEGIN)
@@ -23487,41 +23530,630 @@ recharge rate = never
 spell effect = monsterWinterWolfBreathWeapon
 \(END)
 
+///////////////////////////////////////////////////////////////////////////////
+///// demodrands //////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 \(BEGIN)
-name = Goblin Knife
-id name = Goblin Knife
+name = monsterDemodandBeguile
+id name = monsterDemodandBeguile
 launch sound = none
-hit sound = none
-miss sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
 missile sprite = none
 hit sprite = none
-ROF per round = 1.000000
+ROF per round = 1
 combat range = 1
-cost = 1
+cost = 
 hands to carry = 1
-baseclass = assassin
-baseclass = fighter
 baseclass = magicUser
-baseclass = paladin
-baseclass = ranger
-baseclass = thief
-baseclass = $$Help
-small/medium damage dice = 1D4 + 0
-large damage dice = 1D4 + 0
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
 AC base = 0
 AC bonus = 0
 attack bonus = 0
 experience = 0
-encumbrance = 25
+encumbrance = 0
 cursed = no
 non lethal = no
 readied location = WEAPON
 bundle quantity = 1
+Special Ability = can't find spell
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandBeguile
+\(END)
+
+\(BEGIN)
+name = monsterDemodandCloudkill
+id name = monsterDemodandCloudkill
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandCloudKill
+\(END)
+
+\(BEGIN)
+name = monsterDemodandFogCloud
+id name = monsterDemodandFogCloud
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandFogCloud
+\(END)
+
+\(BEGIN)
+name = monsterDemodandRayOfEnfeeblement
+id name = monsterDemodandRayOfEnfeeblement
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandRayOfEnfeeblement
+\(END)
+
+\(BEGIN)
+name = monsterDemodandStinkingCloud
+id name = monsterDemodandStinkingCloud
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandStinkingCloud
+\(END)
+
+\(BEGIN)
+name = monsterDemodandSummonShaggyDemodand
+id name = monsterDemodandSummonShaggyDemodand
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandSummonShaggyDemodand
+\(END)
+
+\(BEGIN)
+name = monsterDemodandSummonSlimeDemodand
+id name = monsterDemodandSummonSlimeDemodand
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandSummonSlimeDemodand
+\(END)
+
+\(BEGIN)
+name = monsterDemodandSummonTarryDemodand
+id name = monsterDemodandSummonTarryDemodand
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandSummonTarryDemodand
+\(END)
+
+\(BEGIN)
+name = monsterDemodandWeaken
+id name = monsterDemodandWeaken
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDemodandWeaken
+\(END)
+
+///////////////////////////////////////////////////////////////////////////////
+///// devas ///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+\(BEGIN)
+name = monsterDispelInvisibility
+id name = monsterDispelInvisibility
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDispelInvisibility
+\(END)
+
+\(BEGIN)
+name = monsterPlanetarGateDeva
+id name = monsterPlanetarGateDeva
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterPlanetarGateDeva
+\(END)
+
+\(BEGIN)
+name = monsterPlanetarSummonGoodCreature
+id name = monsterPlanetarSummonGoodCreature
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterPlanetarSummonGoodCreature
+\(END)
+
+\(BEGIN)
+name = monsterSolarGatePlanetarOrDeva
+id name = monsterSolarGatePlanetarOrDeva
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSolarGatePlanetarOrDeva
+\(END)
+
+\(BEGIN)
+name = monsterSolarImprisonment
+id name = monsterSolarImprisonment
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSolarImprisonment
+\(END)
+
+\(BEGIN)
+name = monsterSolarSummonGoodCreature
+id name = monsterSolarSummonGoodCreature
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSolarSummonGoodCreature
+\(END)
+
+\(BEGIN)
+name = Planetar's Great Sword
+id name = Planetar's Great Sword
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 0
+hands to carry = 1
+baseclass = fighter
+small/medium damage dice = 1D12 + 7
+large damage dice = 1D12 + 7
+AC base = 0
+AC bonus = 0
+attack bonus = 3
+experience = 0
+encumbrance = 150
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_MagicalWeapon,3
+Special Ability = item_SwordUse,Planetar
+Special Ability = item_VorpalLongSword,1
+Special Ability = item_WeaponType,slashing
 weapon type = hand held cutting
 ammo type = 
 usable = no
-scribtable = no
 not magical = no
+scribtable = no
 can drop = yes
 CanHalveJoin = no
 number of charges = 0
@@ -23529,6 +24161,3963 @@ Examine Event ID = 0
 Examine Label = EXAMINE
 recharge rate = never
 spell effect = none
+\(END)
+
+\(BEGIN)
+name = Solar's Long Bow
+id name = Solar's Long Bow
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 2.000000
+combat range = 21
+cost = 1800
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 2
+experience = 0
+encumbrance = 100
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_CombatAim,Bow
+Special Ability = item_MagicalWeapon,2
+Special Ability = item_BowUse,Solar
+Special Ability = item_RangeWeapon,$7$14
+weapon type = bow
+ammo type = Bow
+usable = no
+not magical = no
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = none
+\(END)
+
+\(BEGIN)
+name = Solar's Long Sword
+id name = Solar's Long Sword
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 0
+hands to carry = 1
+baseclass = fighter
+small/medium damage dice = 2D10 + 11
+large damage dice = 2D10 + 11
+AC base = 0
+AC bonus = 0
+attack bonus = 5
+experience = 0
+encumbrance = 250
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_MagicalWeapon,5
+Special Ability = item_SwordUse,Solar
+Special Ability = item_VorpalLongSword,1
+Special Ability = item_WeaponType,slashing
+weapon type = hand held cutting
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = none
+\(END)
+
+// spellcaster items
+\(BEGIN)
+name = monsterClericCureBlindness
+id name = monsterClericCureBlindness
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Cure Blindness|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericCureDisease
+id name = monsterClericCureDisease
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Cure Disease|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericDetectMagic
+id name = monsterClericDetectMagic
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Detect Magic|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericDispelEvil
+id name = monsterClericDispelEvil
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Dispel Evil|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericFireStorm
+id name = monsterClericFireStorm
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Fire Storm|MonsterDruid
+\(END)
+
+\(BEGIN)
+name = monsterClericHolyWord
+id name = monsterClericHolyWord
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Holy Word|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericNeutralizePoison
+id name = monsterClericNeutralizePoison
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Neutralize Poison|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericRaiseDead
+id name = monsterClericRaiseDead
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Raise Dead|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericRegenerate
+id name = monsterClericRegenerate
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Regenerate|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericRemoveCurse
+id name = monsterClericRemoveCurse
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Remove Curse|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericRemoveFear
+id name = monsterClericRemoveFear
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Remove Fear|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericRestoration
+id name = monsterClericRestoration
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Restoration|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericResurrection
+id name = monsterClericResurrection
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Resurrection|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericSpeakWithDead
+id name = monsterClericSpeakWithDead
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Speak With Dead|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericSymbol
+id name = monsterClericSymbol
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Symbol|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericTrueSeeing
+id name = monsterClericTrueSeeing
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = True Seeing|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterDruidFingerOfDeath
+id name = monsterDruidFingerOfDeath
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Finger Of Death|MonsterDruid
+\(END)
+
+\(BEGIN)
+name = monsterDruidInsectPlague
+id name = monsterDruidInsectPlague
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Insect Plague|MonsterDruid
+\(END)
+
+\(BEGIN)
+name = monsterMageContinualLight
+id name = monsterMageContinualLight
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Continual Light|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageDispelIllusion
+id name = monsterMageDispelIllusion
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Dispel Illusion|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageHoldElemental
+id name = monsterMageHoldElemental
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Hold Elemental|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageImprovedInvisibility
+id name = monsterMageImprovedInvisibility
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Improved Invisibility|MonsterIllusionist
+\(END)
+
+\(BEGIN)
+name = monsterMageKnowAlignment
+id name = monsterMageKnowAlignment
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Know Alignment|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageLight
+id name = monsterMageLight
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Light|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMagePowerWordSilence
+id name = monsterMagePowerWordSilence
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Power Word, Silence|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMagePrismaticSpray
+id name = monsterMagePrismaticSpray
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Prismatic Spray|MonsterIllusionist
+\(END)
+
+\(BEGIN)
+name = monsterMageRemoveCurse
+id name = monsterMageRemoveCurse
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Remove Curse|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageTeleportWithoutError
+id name = monsterMageTeleportWithoutError
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Teleport Without Error|MonsterMage
+\(END)
+
+///////////////////////////////////////////////////////////////////////////////
+///// modrons /////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// monster items
+\(BEGIN)
+name = monsterPentadroneParalysisGas
+id name = monsterPentadroneParalysisGas
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterPentadroneParalysisGas
+\(END)
+
+\(BEGIN)
+name = monsterWallOfForce
+id name = monsterWallOfForce
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterWallOfForce
+\(END)
+
+\(BEGIN)
+name = monsterModronCure1HP
+id name = monsterModronCure1HP
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterModronCure1HP
+\(END)
+
+\(BEGIN)
+name = monsterModronHeal
+id name = monsterModronHeal
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterModronHeal
+\(END)
+
+// spellcaster items
+\(BEGIN)
+name = monsterClericAid
+id name = monsterClericAid
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Aid|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericCommand
+id name = monsterClericCommand
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Command|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericContinualLight
+id name = monsterClericContinualLight
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Continual Light|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericDispelGood
+id name = monsterClericDispelGood
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Dispel Good|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericFlameBlade
+id name = monsterClericFlameBlade
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Flame Blade|MonsterDruid
+\(END)
+
+\(BEGIN)
+name = monsterClericLight
+id name = monsterClericLight
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Light|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericProtectionFromEvil10Radius
+id name = monsterClericProtectionFromEvil10Radius
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Protection from Evil 10' Radius|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericProtectionFromFire
+id name = monsterClericProtectionFromFire
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Protection from Fire|MonsterDruid
+\(END)
+
+\(BEGIN)
+name = monsterClericPyrotechnics
+id name = monsterClericPyrotechnics
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Pyrotechnics|MonsterDruid
+\(END)
+
+\(BEGIN)
+name = monsterClericSilence15Radius
+id name = monsterClericSilence15Radius
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Silence|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericSlowPoison
+id name = monsterClericSlowPoison
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Slow Poison|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterClericSpiritualHammer
+id name = monsterClericSpiritualHammer
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Spiritual Hammer|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterMageBanishment
+id name = monsterMageBanishment
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Banishment|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageChainLightning
+id name = monsterMageChainLightning
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Chain Lightning|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageColorSpray
+id name = monsterMageColorSpray
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Color Spray|MonsterIllusionist
+\(END)
+
+\(BEGIN)
+name = monsterMageDetectCharm
+id name = monsterMageDetectCharm
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Detect Charm|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageDetectEvil
+id name = monsterMageDetectEvil
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Detect Evil|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageDetectGood
+id name = monsterMageDetectGood
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Detect Good|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageDimensionDoor
+id name = monsterMageDimensionDoor
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Dimension Door|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageDomination
+id name = monsterMageDomination
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Domination|MonsterIllusionist
+\(END)
+
+\(BEGIN)
+name = monsterMageIncendiaryCloud
+id name = monsterMageIncendiaryCloud
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Incendiary Cloud|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageMelfsAcidArrow
+id name = monsterMageMelfsAcidArrow
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Melf's Acid Arrow|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMagePowerWordBlind
+id name = monsterMagePowerWordBlind
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Power Word, Blind|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMagePowerWordStun
+id name = monsterMagePowerWordStun
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Power Word, Stun|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageStoneskin
+id name = monsterMageStoneskin
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Stoneskin|MonsterMage
+\(END)
+
+\(BEGIN)
+name = monsterMageWeb
+id name = monsterMageWeb
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Web|MonsterMage
+\(END)
+
+
+///////////////////////////////////////////////////////////////////////////////
+///// slaadi //////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+\(BEGIN)
+name = monsterClericUnholyWord
+id name = monsterClericUnholyWord
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = no
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Unholy Word|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = monsterSlaadBallLightning
+id name = monsterSlaadBallLightning
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadBallLightning
+\(END)
+
+\(BEGIN)
+name = monsterSlaadContinualDarkness15r
+id name = monsterSlaadContinualDarkness15r
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadContinualDarkness15r
+\(END)
+
+\(BEGIN)
+name = monsterSlaadDarkness15r
+id name = monsterSlaadDarkness15r
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadDarkness15r
+\(END)
+
+\(BEGIN)
+name = monsterSlaadGateBlueSlaad
+id name = monsterSlaadGateBlueSlaad
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadGateBlueSlaad
+\(END)
+
+\(BEGIN)
+name = monsterSlaadGateDeathSlaad
+id name = monsterSlaadGateDeathSlaad
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadGateDeathSlaad
+\(END)
+
+\(BEGIN)
+name = monsterSlaadGateGreenSlaad
+id name = monsterSlaadGateGreenSlaad
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadGateGreenSlaad
+\(END)
+
+\(BEGIN)
+name = monsterSlaadGateGreySlaad
+id name = monsterSlaadGateGreySlaad
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadGateGreySlaad
+\(END)
+
+\(BEGIN)
+name = monsterSlaadGateSsendam
+id name = monsterSlaadGateSsendam
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadGateSsendam
+\(END)
+
+\(BEGIN)
+name = monsterSlaadGateYgorl
+id name = monsterSlaadGateYgorl
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadGateYgorl
+\(END)
+
+\(BEGIN)
+name = monsterSlaadSummonPhantasmalKiller
+id name = monsterSlaadSummonPhantasmalKiller
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadSummonPhantasmalKiller
+\(END)
+
+\(BEGIN)
+name = monsterSlaadSummonRedSlaad
+id name = monsterSlaadSummonRedSlaad
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadSummonRedSlaad
+\(END)
+
+\(BEGIN)
+name = monsterSlaadSymbolFear
+id name = monsterSlaadSymbolFear
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadSymbolFear
+\(END)
+
+\(BEGIN)
+name = monsterSlaadSymbolInsanity
+id name = monsterSlaadSymbolInsanity
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadSymbolInsanity
+\(END)
+
+\(BEGIN)
+name = monsterSlaadWeakness
+id name = monsterSlaadWeakness
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSlaadWeakness
+\(END)
+
+\(BEGIN)
+name = monsterSsendamFlameStrike
+id name = monsterSsendamFlameStrike
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 1.000000
+combat range = 1
+cost = 
+hands to carry = 1
+baseclass = magicUser
+small/medium damage dice = 1D2 + 0
+large damage dice = 1D2 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 1
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = Flame Strike|MonsterCleric
+\(END)
+
+\(BEGIN)
+name = Ygorl's Death Sickle
+id name = Ygorl's Death Sickle
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 2
+cost = 50000
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 6D6 + 0
+large damage dice = 6D6 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 5
+experience = 0
+encumbrance = 
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_WeaponType,slashing
+Special Ability = item_SickleUse,Ygorl
+Special Ability = item_MagicWeapon,sickle
+Special Ability = item_SickleDeath,save vs poison or die instantly
+weapon type = hand held cutting
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = none
+\(END)
+
+///////////////////////////////////////////////////////////////////////////////
+///// underwater ///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+\(BEGIN)
+name = Gem|Black Urchin
+id name = Black Urchin Gem
+launch sound = none
+hit sound = none
+miss sound = none
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 55
+hands to carry = 1
+baseclass = assassin
+baseclass = cleric
+baseclass = druid
+baseclass = fighter
+baseclass = magicUser
+baseclass = paladin
+baseclass = ranger
+baseclass = thief
+small/medium damage dice = 1D1 + 0
+large damage dice = 1D1 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 10
+cursed = no
+non lethal = no
+readied location = PACK
+bundle quantity = 1
+Special Ability = itemSlot_Pack,gem
+weapon type = not weapon
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = 
+\(END)
+
+\(BEGIN)
+name = Gem|Green Urchin
+id name = Green Urchin Gem
+launch sound = none
+hit sound = none
+miss sound = none
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 220
+hands to carry = 1
+baseclass = assassin
+baseclass = cleric
+baseclass = druid
+baseclass = fighter
+baseclass = magicUser
+baseclass = paladin
+baseclass = ranger
+baseclass = thief
+small/medium damage dice = 1D1 + 0
+large damage dice = 1D1 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 10
+cursed = no
+non lethal = no
+readied location = PACK
+bundle quantity = 1
+Special Ability = itemSlot_Pack,gem
+weapon type = not weapon
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = 
+\(END)
+
+\(BEGIN)
+name = Gem|Red Urchin
+id name = Red Urchin Gem
+launch sound = none
+hit sound = none
+miss sound = none
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 495
+hands to carry = 1
+baseclass = assassin
+baseclass = cleric
+baseclass = druid
+baseclass = fighter
+baseclass = magicUser
+baseclass = paladin
+baseclass = ranger
+baseclass = thief
+small/medium damage dice = 1D1 + 0
+large damage dice = 1D1 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 10
+cursed = no
+non lethal = no
+readied location = PACK
+bundle quantity = 1
+Special Ability = itemSlot_Pack,gem
+weapon type = not weapon
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = 
+\(END)
+
+\(BEGIN)
+name = Gem|Silver Urchin
+id name = Silver Urchin Gem
+launch sound = none
+hit sound = none
+miss sound = none
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1375
+hands to carry = 1
+baseclass = assassin
+baseclass = cleric
+baseclass = druid
+baseclass = fighter
+baseclass = magicUser
+baseclass = paladin
+baseclass = ranger
+baseclass = thief
+small/medium damage dice = 1D1 + 0
+large damage dice = 1D1 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 10
+cursed = no
+non lethal = no
+readied location = PACK
+bundle quantity = 1
+Special Ability = itemSlot_Pack,gem
+weapon type = not weapon
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = 
+\(END)
+
+\(BEGIN)
+name = Gem|Yellow Urchin
+id name = Yellow Urchin Gem
+launch sound = none
+hit sound = none
+miss sound = none
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 880
+hands to carry = 1
+baseclass = assassin
+baseclass = cleric
+baseclass = druid
+baseclass = fighter
+baseclass = magicUser
+baseclass = paladin
+baseclass = ranger
+baseclass = thief
+small/medium damage dice = 1D1 + 0
+large damage dice = 1D1 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 10
+cursed = no
+non lethal = no
+readied location = PACK
+bundle quantity = 1
+Special Ability = itemSlot_Pack,gem
+weapon type = not weapon
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = 
+\(END)
+
+\(BEGIN)
+name = monsterAbolethEnslave
+id name = monsterAbolethEnslave
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterAbolethEnslave
+\(END)
+
+\(BEGIN)
+name = monsterBlackUrchinSpines
+id name = monsterBlackUrchinSpines
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 18
+cost = 0
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D6 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 1
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = no
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = none
+\(END)
+
+\(BEGIN)
+name = monsterDragonTurtleBreathWeapon
+id name = monsterDragonTurtleBreathWeapon
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterDragonTurtleBreathWeapon
+\(END)
+
+\(BEGIN)
+name = monsterEyeOfTheDeepHoldMonster
+id name = monsterEyeOfTheDeepHoldMonster
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterEyeOfTheDeepHoldMonster
+\(END)
+
+\(BEGIN)
+name = monsterEyeOfTheDeepHoldPerson
+id name = monsterEyeOfTheDeepHoldPerson
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterEyeOfTheDeepHoldPerson
+\(END)
+
+\(BEGIN)
+name = monsterEyeOfTheDeepStun
+id name = monsterEyeOfTheDeepStun
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = item_Noisy,spellcaster
+weapon type = SpellCaster
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterEyeOfTheDeepStun
+\(END)
+
+\(BEGIN)
+name = monsterGreaterVodyanoiSummonSharks
+id name = monsterGreaterVodyanoiSummonSharks
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 18
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D4 + 1
+large damage dice = 1D14 + 1
+AC base = 0
+AC bonus = 0
+attack bonus = 5
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterGreaterVodyanoiSummonSharks
+\(END)
+
+\(BEGIN)
+name = monsterGreenUrchinSpines
+id name = monsterGreenUrchinSpines
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 18
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 1
+large damage dice = 1D6 + 1
+AC base = 0
+AC bonus = 0
+attack bonus = 2
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = none
+\(END)
+
+\(BEGIN)
+name = monsterKelpieCharm
+id name = monsterKelpieCharm
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterKelpieCharm
+\(END)
+
+\(BEGIN)
+name = monsterMasherPoisonSpine
+id name = monsterMasherPoisonSpine
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterMasherPoisonSpine
+\(END)
+
+\(BEGIN)
+name = monsterNereidSpit
+id name = monsterNereidSpit
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterNereidSpit
+\(END)
+
+\(BEGIN)
+name = monsterNixieCharm
+id name = monsterNixieCharm
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterNixieCharm
+\(END)
+
+\(BEGIN)
+name = monsterRedUrchinSpines
+id name = monsterRedUrchinSpines
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 18
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D4 + 1
+large damage dice = 1D4 + 1
+AC base = 0
+AC bonus = 0
+attack bonus = 3
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterRedUrchinSpines
+\(END)
+
+\(BEGIN)
+name = monsterSeaHagDeadlyGlance
+id name = monsterSeaHagDeadlyGlance
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSeaHagDeadlyGlance
+\(END)
+
+\(BEGIN)
+name = monsterSilverUrchinSpines
+id name = monsterSilverUrchinSpines
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 18
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D4 + 1
+large damage dice = 1D14 + 1
+AC base = 0
+AC bonus = 0
+attack bonus = 5
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSilverUrchinSpines
+\(END)
+
+\(BEGIN)
+name = monsterSirineSong
+id name = monsterSirineSong
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 0
+hands to carry = 1
+baseclass = fighter
+small/medium damage dice = 1D4 + 1
+large damage dice = 1D14 + 1
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 0
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterSirineSong
+\(END)
+
+\(BEGIN)
+name = monsterVodyanoiSummonEels
+id name = monsterVodyanoiSummonEels
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 1
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D6 + 0
+large damage dice = 1D12 + 0
+AC base = 0
+AC bonus = 0
+attack bonus = 0
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterVodyanoiSummonEels
+\(END)
+
+\(BEGIN)
+name = monsterYellowUrchinSpines
+id name = monsterYellowUrchinSpines
+launch sound = none
+hit sound = sound_Hit.wav
+miss sound = sound_Miss.wav
+missile sprite = none
+hit sprite = none
+ROF per round = 0.000000
+combat range = 18
+cost = 1
+hands to carry = 2
+baseclass = fighter
+small/medium damage dice = 1D4 + 1
+large damage dice = 1D4 + 1
+AC base = 0
+AC bonus = 0
+attack bonus = 4
+experience = 0
+encumbrance = 80
+cursed = no
+non lethal = no
+readied location = WEAPON
+bundle quantity = 1
+Special Ability = 
+weapon type = Spell-like Ability
+ammo type = 
+usable = no
+not magical = yes
+scribtable = no
+can drop = yes
+CanHalveJoin = no
+number of charges = 0
+Examine Event ID = 0
+Examine Label = EXAMINE
+recharge rate = never
+spell effect = monsterYellowUrchinSpines
 \(END)
 
 
@@ -23541,38 +28130,56 @@ Special Ability = Updates1_01,"added monsterClericCauseCriticalWounds spellcaste
 Special Ability = Updates1_03,"added monsterClericBladeBarrier, monsterClericBless, monsterClericCureCriticalWounds, monsterCureLightWounds, monsterCureASeriousWounds, monsterClericCurse, monsterClericDestruction, monsterClericDispelMagic, monsterClericEnergyDrain, monsterClericFindTraps, monsterClericHarm, monsterClericHeal, monsterClericIronSkin, monsterClericPoison, monsterClericPrayer, monsterCLericProtectionFromEvil, monsterClericResistCold, monsterClericResistFire, monsterDruidEntangle, monsterDruidFaerieFire, monsterMageBestowCurse, monsterMageBurningHands, monsterMageCloudkill, monsterMageConeofCold, monsterMageConfusion, monsterMageDeath, monsterMageDelayedBlastFireball, monsterMageDetectInvisibility, monsterMageDetectMagic, monsterMageDisintegrate, monsterMageDispelMagic, monsterMageEnlarge, monsterMageFear, monsterMageFeeblemind, monsterMageFireShield, monsterMageFireTouch, monsterMageFleshtoStone, monsterMageFumble, monsterMageGlobeofInvulnerability, monsterMageHaste, monsterMageInvisibility, monsterMageKnock, monsterMageLightningBolt, monsterMassCharm, monsterMeteorSwarm, monsterMinorGlobeofInvulnerability, monsterMageMindBlank, monsterMageOttosIrresistibleDance, monsterMagePowerWordKill, monsterMageProtectionfromEvil10Radius, monsterMageRayofEnfeeblement, monsterMageShield, monsterMageShockingGrasp, monsterMageSlow, removed monsterClericSpiritualHammer"
 Special Ability = Updates1_04,"added Gauntlets of Dexterity, Cursed Long Sword -3, Cursed Short Sword -2, Cursed Hammer -2, Cursed Mace -3, Cursed Quarter Staff -3, Cursed Dagger -2, monsterDjinniWhirlwind, monsterMaridWaterJet, monsterRockToMud, monsterWallOfStone"
 Special Ability = Updates1_05,"removed item_wand from all wands to match 1e rules"
-Special Ability = Update170504,"updated all potions"
+Special Ability = Update170504,"updated all potions to not use EXAMINE events"
+Special Ability = Update191031,"added items needed for demodands, devas, modrons, slaadi, Black Urchin Gem, Green Urchin Gem, Red Urchin Gem, Silver Urchin Gem, Yellow Urchin Gem, monsterAbolethEnslave, monsterBlackUrchinSpines, monsterDragonTurtleBreathWeapon, monsterEyeOfTheDeepHoldMonster, monsterEyeOfTheDeepHoldPerson, monsterEyeOfTheDeepStun, monsterGreaterVodyanoiSummonSharks, monsterGreenUrchinSpines, monsterKelpieCharm, monsterMasherPoisonSpine, monsterNereidSpit, monsterNixieCharm, monsterRedUrchinSpines, monsterSeaHagDeadlyGlance, monsterSilverUrchinSpines, monsterSirineSong, monsterVodyanoiSummonEels, monsterYellowUrchinSpines"
 \(END)
 
 // cleric spell items by level
 // level 1
 //	monsterClericBless
 //	monsterClericCauseLightWounds
+//	monsterClericCommand
 //	monsterClericCureLightWounds
 //	monsterClericCurse
+//	monsterClericDetectMagic
+//	monsterClericLight
 //	monsterClericProtectionfromEvil
 //	monsterClericProtectionFromGood
+//	monsterClericRemoveFear
 //	monsterClericResistCold
 // level 2
+//	monsterClericAid
 //	monsterClericFindTraps
 //	monsterClericHoldPerson
 //	monsterClericResistFire
 //	monsterClericSilence
+//	monsterClericSilence15Radius
+//	monsterClericSlowPoison
 // level 3
 //	monsterClericCauseBlindness
 //	monsterClericCauseDisease
+//	monsterClericContinualLight
+//	monsterClericCureBlindness
+//	monsterClericCureDisease
 //	monsterClericDispelMagic
 //	monsterClericPrayer
+//	monsterClericRemoveCurse
 // level 4
 //	monsterClericCauseSeriousWounds
 //	monsterClericCureSeriousWounds
+//	monsterClericNeutralizePoison
 //	monsterClericPoison
+//	monsterClericProtectionFromEvil10Radius
 //	monsterClericSticksToSnakes
 // level 5
 //	monsterClericCauseCriticalWounds
 //	monsterClericCureCriticalWounds
+//	monsterClericDispelEvil
+//	monsterClericDispelGood
 //	monsterClericFlameStrike
+//	monsterClericRaiseDead
 //	monsterClericSlayLiving
+//	monsterClericTrueSeeing
 // level 6
 //	monsterClericBladeBarrier
 //	monsterClericHarm
@@ -23580,6 +28187,38 @@ Special Ability = Update170504,"updated all potions"
 // level 7
 //	monsterClericDestruction
 //	monsterClericEnergyDrain
+//	monsterClericFireStorm
+//	monsterClericHolyWord
+//	monsterClericRegenerate
+//	monsterClericRestoration
+//	monsterClericResurrection
+//	monsterClericSpeakWithDead
+//	monsterClericSymbol
+//	monsterClericUnholyWord
+//
+// druid spell items by level
+// level 1
+//	monsterDruidEntangle
+//	monsterDruidFaerieFire
+// level 2
+//	monsterClericFlameBlade
+// level 3
+//	monsterClericProtectionFromFire
+//	monsterClericPyrotechnics
+// level 5
+//	monsterDruidInsectPlague
+// level 7
+//	monsterDruidFingerOfDeath
+//
+// illusionist spell items by level
+// level 1
+//	monsterMageColorSpray
+// level 3
+//	monsterMageDomination
+// level 4
+//	monsterMageImprovedInvisibility
+// level 7
+//	monsterMagePrismaticSpray
 //
 // magic user spell items by level
 // level 1
@@ -23587,21 +28226,32 @@ Special Ability = Update170504,"updated all potions"
 //	monsterMageCharmPerson
 //	monsterMageDetectMagic
 //	monsterMageEnlarge
+//	monsterMageLight
 //	monsterMageMagicMissile
 //	monsterMageReduce
 //	monsterMageShield
 //	monsterMageShockingGrasp
 //	monsterMageSleep
 // level 2
+//	monsterMageContinualLight
+//	monsterMageDetectCharm
+//	monsterMageDetectEvil
+//	monsterMageDetectGood
 //	monsterMageDetectInvisibility
+//	monsterMageDimensionDoor
 //	monsterMageInvisibility
 //	monsterMageKnock
+//	monsterMageKnowAlignment
+//	monsterMageMelfsAcidArrow
 //	monsterMageMirrorImage
 //	monsterMageRayofEnfeeblement
+//	monsterMageStinkingCloud
+//	monsterMageWeb
 // level 3
 //	monsterMageDispelMagic
 //	monsterMageFireball
 //	monsterMageHaste
+//	monsterMageHoldElemental
 //	monsterMageHoldPerson
 //	monsterMageLightningBolt
 //	monsterMageProtectionfromEvil10Radius
@@ -23610,28 +28260,38 @@ Special Ability = Update170504,"updated all potions"
 //	monsterMageBestowCurse
 //	monsterMageCharmMonster
 //	monsterMageConfusion
+//	monsterMageDispelIllusion
 //	monsterMageFear
 //	monsterMageFireShield
 //	monsterMageFumble
 //	monsterMageIceStorm
 //	monsterMageMinGlobeofInvulnerability
+//	monsterMageRemoveCurse
+//	monsterMageStoneskin
 // level 5
 //	monsterMageCloudkill
 //	monsterMageConeofCold
 //	monsterMageFeeblemind
 //	monsterMageFireTouch
 //	monsterMageHoldMonster
+//	monsterMageTeleportWithoutError
 // level 6
+//	monsterMageChainLightning
 //	monsterMageDeath
 //	monsterMageDisintegrate
 //	monsterMageFleshtoStone
 //	monsterMageGlobeofInvulnerability
+//	monsterMagePowerWordSilence
 // level 7
+//	monsterMageBanishment
 //	monsterMageDelayedBlastFireball
+//	monsterMagePowerWordStun
 // level 8
+//	monsterMageIncendiaryCloud
 //	monsterMageMassCharm
 //	monsterMageMindBlank
 //	monsterMageOttosIrresistibleDance
+//	monsterMagePowerWordBlind
 // level 9
 //	monsterMageMeteorSwarm
 //	monsterMagePowerWordKill

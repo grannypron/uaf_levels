@@ -1,0 +1,1067 @@
+000f053e 984382 0000000000000000 DungeonCraft Editor version 5.26
+000f0540      2 0000000000000000 Editor folder = C:\Users\Shadow\Downloads\Full_Release_191031\editor
+000f43df  16031 0000000000000000 User chose "C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn" as design folder
+Opened Error Log on Mon Dec 14 08:15:46 2020
+000f43ee     15 0000000000000000 Loading Config File = 'C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\config.txt'
+000f43f0      2 0000000000000000 Editor Art Dir = C:\Users\Shadow\Downloads\Full_Release_191031\editor\EditorResources\
+000f43f0      0 0000000000000000 Editor Art Dir = C:\Users\Shadow\Downloads\Full_Release_191031\editor\EditorResources\
+000f43f6      6 0000000000000000 Force_SysMem = 1
+000f43f7      1 0000000000000000 Error Log ON
+000f43f8      1 0000000000000000 Total optional wall formats: 6
+000f43f8      0 0000000000000000 Editor 640x480, Game 640x480
+000f43f8      0 0000000000000000 Editor Version: 5.2600000
+000f43f9      1 0000000000000000 Init WallSlot image cache with size 48
+000f43f9      0 0000000000000000 Init BgSlot image cache with size 32
+000f4424     43 0000000000000000 CreateWindowed(525162,1366,768,1)
+000f46af    651 0000000000000000 Loaded sound lib file Bass.dll, ver 1.6
+000f46af      0 0000000000000000 Sound playback rate = 22050
+000f4723    116 0000000000000000 Sound card 1 desc: Primary Sound Driver
+000f4723      0 0000000000000000 Sound card 2 desc: DigitalOutput (NVIDIA High Definition Audio)
+000f4723      0 0000000000000000 Sound Card Info: hwsize 0, hwfree 0, freesam 0, free3d 0, minrate 100, maxrate 200000, eax 0, a3d 0, dsver 8
+000f4723      0 0000000000000000 Sound Card Info: Continuous sample rates supported
+000f4723      0 0000000000000000 Sound Card Info: mono sample rates supported in hw
+000f4723      0 0000000000000000 Sound Card Info: stereo sample rates supported in hw
+000f4723      0 0000000000000000 Sound Card Info: 8-bit sample rates supported in hw
+000f4723      0 0000000000000000 Sound Card Info: 16-bit sample rates supported in hw
+000f472a      7 0000000000000000 Begin loading design data for C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\
+000f4741     23 0000000000000000 First 8 bytes of 'game.dat' = FABCDEFABCDEFABF
+000f4741      0 0000000000000000 Loading design C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\game.dat, version 5.2600000000...
+000f4742      1 0000000000000000 Finished clearing old design
+000f474c     10 0000000000000000 Loading special abilities DB
+000f4751      5 0000000000000000 Finished loading SpecialAbilitiesDB
+000f4759      8 0000000000000000 Loading item DB version: 5.2600000
+000f4766     13 0000000000000000 Finished loading ItemDB
+000f476e      8 0000000000000000 Loading monster DB version: 5.2600000
+000f4774      6 0000000000000000 Finished loading MonsterDB
+000f477d      9 0000000000000000 Loading spell DB version: 5.2600000
+000f479d     32 0000000000000000 Finished loading SpellDB
+000f47a5      8 0000000000000000 Loaded 12 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\races.dat
+000f47ac      7 0000000000000000 Loaded 9 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\baseclass.dat
+000f47b3      7 0000000000000000 Loaded 20 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\classes.dat
+000f47ba      7 0000000000000000 Loaded 6 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\ability.dat
+000f47ba      0 0000000000000000 Finished loading globalData
+000f47ba      0 0000000000000000 Design game39 loaded, version 5.2600000
+000f4808     78 0000000000000000 Finished loading design data
+000f4809      1 0000000000000000 About to call LoadLevel for LEVEL001.LVL.
+000f480a      1 0000000000000000 Start loading WallSetSurfaces
+000f4891    135 0000000000000000 Level 1 loaded, 16x16, ver 5.2600000
+000f4893      2 0000000000000000 Can't find file in AddSurface(wa_wall10_thumb.png)
+000f4898      5 0000000000000000 Can't find file in AddSurface(dr_door10_thumb.png)
+000f48b4     28 0000000000000000 Editor active: Yes
+000f48d4     32 0000000000000000+Bogus wall slot num 256 in getWallSurface()
+000f48d4      0 0000000000000000 level:1; x:2; y:3; facing:E
+000f48d4      0 0000000000000000+Bogus wall slot num 256 in getOverlaySurface()
+000f48d4      0 0000000000000000 level:1; x:2; y:14; facing:E
+000f48d5      1 0000000000000000+Bogus wall slot num 256 in getDoorSurface()
+000f48d5      0 0000000000000000 level:1; x:2; y:14; facing:E
+000f4ffb   1830 0000000000000000 Editor active: No
+000f5058     93 0000000000000000 Editor active: Yes
+000f54a4   1100 0000000000000000 Editor active: No
+000fbfd5  27441 0000000000000000 Editor active: Yes
+000fc95c   2439 0000000000000000 Editor active: No
+000fcfd8   1660 0000000000000000 Editor active: Yes
+000fd7fe   2086 0000000000000000 Editor active: No
+0012a5ce 183760 0000000000000000 Editor active: Yes
+0012c849   8827 0000000000000000 Editor active: No
+0012d8f2   4265 0000000000000000 Editor active: Yes
+0012d8fb      9 0000000000000000 Editor active: Yes
+00130d49  13390 0000000000000000 Editor active: No
+00131e2a   4321 0000000000000000 Editor active: Yes
+00131e33      9 0000000000000000 Editor active: Yes
+00133bc3   7568 0000000000000000 Editor active: No
+001357b5   7154 0000000000000000 Editor active: Yes
+001357bf     10 0000000000000000 Editor active: Yes
+00136bfa   5179 0000000000000000 Editor active: No
+00137082   1160 0000000000000000 Editor active: Yes
+0013708a      8 0000000000000000 Editor active: Yes
+00137620   1430 0000000000000000 Creating new chain event
+00139208   7144 0000000000000000 Editor active: No
+0013a60f   5127 0000000000000000 Editor active: Yes
+0013a616      7 0000000000000000 Editor active: Yes
+0013d24e  11320 0000000000000000 Editor active: No
+0013dd4c   2814 0000000000000000 Editor active: Yes
+0013dd53      7 0000000000000000 Editor active: Yes
+001414ca  14199 0000000000000000 Editor active: No
+0014344b   8065 0000000000000000 Editor active: Yes
+00143454      9 0000000000000000 Editor active: Yes
+00144df3   6559 0000000000000000 Creating new chain event
+001457ff   2572 0000000000000000 Editor active: No
+001470d8   6361 0000000000000000 Editor active: Yes
+001470e1      9 0000000000000000 Editor active: Yes
+0014968d   9644 0000000000000000 Editor active: No
+0014c7af  12578 0000000000000000 Editor active: Yes
+0014c7b5      6 0000000000000000 Editor active: Yes
+0016c938 131459 0000000000000000 Editor active: No
+001700f7  14271 0000000000000000 Editor active: Yes
+001700fc      5 0000000000000000 Editor active: Yes
+00180536  66618 0000000000000000 Editor active: No
+00181a27   5361 0000000000000000 Editor active: Yes
+00181a2f      8 0000000000000000 Editor active: Yes
+001899de  32687 0000000000000000 Editor active: No
+0018bec0   9442 0000000000000000 Editor active: Yes
+0018bec6      6 0000000000000000 Editor active: Yes
+0018e52b   9829 0000000000000000 Editor active: No
+001977b7  37516 0000000000000000 Editor active: Yes
+001977be      7 0000000000000000 Editor active: Yes
+001994c2   7428 0000000000000000 Entering 'OnFileSaveMap'
+001994c2      0 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+001994c3      1 0000000000000000 Copy bass.dll
+00199548    133 0000000000000000 Copy Readme.txt
+0019954a      2 0000000000000000 Deleting level and global art
+00199572     40 0000000000000000 SaveArt(globalData)
+00199572      0 0000000000000000 charData.SaveArt
+00199572      0 0000000000000000 SmallPicImport.SavePicData
+00199572      0 0000000000000000 IconPicImport.SavePicData
+00199573      1 0000000000000000 SaveArt(itemData)
+00199573      0 0000000000000000 SaveArt(monsterData)
+00199573      0 0000000000000000 SaveArt(spellData)
+00199b41   1486 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+00199b41      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+00199b41      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+00199b42      1 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+00199ca7    357 0000000000000000  Start Serialize globalData
+00199ca7      0 0000000000000000  End Serialize globalData - Start Serialize current level
+00199cb1     10 0000000000000000  Start ConfirmUsedLevels
+00199cb2      1 0000000000000000  Start saveData(itemData)
+00199cc4     18 0000000000000000  Start saveData(monsterData)
+00199cce     10 0000000000000000  Start saveData(spellData)
+00199cf5     39 0000000000000000  Start saveData(spellgroupData)
+00199cf5      0 0000000000000000  Start saveData(raceData)
+00199cf6      1 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+00199cf7      1 0000000000000000  Start saveData(abilityData)]
+00199cfd      6 0000000000000000  Start saveData(specialAbilityData)
+00199d11     20 0000000000000000  Start saveData(baseclassData)
+00199d14      3 0000000000000000  Start saveData(classData)
+00199d17      3 0000000000000000  Start Validate Event Data)
+00199d47     48 0000000000000000 Exiting savedesign(CArchive&)
+00199d4a      3 0000000000000000 Exiting 'OnFileSaveMap'
+00199d4e      4 0000000000000000 Editor active: No
+0019bd43   8181 0000000000000000 Editor active: Yes
+0019c829   2790 0000000000000000 Editor active: No
+001a1126  18685 0000000000000000 Editor active: Yes
+001bab58 105010 0000000000000000 Editor active: No
+001c7143  50667 0000000000000000 Editor active: Yes
+001d1c40  43773 0000000000000000 Editor active: No
+001d39dd   7581 0000000000000000 Editor active: Yes
+001d39e5      8 0000000000000000 Editor active: Yes
+001d4e46   5217 0000000000000000 Creating new root event at 0,0
+001d62cf   5257 0000000000000000 Editor active: No
+001d6dbf   2800 0000000000000000 Editor active: Yes
+001d6dca     11 0000000000000000 Editor active: Yes
+001d8e3a   8304 0000000000000000 Editor active: No
+001d90bb    641 0000000000000000 Editor active: Yes
+001d90c6     11 0000000000000000 Editor active: Yes
+001de142  20604 0000000000000000 Editor active: No
+001e1122  12256 0000000000000000 Editor active: Yes
+001e112d     11 0000000000000000 Editor active: Yes
+001e50c2  16277 0000000000000000 Editor active: No
+001e83c9  13063 0000000000000000 Editor active: Yes
+001e83d2      9 0000000000000000 Editor active: Yes
+001e8bd5   2051 0000000000000000 Creating new chain event
+001f32ff  42794 0000000000000000 Editor active: No
+001f4dcc   6861 0000000000000000 Editor active: Yes
+001f4dd6     10 0000000000000000 Editor active: Yes
+001fb9c1  27627 0000000000000000 Editor active: No
+001fbd6a    937 0000000000000000 Editor active: Yes
+001fc45a   1776 0000000000000000 Editor active: No
+002010da  19584 0000000000000000 Editor active: Yes
+00201637   1373 0000000000000000 Editor active: No
+0026b87e 434759 0000000000000000 Editor active: Yes
+0026c490   3090 0000000000000000 Editor active: No
+00273ec6  31286 0000000000000000 Editor active: Yes
+00279183  21181 0000000000000000 Editor active: No
+0027c73b  13752 0000000000000000 Editor active: Yes
+0027c745     10 0000000000000000 Editor active: Yes
+0027ec8b   9542 0000000000000000 Editor active: No
+00280128   5277 0000000000000000 Editor active: Yes
+00280130      8 0000000000000000 Editor active: Yes
+00280a76   2374 0000000000000000 Creating new root event at 4,0
+00285e4c  21462 0000000000000000 Editor active: No
+0028be07  24507 0000000000000000 Editor active: Yes
+0028be11     10 0000000000000000 Editor active: Yes
+0028e634  10275 0000000000000000 Editor active: No
+00291c13  13791 0000000000000000 Editor active: Yes
+00291c1a      7 0000000000000000 Editor active: Yes
+0029299b   3457 0000000000000000 Creating new chain event
+002955d5  11322 0000000000000000 Editor active: No
+002963b1   3548 0000000000000000 Editor active: Yes
+002963b9      8 0000000000000000 Editor active: Yes
+00296d2a   2417 0000000000000000 Editor active: No
+00299978  11342 0000000000000000 Editor active: Yes
+00299982     10 0000000000000000 Editor active: Yes
+0029b2eb   6505 0000000000000000 Editor active: No
+0029c3db   4336 0000000000000000 Editor active: Yes
+0029c3e2      7 0000000000000000 Editor active: Yes
+0029dd48   6502 0000000000000000 Editor active: No
+0029f7a5   6749 0000000000000000 Editor active: Yes
+0029f7af     10 0000000000000000 Editor active: Yes
+002a0853   4260 0000000000000000 Creating new chain event
+002ac257  47620 0000000000000000 Editor active: No
+002ae32e   8407 0000000000000000 Editor active: Yes
+002ae339     11 0000000000000000 Editor active: Yes
+002b4805  25804 0000000000000000 Editor active: No
+002b8dc2  17853 0000000000000000 Editor active: Yes
+002b8dc8      6 0000000000000000 Editor active: Yes
+002bb604  10300 0000000000000000 Editor active: No
+002c0677  20595 0000000000000000 Editor active: Yes
+002c0684     13 0000000000000000 Editor active: Yes
+002c3808  12676 0000000000000000 Editor active: No
+002c3d98   1424 0000000000000000 Editor active: Yes
+002c3d9d      5 0000000000000000 Editor active: Yes
+002c4079    732 0000000000000000 Editor active: No
+002c5358   4831 0000000000000000 Editor active: Yes
+002c5363     11 0000000000000000 Editor active: Yes
+002c7058   7413 0000000000000000 Editor active: No
+002c9840  10216 0000000000000000 Editor active: Yes
+002c984a     10 0000000000000000 Editor active: Yes
+002cb30e   6852 0000000000000000 Editor active: No
+002cca79   5995 0000000000000000 Editor active: Yes
+002cca80      7 0000000000000000 Editor active: Yes
+002ce11a   5786 0000000000000000 Creating new chain event
+002cee8d   3443 0000000000000000 Deleting 'Utilities (0)' event in EventViewer - canceled new event add
+002cf6ad   2080 0000000000000000 Creating new chain event
+002d1bd4   9511 0000000000000000 Editor active: No
+002d5412  14398 0000000000000000 Editor active: Yes
+002d541f     13 0000000000000000 Editor active: Yes
+002d7ea8  10889 0000000000000000 Entering 'OnFileSaveMap'
+002d7ea9      1 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+002d7eaa      1 0000000000000000 Copy bass.dll
+002d7f28    126 0000000000000000 Copy Readme.txt
+002d7f2a      2 0000000000000000 Deleting level and global art
+002d7f51     39 0000000000000000 SaveArt(globalData)
+002d7f51      0 0000000000000000 charData.SaveArt
+002d7f51      0 0000000000000000 SmallPicImport.SavePicData
+002d7f51      0 0000000000000000 IconPicImport.SavePicData
+002d7f51      0 0000000000000000 SaveArt(itemData)
+002d7f51      0 0000000000000000 SaveArt(monsterData)
+002d7f51      0 0000000000000000 SaveArt(spellData)
+002d853b   1514 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+002d853b      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+002d853c      1 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+002d853c      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+002d8692    342 0000000000000000  Start Serialize globalData
+002d8692      0 0000000000000000  End Serialize globalData - Start Serialize current level
+002d869c     10 0000000000000000  Start ConfirmUsedLevels
+002d869e      2 0000000000000000  Start saveData(itemData)
+002d86b0     18 0000000000000000  Start saveData(monsterData)
+002d86bb     11 0000000000000000  Start saveData(spellData)
+002d86e3     40 0000000000000000  Start saveData(spellgroupData)
+002d86e3      0 0000000000000000  Start saveData(raceData)
+002d86e4      1 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+002d86e6      2 0000000000000000  Start saveData(abilityData)]
+002d86ec      6 0000000000000000  Start saveData(specialAbilityData)
+002d86ff     19 0000000000000000  Start saveData(baseclassData)
+002d8702      3 0000000000000000  Start saveData(classData)
+002d8705      3 0000000000000000  Start Validate Event Data)
+002d8739     52 0000000000000000 Exiting savedesign(CArchive&)
+002d8740      7 0000000000000000 Exiting 'OnFileSaveMap'
+0043f104 1468868 0000000000000000Editor active: No
+0044209b  12183 0000000000000000 Editor active: Yes
+00446aa8  18957 0000000000000000 Editor active: No
+0044a96e  16070 0000000000000000 Editor active: Yes
+0044d489  11035 0000000000000000 Editor active: No
+00450993  13578 0000000000000000 Editor active: Yes
+0045099d     10 0000000000000000 Editor active: Yes
+00452b37   8602 0000000000000000 Creating new root event at 13,1
+00457958  20001 0000000000000000 Editor active: No
+00459b57   8703 0000000000000000 Editor active: Yes
+00459b62     11 0000000000000000 Editor active: Yes
+0045a86d   3339 0000000000000000 Editor active: No
+0045bb54   4839 0000000000000000 Editor active: Yes
+0045bb5f     11 0000000000000000 Editor active: Yes
+0046a38f  59440 0000000000000000 Editor active: No
+00470a2f  26272 0000000000000000 Editor active: Yes
+00470a38      9 0000000000000000 Editor active: Yes
+00483929  77553 0000000000000000 Editor active: No
+0048b96a  32833 0000000000000000 Editor active: Yes
+0048b975     11 0000000000000000 Editor active: Yes
+0048c2c3   2382 0000000000000000 Editor active: No
+0048e24e   8075 0000000000000000 Editor active: Yes
+0048e257      9 0000000000000000 Editor active: Yes
+0048f27d   4134 0000000000000000 Creating new chain event
+0048fa04   1927 0000000000000000 Editor active: No
+00490676   3186 0000000000000000 Editor active: Yes
+00490680     10 0000000000000000 Editor active: Yes
+0049675e  24798 0000000000000000 Editor active: No
+00496c2b   1229 0000000000000000 Editor active: Yes
+00496c33      8 0000000000000000 Editor active: Yes
+0049d06d  25658 0000000000000000 Editor active: No
+004aaac8  55899 0000000000000000 Editor active: Yes
+004aaace      6 0000000000000000 Editor active: Yes
+004ba090  62914 0000000000000000 Editor active: No
+004baa19   2441 0000000000000000 Editor active: Yes
+004baa25     12 0000000000000000 Editor active: Yes
+004bdef9  13524 0000000000000000 Editor active: No
+004bee7f   3974 0000000000000000 Editor active: Yes
+004bee87      8 0000000000000000 Editor active: Yes
+004c112e   8871 0000000000000000 Editor active: No
+004c264f   5409 0000000000000000 Editor active: Yes
+004c265b     12 0000000000000000 Editor active: Yes
+004c4347   7404 0000000000000000 Editor active: No
+004c67ad   9318 0000000000000000 Editor active: Yes
+004c67b9     12 0000000000000000 Editor active: Yes
+004c9dae  13813 0000000000000000 Creating new chain event
+004cc9ed  11327 0000000000000000 Editor active: No
+004cde73   5254 0000000000000000 Editor active: Yes
+004cde7f     12 0000000000000000 Editor active: Yes
+004ceecd   4174 0000000000000000 Editor active: No
+004d3709  18492 0000000000000000 Editor active: Yes
+004d3714     11 0000000000000000 Editor active: Yes
+004d6aa9  13205 0000000000000000 Editor active: No
+004ddf0a  29793 0000000000000000 Editor active: Yes
+004ddf15     11 0000000000000000 Editor active: Yes
+004e0b77  11362 0000000000000000 Editor active: No
+004e5e2e  21175 0000000000000000 Editor active: Yes
+004e5e35      7 0000000000000000 Editor active: Yes
+004f7170  70459 0000000000000000 Entering 'OnFileSaveMap'
+004f7171      1 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+004f7171      0 0000000000000000 Copy bass.dll
+004f71ee    125 0000000000000000 Copy Readme.txt
+004f71f0      2 0000000000000000 Deleting level and global art
+004f721a     42 0000000000000000 SaveArt(globalData)
+004f721a      0 0000000000000000 charData.SaveArt
+004f721a      0 0000000000000000 SmallPicImport.SavePicData
+004f721a      0 0000000000000000 IconPicImport.SavePicData
+004f721a      0 0000000000000000 SaveArt(itemData)
+004f721a      0 0000000000000000 SaveArt(monsterData)
+004f721a      0 0000000000000000 SaveArt(spellData)
+004f77de   1476 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+004f77df      1 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+004f77df      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+004f77df      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+004f7940    353 0000000000000000  Start Serialize globalData
+004f7941      1 0000000000000000  End Serialize globalData - Start Serialize current level
+004f794a      9 0000000000000000  Start ConfirmUsedLevels
+004f794c      2 0000000000000000  Start saveData(itemData)
+004f795e     18 0000000000000000  Start saveData(monsterData)
+004f7969     11 0000000000000000  Start saveData(spellData)
+004f798b     34 0000000000000000  Start saveData(spellgroupData)
+004f798b      0 0000000000000000  Start saveData(raceData)
+004f798d      2 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+004f7992      5 0000000000000000  Start saveData(abilityData)]
+004f7995      3 0000000000000000  Start saveData(specialAbilityData)
+004f79a7     18 0000000000000000  Start saveData(baseclassData)
+004f79ab      4 0000000000000000  Start saveData(classData)
+004f79b1      6 0000000000000000  Start Validate Event Data)
+004f79e1     48 0000000000000000 Exiting savedesign(CArchive&)
+004f79e7      6 0000000000000000 Exiting 'OnFileSaveMap'
+004f9738   7505 0000000000000000 Editor active: No
+004faf11   6105 0000000000000000 Editor active: Yes
+004fba88   2935 0000000000000000 Editor active: No
+005018a0  24088 0000000000000000 Editor active: Yes
+005063f6  19286 0000000000000000 Editor active: No
+00507598   4514 0000000000000000 Editor active: Yes
+005075a2     10 0000000000000000 Editor active: Yes
+0050bb71  17871 0000000000000000 Creating new root event at 10,1
+00515fd3  42082 0000000000000000 Editor active: No
+00516547   1396 0000000000000000 Editor active: Yes
+0051654e      7 0000000000000000 Editor active: Yes
+0051d407  28345 0000000000000000 Editor active: No
+0051e783   4988 0000000000000000 Editor active: Yes
+0051e790     13 0000000000000000 Editor active: Yes
+005261c3  31283 0000000000000000 Editor active: No
+005265de   1051 0000000000000000 Editor active: Yes
+005265e6      8 0000000000000000 Editor active: Yes
+0052e74d  33127 0000000000000000 Editor active: No
+00530d8f   9794 0000000000000000 Editor active: Yes
+00530d99     10 0000000000000000 Editor active: Yes
+00532d25   8076 0000000000000000 Editor active: No
+0055f34b 181798 0000000000000000 Editor active: Yes
+0055f357     12 0000000000000000 Editor active: Yes
+005b1905 337326 0000000000000000 Editor active: No
+005b1d8b   1158 0000000000000000 Editor active: Yes
+005b1d91      6 0000000000000000 Editor active: Yes
+005b6279  17640 0000000000000000 Editor active: No
+005bc352  24793 0000000000000000 Editor active: Yes
+005bc35d     11 0000000000000000 Editor active: Yes
+005beb0b  10158 0000000000000000 Creating new chain event
+005c038d   6274 0000000000000000 Editor active: No
+005c3a22  13973 0000000000000000 Editor active: Yes
+005c3a29      7 0000000000000000 Editor active: Yes
+005c9f29  25856 0000000000000000 Editor active: No
+005cb19c   4723 0000000000000000 Editor active: Yes
+005cb1a6     10 0000000000000000 Editor active: Yes
+005d0657  21681 0000000000000000 Editor active: No
+005d1d45   5870 0000000000000000 Editor active: Yes
+005d1d50     11 0000000000000000 Editor active: Yes
+005d3202   5298 0000000000000000 Editor active: No
+005d4407   4613 0000000000000000 Editor active: Yes
+005d4410      9 0000000000000000 Editor active: Yes
+005d6852   9282 0000000000000000 Editor active: No
+005d8672   7712 0000000000000000 Editor active: Yes
+005d867b      9 0000000000000000 Editor active: Yes
+005d9604   3977 0000000000000000 Creating new chain event
+005ddb8f  17803 0000000000000000 Editor active: No
+005e1e48  17081 0000000000000000 Editor active: Yes
+005e1e50      8 0000000000000000 Editor active: Yes
+005e328f   5183 0000000000000000 Editor active: No
+005e5bcf  10560 0000000000000000 Editor active: Yes
+005e5bd7      8 0000000000000000 Editor active: Yes
+005e72ef   5912 0000000000000000 Spell 'Bless'
+005e72ef      0 0000000000000000 Spell 'Cause Light Wounds'
+005e72f0      1 0000000000000000 Spell 'Cure Light Wounds'
+005e72f0      0 0000000000000000 Spell 'Curse'
+005e72f0      0 0000000000000000 Spell 'Detect Magic|Cleric'
+005e72f0      0 0000000000000000 Spell 'Protection From Evil|Cleric'
+005e72f1      1 0000000000000000 Spell 'Protection From Good|Cleric'
+005e72f1      0 0000000000000000 Spell 'Resist Cold'
+005e72f1      0 0000000000000000 Spell 'Hold Person'
+005e72f1      0 0000000000000000 Spell 'Resist Fire'
+005e72f1      0 0000000000000000 Spell 'Silence 15' Radius'
+005e72f2      1 0000000000000000 Spell 'Slow Poison'
+005e72f2      0 0000000000000000 Spell 'Snake Charm'
+005e72f2      0 0000000000000000 Spell 'Spiritual Hammer'
+005e72f2      0 0000000000000000 Spell 'Bestow Curse'
+005e72f2      0 0000000000000000 Spell 'Cause Blindness'
+005e72f3      1 0000000000000000 Spell 'Cause Disease'
+005e72f3      0 0000000000000000 Spell 'Cure Blindness'
+005e72f3      0 0000000000000000 Spell 'Cure Disease'
+005e72f4      1 0000000000000000 Spell 'Dispel Magic|Cleric'
+005e72f5      1 0000000000000000 Spell 'Prayer'
+005e72f5      0 0000000000000000 Spell 'Remove Curse'
+005e72f5      0 0000000000000000 Spell 'Cause Serious Wounds'
+005e72f7      2 0000000000000000 Spell 'Cure Serious Wounds'
+005e72f7      0 0000000000000000 Spell 'Neutralize Poison'
+005e72f8      1 0000000000000000 Spell 'Poison'
+005e72f9      1 0000000000000000 Spell 'Protection From Evil 10' Radius|Cleric'
+005e72f9      0 0000000000000000 Spell 'Protection From Good 10' Radius|Cleric'
+005e72fa      1 0000000000000000 Spell 'Sticks to Snakes'
+005e72fa      0 0000000000000000 Spell 'Cause Critical Wounds'
+005e72fa      0 0000000000000000 Spell 'Cure Critical Wounds'
+005e72fb      1 0000000000000000 Spell 'Dispel Evil'
+005e72fb      0 0000000000000000 Spell 'Dispel Good'
+005e72fb      0 0000000000000000 Spell 'Flame Strike'
+005e72fb      0 0000000000000000 Spell 'Raise Dead'
+005e72fc      1 0000000000000000 Spell 'Slay Living'
+005e72fc      0 0000000000000000 Spell 'Blade Barrier'
+005e72fd      1 0000000000000000 Spell 'Harm'
+005e72fd      0 0000000000000000 Spell 'Heal'
+005e72fe      1 0000000000000000 Spell 'Destruction'
+005e72fe      0 0000000000000000 Spell 'Energy Drain'
+005e72ff      1 0000000000000000 Spell 'Restoration'
+005e72ff      0 0000000000000000 Spell 'Resurrection'
+005e7300      1 0000000000000000 Spell 'Detect Magic|Druid'
+005e7300      0 0000000000000000 Spell 'Entangle'
+005e7300      0 0000000000000000 Spell 'Faerie Fire'
+005e7300      0 0000000000000000 Spell 'Invisibility to Animals'
+005e7301      1 0000000000000000 Spell 'Shillelagh'
+005e7301      0 0000000000000000 Spell 'Speak with Animals'
+005e7302      1 0000000000000000 Spell 'Barkskin'
+005e7302      0 0000000000000000 Spell 'Cause Light Wounds|Druid'
+005e7302      0 0000000000000000 Spell 'Charm Person or Mammal'
+005e7303      1 0000000000000000 Spell 'Cure Light Wounds|Druid'
+005e7304      1 0000000000000000 Spell 'Slow Poison|Druid'
+005e7304      0 0000000000000000 Spell 'Cause Disease|Druid'
+005e7304      0 0000000000000000 Spell 'Cure Disease|Druid'
+005e7304      0 0000000000000000 Spell 'Hold Animal'
+005e7305      1 0000000000000000 Spell 'Neutralize Poison|Druid'
+005e7306      1 0000000000000000 Spell 'Poison|Druid'
+005e7306      0 0000000000000000 Spell 'Protection from Fire'
+005e7306      0 0000000000000000 Spell 'Animal Summoning I'
+005e7306      0 0000000000000000 Spell 'Cause Serious Wounds|Druid'
+005e7307      1 0000000000000000 Spell 'Cure Serious Wounds|Druid'
+005e7307      0 0000000000000000 Spell 'Dispel Magic|Druid'
+005e7307      0 0000000000000000 Spell 'Protection from Lightning'
+005e7307      0 0000000000000000 Spell 'Animal Summoning II'
+005e7308      1 0000000000000000 Spell 'Insect Plague|Druid'
+005e7308      0 0000000000000000 Spell 'Sticks to Snakes|Druid'
+005e730a      2 0000000000000000 Spell 'Transmute Rock To Mud|Druid'
+005e730a      0 0000000000000000 Spell 'Animal Summoning III'
+005e730a      0 0000000000000000 Spell 'Cause Critical Wounds|Druid'
+005e730b      1 0000000000000000 Spell 'Conjure Fire Elemental|Druid'
+005e730c      1 0000000000000000 Spell 'Cure Critical Wounds|Druid'
+005e730c      0 0000000000000000 Spell 'Feeblemind|Druid'
+005e730d      1 0000000000000000 Spell 'Confusion|Druid'
+005e730e      1 0000000000000000 Spell 'Conjure Earth Elemental|Druid'
+005e730e      0 0000000000000000 Spell 'Burning Hands'
+005e730e      0 0000000000000000 Spell 'Charm Person'
+005e730f      1 0000000000000000 Spell 'Detect Magic|MagicUser'
+005e730f      0 0000000000000000 Spell 'Enlarge'
+005e730f      0 0000000000000000 Spell 'Friends'
+005e7310      1 0000000000000000 Spell 'Magic Missile'
+005e7310      0 0000000000000000 Spell 'Protection From Evil|MagicUser'
+005e7311      1 0000000000000000 Spell 'Protection From Good|MagicUser'
+005e7311      0 0000000000000000 Spell 'Read Magic'
+005e7311      0 0000000000000000 Spell 'Reduce'
+005e7312      1 0000000000000000 Spell 'Shield'
+005e7312      0 0000000000000000 Spell 'Shocking Grasp'
+005e7313      1 0000000000000000 Spell 'Sleep'
+005e7313      0 0000000000000000 Spell 'Detect Evil'
+005e7313      0 0000000000000000 Spell 'Detect Good'
+005e7314      1 0000000000000000 Spell 'Detect Invisibility'
+005e7314      0 0000000000000000 Spell 'Invisibility'
+005e7314      0 0000000000000000 Spell 'Knock'
+005e7315      1 0000000000000000 Spell 'Know Alignment'
+005e7315      0 0000000000000000 Spell 'Mirror Image'
+005e7316      1 0000000000000000 Spell 'Ray of Enfeeblement'
+005e7316      0 0000000000000000 Spell 'Stinking Cloud'
+005e7316      0 0000000000000000 Spell 'Strength'
+005e7318      2 0000000000000000 Spell 'Blink'
+005e7319      1 0000000000000000 Spell 'Dispel Magic|Magic User'
+005e7319      0 0000000000000000 Spell 'Fireball'
+005e7319      0 0000000000000000 Spell 'Haste'
+005e7319      0 0000000000000000 Spell 'Hold Person|Magic User'
+005e731a      1 0000000000000000 Spell 'Invisibility 10' Radius'
+005e731a      0 0000000000000000 Spell 'Lightning Bolt'
+005e731a      0 0000000000000000 Spell 'Monster Summoning I'
+005e731b      1 0000000000000000 Spell 'Protection From Evil 10' Radius| Magic User'
+005e731b      0 0000000000000000 Spell 'Protection From Good 10' Radius| Magic User'
+005e731b      0 0000000000000000 Spell 'Protection from Normal Missiles'
+005e731b      0 0000000000000000 Spell 'Slow'
+005e731c      1 0000000000000000 Spell 'Bestow Curse|Magic User'
+005e731d      1 0000000000000000 Spell 'Charm Monster'
+005e731d      0 0000000000000000 Spell 'Confusion'
+005e731d      0 0000000000000000 Spell 'Dimension Door'
+005e731e      1 0000000000000000 Spell 'Fear'
+005e731e      0 0000000000000000 Spell 'Fire Shield'
+005e731f      1 0000000000000000 Spell 'Fumble'
+005e731f      0 0000000000000000 Spell 'Ice Storm'
+005e731f      0 0000000000000000 Spell 'Minor Globe of Invulnerability'
+005e7320      1 0000000000000000 Spell 'Monster Summoning II'
+005e7320      0 0000000000000000 Spell 'Remove Curse|Magic User'
+005e7321      1 0000000000000000 Spell 'Cloudkill'
+005e7321      0 0000000000000000 Spell 'Cone of Cold'
+005e7322      1 0000000000000000 Spell 'Conjure Air Elemental'
+005e7322      0 0000000000000000 Spell 'Conjure Earth Elemental'
+005e7322      0 0000000000000000 Spell 'Conjure Fire Elemental'
+005e7323      1 0000000000000000 Spell 'Conjure Water Elemental'
+005e7323      0 0000000000000000 Spell 'Feeblemind'
+005e7324      1 0000000000000000 Spell 'Fire Touch'
+005e7324      0 0000000000000000 Spell 'Hold Monster'
+005e7325      1 0000000000000000 Spell 'Monster Summoning III'
+005e7325      0 0000000000000000 Spell 'Protection from Acid'
+005e7326      1 0000000000000000 Spell 'Transmute Rock To Mud|Magic User'
+005e7326      0 0000000000000000 Spell 'Wall Of Stone|Magic User'
+005e7326      0 0000000000000000 Spell 'Death Spell'
+005e7327      1 0000000000000000 Spell 'Disintegrate'
+005e7327      0 0000000000000000 Spell 'Flesh to Stone'
+005e7328      1 0000000000000000 Spell 'Globe of Invulnerability'
+005e7328      0 0000000000000000 Spell 'Invisible Stalker'
+005e7328      0 0000000000000000 Spell 'Monster Summoning IV'
+005e7329      1 0000000000000000 Spell 'Power Word, Silence'
+005e7329      0 0000000000000000 Spell 'Stone to Flesh'
+005e732a      1 0000000000000000 Spell 'Charm Plants'
+005e732a      0 0000000000000000 Spell 'Delayed Blast Fireball'
+005e732b      1 0000000000000000 Spell 'Mass Invisibility'
+005e732b      0 0000000000000000 Spell 'Monster Summoning V'
+005e732b      0 0000000000000000 Spell 'Power Word, Stun'
+005e732d      2 0000000000000000 Spell 'Mass Charm'
+005e732d      0 0000000000000000 Spell 'Mind Blank'
+005e732d      0 0000000000000000 Spell 'Monster Summoning VI'
+005e732e      1 0000000000000000 Spell 'Otto's Irresistible Dance'
+005e732e      0 0000000000000000 Spell 'Power Word, Blind'
+005e732f      1 0000000000000000 Spell 'Meteor Swarm'
+005e732f      0 0000000000000000 Spell 'Monster Summoning VII'
+005e7330      1 0000000000000000 Spell 'Power Word, Kill'
+005e7331      1 0000000000000000 Spell 'Bless|Paladin'
+005e7331      0 0000000000000000 Spell 'Cure Light Wounds|Paladin'
+005e7331      0 0000000000000000 Spell 'Detect Magic|Paladin'
+005e7331      0 0000000000000000 Spell 'Protection From Evil|Paladin'
+005e7332      1 0000000000000000 Spell 'Resist Cold|Paladin'
+005e7332      0 0000000000000000 Spell 'Find Traps|Paladin'
+005e7332      0 0000000000000000 Spell 'Hold Person|Paladin'
+005e7333      1 0000000000000000 Spell 'Resist Fire|Paladin'
+005e7333      0 0000000000000000 Spell 'Silence 15' Radius|Paladin'
+005e7333      0 0000000000000000 Spell 'Slow Poison|Paladin'
+005e7334      1 0000000000000000 Spell 'Snake Charm|Paladin'
+005e7335      1 0000000000000000 Spell 'Spiritual Hammer|Paladin'
+005e7336      1 0000000000000000 Spell 'Cure Blindness|Paladin'
+005e7337      1 0000000000000000 Spell 'Cure Disease|Paladin'
+005e7337      0 0000000000000000 Spell 'Dispel Magic|Paladin'
+005e7337      0 0000000000000000 Spell 'Prayer|Paladin'
+005e7338      1 0000000000000000 Spell 'Remove Curse|Paladin'
+005e7338      0 0000000000000000 Spell 'Cure Serious Wounds|Paladin'
+005e7338      0 0000000000000000 Spell 'Neutralize Poison|Paladin'
+005e7339      1 0000000000000000 Spell 'Protection From Evil 10' Radius|Paladin'
+005e7339      0 0000000000000000 Spell 'Sticks to Snakes|Paladin'
+005e733a      1 0000000000000000 Spell 'Detect Magic|Ranger'
+005e733a      0 0000000000000000 Spell 'Entangle|Ranger'
+005e733a      0 0000000000000000 Spell 'Faerie Fire|Ranger'
+005e733b      1 0000000000000000 Spell 'Invisibility to Animals|Ranger'
+005e733b      0 0000000000000000 Spell 'Shillelagh|Ranger'
+005e733b      0 0000000000000000 Spell 'Speak with Animals|Ranger'
+005e733c      1 0000000000000000 Spell 'Barkskin|Ranger'
+005e733c      0 0000000000000000 Spell 'Cause Light Wounds|Ranger'
+005e733c      0 0000000000000000 Spell 'Charm Person or Mammal|Ranger'
+005e733d      1 0000000000000000 Spell 'Cure Light Wounds|Ranger'
+005e733e      1 0000000000000000 Spell 'Slow Poison|Ranger'
+005e733f      1 0000000000000000 Spell 'Cause Disease|Ranger'
+005e733f      0 0000000000000000 Spell 'Cure Disease|Ranger'
+005e733f      0 0000000000000000 Spell 'Hold Animal|Ranger'
+005e733f      0 0000000000000000 Spell 'Neutralize Poison|Ranger'
+005e7340      1 0000000000000000 Spell 'Poison|Ranger'
+005e7340      0 0000000000000000 Spell 'Protection from Fire|Ranger'
+005e7341      1 0000000000000000 Spell 'Burning Hands|Ranger'
+005e7341      0 0000000000000000 Spell 'Charm Person|Ranger'
+005e7341      0 0000000000000000 Spell 'Detect Magic|Ranger(Magic-User)'
+005e7342      1 0000000000000000 Spell 'Enlarge|Ranger'
+005e7342      0 0000000000000000 Spell 'Friends|Ranger'
+005e7343      1 0000000000000000 Spell 'Magic Missile|Ranger'
+005e7344      1 0000000000000000 Spell 'Protection From Evil|Ranger'
+005e7344      0 0000000000000000 Spell 'Protection From Good|Ranger'
+005e7345      1 0000000000000000 Spell 'Read Magic|Ranger'
+005e7345      0 0000000000000000 Spell 'Reduce|Ranger'
+005e7345      0 0000000000000000 Spell 'Shield|Ranger'
+005e7345      0 0000000000000000 Spell 'Shocking Grasp|Ranger'
+005e7346      1 0000000000000000 Spell 'Sleep|Ranger'
+005e7347      1 0000000000000000 Spell 'Detect Invisibility|Ranger'
+005e7347      0 0000000000000000 Spell 'Invisibility|Ranger'
+005e7347      0 0000000000000000 Spell 'Knock|Ranger'
+005e7348      1 0000000000000000 Spell 'Mirror Image|Ranger'
+005e7348      0 0000000000000000 Spell 'Ray of Enfeeblement|Ranger'
+005e7348      0 0000000000000000 Spell 'Stinking Cloud|Ranger'
+005e7348      0 0000000000000000 Spell 'Strength|Ranger'
+005e7349      1 0000000000000000 Spell 'itemEyesCharming'
+005e734a      1 0000000000000000 Spell 'itemNecklaceMissiles'
+005e734a      0 0000000000000000 Spell 'itemPotionGiantStrength'
+005e734b      1 0000000000000000 Spell 'itemPotionInvisibility'
+005e734b      0 0000000000000000 Spell 'itemPotionSpeed'
+005e734b      0 0000000000000000 Spell 'itemScrollImmuneDragonBreath'
+005e734c      1 0000000000000000 Spell 'WandFireball'
+005e734c      0 0000000000000000 Spell 'WandIceStorm'
+005e734d      1 0000000000000000 Spell 'WandLightningBolt'
+005e734d      0 0000000000000000 Spell 'WandMagicMissile'
+005e734e      1 0000000000000000 Spell 'WandParalysis'
+005e734e      0 0000000000000000 Spell 'Banish'
+005e734f      1 0000000000000000 Spell 'Cold Fire Shield'
+005e734f      0 0000000000000000 Spell 'druidShapeChange'
+005e734f      0 0000000000000000 Spell 'HarmDisease'
+005e7350      1 0000000000000000 Spell 'Hot Fire Shield'
+005e7350      0 0000000000000000 Spell 'OpenLocks'
+005e7351      1 0000000000000000 Spell 'paladinCureDisease'
+005e7351      0 0000000000000000 Spell 'paladinLayOnHands'
+005e7351      0 0000000000000000 Spell 'Charm|MonsterBeholder'
+005e7352      1 0000000000000000 Spell 'Fear|MonsterBeholder'
+005e7352      0 0000000000000000 Spell 'Flesh to Stone|MonsterBeholder'
+005e7353      1 0000000000000000 Spell 'Sleep|MonsterBeholder'
+005e7354      1 0000000000000000 Spell 'Slow|MonsterBeholder'
+005e7356      2 0000000000000000 Spell 'Invisibility|MonsterOgreMage'
+005e7356      0 0000000000000000 Spell 'Lightning Bolt|MonsterStormGiant'
+005e7356      0 0000000000000000 Spell 'Blade Barrier|MonsterCleric'
+005e7357      1 0000000000000000 Spell 'Bless|MonsterCleric'
+005e7357      0 0000000000000000 Spell 'Cause Blindness|MonsterCleric'
+005e7357      0 0000000000000000 Spell 'Cause Critical Wounds|MonsterCleric'
+005e7358      1 0000000000000000 Spell 'Cause Disease|MonsterCleric'
+005e7358      0 0000000000000000 Spell 'Cause Light Wounds|MonsterCleric'
+005e7359      1 0000000000000000 Spell 'Cause Serious Wounds|MonsterCleric'
+005e7359      0 0000000000000000 Spell 'Cure Critical Wounds|MonsterCleric'
+005e735a      1 0000000000000000 Spell 'Cure Light Wounds|MonsterCleric'
+005e735a      0 0000000000000000 Spell 'Cure Serious Wounds|MonsterCleric'
+005e735b      1 0000000000000000 Spell 'Curse|MonsterCleric'
+005e735b      0 0000000000000000 Spell 'Destruction|MonsterCleric'
+005e735b      0 0000000000000000 Spell 'Dispel Magic|MonsterCleric'
+005e735c      1 0000000000000000 Spell 'Energy Drain|MonsterCleric'
+005e735d      1 0000000000000000 Spell 'Find Traps|MonsterCleric'
+005e735d      0 0000000000000000 Spell 'Flame Strike|MonsterCleric'
+005e735d      0 0000000000000000 Spell 'Harm|MonsterCleric'
+005e735d      0 0000000000000000 Spell 'Heal|MonsterCleric'
+005e735e      1 0000000000000000 Spell 'Poison|MonsterCleric'
+005e735e      0 0000000000000000 Spell 'Hold Person|MonsterCleric'
+005e735f      1 0000000000000000 Spell 'Prayer|MonsterCleric'
+005e735f      0 0000000000000000 Spell 'Protection from Evil|MonsterCleric'
+005e735f      0 0000000000000000 Spell 'Protection from Evil 10' Radius|MonsterCleric'
+005e7360      1 0000000000000000 Spell 'Protection from Good|MonsterCleric'
+005e7360      0 0000000000000000 Spell 'Resist Cold|MonsterCleric'
+005e7361      1 0000000000000000 Spell 'Resist Fire|MonsterCleric'
+005e7362      1 0000000000000000 Spell 'Silence|MonsterCleric'
+005e7363      1 0000000000000000 Spell 'Slay Living|MonsterCleric'
+005e7363      0 0000000000000000 Spell 'Sticks to Snakes|MonsterCleric'
+005e7363      0 0000000000000000 Spell 'Entangle|MonsterDruid'
+005e7363      0 0000000000000000 Spell 'Faerie Fire|MonsterDruid'
+005e7364      1 0000000000000000 Spell 'Bestow Curse|MonsterMage'
+005e7364      0 0000000000000000 Spell 'Burning Hands|MonsterMage'
+005e7365      1 0000000000000000 Spell 'Charm Monster|MonsterMage'
+005e7365      0 0000000000000000 Spell 'Charm Person|MonsterMage'
+005e7365      0 0000000000000000 Spell 'Cloudkill|MonsterMage'
+005e7366      1 0000000000000000 Spell 'Cone of Cold|MonsterMage'
+005e7366      0 0000000000000000 Spell 'Confusion|MonsterMage'
+005e7367      1 0000000000000000 Spell 'Death Spell|MonsterMage'
+005e7367      0 0000000000000000 Spell 'Delayed Blast Fireball|MonsterMage'
+005e7368      1 0000000000000000 Spell 'Detect Invisibility|MonsterMage'
+005e7368      0 0000000000000000 Spell 'Detect Magic|MonsterMage'
+005e7368      0 0000000000000000 Spell 'Disintegrate|MonsterMage'
+005e7368      0 0000000000000000 Spell 'Dispel Magic|MonsterMage'
+005e736a      2 0000000000000000 Spell 'Enlarge|MonsterMage'
+005e736a      0 0000000000000000 Spell 'Fear|MonsterMage'
+005e736a      0 0000000000000000 Spell 'Feeblemind|MonsterMage'
+005e736b      1 0000000000000000 Spell 'Fire Shield|MonsterMage'
+005e736c      1 0000000000000000 Spell 'Fire Touch|MonsterMage'
+005e736c      0 0000000000000000 Spell 'Fireball|MonsterMage'
+005e736c      0 0000000000000000 Spell 'Flesh to Stone|MonsterMage'
+005e736d      1 0000000000000000 Spell 'Fumble|MonsterMage'
+005e736e      1 0000000000000000 Spell 'Globe of Invulnerability|MonsterMage'
+005e736e      0 0000000000000000 Spell 'Haste|MonsterMage'
+005e736e      0 0000000000000000 Spell 'Hold Monster|MonsterMage'
+005e736f      1 0000000000000000 Spell 'Hold Person|MonsterMage'
+005e736f      0 0000000000000000 Spell 'Ice Storm|MonsterMage'
+005e7370      1 0000000000000000 Spell 'Invisibility|MonsterMage'
+005e7370      0 0000000000000000 Spell 'Iron Skin|MonsterMage'
+005e7370      0 0000000000000000 Spell 'Knock|MonsterMage'
+005e7371      1 0000000000000000 Spell 'Lightning Bolt|MonsterMage'
+005e7371      0 0000000000000000 Spell 'Magic Missile|MonsterMage'
+005e7372      1 0000000000000000 Spell 'Mass Charm|MonsterMage'
+005e7372      0 0000000000000000 Spell 'Meteor Swarm|MonsterMage'
+005e7372      0 0000000000000000 Spell 'Minor Globe of Invulnerability|MonsterMage'
+005e7374      2 0000000000000000 Spell 'Mind Blank|MonsterMage'
+005e7375      1 0000000000000000 Spell 'Mirror Image|MonsterMage'
+005e7375      0 0000000000000000 Spell 'Otto's Irresistible Dance|MonsterMage'
+005e7376      1 0000000000000000 Spell 'Power Word, Kill|MonsterMage'
+005e7376      0 0000000000000000 Spell 'Protection from Evil 10' Radius|MonsterMage'
+005e7376      0 0000000000000000 Spell 'Ray of Enfeeblement|MonsterMage'
+005e7376      0 0000000000000000 Spell 'Reduce|MonsterMage'
+005e7377      1 0000000000000000 Spell 'Shield|MonsterMage'
+005e7378      1 0000000000000000 Spell 'Shocking Grasp|MonsterMage'
+005e7378      0 0000000000000000 Spell 'Sleep|MonsterMage'
+005e7378      0 0000000000000000 Spell 'Slow|MonsterMage'
+005e7378      0 0000000000000000 Spell 'Stinking Cloud|MonsterMage'
+005e7379      1 0000000000000000 Spell 'Cold Ray|MonsterOgreMage'
+005e737a      1 0000000000000000 Spell 'monsterBasiliskPetrifyGaze'
+005e737b      1 0000000000000000 Spell 'monsterBearHug1'
+005e737b      0 0000000000000000 Spell 'monsterBearHug2'
+005e737b      0 0000000000000000 Spell 'monsterBlackPuddingAttack'
+005e737c      1 0000000000000000 Spell 'monsterCarrionStench'
+005e737c      0 0000000000000000 Spell 'monsterDjinniWhirlwind'
+005e737c      0 0000000000000000 Spell 'monsterDracoliskBreathWeapon'
+005e737c      0 0000000000000000 Spell 'monsterDracoliskPetrifyGaze'
+005e737d      1 0000000000000000 Spell 'monsterDragonBreathWeaponAcid'
+005e737d      0 0000000000000000 Spell 'monsterDragonBreathWeaponCold'
+005e737e      1 0000000000000000 Spell 'monsterDragonBreathWeaponColdSilver'
+005e737e      0 0000000000000000 Spell 'monsterDragonBreathWeaponFear'
+005e737f      1 0000000000000000 Spell 'monsterDragonBreathWeaponFire'
+005e737f      0 0000000000000000 Spell 'monsterDragonBreathWeaponLightning'
+005e737f      0 0000000000000000 Spell 'monsterDragonBreathWeaponParalysis'
+005e7380      1 0000000000000000 Spell 'monsterDragonBreathWeaponPoison'
+005e7380      0 0000000000000000 Spell 'monsterDragonBreathWeaponSleep'
+005e7381      1 0000000000000000 Spell 'monsterDragonBreathWeaponSlow'
+005e7381      0 0000000000000000 Spell 'monsterDriderParalyzingBite'
+005e7382      1 0000000000000000 Spell 'monsterEngulf1'
+005e7382      0 0000000000000000 Spell 'monsterEngulf2'
+005e7382      0 0000000000000000 Spell 'monsterFireBatAttack'
+005e7383      1 0000000000000000 Spell 'monsterGiantSlugSpit'
+005e7383      0 0000000000000000 Spell 'monsterGiantWeaselAttack'
+005e7384      1 0000000000000000 Spell 'monsterGorgonBreathWeapon'
+005e7384      0 0000000000000000 Spell 'monsterGreenSlimeAttack'
+005e7384      0 0000000000000000 Spell 'monsterHellHoundBreathWeapon'
+005e7385      1 0000000000000000 Spell 'monsterMaridWaterJet'
+005e7385      0 0000000000000000 Spell 'monsterMedusaPetrifyGaze'
+005e7386      1 0000000000000000 Spell 'monsterMindFlayerMindBlast'
+005e7386      0 0000000000000000 Spell 'monsterMindFlayerTentacle'
+005e7386      0 0000000000000000 Spell 'monsterMummyRot'
+005e7387      1 0000000000000000 Spell 'monsterParalysis'
+005e7387      0 0000000000000000 Spell 'monsterPetrify'
+005e7389      2 0000000000000000 Spell 'monsterPoison'
+005e7389      0 0000000000000000 Spell 'monsterPoisonCentipede'
+005e738a      1 0000000000000000 Spell 'monsterPoisonCloud'
+005e738a      0 0000000000000000 Spell 'monsterPoisonFrog'
+005e738b      1 0000000000000000 Spell 'monsterPoisonSnake'
+005e738c      1 0000000000000000 Spell 'monsterPoisonWyvern'
+005e738c      0 0000000000000000 Spell 'monsterPurpleWormSwallow'
+005e738c      0 0000000000000000 Spell 'monsterPyroliskImmolationGaze'
+005e738d      1 0000000000000000 Spell 'monsterRearClawRake1'
+005e738d      0 0000000000000000 Spell 'monsterRearClawRake2'
+005e738d      0 0000000000000000 Spell 'monsterRearClawRakeCat1'
+005e738d      0 0000000000000000 Spell 'monsterRearClawRakeCat2'
+005e738e      1 0000000000000000 Spell 'monsterRemorhazSwallow'
+005e738e      0 0000000000000000 Spell 'monsterSalamanderFireAttack'
+005e738f      1 0000000000000000 Spell 'monsterShadowDrainStrength'
+005e738f      0 0000000000000000 Spell 'monsterStirgeAttack'
+005e738f      0 0000000000000000 Spell 'monsterTransmuteRockToMud'
+005e738f      0 0000000000000000 Spell 'monsterUmberHulkConfusionGaze'
+005e7390      1 0000000000000000 Spell 'monsterUndeadDrainLevel'
+005e7390      0 0000000000000000 Spell 'monsterVampireCharmGaze'
+005e7391      1 0000000000000000 Spell 'monsterVampireDrainLevel'
+005e7392      1 0000000000000000 Spell 'monsterWallOfStone'
+005e7392      0 0000000000000000 Spell 'monsterWinterWolfBreathWeapon'
+005e7392      0 0000000000000000 Spell 'monsterYetiSqueeze'
+005e7394      2 0000000000000000 Spell 'Highlight'
+005e7394      0 0000000000000000 Spell '$$Help'
+005e7fa0   3084 0000000000000000 Entering 'OnFileSaveMap'
+005e7fa0      0 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+005e7fa1      1 0000000000000000 Copy bass.dll
+005e8017    118 0000000000000000 Copy Readme.txt
+005e8018      1 0000000000000000 Deleting level and global art
+005e8041     41 0000000000000000 SaveArt(globalData)
+005e8041      0 0000000000000000 charData.SaveArt
+005e8041      0 0000000000000000 SmallPicImport.SavePicData
+005e8041      0 0000000000000000 IconPicImport.SavePicData
+005e8041      0 0000000000000000 SaveArt(itemData)
+005e8041      0 0000000000000000 SaveArt(monsterData)
+005e8041      0 0000000000000000 SaveArt(spellData)
+005e85d3   1426 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+005e85d3      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+005e85d3      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+005e85d4      1 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+005e871b    327 0000000000000000  Start Serialize globalData
+005e871b      0 0000000000000000  End Serialize globalData - Start Serialize current level
+005e8723      8 0000000000000000  Start ConfirmUsedLevels
+005e8725      2 0000000000000000  Start saveData(itemData)
+005e8736     17 0000000000000000  Start saveData(monsterData)
+005e8741     11 0000000000000000  Start saveData(spellData)
+005e8764     35 0000000000000000  Start saveData(spellgroupData)
+005e8764      0 0000000000000000  Start saveData(raceData)
+005e8766      2 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+005e8767      1 0000000000000000  Start saveData(abilityData)]
+005e876e      7 0000000000000000  Start saveData(specialAbilityData)
+005e8782     20 0000000000000000  Start saveData(baseclassData)
+005e878a      8 0000000000000000  Start saveData(classData)
+005e8790      6 0000000000000000  Start Validate Event Data)
+005e87bc     44 0000000000000000 Exiting savedesign(CArchive&)
+005e87bf      3 0000000000000000 Exiting 'OnFileSaveMap'
+005e99da   4635 0000000000000000 Editor active: No
+005ec08b   9905 0000000000000000 Editor active: Yes
+005ecfa4   3865 0000000000000000 Editor active: No
+005f0158  12724 0000000000000000 Editor active: Yes
+005f0162     10 0000000000000000 Editor active: Yes
+005f77a8  30278 0000000000000000 Creating new root event at 3,1
+005f8c34   5260 0000000000000000 Editor active: No
+005f9f1e   4842 0000000000000000 Editor active: Yes
+005f9f29     11 0000000000000000 Editor active: Yes
+005fdfe3  16570 0000000000000000 Editor active: No
+005ff720   5949 0000000000000000 Editor active: Yes
+005ff72b     11 0000000000000000 Editor active: Yes
+0060134a   7199 0000000000000000 Editor active: No
+00609190  32326 0000000000000000 Editor active: Yes
+0060919b     11 0000000000000000 Editor active: Yes
+0060b3ea   8783 0000000000000000 Editor active: No
+0060f799  17327 0000000000000000 Editor active: Yes
+0061201f  10374 0000000000000000 Editor active: No
+006135fb   5596 0000000000000000 Editor active: Yes
+00613603      8 0000000000000000 Editor active: Yes
+006143e1   3550 0000000000000000 Creating new root event at 0,2
+00614b36   1877 0000000000000000 Editor active: No
+006156a5   2927 0000000000000000 Editor active: Yes
+006156b1     12 0000000000000000 Editor active: Yes
+00619062  14769 0000000000000000 Editor active: No
+0061b483   9249 0000000000000000 Editor active: Yes
+0061b48d     10 0000000000000000 Editor active: Yes
+0061ece7  14426 0000000000000000 Editor active: No
+00621ade  11767 0000000000000000 Editor active: Yes
+00621ae5      7 0000000000000000 Editor active: Yes
+00623417   6450 0000000000000000 Editor active: No
+006247bc   5029 0000000000000000 Editor active: Yes
+006247c7     11 0000000000000000 Editor active: Yes
+00626b6b   9124 0000000000000000 Editor active: No
+00627e1d   4786 0000000000000000 Editor active: Yes
+00627e24      7 0000000000000000 Editor active: Yes
+00629faa   8582 0000000000000000 Creating new chain event
+00632f9e  36852 0000000000000000 Editor active: No
+0063a50f  30065 0000000000000000 Editor active: Yes
+0063a516      7 0000000000000000 Editor active: Yes
+0063fa2b  21781 0000000000000000 Editor active: No
+0064252f  11012 0000000000000000 Editor active: Yes
+00642539     10 0000000000000000 Editor active: Yes
+00642fa3   2666 0000000000000000 Editor active: No
+006440fc   4441 0000000000000000 Editor active: Yes
+00644105      9 0000000000000000 Editor active: Yes
+006461d7   8402 0000000000000000 Editor active: No
+0064772d   5462 0000000000000000 Editor active: Yes
+00647735      8 0000000000000000 Editor active: Yes
+00648288   2899 0000000000000000 Creating new chain event
+0064cb37  18607 0000000000000000 Editor active: No
+0064e0a5   5486 0000000000000000 Editor active: Yes
+0064e0af     10 0000000000000000 Editor active: Yes
+00657c7d  39886 0000000000000000 Editor active: No
+0065f584  30983 0000000000000000 Editor active: Yes
+0065f58a      6 0000000000000000 Editor active: Yes
+00667b19  34191 0000000000000000 Editor active: No
+0067448f  51574 0000000000000000 Editor active: Yes
+00674497      8 0000000000000000 Editor active: Yes
+00675e92   6651 0000000000000000 Creating new chain event
+00676a1a   2952 0000000000000000 Editor active: No
+00677ffe   5604 0000000000000000 Editor active: Yes
+00678006      8 0000000000000000 Editor active: Yes
+0067db93  23437 0000000000000000 Editor active: No
+006813f1  14430 0000000000000000 Editor active: Yes
+006813f8      7 0000000000000000 Editor active: Yes
+0068ab62  38762 0000000000000000 Editor active: No
+0068ac33    209 0000000000000000 Editor active: Yes
+0068ac3c      9 0000000000000000 Editor active: Yes
+0068ddea  12718 0000000000000000 Editor active: No
+0068de9e    180 0000000000000000 Editor active: Yes
+0068dea7      9 0000000000000000 Editor active: Yes
+00693d70  24265 0000000000000000 Editor active: No
+00695045   4821 0000000000000000 Editor active: Yes
+0069504f     10 0000000000000000 Editor active: Yes
+00697e55  11782 0000000000000000 Editor active: No
+00699cdb   7814 0000000000000000 Editor active: Yes
+00699ce4      9 0000000000000000 Editor active: Yes
+0069f63a  22870 0000000000000000 Editor active: No
+006a5115  23259 0000000000000000 Editor active: Yes
+006a511c      7 0000000000000000 Editor active: Yes
+006b2353  53815 0000000000000000 Entering 'OnFileSaveMap'
+006b2353      0 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+006b2354      1 0000000000000000 Copy bass.dll
+006b23ca    118 0000000000000000 Copy Readme.txt
+006b23cc      2 0000000000000000 Deleting level and global art
+006b23f7     43 0000000000000000 SaveArt(globalData)
+006b23f8      1 0000000000000000 charData.SaveArt
+006b23f8      0 0000000000000000 SmallPicImport.SavePicData
+006b23f8      0 0000000000000000 IconPicImport.SavePicData
+006b23f8      0 0000000000000000 SaveArt(itemData)
+006b23f8      0 0000000000000000 SaveArt(monsterData)
+006b23f8      0 0000000000000000 SaveArt(spellData)
+006b29dc   1508 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+006b29dc      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+006b29dc      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+006b29dc      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+006b2b58    380 0000000000000000  Start Serialize globalData
+006b2b58      0 0000000000000000  End Serialize globalData - Start Serialize current level
+006b2b62     10 0000000000000000  Start ConfirmUsedLevels
+006b2b63      1 0000000000000000  Start saveData(itemData)
+006b2b76     19 0000000000000000  Start saveData(monsterData)
+006b2b81     11 0000000000000000  Start saveData(spellData)
+006b2ba6     37 0000000000000000  Start saveData(spellgroupData)
+006b2ba6      0 0000000000000000  Start saveData(raceData)
+006b2ba8      2 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+006b2ba9      1 0000000000000000  Start saveData(abilityData)]
+006b2bab      2 0000000000000000  Start saveData(specialAbilityData)
+006b2bbe     19 0000000000000000  Start saveData(baseclassData)
+006b2bc1      3 0000000000000000  Start saveData(classData)
+006b2bc3      2 0000000000000000  Start Validate Event Data)
+006b2bf3     48 0000000000000000 Exiting savedesign(CArchive&)
+006b2bf9      6 0000000000000000 Exiting 'OnFileSaveMap'
+006b2cb1    184 0000000000000000 Editor active: No
+006b4579   6344 0000000000000000 Editor active: Yes
+006bc71d  33188 0000000000000000 Editor active: No
+006bd34a   3117 0000000000000000 Editor active: Yes
+006bd354     10 0000000000000000 Editor active: Yes
+006be94b   5623 0000000000000000 Editor active: No
+006c22f4  14761 0000000000000000 Editor active: Yes
+006c22fd      9 0000000000000000 Editor active: Yes
+006c4d40  10819 0000000000000000 Editor active: No
+006c70f7   9143 0000000000000000 Editor active: Yes
+006c7102     11 0000000000000000 Editor active: Yes
+006cd1c2  24768 0000000000000000 Editor active: No
+006cee5d   7323 0000000000000000 Editor active: Yes
+006cee68     11 0000000000000000 Editor active: Yes
+006d1156   8942 0000000000000000 Editor active: No
+006d2b42   6636 0000000000000000 Editor active: Yes
+006d2b4d     11 0000000000000000 Editor active: Yes
+006d5de2  12949 0000000000000000 Creating new chain event
+006d7014   4658 0000000000000000 Editor active: No
+006d7a3e   2602 0000000000000000 Editor active: Yes
+006d7a49     11 0000000000000000 Editor active: Yes
+006dc882  20025 0000000000000000 Editor active: No
+006de711   7823 0000000000000000 Editor active: Yes
+006de71c     11 0000000000000000 Editor active: Yes
+006df401   3301 0000000000000000 Editor active: No
+006e025a   3673 0000000000000000 Editor active: Yes
+006e0262      8 0000000000000000 Editor active: Yes
+006e1a54   6130 0000000000000000 Editor active: No
+006e2d31   4829 0000000000000000 Editor active: Yes
+006e2d3c     11 0000000000000000 Editor active: Yes
+006e435c   5664 0000000000000000 Creating new chain event
+006e50be   3426 0000000000000000 Deleting 'Text Statement (0)' event in EventViewer - canceled new event add
+006e653b   5245 0000000000000000 Editor active: No
+006e68c3    904 0000000000000000 Editor active: Yes
+006e68d0     13 0000000000000000 Editor active: Yes
+006e6de1   1297 0000000000000000 Editor active: No
+006e87a6   6597 0000000000000000 Editor active: Yes
+006e87b0     10 0000000000000000 Editor active: Yes
+006e926e   2750 0000000000000000 Creating new chain event
+006ef561  25331 0000000000000000 Editor active: No
+006f0dc6   6245 0000000000000000 Editor active: Yes
+006f0dd0     10 0000000000000000 Editor active: Yes
+006f30c4   8948 0000000000000000 Entering 'OnFileSaveMap'
+006f30c5      1 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+006f30c5      0 0000000000000000 Copy bass.dll
+006f313a    117 0000000000000000 Copy Readme.txt
+006f313d      3 0000000000000000 Deleting level and global art
+006f316b     46 0000000000000000 SaveArt(globalData)
+006f316b      0 0000000000000000 charData.SaveArt
+006f316b      0 0000000000000000 SmallPicImport.SavePicData
+006f316c      1 0000000000000000 IconPicImport.SavePicData
+006f316c      0 0000000000000000 SaveArt(itemData)
+006f316c      0 0000000000000000 SaveArt(monsterData)
+006f316c      0 0000000000000000 SaveArt(spellData)
+006f376a   1534 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+006f376a      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+006f376a      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+006f376a      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+006f38d8    366 0000000000000000  Start Serialize globalData
+006f38d9      1 0000000000000000  End Serialize globalData - Start Serialize current level
+006f38e2      9 0000000000000000  Start ConfirmUsedLevels
+006f38e3      1 0000000000000000  Start saveData(itemData)
+006f38f6     19 0000000000000000  Start saveData(monsterData)
+006f3901     11 0000000000000000  Start saveData(spellData)
+006f3927     38 0000000000000000  Start saveData(spellgroupData)
+006f3927      0 0000000000000000  Start saveData(raceData)
+006f3929      2 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+006f3929      0 0000000000000000  Start saveData(abilityData)]
+006f392b      2 0000000000000000  Start saveData(specialAbilityData)
+006f393f     20 0000000000000000  Start saveData(baseclassData)
+006f3941      2 0000000000000000  Start saveData(classData)
+006f3944      3 0000000000000000  Start Validate Event Data)
+006f3974     48 0000000000000000 Exiting savedesign(CArchive&)
+006f3976      2 0000000000000000 Exiting 'OnFileSaveMap'
+006f433a   2500 0000000000000000 Editor active: No
+00706a07  75469 0000000000000000 Editor active: Yes
+00707f3a   5427 0000000000000000 Editor active: No
+00722692 108376 0000000000000000 Editor active: Yes
+007241f9   7015 0000000000000000 Entering 'OnFileSaveMap'
+007241fa      1 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+007241fb      1 0000000000000000 Copy bass.dll
+0072426f    116 0000000000000000 Copy Readme.txt
+00724272      3 0000000000000000 Deleting level and global art
+007242a3     49 0000000000000000 SaveArt(globalData)
+007242a3      0 0000000000000000 charData.SaveArt
+007242a3      0 0000000000000000 SmallPicImport.SavePicData
+007242a3      0 0000000000000000 IconPicImport.SavePicData
+007242a3      0 0000000000000000 SaveArt(itemData)
+007242a3      0 0000000000000000 SaveArt(monsterData)
+007242a3      0 0000000000000000 SaveArt(spellData)
+007248c7   1572 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+007248c7      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+007248c7      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+007248c8      1 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+00724a36    366 0000000000000000  Start Serialize globalData
+00724a36      0 0000000000000000  End Serialize globalData - Start Serialize current level
+00724a3f      9 0000000000000000  Start ConfirmUsedLevels
+00724a40      1 0000000000000000  Start saveData(itemData)
+00724a52     18 0000000000000000  Start saveData(monsterData)
+00724a5d     11 0000000000000000  Start saveData(spellData)
+00724a82     37 0000000000000000  Start saveData(spellgroupData)
+00724a82      0 0000000000000000  Start saveData(raceData)
+00724a83      1 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+00724a84      1 0000000000000000  Start saveData(abilityData)]
+00724a86      2 0000000000000000  Start saveData(specialAbilityData)
+00724a9a     20 0000000000000000  Start saveData(baseclassData)
+00724a9d      3 0000000000000000  Start saveData(classData)
+00724a9f      2 0000000000000000  Start Validate Event Data)
+00724ad0     49 0000000000000000 Exiting savedesign(CArchive&)
+00724ad3      3 0000000000000000 Exiting 'OnFileSaveMap'
+00724f02   1071 0000000000000000 Editor active: No
+00725316   1044 0000000000000000 Editor active: Yes
+00726b3a   6180 0000000000000000 Entering 'OnFileSaveMap'
+00726b3a      0 0000000000000000 Entering CreateDesignDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn)
+00726b3b      1 0000000000000000 Copy bass.dll
+00726bb6    123 0000000000000000 Copy Readme.txt
+00726bb9      3 0000000000000000 Deleting level and global art
+00726be5     44 0000000000000000 SaveArt(globalData)
+00726be5      0 0000000000000000 charData.SaveArt
+00726be5      0 0000000000000000 SmallPicImport.SavePicData
+00726be5      0 0000000000000000 IconPicImport.SavePicData
+00726be5      0 0000000000000000 SaveArt(itemData)
+00726be5      0 0000000000000000 SaveArt(monsterData)
+00726be5      0 0000000000000000 SaveArt(spellData)
+007271e7   1538 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Hit.wav' in writeSoundToFile()
+007271e7      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_Miss.wav' in writeSoundToFile()
+007271e8      1 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharMove.wav' in writeSoundToFile()
+007271e8      0 0000000000000000 Can't find file 'C:\!__Dungeon_Craft__\editor\TemplateDesign.dsn\Resources\sound_CharDeath.wav' in writeSoundToFile()
+00727355    365 0000000000000000  Start Serialize globalData
+00727355      0 0000000000000000  End Serialize globalData - Start Serialize current level
+0072735d      8 0000000000000000  Start ConfirmUsedLevels
+0072735e      1 0000000000000000  Start saveData(itemData)
+00727371     19 0000000000000000  Start saveData(monsterData)
+0072737c     11 0000000000000000  Start saveData(spellData)
+007273a0     36 0000000000000000  Start saveData(spellgroupData)
+007273a0      0 0000000000000000  Start saveData(raceData)
+007273a2      2 0000000000000000 **COMPILE ERROR** Race Half-Elf has undefined AllowedMultiClass Ranger/Cleric
+007273a3      1 0000000000000000  Start saveData(abilityData)]
+007273a5      2 0000000000000000  Start saveData(specialAbilityData)
+007273b8     19 0000000000000000  Start saveData(baseclassData)
+007273ba      2 0000000000000000  Start saveData(classData)
+007273be      4 0000000000000000  Start Validate Event Data)
+007273ed     47 0000000000000000 Exiting savedesign(CArchive&)
+007273f0      3 0000000000000000 Exiting 'OnFileSaveMap'
+00727f00   2832 0000000000000000 Editor active: No

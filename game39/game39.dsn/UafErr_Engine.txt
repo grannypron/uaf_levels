@@ -1,0 +1,190 @@
+Opened Error Log on Sun Dec 13 21:16:42 2020
+008083dd 8422365 0000000000000000Engine Version: 5.2600000000
+008083df      2 0000000000000000 Working directory = C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\
+008083f1     18 0000000000000000 Loading Config File = 'C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\config.txt'
+008083f2      1 0000000000000000 DisableScreenSaver = 1
+008083f2      0 0000000000000000 Force_SysMem = 1
+008083f2      0 0000000000000000 Error Log ON
+008083f4      2 0000000000000000 Total optional wall formats: 6
+008083f4      0 0000000000000000 CreateEx(0,0,640,480)
+00808418     36 0000000000000000 CreateEx ClientRect = 0 0 1366 768
+00808582    362 0000000000000000 OS:  Workstation version 6.2  (Build 9200)
+00808582      0 0000000000000000 DX: DirectX 8
+00808583      1 0000000000000000 IE: IE version 3 or less
+00808583      0 0000000000000000 InitGame ClientRect = 0 0 1366 768
+00808583      0 0000000000000000 Enter InitFullScreen
+00808583      0 0000000000000000 Creating pScreen
+00808599     22 0000000000000000 Checking SysMem Flag
+00808599      0 0000000000000000 Checking video modes
+00808599      0 0000000000000000 Checking 640 x 480 x 32
+00808599      0 0000000000000000 Using video mode 640 x 480 x 32
+00808599      0 0000000000000000 Creating full screen(263774,640,480,32)
+008086c7    302 0000000000000000 screen created ok
+008086c7      0 0000000000000000 InitGraphics fullscreen at 640 x 480 x 32
+008086c7      0 0000000000000000 Init WallSlot image cache with size 48
+008086c7      0 0000000000000000 Init BgSlot image cache with size 32
+00808746    127 0000000000000000 Loaded sound lib file Bass.dll, ver 1.6
+00808746      0 0000000000000000 Sound playback rate = 22050
+008087e9    163 0000000000000000 Sound card 1 desc: Primary Sound Driver
+008087e9      0 0000000000000000 Sound card 2 desc: DigitalOutput (NVIDIA High Definition Audio)
+008087e9      0 0000000000000000 Sound Card Info: hwsize 0, hwfree 0, freesam 0, free3d 0, minrate 100, maxrate 200000, eax 0, a3d 0, dsver 8
+008087e9      0 0000000000000000 Sound Card Info: Continuous sample rates supported
+008087e9      0 0000000000000000 Sound Card Info: mono sample rates supported in hw
+008087e9      0 0000000000000000 Sound Card Info: stereo sample rates supported in hw
+008087e9      0 0000000000000000 Sound Card Info: 8-bit sample rates supported in hw
+008087e9      0 0000000000000000 Sound Card Info: 16-bit sample rates supported in hw
+008087eb      2 0000000000000000 First 8 bytes of 'game.dat' = FABCDEFABCDEFABF
+008087eb      0 0000000000000000 Loading design C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\game.dat, version 5.2600000000...
+008087ed      2 0000000000000000 EditorStatusMsg: Loading design data...
+008087ed      0 0000000000000000 Finished clearing old design
+008087ed      0 0000000000000000 Loading special abilities DB
+008087f2      5 0000000000000000 Finished loading SpecialAbilitiesDB
+008087f2      0 0000000000000000 Loading item DB version: 5.2600000
+00808801     15 0000000000000000 Finished loading ItemDB
+00808802      1 0000000000000000 Loading monster DB version: 5.2600000
+00808808      6 0000000000000000 Finished loading MonsterDB
+00808808      0 0000000000000000 Loading spell DB version: 5.2600000
+00808825     29 0000000000000000 Finished loading SpellDB
+00808826      1 0000000000000000 Loaded 12 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\races.dat
+00808827      1 0000000000000000 Loaded 9 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\baseclass.dat
+00808829      2 0000000000000000 Loaded 20 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\classes.dat
+0080882a      1 0000000000000000 Loaded 6 entries from C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Data\ability.dat
+0080882a      0 0000000000000000 Finished loading globalData
+0080882a      0 0000000000000000 EditorStatusMsg: Design data loaded.
+0080882a      0 0000000000000000 Design game39 loaded, version 5.2600000
+0080882a      0 0000000000000000 Design Version: 5.2600000
+0080882a      0 0000000000000000 PlayAs Version: 0.9140000
+0080882a      0 0000000000000000 GuidedTour Version: 0.9140000
+0080882a      0 0000000000000000 ItemUseEvent Version: 0.9140000
+0080882a      0 0000000000000000 SpecialItemKeyQty Version: 0.9140000
+0080882a      0 0000000000000000 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+0080882b      1 0000000000000000 Directory already exists
+0080882c      1 0000000000000000 Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\cursor_Arrows.png,32,32,15
+0080882c      0 0000000000000000 rval = 0 = Create(02ab9f20,32,32) SurfaceID = 2
+0080882d      1 0000000000000000 Creating fonts from SYSTEM
+008088ac    127 0000000000000000 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\AreaViewArt.png,1)  SurfaceID = 13
+008088ae      2 0000000000000000 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Horizontal.png,1)  SurfaceID = 14
+008088b0      2 0000000000000000 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Vertical.png,1)  SurfaceID = 15
+008088b3      3 0000000000000000 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Viewport.png,1)  SurfaceID = 16
+008088b5      2 0000000000000000 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Viewport.png,1)  SurfaceID = 17
+008088b6      1 0000000000000000 Game initialized successfully
+008088c5     15 000000000000001e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\Title.png,1)  SurfaceID = 18
+008088c8      3 000000000000001e !!FadeToSource m_pScreen=02ab9f20
+0080894c    132 000000000000001e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\Title.png,1)  SurfaceID = 20
+00809f7c   5680 0000000000001158 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+00809f7c      0 0000000000001158 Directory already exists
+00809f86     10 0000000000001158 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+00809f86      0 0000000000001158 Directory already exists
+00809f90     10 0000000000001158 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+00809f90      0 0000000000001158 Directory already exists
+00809f9b     11 0000000000001158 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+00809f9c      1 0000000000001158 Directory already exists
+00809fa6     10 0000000000001158 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+00809fa6      0 0000000000001158 Directory already exists
+00809faf      9 0000000000001158 Entering CreateSaveDirectory(C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Saves)
+00809faf      0 0000000000001158 Directory already exists
+0080b416   5223 00000000000025bc AddOverRideMenu(LOADING...,-1)
+0080b417      1 00000000000025bc EditorStatusMsg: Loading level data...
+0080b419      2 00000000000025bc Start loading WallSetSurfaces
+0080b41c      3 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall10.png,1)  SurfaceID = 30
+0080b423      7 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door10.png,1)  SurfaceID = 31
+0080b426      3 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall48.png,1)  SurfaceID = 32
+0080b42a      4 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall45.png,1)  SurfaceID = 33
+0080b430      6 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door45.png,1)  SurfaceID = 34
+0080b436      6 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall80.png,1)  SurfaceID = 35
+0080b43c      6 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door79.png,1)  SurfaceID = 36
+0080b440      4 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall4.png,1)  SurfaceID = 37
+0080b443      3 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door7.png,1)  SurfaceID = 38
+0080b446      3 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_IndoorWoodRafterRoof.png,1)  SurfaceID = 39
+0080b454     14 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_OutdoorPavedDay.png,1)  SurfaceID = 40
+0080b461     13 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_OutdoorPavedNight.png,1)  SurfaceID = 41
+0080b462      1 00000000000025bc EditorStatusMsg: Level data loaded.
+0080b462      0 00000000000025bc Level 1 loaded, 16x16, ver 5.2600000
+0080b462      0 00000000000025bc RemoveOverRideMenu()
+0080b494     50 00000000000025bc+Bogus wall slot num 256 in getWallSurface()
+0080b494      0 00000000000025bc level:1; x:5; y:0; facing:W
+0080b494      0 00000000000025bc+Bogus wall slot num 256 in getOverlaySurface()
+0080b494      0 00000000000025bc level:1; x:5; y:0; facing:W
+0080b494      0 00000000000025bc+Bogus wall slot num 256 in getDoorSurface()
+0080b494      0 00000000000025bc level:1; x:5; y:0; facing:W
+0080b49a      6 00000000000025bc rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 44
+0080b6f4    602 00000000000028aa rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 45
+0080b991    669 0000000000002b3e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 46
+0080bb8c    507 0000000000002d3c rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 47
+0080bdc2    566 0000000000002f58 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 48
+0080bfb2    496 0000000000003156 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 49
+0080c0b1    255 0000000000003264 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 50
+0080c20b    346 00000000000033ae rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 51
+0080c2ed    226 000000000000349e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 52
+0080c3e9    252 000000000000358e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 53
+0080c545    348 00000000000036f6 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 54
+0080c853    782 0000000000003a02 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 55
+0080ca2b    472 0000000000003bc4 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 56
+0080cb3a    271 0000000000003cf0 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 57
+0080cd00    454 0000000000003eb2 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 58
+0080cde1    225 0000000000003f84 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 59
+0080ceea    265 0000000000004092 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 60
+0080d0d1    487 0000000000004272 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 61
+0080d1ab    218 0000000000004344 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 62
+0080d2c0    277 0000000000004470 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Compass.png,1)  SurfaceID = 63
+0080d377    183 0000000000004524 Quest Event 3 at -1,-1 level 0 not triggered (Curr=0, Quest=16)
+0080dbdf   2152 0000000000004a88 Creating fonts from SYSTEM
+0080dbed     14 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\AreaViewArt.png,1)  SurfaceID = 75
+0080dbef      2 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Horizontal.png,1)  SurfaceID = 76
+0080dbf1      2 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Vertical.png,1)  SurfaceID = 77
+0080dbf3      2 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Viewport.png,1)  SurfaceID = 78
+0080dbf5      2 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Viewport.png,1)  SurfaceID = 79
+0080dbf6      1 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\cursor_Combat.png,1)  SurfaceID = 80
+0080dbf7      1 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\cursor_CombatDying.png,1)  SurfaceID = 81
+0080dbf8      1 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\DefCPI.png,1)  SurfaceID = 82
+0080dbf9      1 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\cursor_CombatDeath.png,1)  SurfaceID = 83
+0080dbfe      5 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\combat_Dungeon.png,1)  SurfaceID = 84
+0080dc01      3 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Vertical.png,1)  SurfaceID = 85
+0080dc03      2 0000000000004a88 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Horizontal.png,1)  SurfaceID = 86
+0080dc10     13 0000000000004a88 Can't find file in AddSprite(icon_PC_FighterMale.png)
+0080dc10      0 0000000000004a88^Failed to load pic file icon_PC_FighterMale.png in LoadPicSurfaces
+0080dc10      0 0000000000004a88+Failed to load icon file icon_PC_FighterMale.png in LoadCombatIcon
+0080e439   2089 0000000000004a88 DEBUG - Combatant 0 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 1 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 2 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 3 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 4 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 5 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 6 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 7 starts at (-1,-1)
+0080e439      0 0000000000004a88 DEBUG - Combatant 8 starts at (-1,-1)
+0080e86a   1073 0000000000004f38 AI_Script first line = \ Computer Controlled AI Script 1.01 10/15/2014 
+00812ba4  17210 0000000000008dea (MB) Error: $SpellContext() called when no spell context exists
+Type=CLASS
+Name=Fighter
+SA = class_NoSpells
+Script=CanCastSpells
+
+0081300b   1127 0000000000008dea $SpellContext() called when no spell context exists
+Type=CLASS
+Name=Fighter
+SA = class_NoSpells
+Script=CanCastSpells00818068  20573 000000000000da52 Creating fonts from SYSTEM
+00818078     16 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall10.png,1)  SurfaceID = 138
+0081807e      6 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door10.png,1)  SurfaceID = 139
+00818082      4 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall48.png,1)  SurfaceID = 140
+00818086      4 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall45.png,1)  SurfaceID = 141
+0081808c      6 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door45.png,1)  SurfaceID = 142
+00818093      7 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall80.png,1)  SurfaceID = 143
+00818099      6 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door79.png,1)  SurfaceID = 144
+0081809d      4 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall4.png,1)  SurfaceID = 145
+008180a0      3 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door7.png,1)  SurfaceID = 146
+008180a3      3 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_IndoorWoodRafterRoof.png,1)  SurfaceID = 147
+008180b3     16 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_OutdoorPavedDay.png,1)  SurfaceID = 148
+008180c0     13 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_OutdoorPavedNight.png,1)  SurfaceID = 149
+008180c4      4 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\AreaViewArt.png,1)  SurfaceID = 150
+008180c6      2 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Horizontal.png,1)  SurfaceID = 151
+008180c9      3 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Vertical.png,1)  SurfaceID = 152
+008180cb      2 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Viewport.png,1)  SurfaceID = 153
+008180cd      2 000000000000da52 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\border_Viewport.png,1)  SurfaceID = 154
+00819210   4419 000000000000eb14 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\bigpic_Map.png,1)  SurfaceID = 161
+00819211      1 000000000000eb14 !!FadeToSource m_pScreen=02ab9f20
+00819296    133 000000000000eb14 rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\bigpic_Map.png,1)  SurfaceID = 163
+0081980f   1401 000000000000f10e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\Credits.png,1)  SurfaceID = 164
+00819810      1 000000000000f10e !!FadeToSource m_pScreen=02ab9f20
+00819895    133 000000000000f10e rval = 1 = Create(02ab9f20,C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\Credits.png,1)  SurfaceID = 166

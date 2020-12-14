@@ -1,0 +1,10 @@
+- Get the Rest events in slums
+- Get the regular events in slums
+
+- Slums - combat event at 4,0 doesn't have a Kobold Leader monster in it
+- Slums - better pics for orcs and hobgoblins
+
+- Get the backgrounds and walls finished in Mendor
+- Get the backgrounds and walls in Civilized
+
+- Get the Zones in to the Civilized and Mendor's

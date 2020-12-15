@@ -1838,19 +1838,157 @@ Item 'Bolt|6' missing Hit Sound file 'sound_Hit.wav'
 Item 'Bolt|6' missing Miss Sound file 'sound_Miss.wav'
 Item 'Azer Mallet' missing Hit Sound file 'sound_Hit.wav'
 Item 'Azer Mallet' missing Miss Sound file 'sound_Miss.wav'
-fail chain in Who Pays (76) event at -1,-1 not valid
-Combat (98) event at -1,-1 missing death sound: sound_CharDeath.wav
-Combat (98) event at -1,-1 missing move sound: sound_CharMove.wav
-Combat (98) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Combat (5) chain event missing image: smallpic_Orc.png
+Combat (5) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (5) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (5) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Orc' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Orc' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Orc' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Orc' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Orc' missing Icon file 'icon_Orc.png'
+Combat (5) event at -1,-1 failed monster validation
+Combat (19) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (19) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (19) event at -1,-1 missing turn undead sound: sound_Cast.wav
 Bogus NPC key 4294967295
-Combat (98) event at -1,-1 failed NPC validation
+Combat (19) event at -1,-1 failed NPC validation
 Bogus NPC key 4294967295
-Combat (98) event at -1,-1 failed NPC validation
+Combat (19) event at -1,-1 failed NPC validation
 Bogus NPC key 4294967295
-Combat (98) event at -1,-1 failed NPC validation
+Combat (19) event at -1,-1 failed NPC validation
 Bogus NPC key 4294967295
-Combat (98) event at -1,-1 failed NPC validation
+Combat (19) event at -1,-1 failed NPC validation
+Combat (25) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (25) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (25) event at -1,-1 missing turn undead sound: sound_Cast.wav
 Bogus NPC key 4294967295
-Combat (98) event at -1,-1 failed NPC validation
+Combat (25) event at -1,-1 failed NPC validation
 Bogus NPC key 4294967295
-Combat (98) event at -1,-1 failed NPC validation
+Combat (25) event at -1,-1 failed NPC validation
+Bogus NPC key 4294967295
+Combat (25) event at -1,-1 failed NPC validation
+Bogus NPC key 4294967295
+Combat (25) event at -1,-1 failed NPC validation
+Text Statement (29) event at 10,1 missing image: smallpic_Goblin.png
+Combat (30) chain event missing image: smallpic_Goblin.png
+Combat (30) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (30) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (30) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Goblin' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Goblin' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Goblin' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Goblin' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Goblin' missing Icon file 'icon_Goblin.png'
+Combat (30) event at -1,-1 failed monster validation
+Monster 'Goblin Leader' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Goblin Leader' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Goblin Leader' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Goblin Leader' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Goblin Leader' missing Icon file 'icon_GoblinLeader.png'
+Combat (30) event at -1,-1 failed monster validation
+Combat (43) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (43) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (43) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Bogus NPC key 4294967295
+Combat (43) event at -1,-1 failed NPC validation
+Bogus NPC key 4294967295
+Combat (43) event at -1,-1 failed NPC validation
+Gain Experience (46) chain event missing image: smallpic_Hobgoblin.png
+Text Statement (47) chain event missing image: smallpic_Hobgoblin.png
+Combat (48) chain event missing image: smallpic_Hobgoblin.png
+Combat (48) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (48) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (48) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Hobgoblin' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Hobgoblin' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Hobgoblin' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Hobgoblin' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Hobgoblin' missing Icon file 'icon_Hobgoblin.png'
+Combat (48) event at -1,-1 failed monster validation
+Text Statement (51) event at 3,3 missing image: smallpic_Orc.png
+Combat (53) chain event missing image: smallpic_Orc.png
+Combat (53) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (53) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (53) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Orc' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Orc' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Orc' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Orc' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Orc' missing Icon file 'icon_Orc.png'
+Combat (53) event at -1,-1 failed monster validation
+Monster 'Orc Chieftain' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Orc Chieftain' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Orc Chieftain' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Orc Chieftain' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Orc Chieftain' missing Icon file 'icon_OrcChieftain.png'
+Combat (53) event at -1,-1 failed monster validation
+Combat (80) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (80) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (80) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Bogus NPC key 4294967295
+Combat (80) event at -1,-1 failed NPC validation
+Encounter (83) chain event missing image: smallpic_Kobold.png
+Combat (84) chain event missing image: smallpic_Kobold.png
+Combat (84) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (84) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (84) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Kobold' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Kobold' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Kobold' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Kobold' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Kobold' missing Icon file 'icon_Kobold.png'
+Combat (84) event at -1,-1 failed monster validation
+Encounter (87) chain event missing image: smallpic_Orc.png
+Combat (88) chain event missing image: smallpic_Orc.png
+Combat (88) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (88) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (88) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Orc' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Orc' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Orc' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Orc' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Orc' missing Icon file 'icon_Orc.png'
+Combat (88) event at -1,-1 failed monster validation
+Encounter (91) chain event missing image: smallpic_Goblin.png
+Combat (92) chain event missing image: smallpic_Goblin.png
+Combat (92) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (92) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (92) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Goblin' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Goblin' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Goblin' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Goblin' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Goblin' missing Icon file 'icon_Goblin.png'
+Combat (92) event at -1,-1 failed monster validation
+Combat (95) chain event missing image: smallpic_Goblin.png
+Combat (95) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (95) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (95) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Goblin' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Goblin' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Goblin' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Goblin' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Goblin' missing Icon file 'icon_Goblin.png'
+Combat (95) event at -1,-1 failed monster validation
+Combat (99) event at -1,-1 missing death sound: sound_CharDeath.wav
+Combat (99) event at -1,-1 missing move sound: sound_CharMove.wav
+Combat (99) event at -1,-1 missing turn undead sound: sound_Cast.wav
+Monster 'Goblin' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Goblin' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Goblin' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Goblin' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Goblin' missing Icon file 'icon_Goblin.png'
+Combat (99) event at -1,-1 failed monster validation
+Monster 'Hobgoblin' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Hobgoblin' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Hobgoblin' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Hobgoblin' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Hobgoblin' missing Icon file 'icon_Hobgoblin.png'
+Combat (99) event at -1,-1 failed monster validation
+Monster 'Kobold' missing Hit Sound file 'sound_Hit.wav'
+Monster 'Kobold' missing Miss Sound file 'sound_Miss.wav'
+Monster 'Kobold' missing Move Sound file 'sound_MonsterMoveStep.wav'
+Monster 'Kobold' missing Death Sound file 'sound_MonsterDeathMedium.wav'
+Monster 'Kobold' missing Icon file 'icon_Kobold.png'
+Combat (99) event at -1,-1 failed monster validation

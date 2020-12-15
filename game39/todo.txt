@@ -1,6 +1,57 @@
-- Get Portrait pool and icon pool into game39.dsn
-- Slums combat encounters have no monsters in them!
+- Allow area viewing in civilized phlan
+- Character view screen portrait frame seems off somewhat
+- Fix the initial guided tour in Phlan
 - Slums - better pics for orcs and hobgoblins
-
 - Get the backgrounds and walls finished in all other levels besides civilized and Mendor
+- Make a church wall/door for the temples in the civilized area (and maybe other areas like temple of bane)
+
+
+
+Low:
+
+- Slums - decide - do I use the FRUA treasure drops or the original PoR ones
+
+- More items in StepEvent2 (zone2) shop  These are not available in the default item library:
+bec de corbin
+bill-guisarme
+bo stick
+fauchard
+fauchard-fork
+military fork
+glaive
+glaive-guisarme
+guisarme
+guisarme-voulge
+lucern hammer
+jo stick
+partisan
+ranseur
+spetum
+voulge
+padded armor
+splint mail
+
+- More silver items in 10,13 shop.  These are not available in the default item library:
+Silver Mace
+Silver Bastard Sword
+Silver Broad Sword
+Silver Long Sword
+Silver Short Sword
+Silver Two-handed Sword
+1 Silver dagger
+20 Silver arrows
+1 Silver quarrel
+Silver chain mail
+Silver plate mail
+Silver ring
+Fine Composite Long bow
+
+- More items in 9,10 / zone 5 shop.  These are not available in the default item library:
+silver mirror
+1 flask of oil
+wooden holy symbol of tyr
+iron holy symbol of tempus
+silver holy symbol of sune
+1 holy water vial
+
 

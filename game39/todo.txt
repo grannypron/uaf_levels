@@ -1,5 +1,3 @@
-- Allow area viewing in civilized phlan
-- Character view screen portrait frame seems off somewhat
 - Fix the initial guided tour in Phlan
 - Slums - better pics for orcs and hobgoblins
 - Get the backgrounds and walls finished in all other levels besides civilized and Mendor
@@ -8,6 +6,7 @@
 
 
 Low:
+- Put in default party from C64 PoR "Arax the Bold", etc
 
 - Slums - decide - do I use the FRUA treasure drops or the original PoR ones
 

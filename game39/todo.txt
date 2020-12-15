@@ -1,11 +1,16 @@
+- Kuto's Well: events needs lizard man photo: 7,12,  Step event #24,#35,#31
 - Fix the initial guided tour in Phlan
 - Slums - better pics for orcs and hobgoblins
+- Kuto's Well: 7,7 needs 3 "Kobold Leader"s instead of the second group of 3 kobolds
+- Kuto's Well: 7,12 needs 4 Giant Lizard instead of 4 Giant Crocodiles
 - Get the backgrounds and walls finished in all other levels besides civilized and Mendor
 - Make a church wall/door for the temples in the civilized area (and maybe other areas like temple of bane)
 
 
 
 Low:
+- Kuto's Well - check on the loot in the Give Treasure event at 15,15
+
 - Put in default party from C64 PoR "Arax the Bold", etc
 
 - Slums - decide - do I use the FRUA treasure drops or the original PoR ones

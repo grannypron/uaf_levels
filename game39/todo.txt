@@ -1,3 +1,5 @@
+- Podol Plaza: Finish events starting with combat #20 @ 4,8
+- Podol Plaza: Need auctioneer (Vidruand?) smallpic for event @ 7,6 #44 AND ALL APPLICABLE CHILDREN
 - Kuto's Well: icons for giant lizard
 - Sokol keep: Lethal poison ability for poisonous frog
 - Sokol keep: Step event 4 #54 needs a Poisonous Frog picture and 4 poisonous frogs

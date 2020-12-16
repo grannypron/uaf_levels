@@ -1,8 +1,8 @@
-- Kuto's Well: events needs lizard man photo: 7,12,  Step event #24,#35,#31
+- Kuto's Well: icons for giant lizard
+- Sokol keep: Lethal poison ability for poisonous frog
+- Sokol keep: Step event 4 #54 needs a Poisonous Frog picture and 4 poisonous frogs
+- Sokol keep: Better picture for smallpic_spectre.png.  It is the same as smallpic_wraith.png
 - Fix the initial guided tour in Phlan
-- Slums - better pics for orcs and hobgoblins
-- Kuto's Well: 7,7 needs 3 "Kobold Leader"s instead of the second group of 3 kobolds
-- Kuto's Well: 7,12 needs 4 Giant Lizard instead of 4 Giant Crocodiles
 - Get the backgrounds and walls finished in all other levels besides civilized and Mendor
 - Make a church wall/door for the temples in the civilized area (and maybe other areas like temple of bane)
 

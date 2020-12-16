@@ -1,3 +1,5 @@
+- Slums: Level 3 MU monster (Ohlo) has no spells memorized/no way to cast.   Use special abilities?
+- Slums: WHere are the trolls in the Old Rope Guild?
 - Podol Plaza: Finish events starting with combat #20 @ 4,8
 - Podol Plaza: Need auctioneer (Vidruand?) smallpic for event @ 7,6 #44 AND ALL APPLICABLE CHILDREN
 - Kuto's Well: icons for giant lizard
@@ -7,7 +9,7 @@
 - Fix the initial guided tour in Phlan
 - Get the backgrounds and walls finished in all other levels besides civilized and Mendor
 - Make a church wall/door for the temples in the civilized area (and maybe other areas like temple of bane)
-
+- Fall back to the Ray Dyer UA art
 
 
 Low:

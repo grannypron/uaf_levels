@@ -1,3 +1,5 @@
+- Library: Black lines around top and bottom of side-tiles in wa_wall_wood.png.  It's because there are some dark brown not-quite-black pixels around the top/bottom
+- Library: Wall slot #5 - Door44 doesn't quite match with the wa_wall_wood.png.  Probably need a different door png
 - Slums: Level 3 MU monster (Ohlo) has no spells memorized/no way to cast.   Use special abilities?
 - Slums: Where are the trolls in the Old Rope Guild?
 - Kuto's Well: icons for giant lizard

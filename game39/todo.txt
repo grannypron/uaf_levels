@@ -1,3 +1,6 @@
+- Wealthy/Bane: Mace doesn't have any spells memorized.  How does that work?
+- Wealthy/Bane: Step Event 2, Text Statement #56 seems like it is empty and may have been a mistake, but was in game39.  Decide what to do with it
+- Wealthy/Bane: Need a Dust of Disappearance item for GiveTreasure #35 @ 9,12
 - Textile House: Wall Slot 5 should use a new wall tilemap made from 8X8DB.TLB_0_828 - 8X8DB.TLB_0_836 - @ 1,20 & 6,28
 - Library: Black lines around top and bottom of side-tiles in wa_wall_wood.png.  It's because there are some dark brown not-quite-black pixels around the top/bottom
 - Library: Wall slot #5 - Door44 doesn't quite match with the wa_wall_wood.png.  Probably need a different door png
@@ -13,6 +16,8 @@
 
 
 Low:
+- In Cadorna & Wealthy/Bane there are a couple of GiveTreasure events that we should make a "Textile" object for - @22,5 in Wealthy - that would be fun.  Ray Dyer used a jewelry in place of it
+
 - Kuto's Well - check on the loot in the Give Treasure event at 15,15
 
 - Put in default party from C64 PoR "Arax the Bold", etc

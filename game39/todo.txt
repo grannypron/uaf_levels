@@ -1,9 +1,7 @@
 - Stojanow Gate: Level 6 MU monster does not have any spells - how do I do that?  (same as Level 3 MU)
-- Stojanow Gate: Wall 2 doesn't have the correct toppage to the wall with the battlements like game39 does - change wa_wall6_with_battlements.png to have them - use 8X8DC.TLB_0_282.png through 8X8DC.TLB_0_291.png
 - Wealthy/Bane: Mace doesn't have any spells memorized.  How does that work?
 - Wealthy/Bane: Step Event 2, Text Statement #56 seems like it is empty and may have been a mistake, but was in game39.  Decide what to do with it
 - Wealthy/Bane: Need a Dust of Disappearance item for GiveTreasure #35 @ 9,12
-- Textile House: Wall Slot 5 should use a new wall tilemap made from 8X8DB.TLB_0_828 - 8X8DB.TLB_0_836 - @ 1,20 & 6,28
 - Library: Black lines around top and bottom of side-tiles in wa_wall_wood.png.  It's because there are some dark brown not-quite-black pixels around the top/bottom
 - Library: Wall slot #5 - Door44 doesn't quite match with the wa_wall_wood.png.  Probably need a different door png
 - Slums: Level 3 MU monster (Ohlo) has no spells memorized/no way to cast.   Use special abilities?
@@ -72,3 +70,11 @@ silver holy symbol of sune
 1 holy water vial
 
 
+Notes:
+Wall sizes:
+Small squares: 16x19
+Small sides: 16x58
+Medium sides: 32x134
+Med square: 48x58
+Big square: 112x134
+Big Side squares: 32x211

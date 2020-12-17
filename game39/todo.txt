@@ -1,4 +1,3 @@
-- Textile House: Left off with events at 6,23
 - Textile House: Wall Slot 5 should use a new wall tilemap made from 8X8DB.TLB_0_828 - 8X8DB.TLB_0_836 - @ 1,20 & 6,28
 - Library: Black lines around top and bottom of side-tiles in wa_wall_wood.png.  It's because there are some dark brown not-quite-black pixels around the top/bottom
 - Library: Wall slot #5 - Door44 doesn't quite match with the wa_wall_wood.png.  Probably need a different door png

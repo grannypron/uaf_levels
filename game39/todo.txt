@@ -20,6 +20,8 @@
 - Fix the initial guided tour in Phlan
 - Get the backgrounds and walls finished in all other levels besides civilized and Mendor
 - Make a church wall/door for the temples in the civilized area (and maybe other areas like temple of bane)
+- Do an export of all libraries and lvl files just in case
+- My monsters have Attacks defined that I thought would match their weaponry.  Will they equip their weapons while fighting?  See what the behavior is just in case - if they ready their armor, then I need to go back and change their AC
 
 
 Low:
@@ -30,8 +32,6 @@ Low:
 - Kuto's Well - check on the loot in the Give Treasure event at 15,15
 
 - Put in default party from C64 PoR "Arax the Bold", etc
-
-- Slums - decide - do I use the FRUA treasure drops or the original PoR ones
 
 - More items in StepEvent2 (zone2) shop  These are not available in the default item library:
 bec de corbin

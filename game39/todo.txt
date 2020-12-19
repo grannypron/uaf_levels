@@ -1,3 +1,4 @@
+- Nomad camp: Nomad Shaman does not have any spells - how do I do that?  (same as Level X MUs)
 - Overland: Phase spider is missing these abilities: "Phase spdr psn", "See invisible", "Blink"
 - Overland: icon_ankheg is really the giant crawfish icon 🤷
 - Overland: Ankheg needs "Dragon Acid" specab

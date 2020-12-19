@@ -1,4 +1,6 @@
-- Overland: Left off at Event #24 @ 17,2
+- Overland: Phase spider is missing these abilities: "Phase spdr psn", "See invisible", "Blink"
+- Overland: icon_ankheg is really the giant crawfish icon 🤷
+- Overland: Ankheg needs "Dragon Acid" specab
 - Valhingen: Need a sling of seeking for GiveTreasure #33 @ 15,8 - replace the sling+3 with it
 - Stojanow Gate: Level 6 MU monster does not have any spells - how do I do that?  (same as Level 3 MU)
 - Wealthy/Bane: Mace doesn't have any spells memorized.  How does that work?

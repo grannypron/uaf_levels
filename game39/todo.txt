@@ -1,3 +1,5 @@
+- Kobold Caves: Envoy should have the ability to cast 2 MU spells (same as Nomad Shaman & Level X MUs)
+- Go back through ALL "Who Tries" events.  I don't think their saving throw types are set (to anything)
 - Nomad camp: Nomad Shaman does not have any spells - how do I do that?  (same as Level X MUs)
 - Overland: Phase spider is missing these abilities: "Phase spdr psn", "See invisible", "Blink"
 - Overland: icon_ankheg is really the giant crawfish icon 🤷

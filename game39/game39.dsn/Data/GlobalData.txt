@@ -635,6 +635,12 @@
       "timeout":"0",
       "titles":[
          {
+            "titleBgArt":"PoRTitle.png",
+            "useTrans":"0",
+            "useBlend":"0",
+            "displayBy":"1"
+         },
+         {
             "titleBgArt":"Title.png",
             "useTrans":"0",
             "useBlend":"0",
@@ -713,7 +719,7 @@
    "partyStep":"sound_Step.wav",
    "deathMusic":"sound_Death.wav",
    "introMusic":{
-      "sound":"intro.mp3"
+      "sound":"PoRIntro.mp3"
    },
    "creditsMusic":{},
    "campMusic":{},

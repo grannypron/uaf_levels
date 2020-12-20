@@ -1,3 +1,4 @@
+- Castle SE: Need "Long Sword Dragonslayer" at GiveTreasure event #59 @ 15,10 - instead of the Long Sword +5 I have there now
 - Zhentil Keep: Al-Hyam Dazid should have the ability to cast MU spells (same as all the others below)
 - Kobold Caves: Envoy should have the ability to cast 2 MU spells (same as Nomad Shaman & Level X MUs)
 - Go back through ALL "Who Tries" events.  I don't think their saving throw types are set (to anything)

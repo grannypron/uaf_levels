@@ -1,3 +1,4 @@
+- Inner Tower: Tyranthraxus! monster needs the following special abilities: Immun Drag Brth, +2D6 Fire Dam, Dragon Lightin, See Invisible, Immune to Fire
 - Sorcerer's Isle 2: Need spells for Yarash monster at combat #79 @ 23,2
 - Sorcerer's Isle 1: Need spells for "Elf Magic-User" monster at step combat event 3
 - Castle SW: Need spells for "Level 1 Cleric" and "Level 5 Cleric" monsters - combat events @ 1,3

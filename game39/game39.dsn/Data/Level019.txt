@@ -7563,8 +7563,8 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall6.png",
-            "doorFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door74.png",
+            "wallFile":"wa_wall6.png",
+            "doorFile":"dr_door74.png",
             "overlayFile":"",
             "soundFile":"",
             "avArtFile":"",
@@ -7589,7 +7589,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall6.png",
+            "wallFile":"wa_wall6.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",

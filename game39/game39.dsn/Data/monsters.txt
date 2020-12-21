@@ -6492,3 +6492,533 @@ attack = 6,2,0,attacks,
 Undead = 
 \(END)
 
+\(BEGIN)
+name = 3rd Level Fighter
+icon file = icon_NPC_Guard.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 16
+armor class = 3
+movement rate = 9
+hit dice = 14.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 125
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Chain Mail,1
+item = Shield,1
+item = Long Sword,1
+attack = 8,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Commander
+icon file = icon_HumanPaladin.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 17
+armor class = 0
+movement rate = 12
+hit dice = 110.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 4000
+Class = Thief
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail|3,1
+item = Shield|2,1
+item = Long Sword|4,1
+attack = 12,1,3,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Guard
+icon file = icon_NPC_Guard.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 8
+armor class = 6
+movement rate = 12
+hit dice = 4.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 14
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Leather Armor,1
+item = Shield,1
+item = Long Sword,1
+attack = 8,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Commandant
+icon file = icon_Commandant.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 11
+armor class = 1
+movement rate = 12
+hit dice = 80.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 13
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 3000
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail|1,1
+item = Shield|1,1
+item = Long Sword|2,1
+item = Javelin|6,1
+item = Ring|11,1
+item = Potion|1,1
+attack = 6,2,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Dwarven Fighter
+icon file = icon_DuergarVeteran.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 17
+armor class = 4
+movement rate = 12
+hit dice = 50.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 14
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 1254
+Class = Fighter
+Race = Dwarf
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Belt,1
+item = Boots,1
+item = Cloak,1
+item = Chain Mail|1,1
+item = Long Sword|1,1
+item = Gauntlets,1
+attack = 6,2,2,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Al-Hyam Dazid
+icon file = icon_HumanMagicUser.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 17
+armor class = 4
+movement rate = 12
+hit dice = 22.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 874
+Class = Magic User
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Potion|1,1
+item = Potion|1,1
+item = Bracers|1,1
+item = Ring|11,1
+item = Wand|2,1
+item = Dagger,1
+attack = 6,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = 6th Lvl Fighter
+icon file = icon_NPC_Guard.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 10
+armor class = 3
+movement rate = 12
+hit dice = 45.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 0
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail,1
+attack = 10,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Tyranthraxus
+icon file = icon_FalseT.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 9
+armor class = 4
+movement rate = 12
+hit dice = 40.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 14
+magic resistance = 0
+size = medium
+morale = 50
+experience point value = 908
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail,1
+item = Long Sword|5,1
+item = Ring|4,1
+item = Gauntlets,1
+attack = 8,1,6,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Level 1 Cleric
+icon file = icon_PC_ClericMale.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 18
+armor class = 5
+movement rate = 12
+hit dice = 8.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 54
+Class = Cleric
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Ring Mail,1
+item = Mace,1
+attack = 6,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Level 5 Cleric
+icon file = icon_PC_hm_Cleric.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 18
+armor class = 1
+movement rate = 12
+hit dice = 29.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 15
+magic resistance = 0
+size = medium
+morale = 40
+experience point value = 765
+Class = Cleric
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail|1,1
+item = Mace|3,1
+item = Necklace,1
+attack = 6,1,3,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Fighter
+icon file = icon_HumanFighter.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 14
+armor class = 2
+movement rate = 12
+hit dice = 41.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 14
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 983
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail,1
+item = Hammer|1,1
+attack = 8,1,1,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Elf Magic-User
+icon file = icon_NPC_HumanFemale.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 16
+armor class = 8
+movement rate = 12
+hit dice = 15.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 19
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 317
+Class = Magic User
+Race = Elf
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Dagger,1
+item = Robe,1
+item = Wand|3,1
+attack = 4,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Yarash
+icon file = icon_yarash.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 18
+armor class = 5
+movement rate = 12
+hit dice = 27.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 16
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 6000
+Class = Magic User
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Robe,1
+item = Bracers,1
+item = Wand|4,1
+attack = 6,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Mutant Liz-Man
+icon file = icon_MutantLizardMan.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 10
+armor class = 3
+movement rate = 12
+hit dice = 18.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 14
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 65
+Class = Fighter
+Race = Monster
+form = none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Trident,1
+attack = 4,2,3,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Genheeris
+icon file = icon_Genheeris.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 18
+armor class = 7
+movement rate = 12
+hit dice = 22.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 18
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 2134
+Class = Magic User
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Robe,1
+item = Cloak,1
+item = Silver Dagger,1
+item = Wand|2,1
+attack = 6,1,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = Tyranthraxus!
+icon file = icon_BrassDragon.png,0,2,240,144,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 18
+armor class = -1
+movement rate = 30
+hit dice = 80.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 2
+magic resistance = 100
+size = medium
+morale = 0
+experience point value = 30000
+Class = Fighter
+Race = Monster
+form = giant + large + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = none
+attack = 8,2,0,attacks,
+Undead = 
+\(END)
+
+\(BEGIN)
+name = 8th Lvl Fighter
+icon file = icon_8thLvlFighter.png,0,2,48,48,0,1,0,1,0,0
+miss sound = DEFAULT
+hit sound = DEFAULT
+move sound = DEFAULT
+death sound = DEFAULT
+intelligence = 9
+armor class = -1
+movement rate = 12
+hit dice = 87.000000
+treat HD as hit points = no
+hit dice bonus = 0
+THAC0 = 20
+magic resistance = 0
+size = medium
+morale = 0
+experience point value = 1985
+Class = Fighter
+Race = Human
+form = mammal + none
+penalty = none
+immunity = none
+Misc Options = can be held/charmed + none
+item = Plate Mail,1
+item = Two-Handed Sword|2,1
+item = Ring|4,1
+attack = 10,1,2,attacks,
+Undead = 
+\(END)
+

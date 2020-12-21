@@ -29,7 +29,7 @@
    "levelData":{
       "width":"33",
       "height":"17",
-      "version":"3.560000",
+      "version":"5.260000",
       "prevZone":"-1",
       "map_grid":[
          {
@@ -8853,7 +8853,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall6.png",
+            "wallFile":"wa_wall6.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",
@@ -8905,8 +8905,8 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall6.png",
-            "doorFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door45.png",
+            "wallFile":"wa_wall6.png",
+            "doorFile":"dr_door45.png",
             "overlayFile":"",
             "soundFile":"",
             "avArtFile":"",
@@ -11364,7 +11364,7 @@
             "useTransparency":"false"
          },
          {
-            "backgroundFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\BACK.TLB_0_0.png",
+            "backgroundFile":"BACK.TLB_0_0.png",
             "backgroundFileAlt":"",
             "soundFile":"",
             "suppressStepSound":"false",

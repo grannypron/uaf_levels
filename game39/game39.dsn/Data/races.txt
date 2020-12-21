@@ -1,119 +1,5 @@
 // Race database file
-// The line above **must** be the first line of the races file!!! "// Race database file"
-//
-// name (text)
-//	Names should not conflict with any of the names in the
-//	baseclass database, class database, items database, spells
-//	database, or abilities database, all baseclasses start
-//	with a lower case letter and classes with an upper case letter.
-//	eg:		name = Human
-//
-// wieght (equation or integer)
-//	Keyword weight lists the weight in pounds of the character
-//	eg:		weight = 6d10+100+40*Male
-//
-// height (equation or integer)
-//	Keyword height lists the height in inches of the character
-//	eg:		height = 2d10+59+1*Male
-//
-// age (equation or integer)
-//	Keyword age is the character's starting age
-//	eg:		age = 1d10+80+1*Male
-//
-// maxage (equation or integer)
-//	Keyword maxage is the maximum age that the character can reach
-//	eg:		maxage = 1d100 + 450
-//
-// BaseMovement (integer)
-//	BaseMovement is the distance a character of this race can
-//	move during combat while unencumbered.
-//	eg:		BaseMovement = 6
-//
-// AbilityRequirement (ability name, min/max)
-//	AbilityRequirement lists the ability name and the
-//	minimum and maximum numbers for the ability.
-//	One ability per instance of hte keyword.
-//	eg:		AbilityRequirement = Strength 8/18(99)
-//
-// AllowedMultiClass (class name)
-//	AllowedMultiClass lists the class name for each of the
-//	allowed multi-classes for the race.
-//	One multi-class per instance of the keyword.
-//	eg:		AllowedMultiClass = Fighter/Thief
-//
-// Special Ability (special ability name)
-//	Each Special Ability corresponds to the Special Ability
-//	database and list the name and parameter.
-//	One Special Ability per instance of the keyword, which
-//	may be listed multiple times.
-//	eg:		Special Ability = race_Infravision,60
-//
-// ChangeClass (yes/no)
-//	The ChangeClass keyword determines if a character
-//	of this race may change classes.
-//	eg:		//ChangeClass = no
-//
-// DwarfResistance (yes/no)
-//	Determines if the character of this race gets the Dwarf Resistance adjustments.
-//	Adjustments are to AC and HAC0 against monsters that have the penalty
-//	of Dwarf AC and/or Dwarf THAC0
-//	Cumulative with GnomeResistance
-//	eg:		DwarfResistance = yes
-//
-// GnomeResistance (yes/no)
-//	Determines if the character of this race gets the Gnome Resistance adjustments.
-//	Adjustments are to AC and HAC0 against monsters that have the penalty
-//	of Gnome AC and/or Gnome THAC0
-//	Cumulative with DwarfResistance
-//	eg:		GnomeResistance = no
-//
-// FindSecretDoor (integer)
-//	This keyword determines the chance of success of
-//	finding a secret door that a character of this
-//	race has.
-//	Values are the number needed for a 6-sided die
-//	eg:		FindSecretDoor = 0
-//
-// FindSecretDoorSearching (integer)
-//	This keyword determines the chance of success of
-//	finding a secret door that a character of this
-//	race has while searching.
-//	Values are the number needed for a 6-sided die
-//	eg:		FindSecretDoorSearching = 0
-
-// Skill (text)
-// Skills consist of the skill name and the score
-//	Eg:	Skill = DetectGrade,75
-//
-// SkillAdjAbility (skill name,ability name, mod, num1-num25)
-//	SkillAdjAbility allows modification of a skill based upon
-//	an ability. Name, ability, type of modifier, score
-//	modifier for each of the 25 ability scores
-//	eg:		SkillAdjAbility = Read,Intelligence,%,0,0,0,0,0,0,0,0,85,90,95,100,100,100,100,100,105,110,115,115,115,115,115,115,115
-//
-// SkillAdjRace (skill name, race name, mod, value)
-//	SkillAdjRace allows modification of skills per each
-//	race, by listing the name of the skill, name of the
-//	race, percentage sign and number to modify it by
-//	eg:		SkillAdjRace = MaxLevel$SYS$,Half-Elf,\=,5
-//
-//	*****Notes*****
-// Adjustments are of the form:
-//    +/-n*(characteristic-k)/d
-// For example to adjust, say, height.  Any of these are legal and equivalent.
-//		height  =  +1*(Level-0)/1  ; Means (+1*(level-0))/1
-//		height  =   1*(Level-0)/1
-//		height  =   1*level/1
-//		height  =   level/1
-//		height  =   1*level
-//		height  =   level
-// Division throws remainder away.  +1/2 = 0   -1/2 = 0
-//
-// To suppress a race name at time of Character Creation, remove the "//" from:
-// // Special Ability = class_RaceSuppress,"Y"
-// in each Race as desired.
-//
-
+// The line above **must** be the first line of the races file!!!
 \(BEGIN)
 name = Dwarf
 weight = 4d9+100+((30+1d4)*Male)
@@ -152,13 +38,12 @@ SkillAdjRace = BroadJump,Dwarf,-,2
 SkillAdjRace = RunningBroadJump,Dwarf,-,3
 SkillAdjRace = TumblingAttack,Dwarf,%,110
 SkillAdjRace = TumblingEvasion,Dwarf,%,105
-// Special Ability = race_RaceSuppress,"Y"
 \(END)
 
 \(BEGIN)
 name = Elf
-height = 2d6+48+(6*Male)
 weight = 3d11+67+((14+1d6)*Male)
+height = 2d6+48+(6*Male)
 age = 5d6+100
 maxage = 4d100+350
 BaseMovement = 12
@@ -192,13 +77,12 @@ SkillAdjRace = TightropeWalking,Elf,%,110
 SkillAdjRace = RunningBroadJump,Elf,-,1
 SkillAdjRace = TumblingEvasion,Elf,%,105
 SkillAdjRace = TumblingFalling,Elf,%,105
-// Special Ability = race_RaceSuppress,"Y"
 \(END)
 
 \(BEGIN)
 name = Gnome
-height = 2d4+34+(1*Male)
 weight = 2d9+65+((5+1d4)*Male)
+height = 2d4+34+(1*Male)
 age = 3d12+60
 maxage = 3d100+200
 BaseMovement = 6
@@ -237,13 +121,12 @@ SkillAdjRace = BroadJump,Gnome,-,1
 SkillAdjRace = RunningBroadJump,Gnome,-,4
 SkillAdjRace = TumblingAttack,Gnome,%,105
 SkillAdjRace = TumblingEvasion,Gnome,%,105
-// Special Ability = race_RaceSuppress,"Y"
 \(END)
 
 \(BEGIN)
 name = Half-Elf
-height = 2d7+54+(4*Male)
 weight = 3d10+85+((22+1d12)*Male)
+height = 2d7+54+(4*Male)
 age = 1d6+15
 maxage = 3d20+125
 BaseMovement = 12
@@ -280,13 +163,49 @@ SkillAdjRace = PickPocketsm,Half-Elf,%,110
 SkillAdjRace = HideInShadows,Half-Elf,%,105
 SkillAdjRace = TightropeWalking,Half-Elf,%,105
 SkillAdjRace = TumblingAttack,Half-Elf,%,105
-// Special Ability = race_RaceSuppress,"Y"
+\(END)
+
+\(BEGIN)
+name = Half-Orc
+weight = 5d11+97+((30+1d8)*Male)
+height = 2d4+57+(5*Male)
+age = 2d3+16
+maxage = 1d20+60
+BaseMovement = 12
+AbilityRequirement = Strength 6/19
+AbilityRequirement = Intelligence 3/17
+AbilityRequirement = Wisdom 3/14
+AbilityRequirement = Dexterity 3/17
+AbilityRequirement = Constitution 13/19
+AbilityRequirement = Charisma 3/12
+AllowedMultiClass = Fighter/Thief
+AllowedMultiClass = Cleric/Fighter
+AllowedMultiClass = Cleric/Thief
+AllowedMultiClass = Cleric/Assassin
+AllowedMultiClass = Fighter/Assassin
+ChangeClass = no
+DwarfResistance = no
+GnomeResistance = no
+FindSecretDoor = 0
+FindSecretDoorSearching = 1
+Skill = Infravision,60
+Skill = MaxLevel$SYS$,40
+SkillAdjAbility = AcrobatLevelCaps.Dexterity.+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,3,3,3,3,3,3,3,3,3,3
+SkillAdjAbility = FighterLevelCaps.Strength.+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+SkillAdjAbility = ThiefLevelCaps.Dexterity.+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
+SkillAdjRace = PickPockets,Half-Orc,%,95
+SkillAdjRace = OpenLocks,Half-Orc,%,105
+SkillAdjRace = FindTraps,Half-Orc,%,105
+SkillAdjRace = HearNoise,Half-Orc,%,105
+SkillAdjRace = ClimbWalls,Half-Orc,%,105
+SkillAdjRace = ReadLanguages,Half-Orc,%,90
+SkillAdjRace = TumblingFalling,Half-Orc,%,110
 \(END)
 
 \(BEGIN)
 name = Halfling
-height = 2d4+28+((3+1d3)*Male)
 weight = 2d9+40+((10+1d4)*Male)
+height = 2d4+28+((3+1d3)*Male)
 age = 3d4+20
 maxage = 1d100+100
 BaseMovement = 6
@@ -324,51 +243,12 @@ SkillAdjRace = RunningBroadJump,Halfling,-,4
 SkillAdjRace = TumblingAttack,Halfling,%,105
 SkillAdjRace = TumblingEvasion,Halfling,%,110
 SkillAdjRace = TumblingFalling,Halfling,%,105
-// Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-\(BEGIN)
-name = Half-Orc
-height = 2d4+57+(5*Male)
-weight = 5d11+97+((30+1d8)*Male)
-age = 2d3+16
-maxage = 1d20+60
-BaseMovement = 12
-AbilityRequirement = Strength 6/19
-AbilityRequirement = Intelligence 3/17
-AbilityRequirement = Wisdom 3/14
-AbilityRequirement = Dexterity 3/17
-AbilityRequirement = Constitution 13/19
-AbilityRequirement = Charisma 3/12
-AllowedMultiClass = Fighter/Thief
-AllowedMultiClass = Cleric/Fighter
-AllowedMultiClass = Cleric/Thief
-AllowedMultiClass = Cleric/Assassin
-AllowedMultiClass = Fighter/Assassin
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 0
-FindSecretDoorSearching = 1
-Skill = Infravision,60
-Skill = MaxLevel$SYS$,40
-SkillAdjAbility = AcrobatLevelCaps.Dexterity.+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,3,3,3,3,3,3,3,3,3,3,3
-SkillAdjAbility = FighterLevelCaps.Strength.+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
-SkillAdjAbility = ThiefLevelCaps.Dexterity.+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2
-SkillAdjRace = PickPockets,Half-Orc,%,95
-SkillAdjRace = OpenLocks,Half-Orc,%,105
-SkillAdjRace = FindTraps,Half-Orc,%,105
-SkillAdjRace = HearNoise,Half-Orc,%,105
-SkillAdjRace = ClimbWalls,Half-Orc,%,105
-SkillAdjRace = ReadLanguages,Half-Orc,%,90
-SkillAdjRace = TumblingFalling,Half-Orc,%,110
-// Special Ability = race_RaceSuppress,"Y"
 \(END)
 
 \(BEGIN)
 name = Human
-height = 2d8+58+((6+1d4)*Male)
 weight = 7d12+93+((45+1d12)*Male)
+height = 2d8+58+((6+1d4)*Male)
 age = 1d4+18
 maxage = 1d20+75
 BaseMovement = 12
@@ -378,20 +258,39 @@ AbilityRequirement = Wisdom 3/18
 AbilityRequirement = Dexterity 3/18
 AbilityRequirement = Constitution 3/18
 AbilityRequirement = Charisma 3/18
+Special Ability = race_DualClass
 ChangeClass = yes
 DwarfResistance = no
 GnomeResistance = no
 FindSecretDoor = 0
 FindSecretDoorSearching = 1
-Special Ability = race_DualClass
-// Special Ability = race_RaceSuppress,"Y"
 \(END)
 
-// NPC and monster races
+\(BEGIN)
+name = Monster
+weight = 100
+height = 100
+age = 10
+maxage = 250
+BaseMovement = 12
+AbilityRequirement = Strength 1/25
+AbilityRequirement = Intelligence 1/25
+AbilityRequirement = Wisdom 1/25
+AbilityRequirement = Dexterity 1/25
+AbilityRequirement = Constitution 1/25
+AbilityRequirement = Charisma 1/25
+Special Ability = race_RaceSuppress,"Y"
+ChangeClass = no
+DwarfResistance = yes
+GnomeResistance = no
+FindSecretDoor = 0
+FindSecretDoorSearching = 0
+\(END)
+
 \(BEGIN)
 name = Drow
-height = 2d6+48+(6*Male)
 weight = 3d11+67+((14+1d6)*Male)
+height = 2d6+48+(6*Male)
 age = 5d6+100
 maxage = 4d100+350
 BaseMovement = 12
@@ -406,6 +305,7 @@ AllowedMultiClass = Fighter/Thief
 AllowedMultiClass = Fighter/Magic User/Thief
 AllowedMultiClass = Magic User/Thief
 Special Ability = race_Elf,Drow
+Special Ability = race_RaceSuppress,"Y"
 ChangeClass = no
 DwarfResistance = no
 GnomeResistance = no
@@ -423,7 +323,6 @@ SkillAdjRace = OpenLocks,Drow,%,95
 SkillAdjRace = MoveSilent,Drow,%,105
 SkillAdjRace = HideInShadows,Drow,%,110
 SkillAdjRace = HearNoise,Drow,%,105
-Special Ability = race_RaceSuppress,"Y"
 \(END)
 
 \(BEGIN)
@@ -440,6 +339,7 @@ AbilityRequirement = Dexterity 3/17
 AbilityRequirement = Constitution 11/19
 AbilityRequirement = Charisma 3/16
 AllowedMultiClass = Fighter/Thief
+Special Ability = race_RaceSuppress,"Y"
 Special Ability = race_ShortSaveBonus,12
 ChangeClass = no
 DwarfResistance = yes
@@ -458,34 +358,12 @@ SkillAdjRace = OpenLocks,Duergar,%,110
 SkillAdjRace = FindTraps,Duergar,%,115
 SkillAdjRace = ClimbWalls,Duergar,%,90
 SkillAdjRace = ReadLanguages,Duergar,%,95
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-\(BEGIN)
-name = Monster
-weight = 100
-height = 100
-age = 10
-maxage = 250
-BaseMovement = 12
-AbilityRequirement = Strength 1/25
-AbilityRequirement = Intelligence 1/25
-AbilityRequirement = Wisdom 1/25
-AbilityRequirement = Dexterity 1/25
-AbilityRequirement = Constitution 1/25
-AbilityRequirement = Charisma 1/25
-ChangeClass = no
-DwarfResistance = yes
-GnomeResistance = no
-FindSecretDoor = 0
-FindSecretDoorSearching = 0
-Special Ability = race_RaceSuppress,"Y"
 \(END)
 
 \(BEGIN)
 name = Svirfneblin
-height = 2d4+34+(1*Male)
 weight = 2d9+65+((5+1d4)*Male)
+height = 2d4+34+(1*Male)
 age = 3d12+60
 maxage = 3d100+200
 BaseMovement = 6
@@ -498,6 +376,7 @@ AbilityRequirement = Charisma 3/18
 AllowedMultiClass = Fighter/Magic User
 AllowedMultiClass = Fighter/Thief
 AllowedMultiClass = Magic User/Thief
+Special Ability = race_RaceSuppress,"Y"
 Special Ability = race_ShortSaveBonus,8
 ChangeClass = no
 DwarfResistance = no
@@ -520,131 +399,24 @@ SkillAdjRace = MoveSilent,Svirfneblin,%,105
 SkillAdjRace = HideInShadows,Svirfneblin,%,105
 SkillAdjRace = HearNoise,Svirfneblin,%,110
 SkillAdjRace = ClimbWalls,Svirfneblin,%,85
-Special Ability = race_RaceSuppress,"Y"
 \(END)
-
-///////////////////////////////////////////////////////////////////////////////
-///// demodrands //////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-\(BEGIN)
-name = Demodand
-BaseMovement = 12
-AbilityRequirement = Strength 3/19
-AbilityRequirement = Intelligence 8/19
-AbilityRequirement = Wisdom 3/19
-AbilityRequirement = Dexterity 3/19
-AbilityRequirement = Constitution 3/19
-AbilityRequirement = Charisma 3/19
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 1
-FindSecretDoorSearching = 2
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-///////////////////////////////////////////////////////////////////////////////
-///// devas ///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-\(BEGIN)
-name = Deva
-BaseMovement = 12
-AbilityRequirement = Strength 3/19
-AbilityRequirement = Intelligence 8/19
-AbilityRequirement = Wisdom 3/19
-AbilityRequirement = Dexterity 3/19
-AbilityRequirement = Constitution 3/19
-AbilityRequirement = Charisma 3/19
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 1
-FindSecretDoorSearching = 2
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-\(BEGIN)
-name = Planetar
-BaseMovement = 12
-AbilityRequirement = Strength 3/19
-AbilityRequirement = Intelligence 8/19
-AbilityRequirement = Wisdom 3/19
-AbilityRequirement = Dexterity 3/19
-AbilityRequirement = Constitution 3/19
-AbilityRequirement = Charisma 3/19
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 1
-FindSecretDoorSearching = 2
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-\(BEGIN)
-name = Solar
-BaseMovement = 12
-AbilityRequirement = Strength 3/19
-AbilityRequirement = Intelligence 8/19
-AbilityRequirement = Wisdom 3/19
-AbilityRequirement = Dexterity 3/19
-AbilityRequirement = Constitution 3/19
-AbilityRequirement = Charisma 3/19
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 1
-FindSecretDoorSearching = 2
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-///////////////////////////////////////////////////////////////////////////////
-///// modrons /////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-\(BEGIN)
-name = Modron
-BaseMovement = 12
-AbilityRequirement = Strength 3/19
-AbilityRequirement = Intelligence 8/19
-AbilityRequirement = Wisdom 3/19
-AbilityRequirement = Dexterity 3/19
-AbilityRequirement = Constitution 3/19
-AbilityRequirement = Charisma 3/19
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 1
-FindSecretDoorSearching = 2
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
-///////////////////////////////////////////////////////////////////////////////
-///// slaadi //////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
-\(BEGIN)
-name = Slaad
-BaseMovement = 12
-AbilityRequirement = Strength 3/19
-AbilityRequirement = Intelligence 8/19
-AbilityRequirement = Wisdom 3/19
-AbilityRequirement = Dexterity 3/19
-AbilityRequirement = Constitution 3/19
-AbilityRequirement = Charisma 3/19
-ChangeClass = no
-DwarfResistance = no
-GnomeResistance = no
-FindSecretDoor = 1
-FindSecretDoorSearching = 2
-Special Ability = race_RaceSuppress,"Y"
-\(END)
-
 
 \(BEGIN)
 name = $$Help
+weight = 0
+height = 0
+age = 0
+maxage = 0
+BaseMovement = 0
 Special Ability = Date,"December 16, 2017"
-Special Ability = updates1_01,"gave all races except monster a 1 for FindSecretDoorSearching if it was previously 0"
+Special Ability = Updates171216,"fixed MaxLevel$SYS$ for all races"
 Special Ability = Updates1_02,"fixed thief racial bonuses for half-elf and half-orc"
 Special Ability = Updates1_03,"fixed incorrect multi-class listing for half-elf"
-Special Ability = Updates171216,"fixed MaxLevel$SYS$ for all races"
-Special Ability = Updates191031,"added demodands, devas, modrons, slaadi"
+Special Ability = updates1_01,"gave all races except monster a 1 for FindSecretDoorSearching if it was previously 0"
+ChangeClass = no
+DwarfResistance = no
+GnomeResistance = no
+FindSecretDoor = 1
+FindSecretDoorSearching = 2
 \(END)
 

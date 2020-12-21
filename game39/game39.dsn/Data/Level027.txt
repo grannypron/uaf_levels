@@ -29,7 +29,7 @@
    "levelData":{
       "width":"17",
       "height":"18",
-      "version":"3.560000",
+      "version":"5.260000",
       "prevZone":"-1",
       "map_grid":[
          {
@@ -7254,7 +7254,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall41.png",
+            "wallFile":"wa_wall41.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",
@@ -7280,8 +7280,8 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall41.png",
-            "doorFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door43.png",
+            "wallFile":"wa_wall41.png",
+            "doorFile":"dr_door43.png",
             "overlayFile":"",
             "soundFile":"",
             "avArtFile":"",
@@ -7293,34 +7293,8 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall41.png",
-            "doorFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door44.png",
-            "overlayFile":"",
-            "soundFile":"",
-            "avArtFile":"",
-            "used":"false",
-            "doorFirst":"false",
-            "drawAV":"true",
-            "unlockSpellID":"",
-            "blendOverlay":"0",
-            "blendAmount":"0"
-         },
-         {
-            "wallFile":"wa_Wall1.png",
-            "doorFile":"dr_Door5.png",
-            "overlayFile":"",
-            "soundFile":"",
-            "avArtFile":"",
-            "used":"false",
-            "doorFirst":"false",
-            "drawAV":"true",
-            "unlockSpellID":"",
-            "blendOverlay":"0",
-            "blendAmount":"0"
-         },
-         {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall_thorns.png",
-            "doorFile":"",
+            "wallFile":"wa_wall41.png",
+            "doorFile":"dr_door44.png",
             "overlayFile":"",
             "soundFile":"",
             "avArtFile":"",
@@ -7345,59 +7319,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
-            "doorFile":"",
-            "overlayFile":"",
-            "soundFile":"",
-            "avArtFile":"",
-            "used":"false",
-            "doorFirst":"false",
-            "drawAV":"true",
-            "unlockSpellID":"",
-            "blendOverlay":"0",
-            "blendAmount":"0"
-         },
-         {
-            "wallFile":"wa_Wall1.png",
-            "doorFile":"",
-            "overlayFile":"",
-            "soundFile":"",
-            "avArtFile":"",
-            "used":"false",
-            "doorFirst":"false",
-            "drawAV":"true",
-            "unlockSpellID":"",
-            "blendOverlay":"0",
-            "blendAmount":"0"
-         },
-         {
-            "wallFile":"wa_Wall1.png",
-            "doorFile":"",
-            "overlayFile":"",
-            "soundFile":"",
-            "avArtFile":"",
-            "used":"false",
-            "doorFirst":"false",
-            "drawAV":"true",
-            "unlockSpellID":"",
-            "blendOverlay":"0",
-            "blendAmount":"0"
-         },
-         {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall76.png",
-            "doorFile":"",
-            "overlayFile":"",
-            "soundFile":"",
-            "avArtFile":"",
-            "used":"false",
-            "doorFirst":"false",
-            "drawAV":"true",
-            "unlockSpellID":"",
-            "blendOverlay":"0",
-            "blendAmount":"0"
-         },
-         {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"wa_wall_thorns.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",
@@ -7423,8 +7345,86 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall76.png",
-            "doorFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\dr_door79.png",
+            "wallFile":"wa_Wall1.png",
+            "doorFile":"",
+            "overlayFile":"",
+            "soundFile":"",
+            "avArtFile":"",
+            "used":"false",
+            "doorFirst":"false",
+            "drawAV":"true",
+            "unlockSpellID":"",
+            "blendOverlay":"0",
+            "blendAmount":"0"
+         },
+         {
+            "wallFile":"wa_Wall1.png",
+            "doorFile":"",
+            "overlayFile":"",
+            "soundFile":"",
+            "avArtFile":"",
+            "used":"false",
+            "doorFirst":"false",
+            "drawAV":"true",
+            "unlockSpellID":"",
+            "blendOverlay":"0",
+            "blendAmount":"0"
+         },
+         {
+            "wallFile":"wa_Wall1.png",
+            "doorFile":"",
+            "overlayFile":"",
+            "soundFile":"",
+            "avArtFile":"",
+            "used":"false",
+            "doorFirst":"false",
+            "drawAV":"true",
+            "unlockSpellID":"",
+            "blendOverlay":"0",
+            "blendAmount":"0"
+         },
+         {
+            "wallFile":"wa_wall76.png",
+            "doorFile":"",
+            "overlayFile":"",
+            "soundFile":"",
+            "avArtFile":"",
+            "used":"false",
+            "doorFirst":"false",
+            "drawAV":"true",
+            "unlockSpellID":"",
+            "blendOverlay":"0",
+            "blendAmount":"0"
+         },
+         {
+            "wallFile":"wa_Wall1.png",
+            "doorFile":"",
+            "overlayFile":"",
+            "soundFile":"",
+            "avArtFile":"",
+            "used":"false",
+            "doorFirst":"false",
+            "drawAV":"true",
+            "unlockSpellID":"",
+            "blendOverlay":"0",
+            "blendAmount":"0"
+         },
+         {
+            "wallFile":"wa_Wall1.png",
+            "doorFile":"dr_Door5.png",
+            "overlayFile":"",
+            "soundFile":"",
+            "avArtFile":"",
+            "used":"false",
+            "doorFirst":"false",
+            "drawAV":"true",
+            "unlockSpellID":"",
+            "blendOverlay":"0",
+            "blendAmount":"0"
+         },
+         {
+            "wallFile":"wa_wall76.png",
+            "doorFile":"dr_door79.png",
             "overlayFile":"",
             "soundFile":"",
             "avArtFile":"",
@@ -9869,8 +9869,8 @@
             "useTransparency":"false"
          },
          {
-            "backgroundFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\BACK.TLB_0_13.png",
-            "backgroundFileAlt":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\BACK.TLB_0_14.png",
+            "backgroundFile":"BACK.TLB_0_13.png",
+            "backgroundFileAlt":"BACK.TLB_0_14.png",
             "soundFile":"",
             "suppressStepSound":"false",
             "used":"false",
@@ -9921,8 +9921,8 @@
             "useTransparency":"false"
          },
          {
-            "backgroundFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_OutdoorPavedDay.png",
-            "backgroundFileAlt":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_OutdoorPavedNight.png",
+            "backgroundFile":"backdrop_OutdoorPavedDay.png",
+            "backgroundFileAlt":"backdrop_OutdoorPavedNight.png",
             "soundFile":"",
             "suppressStepSound":"false",
             "used":"false",
@@ -9947,7 +9947,7 @@
             "useTransparency":"false"
          },
          {
-            "backgroundFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\BACK.TLB_0_0.png",
+            "backgroundFile":"BACK.TLB_0_0.png",
             "backgroundFileAlt":"",
             "soundFile":"",
             "suppressStepSound":"false",
@@ -9986,7 +9986,7 @@
             "useTransparency":"false"
          },
          {
-            "backgroundFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\backdrop_IndoorWoodRafterRoof.png",
+            "backgroundFile":"backdrop_IndoorWoodRafterRoof.png",
             "backgroundFileAlt":"",
             "soundFile":"",
             "suppressStepSound":"false",

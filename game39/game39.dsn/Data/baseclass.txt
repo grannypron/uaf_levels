@@ -1,125 +1,8 @@
 // BaseClass database file
-// The above line must appear exactly as shown."// BaseClass database file"
-//
-// name (text)
-//	Names should not conflict with any of the names in the
-//	class database, items database, spells database, races
-//	database, or abilities database, all baseclasses start
-//	with a lower case letter and classes with an upper case letter.
-//	eg:		name = gnome
-//
-// BonusXP (ability name, mod, bonus1-bonus25)
-//	BonusXP is used to determine if a baseclass gains a bonus
-//	to Experience Points depending on the score for the listed
-//	ability. Ability name is the name of an ability, mod is how
-//	to change the XP such as %, bonus1 through bonus25 are the
-//	values at each ability score.
-//	default is blank
-//	eg:		BonusXP = Intelligence,%,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,10,10,10,10,10,10,10,10
-//
-// THAC0 (level1-level40)
-//	THAC0 stands for "to hit armor class 0" and is a list of 40
-//	integers representing that number at each level of the baseclass
-//	eg:		THAC0 = 20,20,20,18,18,18,16,16,16,14,14,14,12,12,12,10,10,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
-//
-// AbilityRequirement (ability name, min/max)
-//	AbilityRequirement is the name of an ability and the minimum
-//	and maximum numbers allowed for the baseclass.
-//	A separate instance is used for each ability.
-//	eg:		AbilityRequirement = Wisdom 9/18
-//
-// Allowed Race (race name)
-//	The Allowed Race is the name of the race or races from the
-//	races database that is allowed for this baseclass.
-//	Each race is listed with a different instance of the keyword
-//	eg:		Allowed Race = Monkey
-//			Allowe Race = Dog
-//
-// Allowed Alignment (alignment, any)
-//	Possible Allowed Alignment options are Lawful Good, Neutral Good,
-//	Chaotic Good, Lawful Neutral, True Neutral, Chaotic Neutral,
-//	Lawful Evil, Neutral Evil, Chaotic Evil; or any if all are allowed
-//	eg:		Allowed Alignment = Lawful Good
-//			Allowed Alignment = Lawful Evil
-//
-// ExpLevel (integer)
-//	Minimum number of experience points for each character level,
-//	starting with level 1, up to level 40, in order.
-//	One level per line.
-//	eg:		ExpLevel = 65420
-//
-// Base Spell Levels (level, spell school name, spell level1-spell level 9)
-//	The keyword Base Spell Level are the spells at a given level
-//	for a given spell school allowed. After name of school, up
-//	to 9 integers may be used
-//	eg:		Base Spell Levels = 4,Cleric,3,2,1
-//
-// MaxNumSpellsByPrime (spell school name, ability name, spell-spell25)
-//	MaxSpellLevelByPrime determines the highest spell level a
-//	spellcaster may learn based on an ability score. Spell school,
-//	ability, 25 integers are the order for this keyword
-//	eg:		MaxSpellLevelByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,6,7,7,7,7,7,7,7,7
-//
-// MaxSpellLevelByPrime (spell school name, ability name, level1-level25)
-//	MaxSpellLevelByPrime determines the maximum spell level
-//	that a baseclass may have for a paritcular score of the
-//	listed ability.
-//	eg		MaxSpellLevelByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,6,7,7,7,7,7,7,7,7
-//
-// HitDice (level, # of die, # of sides per die, bonus)
-//	HitDice determines the Hit Points given to a baseclass at
-//	a particular level. The first number is the level, the second
-//	is the number of dice, the third number is the sides per dice,
-//	the fourth number is the set number of points (bonus)
-//	eg:		HitDice = 1,1,10,0
-//
-//	Skill (text)
-//	Skills consist of the skill name and the score at which
-//	the skill starts.
-//	eg:		Skill = Swim,20
-//
-// SkillAdjAbility (skill name,ability name, mod, num1-num25)
-//	SkillAdjAbility allows modification of a skill based upon
-//	an ability. Name, ability, type of modifier, score
-//	modifier for each of the 25 ability scores
-//	eg:		SkillAdjAbility = Read,Intelligence,%,0,0,0,0,0,0,0,0,85,90,95,100,100,100,100,100,105,110,115,115,115,115,115,115,115
-//
-// SkillAdjBaseclass (skill name, mod, adj1-adj40)
-//	SkillAdjBaseclass asjusts the named skill for this database.
-//	For each entry, skill name, type of modification and 
-//	modification values for level 1 through 40 are listed.
-//	eg:		SkillAdjBaseclass = Save Vs RSW,cleric,-,0,0,0,1,1,1,3,3,3,4,4,4,5,5,5,6,6,6,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8
-//
-// SkillAdjRace (skill name, race name, mod, value)
-//	SkillAdjRace allows modification of skills per each
-//	race, by listing the name of the skill, name of the
-//	race, percentage sign and number to modify it by
-//	eg:		SkillAdjRace = MaxLevel$SYS$,Half-Elf,\=,5
-//
-// SpellBonusAbility (ability name)
-//	If the baseclass gets bonus spells, this is the ability
-//	used to determine the bonus. If blank, no bonus spells.
-//	default is blank.
-//	eg:		SpellBonusAbility = Wisdom
-//
-// BonusSpells (ability #, bonus#, level #,2nd bonus #, 2nd level #)
-//	If bonus spells are allowed for the baseclass, this keyword
-//	determines the score and the bonus spells for that ability
-//	score using integer pairs. In the integer pairs, the first
-//	is the level of the spell, the second is the quantity.
-//	eg:		BonusSpells = 13,1,1
-//
-// Special Ability (SA name)
-//	each listed Special Ability corresponds to
-//	the Special Ability database.
-//	Each Special Ability is listed on a new line
-//	with a separate instance of the keyword.
-//	eg:		Special Ability = baseclass_NameSuppress,"Y"
-//
-
+// The line above **must** be the first line of the baseclass file!!!
 \(BEGIN)
 name = assassin
-BonusXP = 
+BonusXP = , ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 THAC0 = 20,20,20,20,19,19,19,19,16,16,16,16,14,14,14,14,12,12,12,12,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
 AbilityRequirement = Strength 12/19
 AbilityRequirement = Intelligence 11/18
@@ -164,6 +47,31 @@ HitDice = 12,0,0,2
 HitDice = 13,0,0,2
 HitDice = 14,0,0,2
 HitDice = 15,0,0,2
+HitDice = 16,0,0,0
+HitDice = 17,0,0,0
+HitDice = 18,0,0,0
+HitDice = 19,0,0,0
+HitDice = 20,0,0,0
+HitDice = 21,0,0,0
+HitDice = 22,0,0,0
+HitDice = 23,0,0,0
+HitDice = 24,0,0,0
+HitDice = 25,0,0,0
+HitDice = 26,0,0,0
+HitDice = 27,0,0,0
+HitDice = 28,0,0,0
+HitDice = 29,0,0,0
+HitDice = 30,0,0,0
+HitDice = 31,0,0,0
+HitDice = 32,0,0,0
+HitDice = 33,0,0,0
+HitDice = 34,0,0,0
+HitDice = 35,0,0,0
+HitDice = 36,0,0,0
+HitDice = 37,0,0,0
+HitDice = 38,0,0,0
+HitDice = 39,0,0,0
+HitDice = 40,0,0,0
 Skill = Save Vs PPDM,13
 Skill = Save Vs PP,12
 Skill = Save Vs RSW,14
@@ -178,24 +86,24 @@ Skill = HearNoise,5
 Skill = ClimbWalls,83
 Skill = ReadLanguages,0
 Skill = BackstabMultiplier,100
-SkillAdjBaseclass = Save Vs PPDM,assassin,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
-SkillAdjBaseclass = Save Vs PP,assassin,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
-SkillAdjBaseclass = Save Vs RSW,assassin,-,0,0,0,0,2,2,2,2,4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
-SkillAdjBaseclass = Save Vs BR,assassin,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
-SkillAdjBaseclass = Save Vs SP,assassin,-,0,0,0,0,2,2,2,2,4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
-SkillAdjBaseclass = PickPockets,assassin,+,0,5,10,15,20,25,30,35,40,45,50,60,70,80,95
-SkillAdjBaseclass = OpenLocks,assassin,+,0,4,8,12,16,20,25,30,35,40,45,50,55,60,65
-SkillAdjBaseclass = FindTraps,assassin,+,0,5,10,15,20,25,30,35,40,45,50,55,60,65,70
-SkillAdjBaseclass = MoveSilent,assassin,+,0,6,125,18,24,30,37,44,52,59,67,75,83,91,96
-SkillAdjBaseclass = HideInShadows,assassin,+,0,5,10,15,20,25,31,37,43,49,56,63,70,77,85
-SkillAdjBaseclass = HearNoise,assassin,+,0,0,5,5,10,10,15,15,20,20,25,25,30,30,35
-SkillAdjBaseclass = ClimbWalls,assassin,+,0,1,2,3,4,5,7,9,11,13,15,16,16,16,16
-SkillAdjBaseclass = ReadLanguages,assassin,+,0,0,0,0,0,20,25,30,35,40,45,50,55,60,65
 SkillAdjAbility = PickPockets,Dexterity,+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,10,15,20,25,30,35,40,45
 SkillAdjAbility = OpenLocks,Dexterity,+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,10,15,20,25,30,35,40,45,50
 SkillAdjAbility = FindTraps,Dexterity,+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,10,15,20,25,30,35,40
 SkillAdjAbility = MoveSilent,Dexterity,+,0,0,0,0,0,0,0,0,0,0,0,-5,0,0,0,0,5,10,12,15,18,20,23,25,30
 SkillAdjAbility = HideInShadows,Dexterity,+,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,10,12,15,18,20,23,25,30
+SkillAdjBaseclass = Save Vs PPDM,assassin,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+SkillAdjBaseclass = Save Vs PP,assassin,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+SkillAdjBaseclass = Save Vs RSW,assassin,-,0,0,0,0,2,2,2,2,4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
+SkillAdjBaseclass = Save Vs BR,assassin,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+SkillAdjBaseclass = Save Vs SP,assassin,-,0,0,0,0,2,2,2,2,4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
+SkillAdjBaseclass = PickPockets,assassin,+,0,5,10,15,20,25,30,35,40,45,50,60,70,80,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95,95
+SkillAdjBaseclass = OpenLocks,assassin,+,0,4,8,12,16,20,25,30,35,40,45,50,55,60,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65
+SkillAdjBaseclass = FindTraps,assassin,+,0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70,70
+SkillAdjBaseclass = MoveSilent,assassin,+,0,6,125,18,24,30,37,44,52,59,67,75,83,91,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96
+SkillAdjBaseclass = HideInShadows,assassin,+,0,5,10,15,20,25,31,37,43,49,56,63,70,77,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85,85
+SkillAdjBaseclass = HearNoise,assassin,+,0,0,5,5,10,10,15,15,20,20,25,25,30,30,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35,35
+SkillAdjBaseclass = ClimbWalls,assassin,+,0,1,2,3,4,5,7,9,11,13,15,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16
+SkillAdjBaseclass = ReadLanguages,assassin,+,0,0,0,0,0,20,25,30,35,40,45,50,55,60,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65,65
 SkillAdjBaseclass = BackstabMultiplier,assassin,%,200,200,200,200,300,300,300,300,400,400,400,400,500,500,500,500,600,600,600,600,700,700,700,700,800,800,800,800,900,900,900,900,1000,1000,1000,1000,1100,1100,1100,1100
 SkillAdjRace = MaxLevel$SYS$,Dwarf,\=,9
 SkillAdjRace = MaxLevel$SYS$,Elf,\=,10
@@ -257,48 +165,48 @@ ExpLevel = 6525001
 ExpLevel = 6750001
 ExpLevel = 6975001
 ExpLevel = 7200001
-Base Spell Levels = 1,Cleric,1,0,0,0,0,0,0
-Base Spell Levels = 2,Cleric,2,0,0,0,0,0,0
-Base Spell Levels = 3,Cleric,2,1,0,0,0,0,0
-Base Spell Levels = 4,Cleric,3,2,0,0,0,0,0
-Base Spell Levels = 5,Cleric,3,3,1,0,0,0,0
-Base Spell Levels = 6,Cleric,3,3,2,0,0,0,0
-Base Spell Levels = 7,Cleric,3,3,2,1,0,0,0
-Base Spell Levels = 8,Cleric,3,3,3,2,0,0,0
-Base Spell Levels = 9,Cleric,4,4,3,2,1,0,0
-Base Spell Levels = 10,Cleric,4,4,3,3,2,0,0
-Base Spell Levels = 11,Cleric,5,4,4,3,2,1,0
-Base Spell Levels = 12,Cleric,6,5,5,3,2,2,0
-Base Spell Levels = 13,Cleric,6,6,6,4,2,2,0
-Base Spell Levels = 14,Cleric,6,6,6,5,3,2,0
-Base Spell Levels = 15,Cleric,7,7,7,5,4,2,0
-Base Spell Levels = 16,Cleric,7,7,7,6,5,3,1
-Base Spell Levels = 17,Cleric,7,7,7,7,5,3,2
-Base Spell Levels = 18,Cleric,8,8,8,7,6,4,1
-Base Spell Levels = 19,Cleric,9,9,8,7,6,4,2
-Base Spell Levels = 20,Cleric,9,9,9,8,7,5,2
-Base Spell Levels = 21,Cleric,9,9,9,9,8,6,2
-Base Spell Levels = 22,Cleric,9,9,9,9,9,6,3
-Base Spell Levels = 23,Cleric,9,9,9,9,9,7,3
-Base Spell Levels = 24,Cleric,9,9,9,9,9,8,3
-Base Spell Levels = 25,Cleric,9,9,9,9,9,8,4
-Base Spell Levels = 26,Cleric,9,9,9,9,9,9,4
-Base Spell Levels = 27,Cleric,9,9,9,9,9,9,5
-Base Spell Levels = 28,Cleric,9,9,9,9,9,9,6
-Base Spell Levels = 29,Cleric,9,9,9,9,9,9,7
-Base Spell Levels = 30,Cleric,9,9,9,9,9,9,8
-Base Spell Levels = 31,Cleric,9,9,9,9,9,9,9
-Base Spell Levels = 32,Cleric,10,10,10,9,9,9,9
-Base Spell Levels = 33,Cleric,10,10,10,10,10,9,9
-Base Spell Levels = 34,Cleric,10,10,10,10,10,10,9
-Base Spell Levels = 35,Cleric,10,10,10,10,10,10,10
-Base Spell Levels = 36,Cleric,11,11,11,10,10,10,10
-Base Spell Levels = 37,Cleric,11,11,11,11,11,10,10
-Base Spell Levels = 38,Cleric,11,11,11,11,11,11,10
-Base Spell Levels = 39,Cleric,11,11,11,11,11,11,11
-Base Spell Levels = 40,Cleric,12,12,12,11,11,11,11
-MaxNumSpellsByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
+Base Spell Levels = 1,Cleric,1
+Base Spell Levels = 2,Cleric,2
+Base Spell Levels = 3,Cleric,2,1
+Base Spell Levels = 4,Cleric,3,2
+Base Spell Levels = 5,Cleric,3,3,1
+Base Spell Levels = 6,Cleric,3,3,2
+Base Spell Levels = 7,Cleric,3,3,2,1
+Base Spell Levels = 8,Cleric,3,3,3,2
+Base Spell Levels = 9,Cleric,4,4,3,2,1
+Base Spell Levels = 10,Cleric,4,4,3,3,2
+Base Spell Levels = 11,Cleric,5,4,4,3,2,1
+Base Spell Levels = 12,Cleric,6,5,5,3,2,2
+Base Spell Levels = 13,Cleric,6,6,6,4,2,2
+Base Spell Levels = 14,Cleric,6,6,6,5,3,2
+Base Spell Levels = 15,Cleric,7,7,7,5,4,2
+Base Spell Levels = 16,Cleric,7,7,7,6,5,3,1,1,1
+Base Spell Levels = 17,Cleric,7,7,7,7,5,3,2,2,2
+Base Spell Levels = 18,Cleric,8,8,8,7,6,4,1,1,1
+Base Spell Levels = 19,Cleric,9,9,8,7,6,4,2,2,2
+Base Spell Levels = 20,Cleric,9,9,9,8,7,5,2,2,2
+Base Spell Levels = 21,Cleric,9,9,9,9,8,6,2,2,2
+Base Spell Levels = 22,Cleric,9,9,9,9,9,6,3,3,3
+Base Spell Levels = 23,Cleric,9,9,9,9,9,7,3,3,3
+Base Spell Levels = 24,Cleric,9,9,9,9,9,8,3,3,3
+Base Spell Levels = 25,Cleric,9,9,9,9,9,8,4,4,4
+Base Spell Levels = 26,Cleric,9,9,9,9,9,9,4,4,4
+Base Spell Levels = 27,Cleric,9,9,9,9,9,9,5,5,5
+Base Spell Levels = 28,Cleric,9,9,9,9,9,9,6,6,6
+Base Spell Levels = 29,Cleric,9,9,9,9,9,9,7,7,7
+Base Spell Levels = 30,Cleric,9,9,9,9,9,9,8,8,8
+Base Spell Levels = 31,Cleric,9,9,9,9,9,9,9,9,9
+Base Spell Levels = 32,Cleric,10,10,10,9,9,9,9,9,9
+Base Spell Levels = 33,Cleric,10,10,10,10,10,9,9,9,9
+Base Spell Levels = 34,Cleric,10,10,10,10,10,10,9,9,9
+Base Spell Levels = 35,Cleric,10,10,10,10,10,10,10,10,10
+Base Spell Levels = 36,Cleric,11,11,11,10,10,10,10,10,10
+Base Spell Levels = 37,Cleric,11,11,11,11,11,10,10,10,10
+Base Spell Levels = 38,Cleric,11,11,11,11,11,11,10,10,10
+Base Spell Levels = 39,Cleric,11,11,11,11,11,11,11,11,11
+Base Spell Levels = 40,Cleric,12,12,12,11,11,11,11,11,11
 MaxSpellLevelByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,6,7,7,7,7,7,7,7,7
+MaxNumSpellsByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
 HitDice = 1,1,8,0
 HitDice = 2,1,8,0
 HitDice = 3,1,8,0
@@ -406,31 +314,35 @@ ExpLevel = 5500001
 ExpLevel = 6000001
 ExpLevel = 6500001
 ExpLevel = 7000001
-Base Spell Levels = 1,Druid,2,0,0,0,0,0,0
-Base Spell Levels = 2,Druid,2,1,0,0,0,0,0
-Base Spell Levels = 3,Druid,3,2,1,0,0,0,0
-Base Spell Levels = 4,Druid,4,2,2,0,0,0,0
-Base Spell Levels = 5,Druid,4,3,2,0,0,0,0
-Base Spell Levels = 6,Druid,4,3,2,1,0,0,0
-Base Spell Levels = 7,Druid,4,4,3,1,0,0,0
-Base Spell Levels = 8,Druid,4,4,3,2,0,0,0
-Base Spell Levels = 9,Druid,5,4,3,2,1,0,0
-Base Spell Levels = 10,Druid,5,4,3,3,2,0,0
-Base Spell Levels = 11,Druid,5,5,3,3,2,1,0
-Base Spell Levels = 12,Druid,5,5,4,4,3,2,1
-Base Spell Levels = 13,Druid,6,5,5,5,4,3,2
-Base Spell Levels = 14,Druid,6,6,6,6,5,4,3
-Base Spell Levels = 15,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 16,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 17,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 18,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 19,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 20,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 21,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 22,Druid,6,6,6,6,6,6,6
-Base Spell Levels = 23,Druid,6,6,6,6,6,6,6
-MaxNumSpellsByPrime = Druid,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
+Base Spell Levels = 1,Druid,2
+Base Spell Levels = 2,Druid,2,1
+Base Spell Levels = 3,Druid,3,2,1
+Base Spell Levels = 4,Druid,4,2,2
+Base Spell Levels = 5,Druid,4,3,2
+Base Spell Levels = 6,Druid,4,3,2,1
+Base Spell Levels = 7,Druid,4,4,3,1
+Base Spell Levels = 8,Druid,4,4,3,2
+Base Spell Levels = 9,Druid,5,4,3,2,1
+Base Spell Levels = 10,Druid,5,4,3,3,2
+Base Spell Levels = 11,Druid,5,5,3,3,2,1
+Base Spell Levels = 12,Druid,5,5,4,4,3,2,1,1,1
+Base Spell Levels = 13,Druid,6,5,5,5,4,3,2,2,2
+Base Spell Levels = 14,Druid,6,6,6,6,5,4,3,3,3
+Base Spell Levels = 15,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 16,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 17,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 18,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 19,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 20,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 21,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 22,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 23,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 24,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 25,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 26,Druid,6,6,6,6,6,6,6,6,6
+Base Spell Levels = 27,Druid,6,6,6,6
 MaxSpellLevelByPrime = Druid,Wisdom,0,0,0,0,0,0,0,0,5,5,5,5,5,5,5,5,6,7,7,7,7,7,7,7,7
+MaxNumSpellsByPrime = Druid,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
 HitDice = 1,1,8,0
 HitDice = 2,1,8,0
 HitDice = 3,1,8,0
@@ -454,6 +366,23 @@ HitDice = 20,0,0,1
 HitDice = 21,0,0,1
 HitDice = 22,0,0,1
 HitDice = 23,0,0,1
+HitDice = 24,0,0,0
+HitDice = 25,0,0,0
+HitDice = 26,0,0,0
+HitDice = 27,0,0,0
+HitDice = 28,0,0,0
+HitDice = 29,0,0,0
+HitDice = 30,0,0,0
+HitDice = 31,0,0,0
+HitDice = 32,0,0,0
+HitDice = 33,0,0,0
+HitDice = 34,0,0,0
+HitDice = 35,0,0,0
+HitDice = 36,0,0,0
+HitDice = 37,0,0,0
+HitDice = 38,0,0,0
+HitDice = 39,0,0,0
+HitDice = 40,0,0,0
 Skill = Save Vs PPDM,10
 Skill = Save Vs PP,13
 Skill = Save Vs RSW,14
@@ -636,23 +565,23 @@ ExpLevel = 10125001
 ExpLevel = 10500001
 ExpLevel = 10875001
 ExpLevel = 11250001
-Base Spell Levels = 1,Magic User,1,0,0,0,0,0,0,0,0
-Base Spell Levels = 2,Magic User,2,0,0,0,0,0,0,0,0
-Base Spell Levels = 3,Magic User,2,1,0,0,0,0,0,0,0
-Base Spell Levels = 4,Magic User,3,2,0,0,0,0,0,0,0
-Base Spell Levels = 5,Magic User,4,2,1,0,0,0,0,0,0
-Base Spell Levels = 6,Magic User,4,2,2,0,0,0,0,0,0
-Base Spell Levels = 7,Magic User,4,3,2,1,0,0,0,0,0
-Base Spell Levels = 8,Magic User,4,3,3,2,0,0,0,0,0
-Base Spell Levels = 9,Magic User,4,3,3,2,1,0,0,0,0
-Base Spell Levels = 10,Magic User,4,4,3,2,2,0,0,0,0
-Base Spell Levels = 11,Magic User,4,4,4,3,3,0,0,0,0
-Base Spell Levels = 12,Magic User,4,4,4,4,4,1,0,0,0
-Base Spell Levels = 13,Magic User,5,5,5,4,4,2,0,0,0
-Base Spell Levels = 14,Magic User,5,5,5,4,4,2,1,0,0
-Base Spell Levels = 15,Magic User,5,5,5,5,5,2,1,0,0
-Base Spell Levels = 16,Magic User,5,5,5,5,5,3,2,1,0
-Base Spell Levels = 17,Magic User,5,5,5,5,5,3,3,2,0
+Base Spell Levels = 1,Magic User,1
+Base Spell Levels = 2,Magic User,2
+Base Spell Levels = 3,Magic User,2,1
+Base Spell Levels = 4,Magic User,3,2
+Base Spell Levels = 5,Magic User,4,2,1
+Base Spell Levels = 6,Magic User,4,2,2
+Base Spell Levels = 7,Magic User,4,3,2,1
+Base Spell Levels = 8,Magic User,4,3,3,2
+Base Spell Levels = 9,Magic User,4,3,3,2,1
+Base Spell Levels = 10,Magic User,4,4,3,2,2
+Base Spell Levels = 11,Magic User,4,4,4,3,3
+Base Spell Levels = 12,Magic User,4,4,4,4,4,1
+Base Spell Levels = 13,Magic User,5,5,5,4,4,2
+Base Spell Levels = 14,Magic User,5,5,5,4,4,2,1
+Base Spell Levels = 15,Magic User,5,5,5,5,5,2,1
+Base Spell Levels = 16,Magic User,5,5,5,5,5,3,2,1
+Base Spell Levels = 17,Magic User,5,5,5,5,5,3,3,2
 Base Spell Levels = 18,Magic User,5,5,5,5,5,3,3,2,1
 Base Spell Levels = 19,Magic User,5,5,5,5,5,3,3,3,1
 Base Spell Levels = 20,Magic User,5,5,5,5,5,4,3,3,2
@@ -676,8 +605,8 @@ Base Spell Levels = 37,Magic User,9,9,9,9,9,9,9,9,9
 Base Spell Levels = 38,Magic User,10,10,10,10,9,9,9,9,9
 Base Spell Levels = 39,Magic User,10,10,10,10,10,10,10,9,9
 Base Spell Levels = 40,Magic User,10,10,10,10,10,10,10,10,10
-MaxNumSpellsByPrime = Magic User,Intelligence,0,0,0,0,0,0,0,0,6,7,7,7,9,9,11,11,14,18,99,99,99,99,99,99,99
 MaxSpellLevelByPrime = Magic User,Intelligence,0,0,0,0,0,0,0,0,4,5,5,6,6,7,7,8,8,9,9,9,9,9,9,9,9
+MaxNumSpellsByPrime = Magic User,Intelligence,0,0,0,0,0,0,0,0,6,7,7,7,9,9,11,11,14,18,99,99,99,99,99,99,99
 HitDice = 1,1,4,0
 HitDice = 2,1,4,0
 HitDice = 3,1,4,0
@@ -787,40 +716,8 @@ ExpLevel = 10150001
 ExpLevel = 10500001
 ExpLevel = 10850001
 ExpLevel = 11200001
-Base Spell Levels = 9,Cleric,1,0,0,0
-Base Spell Levels = 10,Cleric,2,0,0,0
-Base Spell Levels = 11,Cleric,2,1,0,0
-Base Spell Levels = 12,Cleric,2,2,0,0
-Base Spell Levels = 13,Cleric,2,2,1,0
-Base Spell Levels = 14,Cleric,3,2,1,0
-Base Spell Levels = 15,Cleric,3,2,1,1
-Base Spell Levels = 16,Cleric,3,3,1,1
-Base Spell Levels = 17,Cleric,3,3,2,1
-Base Spell Levels = 18,Cleric,3,3,3,1
-Base Spell Levels = 19,Cleric,3,3,3,2
-Base Spell Levels = 20,Cleric,3,3,3,3
-Base Spell Levels = 21,Cleric,3,3,3,3
-Base Spell Levels = 22,Cleric,3,3,3,3
-Base Spell Levels = 23,Cleric,3,3,3,3
-Base Spell Levels = 24,Cleric,3,3,3,3
-Base Spell Levels = 25,Cleric,3,3,3,3
-Base Spell Levels = 26,Cleric,3,3,3,3
-Base Spell Levels = 27,Cleric,3,3,3,3
-Base Spell Levels = 28,Cleric,3,3,3,3
-Base Spell Levels = 29,Cleric,3,3,3,3
-Base Spell Levels = 30,Cleric,3,3,3,3
-Base Spell Levels = 31,Cleric,3,3,3,3
-Base Spell Levels = 32,Cleric,3,3,3,3
-Base Spell Levels = 33,Cleric,3,3,3,3
-Base Spell Levels = 34,Cleric,3,3,3,3
-Base Spell Levels = 35,Cleric,3,3,3,3
-Base Spell Levels = 36,Cleric,3,3,3,3
-Base Spell Levels = 37,Cleric,3,3,3,3
-Base Spell Levels = 38,Cleric,3,3,3,3
-Base Spell Levels = 39,Cleric,3,3,3,3
-Base Spell Levels = 40,Cleric,3,3,3,3
-MaxNumSpellsByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
 MaxSpellLevelByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+MaxNumSpellsByPrime = Cleric,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
 HitDice = 1,1,10,0
 HitDice = 2,1,10,0
 HitDice = 3,1,10,0
@@ -932,75 +829,10 @@ ExpLevel = 9100001
 ExpLevel = 9425001
 ExpLevel = 9750001
 ExpLevel = 10075001
-Base Spell Levels = 8,Druid,1,0,0
-Base Spell Levels = 9,Druid,1,0,0
-Base Spell Levels = 10,Druid,2,0,0
-Base Spell Levels = 11,Druid,2,0,0
-Base Spell Levels = 12,Druid,2,1,0
-Base Spell Levels = 13,Druid,2,1,0
-Base Spell Levels = 14,Druid,2,2,0
-Base Spell Levels = 15,Druid,2,2,0
-Base Spell Levels = 16,Druid,2,2,1
-Base Spell Levels = 17,Druid,2,2,2
-Base Spell Levels = 18,Druid,2,2,2
-Base Spell Levels = 19,Druid,2,2,2
-Base Spell Levels = 20,Druid,2,2,2
-Base Spell Levels = 21,Druid,2,2,2
-Base Spell Levels = 22,Druid,2,2,2
-Base Spell Levels = 23,Druid,2,2,2
-Base Spell Levels = 24,Druid,2,2,2
-Base Spell Levels = 25,Druid,2,2,2
-Base Spell Levels = 26,Druid,2,2,2
-Base Spell Levels = 27,Druid,2,2,2
-Base Spell Levels = 28,Druid,2,2,2
-Base Spell Levels = 29,Druid,2,2,2
-Base Spell Levels = 30,Druid,2,2,2
-Base Spell Levels = 31,Druid,2,2,2
-Base Spell Levels = 32,Druid,2,2,2
-Base Spell Levels = 33,Druid,2,2,2
-Base Spell Levels = 34,Druid,2,2,2
-Base Spell Levels = 35,Druid,2,2,2
-Base Spell Levels = 36,Druid,2,2,2
-Base Spell Levels = 37,Druid,2,2,2
-Base Spell Levels = 38,Druid,2,2,2
-Base Spell Levels = 39,Druid,2,2,2
-Base Spell Levels = 40,Druid,2,2,2
-Base Spell Levels = 9,Magic User,1,0
-Base Spell Levels = 10,Magic User,1,0
-Base Spell Levels = 11,Magic User,2,0
-Base Spell Levels = 12,Magic User,2,0
-Base Spell Levels = 13,Magic User,2,1
-Base Spell Levels = 14,Magic User,2,1
-Base Spell Levels = 15,Magic User,2,2
-Base Spell Levels = 16,Magic User,2,2
-Base Spell Levels = 17,Magic User,2,2
-Base Spell Levels = 18,Magic User,2,2
-Base Spell Levels = 19,Magic User,2,2
-Base Spell Levels = 20,Magic User,2,2
-Base Spell Levels = 21,Magic User,2,2
-Base Spell Levels = 22,Magic User,2,2
-Base Spell Levels = 23,Magic User,2,2
-Base Spell Levels = 24,Magic User,2,2
-Base Spell Levels = 25,Magic User,2,2
-Base Spell Levels = 26,Magic User,2,2
-Base Spell Levels = 27,Magic User,2,2
-Base Spell Levels = 28,Magic User,2,2
-Base Spell Levels = 29,Magic User,2,2
-Base Spell Levels = 30,Magic User,2,2
-Base Spell Levels = 31,Magic User,2,2
-Base Spell Levels = 32,Magic User,2,2
-Base Spell Levels = 33,Magic User,2,2
-Base Spell Levels = 34,Magic User,2,2
-Base Spell Levels = 35,Magic User,2,2
-Base Spell Levels = 36,Magic User,2,2
-Base Spell Levels = 37,Magic User,2,2
-Base Spell Levels = 38,Magic User,2,2
-Base Spell Levels = 39,Magic User,2,2
-Base Spell Levels = 40,Magic User,2,2
-MaxNumSpellsByPrime = Druid,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
-MaxNumSpellsByPrime = Magic User,Intelligence,0,0,0,0,0,0,0,0,6,7,7,7,9,9,11,11,14,18,99,99,99,99,99,99,99
 MaxSpellLevelByPrime = Druid,Wisdom,0,0,0,0,0,0,0,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
 MaxSpellLevelByPrime = Magic User,Intelligence,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+MaxNumSpellsByPrime = Druid,Wisdom,0,0,0,0,0,0,0,0,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99
+MaxNumSpellsByPrime = Magic User,Intelligence,0,0,0,0,0,0,0,0,6,7,7,7,9,9,11,11,14,18,99,99,99,99,99,99,99
 HitDice = 1,2,8,0
 HitDice = 2,1,8,0
 HitDice = 3,1,8,0
@@ -1174,6 +1006,11 @@ Skill = HearNoise,10
 Skill = ClimbWalls,85
 Skill = ReadLanguages,0
 Skill = BackstabMultiplier,100
+SkillAdjAbility = PickPockets,Dexterity,%,0,0,0,0,0,0,0,0,85,90,95,100,100,100,100,100,105,110,115,115,115,115,115,115,115
+SkillAdjAbility = OpenLocks,Dexterity,%,0,0,0,0,0,0,0,0,90,95,100,100,100,100,100,100,105,110,115,115,115,115,115,115,115
+SkillAdjAbility = FindTraps,Dexterity,%,0,0,0,0,0,0,0,0,90,90,95,100,100,100,100,100,100,105,110,110,110,110,110,110,110
+SkillAdjAbility = MoveSilent,Dexterity,%,0,0,0,0,0,0,0,0,80,85,90,95,100,100,100,100,105,110,115,115,115,115,115,115,115
+SkillAdjAbility = HideInShadows,Dexterity,%,0,0,0,0,0,0,0,0,90,95,100,100,100,100,100,100,105,110,115,115,115,115,115,115,115
 SkillAdjBaseclass = Save Vs PPDM,thief,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 SkillAdjBaseclass = Save Vs PP,thief,-,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
 SkillAdjBaseclass = Save Vs RSW,thief,-,0,0,0,0,2,2,2,2,4,4,4,4,6,6,6,6,8,8,8,8,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10
@@ -1187,11 +1024,6 @@ SkillAdjBaseclass = HideInShadows,thief,+,0,5,10,15,21,27,33,39,46,53,60,67,75,8
 SkillAdjBaseclass = HearNoise,thief,+,0,0,5,5,10,10,15,15,20,20,25,25,30,30,40,40,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45,45
 SkillAdjBaseclass = ClimbWalls,thief,+,0,1,2,3,5,7,9,11,13,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14
 SkillAdjBaseclass = ReadLanguages,thief,+,0,0,0,20,25,30,35,40,45,50,55,60,65,70,75,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80,80
-SkillAdjAbility = PickPockets,Dexterity,%,0,0,0,0,0,0,0,0,85,90,95,100,100,100,100,100,105,110,115,115,115,115,115,115,115
-SkillAdjAbility = OpenLocks,Dexterity,%,0,0,0,0,0,0,0,0,90,95,100,100,100,100,100,100,105,110,115,115,115,115,115,115,115
-SkillAdjAbility = FindTraps,Dexterity,%,0,0,0,0,0,0,0,0,90,90,95,100,100,100,100,100,100,105,110,110,110,110,110,110,110
-SkillAdjAbility = MoveSilent,Dexterity,%,0,0,0,0,0,0,0,0,80,85,90,95,100,100,100,100,105,110,115,115,115,115,115,115,115
-SkillAdjAbility = HideInShadows,Dexterity,%,0,0,0,0,0,0,0,0,90,95,100,100,100,100,100,100,105,110,115,115,115,115,115,115,115
 SkillAdjBaseclass = BackstabMultiplier,thief,%,200,200,200,200,300,300,300,300,400,400,400,400,500,500,500,500,600,600,600,600,700,700,700,700,800,800,800,800,900,900,900,900,1000,1000,1000,1000,1100,1100,1100,1100
 SkillAdjRace = MaxLevel$SYS$,ThiefLevelCaps,I,0
 SkillAdjRace = MaxLevel$SYS$,Half-Orc,\=,6
@@ -1201,7 +1033,51 @@ Special Ability = baseclass_NameSuppress,"Y"
 
 \(BEGIN)
 name = $$Help
+THAC0 = 
+Allowed Alignment = any
+HitDice = 1,0,0,0
+HitDice = 2,0,0,0
+HitDice = 3,0,0,0
+HitDice = 4,0,0,0
+HitDice = 5,0,0,0
+HitDice = 6,0,0,0
+HitDice = 7,0,0,0
+HitDice = 8,0,0,0
+HitDice = 9,0,0,0
+HitDice = 10,0,0,0
+HitDice = 11,0,0,0
+HitDice = 12,0,0,0
+HitDice = 13,0,0,0
+HitDice = 14,0,0,0
+HitDice = 15,0,0,0
+HitDice = 16,0,0,0
+HitDice = 17,0,0,0
+HitDice = 18,0,0,0
+HitDice = 19,0,0,0
+HitDice = 20,0,0,0
+HitDice = 21,0,0,0
+HitDice = 22,0,0,0
+HitDice = 23,0,0,0
+HitDice = 24,0,0,0
+HitDice = 25,0,0,0
+HitDice = 26,0,0,0
+HitDice = 27,0,0,0
+HitDice = 28,0,0,0
+HitDice = 29,0,0,0
+HitDice = 30,0,0,0
+HitDice = 31,0,0,0
+HitDice = 32,0,0,0
+HitDice = 33,0,0,0
+HitDice = 34,0,0,0
+HitDice = 35,0,0,0
+HitDice = 36,0,0,0
+HitDice = 37,0,0,0
+HitDice = 38,0,0,0
+HitDice = 39,0,0,0
+HitDice = 40,0,0,0
+SpellBonusAbility = 
 Special Ability = Date,"December 16, 2017"
 Special Ability = Updates1_02,"minor corrections for druid, fighter, magic user, paladin, ranger and thief"
 Special Ability = Updates_171216,"fixed MaxLevel$SYS$ for all baseclasses"
 \(END)
+

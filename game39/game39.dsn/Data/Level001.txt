@@ -2703,7 +2703,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Quest NOT present in Party",
-                  "class":"Cleric",
                   "quest":"31",
                   "facing":"Any/All Side(s)"
                },

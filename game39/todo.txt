@@ -1,3 +1,4 @@
+- Sorcerer's Isle 1: Need spells for "Elf Magic-User" at step combat event 3
 - Castle SW: Need spells for "Level 1 Cleric" and "Level 5 Cleric" monsters - combat events @ 1,3
 - Castle SE: Need "Long Sword Dragonslayer" at GiveTreasure event #59 @ 15,10 - instead of the Long Sword +5 I have there now
 - Zhentil Keep: Al-Hyam Dazid should have the ability to cast MU spells (same as all the others below)

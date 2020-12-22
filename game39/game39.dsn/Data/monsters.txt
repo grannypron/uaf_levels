@@ -6897,6 +6897,11 @@ Misc Options = can be held/charmed + none
 item = Dagger,1
 item = Robe,1
 item = Wand|3,1
+item = monsterMageCharmPerson,1
+item = monsterMageMagicMissile,1
+item = monsterMageStinkingCloud,1
+item = monsterMageSleep,1
+item = monsterMageInvisibility,1
 attack = 4,1,0,attacks,
 Undead = 
 \(END)

@@ -3615,6 +3615,21 @@
                   "chance":"30",
                   "facing":"Any/All Side(s)"
                },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_poisonous_frog.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
                "mtext":[
                   "  THE CROAKING RISES IN VOLUME."
                ]
@@ -3645,8 +3660,8 @@
                "monsters":[
                   {
                      "number":"4",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Poisonous Frog",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

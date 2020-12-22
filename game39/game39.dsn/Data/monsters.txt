@@ -6337,7 +6337,8 @@ form = none
 penalty = none
 immunity = none
 Misc Options = can be held/charmed + none
-item = none
+item = monsterDragonBreathAcid,1
+item = monsterDragonBreathAcid,1
 attack = 6,3,0,attacks,
 Undead = 
 \(END)

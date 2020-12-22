@@ -2839,9 +2839,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"2",
+                     "number":"1",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Level 3 MU",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -2852,9 +2852,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"1",
+                     "number":"2",
                      "type":"MONSTER",
-                     "name":"Level 3 MU",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

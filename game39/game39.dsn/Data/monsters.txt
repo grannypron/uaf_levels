@@ -6008,6 +6008,9 @@ immunity = none
 Misc Options = can be held/charmed + none
 item = Robe,1
 item = Quarter Staff,1
+item = monsterMageMagicMissile,1
+item = monsterMageCharmMonster,1
+item = monsterMageStinkingCloud,1
 attack = 4,1,0,attacks,
 Undead = 
 \(END)
@@ -6249,6 +6252,14 @@ Misc Options = can be held/charmed + none
 item = Quarter Staff,1
 item = Robe,1
 item = Ring|3,1
+item = monsterMageMagicMissile,1
+item = monsterMageMagicMissile,1
+item = monsterMageSleep,1
+item = monsterMageShield,1
+item = monsterMageStinkingCloud,1
+item = monsterMageLightningBolt,1
+item = monsterMageHoldPerson,1
+item = monsterMageSleep,1
 attack = 4,1,2,attacks,
 Undead = 
 \(END)

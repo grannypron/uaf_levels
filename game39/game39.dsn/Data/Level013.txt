@@ -7955,7 +7955,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_wall_wood.png",
+            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall_wood.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",
@@ -7994,7 +7994,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_wall_wood.png",
+            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall_wood.png",
             "doorFile":"dr_door44.png",
             "overlayFile":"",
             "soundFile":"",

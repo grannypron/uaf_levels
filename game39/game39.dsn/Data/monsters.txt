@@ -7037,14 +7037,16 @@ magic resistance = 100
 size = medium
 morale = 0
 experience point value = 30000
-Class = Fighter
+Special Ability = IsImmuneDragonBreathWeapon
+Special Ability = IsSeeingInvisible,dragon
+Class = Magic User
 Race = Monster
 form = giant + large + none
 penalty = none
 immunity = none
 Misc Options = can be held/charmed + none
-item = none
-attack = 8,2,0,attacks,
+item = monsterDragonBreathLightning,1
+attack = 8,2,0,attacks,monsterSalamanderFireAttack
 Undead = 
 \(END)
 

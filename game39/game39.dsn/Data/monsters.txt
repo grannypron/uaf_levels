@@ -6786,6 +6786,8 @@ immunity = none
 Misc Options = can be held/charmed + none
 item = Ring Mail,1
 item = Mace,1
+item = monsterClericCauseLightWounds,1
+item = monsterClericCureLightWounds,1
 attack = 6,1,0,attacks,
 Undead = 
 \(END)
@@ -6817,6 +6819,13 @@ Misc Options = can be held/charmed + none
 item = Plate Mail|1,1
 item = Mace|3,1
 item = Necklace,1
+item = monsterClericCauseLightWounds,1
+item = monsterClericCureLightWounds,1
+item = monsterClericCureLightWounds,1
+item = monsterClericHoldPerson,1
+item = monsterClericHoldPerson,1
+item = monsterClericHoldPerson,1
+item = monsterClericPrayer,1
 attack = 6,1,3,attacks,
 Undead = 
 \(END)

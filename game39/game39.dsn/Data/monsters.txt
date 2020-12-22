@@ -6190,6 +6190,13 @@ immunity = none
 Misc Options = can be held/charmed + none
 item = Plate Mail,1
 item = Mace|1,1
+item = monsterClericCauseDisease,1
+item = monsterClericCauseLightWounds,1
+item = monsterClericCureLightWounds,1
+item = monsterClericCurse,1
+item = monsterClericCureSeriousWounds,1
+item = monsterClericHoldPerson,1
+item = monsterClericHoldPerson,1
 attack = 10,1,2,attacks,
 Undead = 
 \(END)

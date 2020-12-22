@@ -6510,6 +6510,8 @@ immunity = none
 Misc Options = can be held/charmed + none
 item = Plate Mail,1
 item = Two-Handed Sword|2,1
+item = monsterMageCharmPerson,1
+item = monsterMageMagicMissile,1
 attack = 6,2,0,attacks,
 Undead = 
 \(END)

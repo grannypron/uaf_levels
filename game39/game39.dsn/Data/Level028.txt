@@ -2177,7 +2177,6 @@
                "eventID":"6",
                "xy":[12,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -4093,7 +4092,7 @@
                "items":[
                   {
                      "key":"1",
-                     "itemID":"Long Sword|5",
+                     "itemID":"Long Sword|2",
                      "ready":"2036836250",
                      "quantity":"1",
                      "identified":"0",

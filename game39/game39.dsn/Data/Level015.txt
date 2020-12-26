@@ -4084,7 +4084,7 @@
                   {
                      "number":"4",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

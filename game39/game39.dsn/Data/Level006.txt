@@ -4214,7 +4214,6 @@
                "eventID":"32",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4253,16 +4252,6 @@
                   {
                      "key":"1",
                      "itemID":"Hammer|3",
-                     "ready":"2036836250",
-                     "quantity":"1",
-                     "identified":"0",
-                     "charges":"0",
-                     "cursed":"0",
-                     "paid":"-1"
-                  },
-                  {
-                     "key":"2",
-                     "itemID":"Sling|3",
                      "ready":"2036836250",
                      "quantity":"1",
                      "identified":"0",
@@ -4337,6 +4326,16 @@
                      "quantity":"1",
                      "identified":"0",
                      "charges":"1",
+                     "cursed":"0",
+                     "paid":"-1"
+                  },
+                  {
+                     "key":"10",
+                     "itemID":"Sling|2",
+                     "ready":"2036836250",
+                     "quantity":"1",
+                     "identified":"0",
+                     "charges":"0",
                      "cursed":"0",
                      "paid":"-1"
                   }

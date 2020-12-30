@@ -3167,7 +3167,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE WIZARD SAYS YOU HAVE DONE WELL, AND THAT YOU WILL BE REWARDED.  THE MAN TAKES THE POTION AND GULPS IT GREEDILY.  AS YOU WATCH, HE SEEMS TO GROW YOUNGER.  HE GIVES YOU YOUR REWARD AND THEN VANISHES."
+                  "  THE WIZARD SAYS YOU HAVE DONE WELL, AND FOR THAT YOU WILL BE REWARDED.  THE MAN TAKES THE POTION AND GULPS IT GREEDILY.  AS YOU WATCH, HE SEEMS TO GROW YOUNGER.  HE GIVES YOU YOUR REWARD AND THEN VANISHES."
                ]
             },
             "particular":{
@@ -8492,9 +8492,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall78.png",
             "doorFile":"",
-            "overlayFile":"",
+            "overlayFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\ov_overlay_fireplace.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",

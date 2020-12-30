@@ -3670,8 +3670,8 @@
                "monsters":[
                   {
                      "number":"15",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Kobold",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -3683,8 +3683,8 @@
                   },
                   {
                      "number":"1",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Kobold Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -8492,9 +8492,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall78.png",
+            "wallFile":"wa_wall78.png",
             "doorFile":"",
-            "overlayFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\ov_overlay_fireplace.png",
+            "overlayFile":"ov_overlay_fireplace.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",

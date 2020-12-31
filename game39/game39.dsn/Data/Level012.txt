@@ -2403,19 +2403,6 @@
                },
                "monsters":[
                   {
-                     "number":"3",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
-                     "friendly":"false",
-                     "moraleAdjustment":"0",
-                     "fixedNumberOfMonsters":"true",
-                     "money":{
-                        "gems":[],
-                        "jewels":[]
-                     },
-                     "possessions":[]
-                  },
-                  {
                      "number":"1",
                      "type":"MONSTER",
                      "name":"Aides",
@@ -3155,7 +3142,6 @@
                "xy":[-1,-1],
                "control":{
                   "eventTrigger":"Quest NOT present in Party",
-                  "class":"Cleric",
                   "quest":"34",
                   "facing":"Any/All Side(s)"
                }
@@ -3405,8 +3391,8 @@
                "monsters":[
                   {
                      "number":"16",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Bugbear",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -3637,7 +3623,6 @@
                "xy":[-1,-1],
                "control":{
                   "onceOnly":"1",
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "chainEventHappen":"54"
@@ -3668,8 +3653,8 @@
                "monsters":[
                   {
                      "number":"16",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Bugbear",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

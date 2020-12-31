@@ -2261,6 +2261,21 @@
                   "onceOnly":"1",
                   "facing":"Any/All Side(s)"
                },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Kobold.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
                "mtext":[
                   "  A SCREAMING HORDE OF KOBOLDS ATTACKS YOU!"
                ],
@@ -2292,8 +2307,8 @@
                "monsters":[
                   {
                      "number":"25",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Kobold",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -2305,8 +2320,8 @@
                   },
                   {
                      "number":"5",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Kobold Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -4624,7 +4639,22 @@
                   "useNightMusic":"false",
                   "startTime":"1800",
                   "endTime":"600"
-               }
+               },
+               "monsters":[
+                  {
+                     "number":"1",
+                     "type":"MONSTER",
+                     "name":"Ankheg",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
             }
          },
          {

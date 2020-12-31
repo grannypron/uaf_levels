@@ -2939,8 +2939,22 @@
                "xy":[-1,-1],
                "control":{
                   "onceOnly":"1",
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Kobold.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
                },
                "mtext":[
                   "  A NET ENTANGLES YOU."
@@ -2972,8 +2986,8 @@
                "monsters":[
                   {
                      "number":"20",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "type":"MONSTER",
+                     "name":"Kobold",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -2992,7 +3006,6 @@
                "eventID":"30",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[

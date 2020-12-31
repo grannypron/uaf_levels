@@ -1270,7 +1270,10 @@ name = Global_Display
 -	};
 -$IF (cbnCount ==# 1)
 -	{
--		$GrPrtLF("LEVEL/XP " + lvl + "/" + xp);
+-		$GrPrint("LEVEL/XP ");
+-		$GrPrint(lvl);
+-		$GrPrint("/");
+-		$GrPrtLF(xp);
 -	};
 -$GrMark("Level");
 -

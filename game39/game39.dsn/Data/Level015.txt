@@ -10982,9 +10982,9 @@
             "soundFile":"",
             "suppressStepSound":"false",
             "used":"false",
-            "startTime":"0",
-            "endTime":"0",
-            "useAltBackground":"false",
+            "startTime":"1800",
+            "endTime":"600",
+            "useAltBackground":"true",
             "useAlphaBlend":"false",
             "alphaBlendPercent":"0",
             "useTransparency":"false"

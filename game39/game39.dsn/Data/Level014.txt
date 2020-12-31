@@ -4981,7 +4981,10 @@
                   "useAlpha":"false",
                   "alpha":"0",
                   "restartFrame":"1"
-               }
+               },
+               "mtext":[
+                  "Naughty kobolds close to attack."
+               ]
             },
             "particular":{
                "deathSound":"sound_CharDeath.wav",
@@ -6290,7 +6293,6 @@
                "eventID":"63",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "chainEventHappen":"64"
@@ -6403,7 +6405,6 @@
                "eventID":"65",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[

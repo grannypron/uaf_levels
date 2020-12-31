@@ -5964,8 +5964,9 @@ name = item_RingOfelectricalVulnerability
 \(BEGIN)
 name = item_Scroll
 [CanReady] = $VAR me; $VAR cls;
--me = $MyIndex(); cls = $SA_PARAM_GET();
--$IF (($GET_CHAR_Lvl(me,cls) <# 1) || ($GET_CHAR_Lvl(me,"thief")) <# 10){$RETURN "N";};
+-me = $IndexOf($CharacterContext()); cls = $SA_PARAM_GET();
+-$IF (($GET_CHAR_Lvl(me,cls) >=# 1) || ($GET_CHAR_Lvl(me,"thief")) >=# 10){$RETURN "Y";}
+-$ELSE {$RETURN "N";};
 \(END)
 
 \(BEGIN)

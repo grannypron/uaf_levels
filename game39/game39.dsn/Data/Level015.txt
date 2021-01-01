@@ -4590,7 +4590,7 @@
                "chainEventNotHappen":"74"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"
@@ -4656,7 +4656,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Random Chance",
-                  "class":"Cleric",
                   "chance":"20",
                   "facing":"Any/All Side(s)"
                },
@@ -4674,7 +4673,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Random Chance",
-                  "class":"Cleric",
                   "chance":"20",
                   "facing":"Any/All Side(s)"
                },
@@ -5037,7 +5035,6 @@
                "eventID":"86",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "chainEventHappen":"87"

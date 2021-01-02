@@ -838,7 +838,7 @@
             "W":{"background":"12"}
          },
          {
-            "xy":[7,6],"zone":"5",
+            "xy":[7,6],"eventExists":"true","zone":"5",
             "N":{"wall":"3","background":"12"},
             "E":{"background":"12"},
             "S":{"wall":"3","background":"12"},
@@ -957,7 +957,7 @@
             "W":{"background":"12"}
          },
          {
-            "xy":[6,7],"zone":"5",
+            "xy":[6,7],"eventExists":"true","zone":"5",
             "N":{"background":"12"},
             "E":{"wall":"3","background":"12"},
             "S":{"background":"12"},
@@ -971,7 +971,7 @@
             "W":{"wall":"3","background":"12"}
          },
          {
-            "xy":[8,7],"zone":"5",
+            "xy":[8,7],"eventExists":"true","zone":"5",
             "N":{"background":"12"},
             "E":{"background":"12"},
             "S":{"background":"12"},
@@ -1090,7 +1090,7 @@
             "W":{"background":"12"}
          },
          {
-            "xy":[7,8],"zone":"5",
+            "xy":[7,8],"eventExists":"true","zone":"5",
             "N":{"wall":"3","background":"12"},
             "E":{"background":"12"},
             "S":{"wall":"5","background":"12"},
@@ -5366,26 +5366,6 @@
          },
          {
             "general":{
-               "eventType":"Text Statement",
-               "eventID":"60",
-               "xy":[-1,-1],
-               "control":{
-                  "onceOnly":"1",
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  BEFORE YOU LIES KUTO'S WELL.  IT IS A SOURCE OF WATER IN ALL SEASONS."
-               ]
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
                "eventType":"Damage",
                "eventID":"61",
                "xy":[-1,-1],
@@ -6753,6 +6733,86 @@
                "acceptChain":"0",
                "rejectChain":"0"
             }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"141",
+               "xy":[6,7],
+               "control":{
+                  "eventTrigger":"Facing dir, even after arrive",
+                  "facing":"East"
+               },
+               "mtext":[
+                  "  BEFORE YOU LIES KUTO'S WELL.  IT IS A SOURCE OF WATER IN ALL SEASONS."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"142",
+               "xy":[8,7],
+               "control":{
+                  "eventTrigger":"Facing dir, even after arrive",
+                  "facing":"West"
+               },
+               "mtext":[
+                  "  BEFORE YOU LIES KUTO'S WELL.  IT IS A SOURCE OF WATER IN ALL SEASONS."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"143",
+               "xy":[7,6],
+               "control":{
+                  "eventTrigger":"Facing dir, even after arrive",
+                  "facing":"South"
+               },
+               "mtext":[
+                  "  BEFORE YOU LIES KUTO'S WELL.  IT IS A SOURCE OF WATER IN ALL SEASONS."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"144",
+               "xy":[7,8],
+               "control":{
+                  "eventTrigger":"Facing dir, even after arrive",
+                  "facing":"North"
+               },
+               "mtext":[
+                  "  BEFORE YOU LIES KUTO'S WELL.  IT IS A SOURCE OF WATER IN ALL SEASONS."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
          }
       ],
       "zones":[
@@ -7668,7 +7728,7 @@
          },
          {
             "triggers":["0","0","0","0","1","0","0","0","0","0","0","0","0","0","0","0"],
-            "event":"60",
+            "event":"0",
             "steps":"1",
             "name":""
          },

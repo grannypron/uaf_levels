@@ -5850,6 +5850,7 @@ magic resistance = 0
 size = medium
 morale = 0
 experience point value = 528
+Special Ability = monsterLevel,5
 Class = Fighter
 Race = Human
 form = mammal + none

@@ -5835,10 +5835,10 @@ Undead =
 \(BEGIN)
 name = Norris The Gray
 icon file = icon_Koalinth.png,0,2,48,48,0,1,0,1,0,0
-miss sound = DEFAULT
-hit sound = DEFAULT
-move sound = DEFAULT
-death sound = DEFAULT
+miss sound = sound_Miss.wav
+hit sound = sound_Hit.wav
+move sound = sound_CharMove.wav
+death sound = sound_CharDeath.wav
 intelligence = 10
 armor class = 10
 movement rate = 12
@@ -5857,8 +5857,9 @@ penalty = none
 immunity = none
 Misc Options = can be held/charmed + none
 item = Long Sword|1,1
-item = Leather Armor,1
-attack = 4,3,0,attacks,
+item = Chain Mail,1
+item = Shield,1
+attack = 2,1,0,attacks,
 Undead = 
 \(END)
 

@@ -3565,27 +3565,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3618,7 +3618,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU FIND THE HISTORY OF THE NORTH.  IT IS MOSTLY WRITTEN TO PLEASE A ROYAL LINE; HOWEVER, THERE IS AN INTERESTING PASSAGE./h  TEN DAYS' RIDE NORTH OF THE VARM IS A BARREN AND DEAD COUNTRY CALLED THE LEE-WAI, LAND-IN-PAIN OR LAND-OF-CAUSED-PAIN.  FURTHER TO THE SOUTH THIS PLACE IS KNOWN AS THE TORTURED LAND./h/h  IT IS SAID TO BE AN EVIL PLACE, SHUNNED BY THE RIDERS.  THEY SPEAK LITTLE OF THIS LAND.  BUT, YEARLY, DURING CHES, THEY MAKE A TRIP INTO ITS HEART./h/h  THERE THEY GO TO PRAISE THE SPIRIT OF A GLOWING SPRING.  THIS THEY HAVE DONE FOR AGES, AND SO SHALL THEY DO FOR YEARS TO COME./h"
+                  "  YOU FIND THE HISTORY OF THE NORTH.  IT IS MOSTLY WRITTEN TO PLEASE A ROYAL LINE; HOWEVER, THERE IS AN INTERESTING PASSAGE.  TEN DAYS' RIDE NORTH OF THE VARM IS A BARREN AND DEAD COUNTRY CALLED THE LEE-WAI, LAND-IN-PAIN OR LAND-OF-CAUSED-PAIN.  FURTHER TO THE SOUTH THIS PLACE IS KNOWN AS THE TORTURED LAND.  IT IS SAID TO BE AN EVIL PLACE, SHUNNED BY THE RIDERS.  THEY SPEAK LITTLE OF THIS LAND.  BUT, YEARLY, DURING CHES, THEY MAKE A TRIP INTO ITS HEART.  THERE THEY GO TO PRAISE THE SPIRIT OF A GLOWING SPRING.  THIS THEY HAVE DONE FOR AGES, AND SO SHALL THEY DO FOR YEARS TO COME."
                ]
             },
             "particular":{
@@ -3674,27 +3674,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3783,27 +3783,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3836,7 +3836,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU FIND THE GRAND HISTORIAN'S RECORDS OF THE ARTS OF WAR.  IN IT IS A USEFUL PASSAGE./h  AT THIS TIME THERE RULING THE TWISTED ONES WAS A POWERFUL GENERAL NAMED TYRANTHRAXUS.  HE STRODE BEFORE HIS ARMIES CLOAKED IN FLAME AND LED THE RIDERS OUT OF THE WASTE./h/h  AT HIS HAND THE KINGDOM OF BARZE WAS CONQUERED.  TURNING SOUTH HE LED HIS ARMY TO CONQUER THE HORREB AND THE VANE.  TYRANTHRAXUS WAS A CRUEL MAN AND LEVELED ALL THAT HE HAD TAKEN, MURDERING THE PRINCES OF THESE LANDS./h/h  BUT THE FLAME THAT SURROUNDED HIM CONSUMED HIM, DESTROYING HIS BODY.  FREED OF ITS SHELL, IT FLEW AMONG THE MEN OF HIS ARMY, LIGHTING ON EACH AND CLAIMING IT.  /h/h  IT WAS THEN WHEN BARON SCHODT IMPRISONED TYRANTHRAXUS IN A VIAL OF WATER THAT SHONE LIKE THE LIGHT OF DAY.  THIS HE SANK IN THE WATERY DEPTHS OF LAKE LONGREACH, DEFEATING THE ARMIES TYRANTHRAXUS HAD RAISED./h"
+                  "  YOU FIND THE GRAND HISTORIAN'S RECORDS OF THE ARTS OF WAR.  IN IT IS A USEFUL PASSAGE.  AT THIS TIME THERE RULING THE TWISTED ONES WAS A POWERFUL GENERAL NAMED TYRANTHRAXUS.  HE STRODE BEFORE HIS ARMIES CLOAKED IN FLAME AND LED THE RIDERS OUT OF THE WASTE.  AT HIS HAND THE KINGDOM OF BARZE WAS CONQUERED.  TURNING SOUTH HE LED HIS ARMY TO CONQUER THE HORREB AND THE VANE.  TYRANTHRAXUS WAS A CRUEL MAN AND LEVELED ALL THAT HE HAD TAKEN, MURDERING THE PRINCES OF THESE LANDS.  BUT THE FLAME THAT SURROUNDED HIM CONSUMED HIM, DESTROYING HIS BODY.  FREED OF ITS SHELL, IT FLEW AMONG THE MEN OF HIS ARMY, LIGHTING ON EACH AND CLAIMING IT.    IT WAS THEN WHEN BARON SCHODT IMPRISONED TYRANTHRAXUS IN A VIAL OF WATER THAT SHONE LIKE THE LIGHT OF DAY.  THIS HE SANK IN THE WATERY DEPTHS OF LAKE LONGREACH, DEFEATING THE ARMIES TYRANTHRAXUS HAD RAISED."
                ]
             },
             "particular":{
@@ -4001,27 +4001,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4054,7 +4054,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU FIND URGUND'S DESCRIPTION OF DARKNESS.  THIS IS HIS ACCOUNT OF HIS IMPRISONMENT IN THE LOWER REALMS.  THERE IS A PASSAGE OF INTEREST./h...AND SETTLED FOREMOST IN THE HALL OF MINOR COURTIERS WERE THE LESSER POWERS: MARAM OF THE GREAT SPEAR; HAASK, VOICE OF HARGUT; TYRANTHRAXUS THE FLAMED ONE; BOREM OF THE LAKE OF BOILING MUD; AND CAMNOD THE UNSEEN./h/h  THESE TOO FELL DOWN AND BECAME SERVANTS OF THE GREAT LORD BANE./h"
+                  "  YOU FIND URGUND'S DESCRIPTION OF DARKNESS.  THIS IS HIS ACCOUNT OF HIS IMPRISONMENT IN THE LOWER REALMS.  THERE IS A PASSAGE OF INTEREST....AND SETTLED FOREMOST IN THE HALL OF MINOR COURTIERS WERE THE LESSER POWERS: MARAM OF THE GREAT SPEAR; HAASK, VOICE OF HARGUT; TYRANTHRAXUS THE FLAMED ONE; BOREM OF THE LAKE OF BOILING MUD; AND CAMNOD THE UNSEEN.  THESE TOO FELL DOWN AND BECAME SERVANTS OF THE GREAT LORD BANE."
                ]
             },
             "particular":{
@@ -4110,27 +4110,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4163,7 +4163,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU FIND FYERDETHA'S DISCOURSES ON POWER.  AMONG ALL THE DRY TEXT YOU FIND AN INTERESTING PASSAGE./h  FOUNTAINS AND POOLS HOLD GREAT POWER THAT CAN ONLY BE REACHED BY PERFORMING PROPER CEREMONIES.  MOST SURE OF THESE IS IMMERSION, FOR IN THIS WAY THE BATHER SURRENDERS HIMSELF TO THE SPIRIT OF THE WATER./h/h  THAT SPIRIT, OR SOME PORTION OF IT, ENTERS INTO THE BATHER, WHEREBY HE GAINS GREAT POWERS.  WOE TO THE WEAK WILLED WHOSE SPIRITS ARE SURE TO BE CONSUMED BY SPIRITS THAT PUT EVEN THE STRONG AT GREAT RISK./h/h  YURAX HOLDS THAT THE FALLS OF IXCE ARE GREATEST OF ALL THESE.  MORDEN WRITES THAT THE POOL OF RADIANCE IS GREATER STILL.  /h  LATER IN THE BOOK, YOU FIND ANOTHER PASSAGE OF NOTE."
+                  "  YOU FIND FYERDETHA'S DISCOURSES ON POWER.  AMONG ALL THE DRY TEXT YOU FIND AN INTERESTING PASSAGE.  FOUNTAINS AND POOLS HOLD GREAT POWER THAT CAN ONLY BE REACHED BY PERFORMING PROPER CEREMONIES.  MOST SURE OF THESE IS IMMERSION, FOR IN THIS WAY THE BATHER SURRENDERS HIMSELF TO THE SPIRIT OF THE WATER.  THAT SPIRIT, OR SOME PORTION OF IT, ENTERS INTO THE BATHER, WHEREBY HE GAINS GREAT POWERS.  WOE TO THE WEAK WILLED WHOSE SPIRITS ARE SURE TO BE CONSUMED BY SPIRITS THAT PUT EVEN THE STRONG AT GREAT RISK.  YURAX HOLDS THAT THE FALLS OF IXCE ARE GREATEST OF ALL THESE.  MORDEN WRITES THAT THE POOL OF RADIANCE IS GREATER STILL.    LATER IN THE BOOK, YOU FIND ANOTHER PASSAGE OF NOTE."
                ],
                "chainEventHappen":"25"
             },
@@ -4199,7 +4199,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  PLACES OF MAGICAL POWER ARE NOT NECESSARILY TIED TO ONE PHYSICAL LOCATION.  POWER OFTEN MOVES FROM PLANE TO PLANE ALONG THE PATH OF LEAST RESISTANCE./h/h  THE TERMINATION OF THE PATH DETERMINES THE PLACE'S LOCATION ON THIS PLANE.  VOLATILE UPHEAVALS BETWEEN THE PLANES MAY LEAD TO A CHANGE IN THE PATH OF LEAST RESISTANCE./h/h  THIS CAN CHANGE WHERE THE PATH TERMINATES ON THIS PLANE, THUS MOVING THE PLACE OF POWER./h/h  SOME WHO WIELD STRONG SUPERNATURAL FORCE CAN BEND THE PATH LIKE AN ENGINEER DAMMING A RIVER.  WHEN THE PATH IS BENT, IT CAN TERMINATE IN A NEW LOCATION, MOVING THE PLACE OF POWER ON THIS PLANE. /h/h  IF THE SUPERNATURAL FORCE THAT BENT THE PATH IS REMOVED, THE PATH WILL SNAP BACK TO ITS ORIGINAL FORM AND THE PLACE OF POWER WILL RETURN TO ITS ORIGINAL LOCATION.  SUCH DISRUPTION CAN HAVE VIOLENT RESULTS./h"
+                  "  PLACES OF MAGICAL POWER ARE NOT NECESSARILY TIED TO ONE PHYSICAL LOCATION.  POWER OFTEN MOVES FROM PLANE TO PLANE ALONG THE PATH OF LEAST RESISTANCE.  THE TERMINATION OF THE PATH DETERMINES THE PLACE'S LOCATION ON THIS PLANE.  VOLATILE UPHEAVALS BETWEEN THE PLANES MAY LEAD TO A CHANGE IN THE PATH OF LEAST RESISTANCE.  THIS CAN CHANGE WHERE THE PATH TERMINATES ON THIS PLANE, THUS MOVING THE PLACE OF POWER.  SOME WHO WIELD STRONG SUPERNATURAL FORCE CAN BEND THE PATH LIKE AN ENGINEER DAMMING A RIVER.  WHEN THE PATH IS BENT, IT CAN TERMINATE IN A NEW LOCATION, MOVING THE PLACE OF POWER ON THIS PLANE.   IF THE SUPERNATURAL FORCE THAT BENT THE PATH IS REMOVED, THE PATH WILL SNAP BACK TO ITS ORIGINAL FORM AND THE PLACE OF POWER WILL RETURN TO ITS ORIGINAL LOCATION.  SUCH DISRUPTION CAN HAVE VIOLENT RESULTS."
                ],
                "chainEventHappen":"26"
             },
@@ -4235,7 +4235,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THUS, INTER-PLANAR UPHEAVALS AND DIRECTED SUPERNATURAL FORCES MAY HOLD THE ANSWER TO THE SEEMINGLY EVER-CHANGING LOCATION OF PLACES OF POWER, SUCH AS THE POOL OF RADIANCE./h"
+                  "  THUS, INTER-PLANAR UPHEAVALS AND DIRECTED SUPERNATURAL FORCES MAY HOLD THE ANSWER TO THE SEEMINGLY EVER-CHANGING LOCATION OF PLACES OF POWER, SUCH AS THE POOL OF RADIANCE."
                ]
             },
             "particular":{
@@ -4659,7 +4659,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  PLEASE DON'T HURT US NOBLE ONES, OH PLEASE DON'T HURT US.  WE DON'T KNOW ANYTHING.  WE ARE BUT LOST TRAVELERS TRYING TO FIND OUR WAY HOME.   /h"
+                  "  PLEASE DON'T HURT US NOBLE ONES, OH PLEASE DON'T HURT US.  WE DON'T KNOW ANYTHING.  WE ARE BUT LOST TRAVELERS TRYING TO FIND OUR WAY HOME.   "
                ],
                "chainEventHappen":"42"
             },
@@ -4828,7 +4828,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU FIND A FIGHTER WITH BATTERED ARMOR AND WILD EYES COWERING IN THE CORNER.  /h  YAI!  MERCY!  MERCY!  /hHE CRIES.  AND THEN AS SUDDENLY, /hDIE!  DIE, YOU SLIME FROM THE PIT!/h"
+                  "  YOU FIND A FIGHTER WITH BATTERED ARMOR AND WILD EYES COWERING IN THE CORNER.    YAI!  MERCY!  MERCY!  HE CRIES.  AND THEN AS SUDDENLY, DIE!  DIE, YOU SLIME FROM THE PIT!"
                ],
                "chainEventHappen":"46"
             },
@@ -4987,7 +4987,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE MAN SCREAMS WHILE FROTHING AT THE MOUTH.  /hDON'T GO THERE!  DON'T GO ON THE HILL!/h/h  HE IS WRAPPED IN FIRE AND SO CRUEL!/h/h/h"
+                  "  THE MAN SCREAMS WHILE FROTHING AT THE MOUTH.  DON'T GO THERE!  DON'T GO ON THE HILL!  HE IS WRAPPED IN FIRE AND SO CRUEL!"
                ]
             },
             "particular":{
@@ -5021,7 +5021,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE MAN SCREAMS WHILE FROTHING AT THE MOUTH.  /hHE IS NOT HUMAN, I TELL YOU!  NOT AT ALL!/h"
+                  "  THE MAN SCREAMS WHILE FROTHING AT THE MOUTH.  HE IS NOT HUMAN, I TELL YOU!  NOT AT ALL!"
                ],
                "chainEventHappen":"51"
             },
@@ -5089,7 +5089,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  HE LOOKS RELUCTANT AND SAYS, /hBUT HIS MINIONS ARE THERE.  HE WILL COME TOO!/h"
+                  "  HE LOOKS RELUCTANT AND SAYS, BUT HIS MINIONS ARE THERE.  HE WILL COME TOO!"
                ],
                "chainEventHappen":"53"
             },
@@ -5380,7 +5380,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  A SPECTRE APPEARS BEFORE YOU.  /hTHIEF!  I DEFENDED THESE BOOKS IN LIFE AND I WILL DEFEND THEM IN DEATH!/h"
+                  "  A SPECTRE APPEARS BEFORE YOU.  THIEF!  I DEFENDED THESE BOOKS IN LIFE AND I WILL DEFEND THEM IN DEATH!"
                ],
                "chainEventHappen":"66"
             },
@@ -7955,7 +7955,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall_wood.png",
+            "wallFile":"wa_wall_wood.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",
@@ -7994,7 +7994,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall_wood.png",
+            "wallFile":"wa_wall_wood.png",
             "doorFile":"dr_door44.png",
             "overlayFile":"",
             "soundFile":"",

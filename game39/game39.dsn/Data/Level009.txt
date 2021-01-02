@@ -4167,7 +4167,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AN OLD THIEF STANDS HERE./h  WELCOME TO MY GUILD.  I AM RESTAL./h  HE BOWS LOW./h  YOU ARE SEEKING THE TEXTILE HOUSE.  WE CAN GET YOU IN UNSEEN AND POSSIBLY HELP WITH THE TREASURE.  INTERESTED?/h"
+                  "  AN OLD THIEF STANDS HERE.  WELCOME TO MY GUILD.  I AM RESTAL.  HE BOWS LOW.  YOU ARE SEEKING THE TEXTILE HOUSE.  WE CAN GET YOU IN UNSEEN AND POSSIBLY HELP WITH THE TREASURE.  INTERESTED?"
                ],
                "chainEventHappen":"8"
             },
@@ -4244,7 +4244,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  YOU ARE BLINDFOLDED AND TAKEN ON A LONG, TWISTING WALK, THEN UP A LADDER./h  ONLY MEET US AT THE MAIN WELL./h"
+                  "  YOU ARE BLINDFOLDED AND TAKEN ON A LONG, TWISTING WALK, THEN UP A LADDER.  ONLY MEET US AT THE MAIN WELL."
                ],
                "chainEventHappen":"11"
             },
@@ -4287,7 +4287,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE OLD THIEF LAUGHS.  /h  PERHAPS WE SHALL MEET AGAIN./h  HE POINTS HIS RING AT YOU, AND YOU RISE UP AND OUT OF THE WELL."
+                  "  THE OLD THIEF LAUGHS.    PERHAPS WE SHALL MEET AGAIN.  HE POINTS HIS RING AT YOU, AND YOU RISE UP AND OUT OF THE WELL."
                ]
             },
             "particular":{
@@ -4307,7 +4307,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE OLD THIEF LAUGHS.  /hPERHAPS WE SHALL MEET AGAIN.  /h  HE POINTS HIS RING AT YOU AND YOU RISE UP AND OUT OF THE WELL."
+                  "  THE OLD THIEF LAUGHS.  PERHAPS WE SHALL MEET AGAIN.    HE POINTS HIS RING AT YOU AND YOU RISE UP AND OUT OF THE WELL."
                ]
             },
             "particular":{
@@ -4341,7 +4341,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AN OLD THIEF STANDS HERE.  /h  WELCOME TO MY GUILD.  I AM RESTAL./h  HE BOWS LOW."
+                  "  AN OLD THIEF STANDS HERE.    WELCOME TO MY GUILD.  I AM RESTAL.  HE BOWS LOW."
                ],
                "chainEventHappen":"15"
             },
@@ -4378,7 +4378,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE CAN DUPLICATE THE SEAL ON THAT CHEST--FOR HALF THE TREASURE--NO ONE WILL EVER KNOW.  INTERESTED?/h"
+                  "  WE CAN DUPLICATE THE SEAL ON THAT CHEST--FOR HALF THE TREASURE--NO ONE WILL EVER KNOW.  INTERESTED?"
                ],
                "chainEventHappen":"16"
             },
@@ -4542,7 +4542,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE OLD THIEF LAUGHS.  /hPERHAPS WE SHALL MEET AGAIN./h  HE POINTS HIS RING AT YOU AND YOU RISE UP AND OUT OF THE WELL."
+                  "  THE OLD THIEF LAUGHS.  PERHAPS WE SHALL MEET AGAIN.  HE POINTS HIS RING AT YOU AND YOU RISE UP AND OUT OF THE WELL."
                ]
             },
             "particular":{
@@ -4766,27 +4766,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -5060,7 +5060,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  YOU SEE A DEAD HOBGOBLIN WITH ITS HEAD CRUSHED.  WRITTEN IN BLOOD IS A MESSAGE: /hSKULLCRUSHER WAS HERE./h"
+                  "  YOU SEE A DEAD HOBGOBLIN WITH ITS HEAD CRUSHED.  WRITTEN IN BLOOD IS A MESSAGE: SKULLCRUSHER WAS HERE."
                ],
                "chainEventHappen":"37"
             },
@@ -5217,7 +5217,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU ARE IN A VERY SMALL, DARK ROOM.  A MUSCULAR MAN LOCKED IN CHAINS LIES HERE.  NEAR HIM IS A SMALL WRINKLED PARCHMENT WITH ROUGHLY SCRATCHED NOTES.  WHILE THE MAN COMES TO, YOU READ./h  HOBGOBLINS TRANSFERRED OUT OF VALJEVO CASTLE.  NOW REPLACED BY GIANTS AND TROLLS.  SOUNDS VERY TOUGH./h/h  STOJANOW GATE GUARDED BY BUGBEARS AND ETTINS.  HEARD ETTINS DIDN'T LIKE LIGHT.  MUST BE CHARMED OR CONTROLLED.  SOUND TOUGH!/h/h  SOME SMUGGLERS SNEAK SUPPLIES THROUGH STOJANOW GATE TO THE BOSS.  MUST CHECK IT OUT./h"
+                  "  YOU ARE IN A VERY SMALL, DARK ROOM.  A MUSCULAR MAN LOCKED IN CHAINS LIES HERE.  NEAR HIM IS A SMALL WRINKLED PARCHMENT WITH ROUGHLY SCRATCHED NOTES.  WHILE THE MAN COMES TO, YOU READ.  HOBGOBLINS TRANSFERRED OUT OF VALJEVO CASTLE.  NOW REPLACED BY GIANTS AND TROLLS.  SOUNDS VERY TOUGH.  STOJANOW GATE GUARDED BY BUGBEARS AND ETTINS.  HEARD ETTINS DIDN'T LIKE LIGHT.  MUST BE CHARMED OR CONTROLLED.  SOUND TOUGH!  SOME SMUGGLERS SNEAK SUPPLIES THROUGH STOJANOW GATE TO THE BOSS.  MUST CHECK IT OUT."
                ],
                "chainEventHappen":"44"
             },
@@ -5253,7 +5253,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OVERHEARD HOBGOBLINS SAY A DRAGON SCARED THEM INTO LEAVING A NICE LAIR IN THE MOUNTAINS OUT EAST.  COULDN'T HAPPEN TO A NICER BUNCH OF CREEPS./h"
+                  "  OVERHEARD HOBGOBLINS SAY A DRAGON SCARED THEM INTO LEAVING A NICE LAIR IN THE MOUNTAINS OUT EAST.  COULDN'T HAPPEN TO A NICER BUNCH OF CREEPS."
                ],
                "chainEventHappen":"45"
             },
@@ -5364,7 +5364,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE BRASS KEY YOU FOUND OPENS ALL THE PADLOCKS./h  THANKS FOR FREEING ME.  I'M LORD CADORNA'S SERVANT.  /h"
+                  "  THE BRASS KEY YOU FOUND OPENS ALL THE PADLOCKS.  THANKS FOR FREEING ME.  I'M LORD CADORNA'S SERVANT.  "
                ],
                "chainEventHappen":"48"
             },
@@ -5499,7 +5499,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  GREAT!  MY NAME IS SKULLCRUSHER.  THERE'S A SECRET DOOR TO THE SOUTHEAST.  THAT'S WHERE I MET THE HOBGOBLIN LEADER./h"
+                  "  GREAT!  MY NAME IS SKULLCRUSHER.  THERE'S A SECRET DOOR TO THE SOUTHEAST.  THAT'S WHERE I MET THE HOBGOBLIN LEADER."
                ],
                "chainEventHappen":"52"
             },
@@ -5662,7 +5662,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WHAT'S YOUR PROBLEM?/h"
+                  "  WHAT'S YOUR PROBLEM?"
                ]
             },
             "particular":{
@@ -5696,7 +5696,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  DON'T TRY TO FOOL ME, /hHE GROWLS."
+                  "  DON'T TRY TO FOOL ME, HE GROWLS."
                ]
             },
             "particular":{
@@ -5730,7 +5730,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I ALMOST KILLED THE LEADER OF THESE SCUMMY HOBGOBLINS, BUT THE REST JUMPED ME./h"
+                  "  I ALMOST KILLED THE LEADER OF THESE SCUMMY HOBGOBLINS, BUT THE REST JUMPED ME."
                ]
             },
             "particular":{
@@ -5764,7 +5764,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  FREE ME AND I'LL HELP YOU./h"
+                  "  FREE ME AND I'LL HELP YOU."
                ]
             },
             "particular":{
@@ -5798,7 +5798,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WORDS DON'T BREAK CHAINS! /hTHE MAN SNARLS."
+                  "  WORDS DON'T BREAK CHAINS! THE MAN SNARLS."
                ]
             },
             "particular":{
@@ -5838,7 +5838,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  YOU FIND A MANGLED PIECE OF PAPER WITH ENTRIES WRITTEN IN A VERY FINE HAND./h  HE IS LIVID ABOUT THE UNDEAD COMING OUT OF VALHINGEN GRAVEYARD.  THREE TIMES HE HAS SENT ASSAULT GROUPS, THREE TIMES NONE HAVE RETURNED./h/h  HE DARES NOT SEND ANY OF THE PRIESTS OF BANE TO CLEAR THE GRAVEYARD.  HE ASSUMES THAT IF A PRIEST COULD WREST CONTROL OF THE UNDEAD FROM THEIR CURRENT MASTER, THAT PRIEST WOULD THEN BECOME A THREAT TO HIS POWER./h/h  I SUGGESTED THAT IF WE COULD NEUTRALIZE THE POWER THAT LEADS THE UNDEAD, THAT WE COULD THEN USE THE UNDEAD AS A TOOL./h/h  HE THOUGHT ON THIS AND THEN ORDERED ME TO FIND OUT WHO OR WHAT IS IN CONTROL IN VALHINGEN GRAVEYARD.  /h"
+                  "  YOU FIND A MANGLED PIECE OF PAPER WITH ENTRIES WRITTEN IN A VERY FINE HAND.  HE IS LIVID ABOUT THE UNDEAD COMING OUT OF VALHINGEN GRAVEYARD.  THREE TIMES HE HAS SENT ASSAULT GROUPS, THREE TIMES NONE HAVE RETURNED.  HE DARES NOT SEND ANY OF THE PRIESTS OF BANE TO CLEAR THE GRAVEYARD.  HE ASSUMES THAT IF A PRIEST COULD WREST CONTROL OF THE UNDEAD FROM THEIR CURRENT MASTER, THAT PRIEST WOULD THEN BECOME A THREAT TO HIS POWER.  I SUGGESTED THAT IF WE COULD NEUTRALIZE THE POWER THAT LEADS THE UNDEAD, THAT WE COULD THEN USE THE UNDEAD AS A TOOL.  HE THOUGHT ON THIS AND THEN ORDERED ME TO FIND OUT WHO OR WHAT IS IN CONTROL IN VALHINGEN GRAVEYARD.  "
                ],
                "chainEventHappen":"64"
             },
@@ -5859,7 +5859,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  PRELIMINARY INVESTIGATION SHOWS THAT THE GRAVEYARD IS CONTROLLED BY A BEING OF GREAT POWER, PERHAPS A VAMPIRE OR A DEMON.  I SHALL EXPEND A FEW SCOUTS AND LOW LEVEL PRIESTS TO FIND OUT MORE INFORMATION.../h"
+                  "  PRELIMINARY INVESTIGATION SHOWS THAT THE GRAVEYARD IS CONTROLLED BY A BEING OF GREAT POWER, PERHAPS A VAMPIRE OR A DEMON.  I SHALL EXPEND A FEW SCOUTS AND LOW LEVEL PRIESTS TO FIND OUT MORE INFORMATION..."
                ]
             },
             "particular":{

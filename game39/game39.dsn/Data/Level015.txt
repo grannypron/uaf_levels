@@ -2328,27 +2328,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -2400,7 +2400,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOU HAVE RETURNED EMPTY HANDED, /hHE OBSERVES.  /hI HAVE NO TIME FOR YOU NOW.  /h  HE WAVES HIS HAND.  YOU GO BACK OUT THE DOOR."
+                  "  YOU HAVE RETURNED EMPTY HANDED, HE OBSERVES.  I HAVE NO TIME FOR YOU NOW.    HE WAVES HIS HAND.  YOU GO BACK OUT THE DOOR."
                ],
                "chainEventNotHappen":"9"
             },
@@ -2437,7 +2437,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU BURST INTO AN ELEGANTLY PANELED ROOM.  A SMALL MAN SITS HUNCHED OVER A TABLE BY THE EAST WALL.  HE SETS DOWN HIS PEN AND GAZES STERNLY AT YOU.  /hWELL? /hHE DEMANDS."
+                  "  YOU BURST INTO AN ELEGANTLY PANELED ROOM.  A SMALL MAN SITS HUNCHED OVER A TABLE BY THE EAST WALL.  HE SETS DOWN HIS PEN AND GAZES STERNLY AT YOU.  WELL? HE DEMANDS."
                ],
                "chainEventHappen":"10"
             },
@@ -2543,7 +2543,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I MAY HAVE A USE FOR YOU, /hTHE MAN SAYS.  /hSOME TIME AGO, I ORDERED A SPECIAL POTION.  THE POTION IS READY, BUT I CAN'T LEAVE TO FETCH IT.  BRING IT HERE; I PAY WELL./h"
+                  "  I MAY HAVE A USE FOR YOU, THE MAN SAYS.  SOME TIME AGO, I ORDERED A SPECIAL POTION.  THE POTION IS READY, BUT I CAN'T LEAVE TO FETCH IT.  BRING IT HERE; I PAY WELL."
                ],
                "chainEventHappen":"13"
             },
@@ -2630,7 +2630,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  IT WAITS IN A BOOTH IN THE OLD ROPE GUILD BUT A SHORT DISTANCE TO THE SOUTHEAST OF WHERE YOU NOW STAND.  SPEAK MY NAME, \"OHLO.\"/h  YOU GO BACK OUTSIDE."
+                  "  IT WAITS IN A BOOTH IN THE OLD ROPE GUILD BUT A SHORT DISTANCE TO THE SOUTHEAST OF WHERE YOU NOW STAND.  SPEAK MY NAME, \"OHLO.\"  YOU GO BACK OUTSIDE."
                ]
             },
             "particular":{
@@ -2664,7 +2664,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I HAVE NO USE FOR THE LIKES OF YOU, /hTHE MAN SAYS AIRILY.  /hBEGONE!/h"
+                  "  I HAVE NO USE FOR THE LIKES OF YOU, THE MAN SAYS AIRILY.  BEGONE!"
                ]
             },
             "particular":{
@@ -2698,7 +2698,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOU PRESUME TOO MUCH!/h  AN ARMY OF HUMANOIDS APPEARS TO DEFEND THE WIZARD."
+                  "  YOU PRESUME TOO MUCH!  AN ARMY OF HUMANOIDS APPEARS TO DEFEND THE WIZARD."
                ],
                "chainEventHappen":"18"
             },
@@ -2734,27 +2734,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -2932,7 +2932,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I HAVE NO TIME FOR THE LIKES OF YOU, /hTHE MAN SAYS AIRILY.  /hBE GONE!/h"
+                  "  I HAVE NO TIME FOR THE LIKES OF YOU, THE MAN SAYS AIRILY.  BE GONE!"
                ]
             },
             "particular":{
@@ -2966,7 +2966,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOU PRESUME TOO MUCH!/h  AN ARMY OF HUMANOIDS APPEARS TO DEFEND THE OLD WIZARD!"
+                  "  YOU PRESUME TOO MUCH!  AN ARMY OF HUMANOIDS APPEARS TO DEFEND THE OLD WIZARD!"
                ],
                "chainEventHappen":"24"
             },
@@ -3002,27 +3002,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3238,7 +3238,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  A HEALTHY-LOOKING GOBLIN IS INSTRUCTING A GROUP OF YOUNG WARRIORS.  HE SMILES AND SAYS, /hI SEE OUR OPPONENTS HAVE ARRIVED./h"
+                  "  A HEALTHY-LOOKING GOBLIN IS INSTRUCTING A GROUP OF YOUNG WARRIORS.  HE SMILES AND SAYS, I SEE OUR OPPONENTS HAVE ARRIVED."
                ],
                "chainEventHappen":"30"
             },
@@ -3352,27 +3352,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3721,27 +3721,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3774,27 +3774,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3862,7 +3862,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THIEVES! /hTHEY SCREAM WHEN THEY SEE YOU."
+                  "  THIEVES! THEY SCREAM WHEN THEY SEE YOU."
                ],
                "chainEventHappen":"48"
             },
@@ -4007,7 +4007,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  A LARGE ORC RAISES HIS HEAD AND SNARLS, /hHOW DARE YOU BREAK INTO OUR HOME?/h"
+                  "  A LARGE ORC RAISES HIS HEAD AND SNARLS, HOW DARE YOU BREAK INTO OUR HOME?"
                ],
                "chainEventHappen":"101"
             },
@@ -4121,27 +4121,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4160,7 +4160,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  SEATED AT A TABLE IS A RAGGED OLD WOMAN.  SHE GREETS YOU.  /hWELCOME.  FOR THE PRICE OF A FEW COPPERS I WILL TELL YOUR FORTUNE./h"
+                  "  SEATED AT A TABLE IS A RAGGED OLD WOMAN.  SHE GREETS YOU.  WELCOME.  FOR THE PRICE OF A FEW COPPERS I WILL TELL YOUR FORTUNE."
                ],
                "chainEventHappen":"56"
             },
@@ -4243,7 +4243,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE WOMAN'S HANDS MAKE MYSTIC PASSAGES AS SHE MUTTERS SOME WORDS.  HER VOICE UNDERGOES A STRANGE TRANSFORMATION.../h  BLOOD AND VIOLENCE ARE WRIT BOLDLY IN YOUR FUTURE.  LOOK FOR FRIENDS WHERE YOU EXPECT ENEMIES AND ENEMIES WHERE YOU EXPECT ALLIES./h"
+                  "  THE WOMAN'S HANDS MAKE MYSTIC PASSAGES AS SHE MUTTERS SOME WORDS.  HER VOICE UNDERGOES A STRANGE TRANSFORMATION...  BLOOD AND VIOLENCE ARE WRIT BOLDLY IN YOUR FUTURE.  LOOK FOR FRIENDS WHERE YOU EXPECT ENEMIES AND ENEMIES WHERE YOU EXPECT ALLIES."
                ],
                "chainEventHappen":"60"
             },
@@ -4374,7 +4374,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h...THERE IS A SECRET TREASURE ROOM IN THE NW CORNER.../h"
+                  "...THERE IS A SECRET TREASURE ROOM IN THE NW CORNER..."
                ],
                "chainEventHappen":"66"
             },
@@ -4442,7 +4442,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h...GANG OPERATING OUT OF KUTO'S WELL./h"
+                  "...GANG OPERATING OUT OF KUTO'S WELL."
                ],
                "chainEventHappen":"69"
             },
@@ -4545,27 +4545,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4794,27 +4794,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4847,27 +4847,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -5053,27 +5053,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -5260,27 +5260,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -5563,27 +5563,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",

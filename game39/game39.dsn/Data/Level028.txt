@@ -2242,7 +2242,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  SITTING ON A THRONE IS A POWERFUL LOOKING MAN CLAD IN BARBARIC SPLENDOR./h  WHAT IS YOUR BUSINESS WITH TYRANTHRAXUS, LORD OF PHLAN?/h"
+                  "  SITTING ON A THRONE IS A POWERFUL LOOKING MAN CLAD IN BARBARIC SPLENDOR.  WHAT IS YOUR BUSINESS WITH TYRANTHRAXUS, LORD OF PHLAN?"
                ],
                "chainEventHappen":"9"
             },
@@ -2621,7 +2621,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  BEGONE, OR FEEL THE WRATH AND POWER OF TYRANTHRAXUS!/h"
+                  "  BEGONE, OR FEEL THE WRATH AND POWER OF TYRANTHRAXUS!"
                ],
                "chainEventHappen":"19"
             },
@@ -2713,7 +2713,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THEN FEEL MY WRATH!/h"
+                  "  THEN FEEL MY WRATH!"
                ],
                "chainEventHappen":"22"
             },
@@ -2872,7 +2872,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  ARROGANT KNAVE, FEEL THE POWER OF TYRANTHRAXUS!/h"
+                  "  ARROGANT KNAVE, FEEL THE POWER OF TYRANTHRAXUS!"
                ],
                "chainEventHappen":"26"
             },
@@ -3030,7 +3030,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  ARROGANT KNAVE!  KNEEL BEFORE THE POWER OF TYRANTHRAXUS!/h"
+                  "  ARROGANT KNAVE!  KNEEL BEFORE THE POWER OF TYRANTHRAXUS!"
                ],
                "chainEventHappen":"30"
             },
@@ -3188,7 +3188,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  ARROGANT KNAVE!  FEEL THE POWER OF TYRANTHRAXUS!/h"
+                  "  ARROGANT KNAVE!  FEEL THE POWER OF TYRANTHRAXUS!"
                ],
                "chainEventHappen":"34"
             },
@@ -3362,7 +3362,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THIS TOWER IS OCCUPIED BY FOUR GIANTS.  WHEN YOU COME IN, THEY ARE IN THE MIDST OF AN ARGUMENT.  THE BIGGEST ONE TURNS TO YOU AND SAYS, /hTHEM LOOK SMART.  THEM TELL US./h/h  FROGS AND TOADS NOT SAME THING.  THEY NOT SAME, THEY DIF...THEY NOT SAME!  ME RIGHT!/h"
+                  "  THIS TOWER IS OCCUPIED BY FOUR GIANTS.  WHEN YOU COME IN, THEY ARE IN THE MIDST OF AN ARGUMENT.  THE BIGGEST ONE TURNS TO YOU AND SAYS, THEM LOOK SMART.  THEM TELL US.  FROGS AND TOADS NOT SAME THING.  THEY NOT SAME, THEY DIF...THEY NOT SAME!  ME RIGHT!"
                ],
                "chainEventHappen":"39"
             },
@@ -3433,7 +3433,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS THE GIANT TURNS IN TRIUMPH, THE OTHERS PICK UP WEAPONS!/h  WHAT THEY KNOW?  WE BASH DUMB LITTLE MEN'S BRAINS OUT!/h/h  YOU NO HURT THEM!  THEY MY BUDDIES!/h  THE GIANTS ARGUE FOR A WHILE AND THEN ONE SAYS, /hWHAT WE FIGHT FOR?  IT'S ALL THE FAULT OF THEM!/h"
+                  "  AS THE GIANT TURNS IN TRIUMPH, THE OTHERS PICK UP WEAPONS!  WHAT THEY KNOW?  WE BASH DUMB LITTLE MEN'S BRAINS OUT!  YOU NO HURT THEM!  THEY MY BUDDIES!  THE GIANTS ARGUE FOR A WHILE AND THEN ONE SAYS, WHAT WE FIGHT FOR?  IT'S ALL THE FAULT OF THEM!"
                ],
                "chainEventHappen":"41"
             },
@@ -3542,7 +3542,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS THE OTHER GIANTS BURST INTO HOWLS OF LAUGHTER, THE ONE WHO TALKED TO YOU TURNS RED AND SAYS, /hYOU LIE!  YOU LIE TO MAKE ME FOOL!  I SMASH YOU!/h  BEFORE HE CAN ATTACK, THE OTHERS GRAB HIM AND SAY, /hYOU BETTER GO, LITTLE MEN./h"
+                  "  AS THE OTHER GIANTS BURST INTO HOWLS OF LAUGHTER, THE ONE WHO TALKED TO YOU TURNS RED AND SAYS, YOU LIE!  YOU LIE TO MAKE ME FOOL!  I SMASH YOU!  BEFORE HE CAN ATTACK, THE OTHERS GRAB HIM AND SAY, YOU BETTER GO, LITTLE MEN."
                ],
                "chainEventHappen":"44"
             },
@@ -3611,7 +3611,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH WELL, CAN'T LET HERDREK HAVE ALL THE FUN!  /hTHEY PICK UP THEIR WEAPONS AND ATTACK!"
+                  "  OH WELL, CAN'T LET HERDREK HAVE ALL THE FUN!  THEY PICK UP THEIR WEAPONS AND ATTACK!"
                ],
                "chainEventHappen":"46"
             },
@@ -3817,7 +3817,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU LEAVE, YOU HEAR ONE OF THE GIANTS SAY, /hAH, US RIGHT.  THEM JUST AFRAID TO SAY 'CAUSE KNOW YOU SMASH 'EM./h  THE ARGUMENT RESUMES."
+                  "  AS YOU LEAVE, YOU HEAR ONE OF THE GIANTS SAY, AH, US RIGHT.  THEM JUST AFRAID TO SAY 'CAUSE KNOW YOU SMASH 'EM.  THE ARGUMENT RESUMES."
                ]
             },
             "particular":{
@@ -4278,7 +4278,7 @@
                   "specialKey":"7"
                },
                "mtext":[
-                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  /hTHAT'S THEM!/h"
+                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  THAT'S THEM!"
                ],
                "chainEventHappen":"69"
             },
@@ -4587,7 +4587,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  FOUR GIANTS COME BOUNDING OUT OF THE DOOR.  /h  WHAT PASSWORD?/h"
+                  "  FOUR GIANTS COME BOUNDING OUT OF THE DOOR.    WHAT PASSWORD?"
                ],
                "chainEventHappen":"76"
             },
@@ -4834,7 +4834,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  ALL RIGHT, BUT NO HANGING AROUND./h"
+                  "  ALL RIGHT, BUT NO HANGING AROUND."
                ]
             },
             "particular":{
@@ -5020,7 +5020,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  CARDORNA WHISPERS, /hTODAY'S PASSWORD IS \"RHODIA.\"/h"
+                  "  CARDORNA WHISPERS, TODAY'S PASSWORD IS \"RHODIA.\""
                ],
                "chainEventHappen":"89"
             },

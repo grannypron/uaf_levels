@@ -4135,7 +4135,7 @@
                   "facing":"North, South, West"
                },
                "mtext":[
-                  "  OVER THIS DOOR IS A CRUDE SIGN SAYING, /hTHE PITT./h"
+                  "  OVER THIS DOOR IS A CRUDE SIGN SAYING, THE PITT."
                ]
             },
             "particular":{
@@ -4155,7 +4155,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  YOU HAVE ENTERED A CROWDED TAVERN.  YOU OPENED THE DOOR INTO A DRUNK BUCCANEER.  HE GLARES AT YOU.  /hONE OF YOU WILL PAY FOR THIS INSULT!/h"
+                  "  YOU HAVE ENTERED A CROWDED TAVERN.  YOU OPENED THE DOOR INTO A DRUNK BUCCANEER.  HE GLARES AT YOU.  ONE OF YOU WILL PAY FOR THIS INSULT!"
                ],
                "chainEventHappen":"10"
             },
@@ -4792,7 +4792,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  A HUNDRED PIECES OF GOLD, THEN!/h"
+                  "  A HUNDRED PIECES OF GOLD, THEN!"
                ],
                "chainEventHappen":"26"
             },
@@ -4837,7 +4837,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE BUCCANEER SMILES.  /hTHAT IS SUFFICIENT PAYMENT./h  HE LEAVES."
+                  "  THE BUCCANEER SMILES.  THAT IS SUFFICIENT PAYMENT.  HE LEAVES."
                ],
                "chainEventHappen":"28"
             },
@@ -5106,7 +5106,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE ORC SMILES CROOKEDLY.  /hGREETINGS FROM BANE.  WE ARE RECRUITING CREATURES FOR OUR TEMPLE TO THE NORTHEAST.  ARE YOU INTERESTED?/h"
+                  "  THE ORC SMILES CROOKEDLY.  GREETINGS FROM BANE.  WE ARE RECRUITING CREATURES FOR OUR TEMPLE TO THE NORTHEAST.  ARE YOU INTERESTED?"
                ],
                "chainEventHappen":"35"
             },
@@ -5560,7 +5560,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE AUCTIONEER CRIES, /hCREATURES OF ALL AGES, WELCOME TO THIS AUCTION FOR AN ITEM BOTH MAGICAL AND POWERFUL!/h  THE AUCTIONEER HAS EITHER A WAND OR A STAFF."
+                  "  THE AUCTIONEER CRIES, CREATURES OF ALL AGES, WELCOME TO THIS AUCTION FOR AN ITEM BOTH MAGICAL AND POWERFUL!  THE AUCTIONEER HAS EITHER A WAND OR A STAFF."
                ],
                "chainEventHappen":"45"
             },
@@ -5727,7 +5727,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  IT'S A STAFF OF COMMAND.  I COULD HAVE MY OWN ARMY!/h"
+                  "  IT'S A STAFF OF COMMAND.  I COULD HAVE MY OWN ARMY!"
                ],
                "chainEventHappen":"50"
             },
@@ -5781,7 +5781,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU MOVE AWAY, THE MONSTERS GLANCE YOUR WAY AND YELL, /hSETTLERS!  KILL THEM!/h/h  THE AUCTION IS CANCELLED!  /hYELLS THE AUCTIONEER AS HE FLEES."
+                  "  AS YOU MOVE AWAY, THE MONSTERS GLANCE YOUR WAY AND YELL, SETTLERS!  KILL THEM!  THE AUCTION IS CANCELLED!  YELLS THE AUCTIONEER AS HE FLEES."
                ],
                "chainEventHappen":"52"
             },
@@ -6066,7 +6066,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  GARWIN, I'LL GET YOU!  /hCRIES THE AUCTIONEER.  HOWEVER, THE MAN HAS ESCAPED IN THE CONFUSION.  THE AUCTION OVER, THE MONSTERS GRUMBLE AND TURN AWAY."
+                  "  GARWIN, I'LL GET YOU!  CRIES THE AUCTIONEER.  HOWEVER, THE MAN HAS ESCAPED IN THE CONFUSION.  THE AUCTION OVER, THE MONSTERS GRUMBLE AND TURN AWAY."
                ]
             },
             "particular":{
@@ -6086,7 +6086,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  GOING...GOING...GONE!  /hTHE AUCTIONEER CRIES.  A MAN AND OGRE EXCHANGE THE WAND AND A LARGE BAG, THEN DISAPPEAR INTO THE CROWD.  THE AUCTION OVER, THE MONSTERS GRUMBLE AND TURN AWAY."
+                  "  GOING...GOING...GONE!  THE AUCTIONEER CRIES.  A MAN AND OGRE EXCHANGE THE WAND AND A LARGE BAG, THEN DISAPPEAR INTO THE CROWD.  THE AUCTION OVER, THE MONSTERS GRUMBLE AND TURN AWAY."
                ]
             },
             "particular":{
@@ -6652,7 +6652,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU MOVE YOU OVERHEAR SOME GOBLINS SAY, /hDO YOU REALLY THINK HE'LL SHOW UP--THE BOSS, I MEAN?/h"
+                  "  AS YOU MOVE YOU OVERHEAR SOME GOBLINS SAY, DO YOU REALLY THINK HE'LL SHOW UP--THE BOSS, I MEAN?"
                ],
                "chainEventNotHappen":"80"
             },
@@ -6770,7 +6770,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU MOVE YOU OVERHEAR SOME ORCS SAY, /hMORE OGRES IN THE STREET SINCE THE GIANTS TOOK OVER THE CASTLE./h"
+                  "  AS YOU MOVE YOU OVERHEAR SOME ORCS SAY, MORE OGRES IN THE STREET SINCE THE GIANTS TOOK OVER THE CASTLE."
                ],
                "chainEventNotHappen":"83"
             },
@@ -6809,7 +6809,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU MOVE YOU OVERHEAR SOME ORCS SAY, /hTHE PLAZA'S TEMPLE IS RECRUITING FOR BANE AGAIN.  GRISHNAK WON'T BE HAPPY./h"
+                  "  AS YOU MOVE YOU OVERHEAR SOME ORCS SAY, THE PLAZA'S TEMPLE IS RECRUITING FOR BANE AGAIN.  GRISHNAK WON'T BE HAPPY."
                ],
                "chainEventNotHappen":"84"
             },
@@ -6848,7 +6848,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU MOVE YOU OVERHEAR SOME OGRES SAY, /hHE MELTED INTO A PUDDLE OF LARD WHEN HE TOUCHED THE THING./h"
+                  "  AS YOU MOVE YOU OVERHEAR SOME OGRES SAY, HE MELTED INTO A PUDDLE OF LARD WHEN HE TOUCHED THE THING."
                ],
                "chainEventNotHappen":"85"
             },
@@ -6887,7 +6887,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AS YOU MOVE YOU OVERHEAR SOME HOBGOBLINS SAY, /hTHE BOSS WILL BE THE ONE BIDDING UP THE PRICE./h"
+                  "  AS YOU MOVE YOU OVERHEAR SOME HOBGOBLINS SAY, THE BOSS WILL BE THE ONE BIDDING UP THE PRICE."
                ],
                "chainEventNotHappen":"86"
             },
@@ -7016,7 +7016,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH, YOU'RE HERE FOR THE BOSS./h"
+                  "  OH, YOU'RE HERE FOR THE BOSS."
                ]
             },
             "particular":{
@@ -7050,7 +7050,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THEY'RE IMPOSTERS!/h"
+                  "  THEY'RE IMPOSTERS!"
                ],
                "chainEventHappen":"91"
             },
@@ -7176,7 +7176,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THEY'RE IMPOSTERS!/h"
+                  "  THEY'RE IMPOSTERS!"
                ],
                "chainEventHappen":"94"
             },
@@ -7324,7 +7324,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  A YOUNG WOMAN COMES FORWARD.  /hWE PROVIDE HELP FOR THOSE WHO CAN REACH US.  ARE YOU IN NEED OF HEALING?/h"
+                  "  A YOUNG WOMAN COMES FORWARD.  WE PROVIDE HELP FOR THOSE WHO CAN REACH US.  ARE YOU IN NEED OF HEALING?"
                ],
                "chainEventHappen":"98"
             },

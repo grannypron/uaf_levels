@@ -2927,7 +2927,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU ARE INTERCEPTED BY THE COUNCIL GUARD./h  HALT.  YOUR PRESENCE IS NOT AUTHORIZED.  LEAVE./h  YOU STEP AWAY."
+                  "  YOU ARE INTERCEPTED BY THE COUNCIL GUARD.  HALT.  YOUR PRESENCE IS NOT AUTHORIZED.  LEAVE.  YOU STEP AWAY."
                ]
             },
             "particular":{
@@ -2963,7 +2963,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AT YOUR ENTRY, THE COUNCIL CLERK BEGINS LOOKING THROUGH A STACK OF PAPERS.  /hBEFORE I CAN OFFER ANY NEW COMMISSIONS, I MUST SEE IF YOU ARE DUE A CURRENT REWARD./h"
+                  "  AT YOUR ENTRY, THE COUNCIL CLERK BEGINS LOOKING THROUGH A STACK OF PAPERS.  BEFORE I CAN OFFER ANY NEW COMMISSIONS, I MUST SEE IF YOU ARE DUE A CURRENT REWARD."
                ],
                "chainEventHappen":"6"
             },
@@ -3020,7 +3020,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SHUFFLES THROUGH HER PAPERS.  /hON THE MATTER OF COMMISSION, /hSHE SAYS, /hI CAN OFFER THE FOLLOWING:/h"
+                  "  THE CLERK SHUFFLES THROUGH HER PAPERS.  ON THE MATTER OF COMMISSION, SHE SAYS, I CAN OFFER THE FOLLOWING:"
                ],
                "chainEventHappen":"8"
             },
@@ -3058,7 +3058,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  PUTTING DOWN THE PAPERS, SHE SAYS, /hI MUST BRING TO YOUR ATTENTION THE FOLLOWING CONCERNING VALHINGEN GRAVEYARD./h/h  UNDEAD FROM THE GRAVEYARD HAVE GROWN MORE DANGEROUS THAN ALL OF THE OTHER DANGERS WHICH CONFRONT US./h/h  I HAVE BEEN AUTHORIZED TO GIVE YOU AN ENCHANTED WEAPON IF YOU ACCEPT THE COMMISSION TO END THE GRAVEYARD MENACE./h"
+                  "  PUTTING DOWN THE PAPERS, SHE SAYS, I MUST BRING TO YOUR ATTENTION THE FOLLOWING CONCERNING VALHINGEN GRAVEYARD.  UNDEAD FROM THE GRAVEYARD HAVE GROWN MORE DANGEROUS THAN ALL OF THE OTHER DANGERS WHICH CONFRONT US.  I HAVE BEEN AUTHORIZED TO GIVE YOU AN ENCHANTED WEAPON IF YOU ACCEPT THE COMMISSION TO END THE GRAVEYARD MENACE."
                ],
                "chainEventHappen":"9"
             },
@@ -3117,7 +3117,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THE SLUMS IMMEDIATELY TO OUR WEST NEED TO BE CLEARED OF MONSTERS./h"
+                  "  THE SLUMS IMMEDIATELY TO OUR WEST NEED TO BE CLEARED OF MONSTERS."
                ],
                "chainEventHappen":"11"
             },
@@ -3154,7 +3154,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  SOKAL KEEP ON THORN ISLAND MUST BE CLEARED./h"
+                  "  SOKAL KEEP ON THORN ISLAND MUST BE CLEARED."
                ],
                "chainEventHappen":"12"
             },
@@ -3191,7 +3191,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THE COUNCIL IS OFFERING A REWARD FOR BOOKS, MAPS, TOMES, ETC. WHICH PROVIDE USEFUL INFORMATION ON PHLAN BEFORE THE FALL.  THE REWARD IS TIED TO THE VALUE OF THE INFORMATION./h"
+                  "  THE COUNCIL IS OFFERING A REWARD FOR BOOKS, MAPS, TOMES, ETC. WHICH PROVIDE USEFUL INFORMATION ON PHLAN BEFORE THE FALL.  THE REWARD IS TIED TO THE VALUE OF THE INFORMATION."
                ],
                "chainEventHappen":"13"
             },
@@ -3228,7 +3228,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  A WEAPON OF GREAT POWER IS TO BE AUCTIONED TO OUR ENEMIES.  THIS AUCTION IS TO BE HELD IN PODAL PLAZA.  FIND OUT WHAT THE WEAPON IS AND RETURN./h"
+                  "  A WEAPON OF GREAT POWER IS TO BE AUCTIONED TO OUR ENEMIES.  THIS AUCTION IS TO BE HELD IN PODAL PLAZA.  FIND OUT WHAT THE WEAPON IS AND RETURN."
                ],
                "chainEventHappen":"14"
             },
@@ -3266,7 +3266,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  JUNIOR COUNCILMAN CADORNA HAS A SPECIAL COMMISSION FOR YOU.  HIS CHAMBERS ARE THROUGH THE EAST DOOR./h"
+                  "  JUNIOR COUNCILMAN CADORNA HAS A SPECIAL COMMISSION FOR YOU.  HIS CHAMBERS ARE THROUGH THE EAST DOOR."
                ],
                "chainEventHappen":"15"
             },
@@ -3304,7 +3304,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOU ARE SUMMONED BY THE BISHOP OF BRACCIO OF TYR.  REPORT TO HIM AT TYR'S TEMPLE./h"
+                  "  YOU ARE SUMMONED BY THE BISHOP OF BRACCIO OF TYR.  REPORT TO HIM AT TYR'S TEMPLE."
                ],
                "chainEventHappen":"16"
             },
@@ -3341,7 +3341,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  A LARGE GROUP OF THIEVES OPERATES OUT OF THE OLD KOVEL MANSION.  THE COUNCIL WILL PAY TO HAVE THEM CLEANED OUT./h"
+                  "  A LARGE GROUP OF THIEVES OPERATES OUT OF THE OLD KOVEL MANSION.  THE COUNCIL WILL PAY TO HAVE THEM CLEANED OUT."
                ],
                "chainEventHappen":"17"
             },
@@ -3378,7 +3378,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  FIND THE NOMADS AND STOP THEM FROM JOINING FORCES WITH OUR ENEMIES./h"
+                  "  FIND THE NOMADS AND STOP THEM FROM JOINING FORCES WITH OUR ENEMIES."
                ],
                "chainEventHappen":"18"
             },
@@ -3415,7 +3415,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  A LARGE TRIBE OF KOBOLDS IS BEING RECRUITED BY THE ENEMY.  MAKE SURE THEY DON'T JOIN THE ENEMY FORCES./h"
+                  "  A LARGE TRIBE OF KOBOLDS IS BEING RECRUITED BY THE ENEMY.  MAKE SURE THEY DON'T JOIN THE ENEMY FORCES."
                ],
                "chainEventHappen":"19"
             },
@@ -3452,7 +3452,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  FIND THE SOURCE OF THE RIVER'S POLLUTION AND END IT./h"
+                  "  FIND THE SOURCE OF THE RIVER'S POLLUTION AND END IT."
                ],
                "chainEventHappen":"20"
             },
@@ -3489,7 +3489,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THE HEIR TO THE HOUSE OF BIVANT MUST BE RESCUED.  WE WILL PAY GENEROUSLY FOR HIS SAFE RETURN./h"
+                  "  THE HEIR TO THE HOUSE OF BIVANT MUST BE RESCUED.  WE WILL PAY GENEROUSLY FOR HIS SAFE RETURN."
                ],
                "chainEventHappen":"21"
             },
@@ -3527,7 +3527,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  LORD CADORNA HAS A DELICATE DIPLOMATIC MISSION THAT REQUIRES YOUR PARTICULAR SKILLS.  YOU ARE SUMMONED TO HIS CHAMBERS.  GO THROUGH THE SOUTH DOOR./h"
+                  "  LORD CADORNA HAS A DELICATE DIPLOMATIC MISSION THAT REQUIRES YOUR PARTICULAR SKILLS.  YOU ARE SUMMONED TO HIS CHAMBERS.  GO THROUGH THE SOUTH DOOR."
                ],
                "chainEventHappen":"22"
             },
@@ -3564,7 +3564,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  LORD URSLINGEN WISHES URGENTLY TO SPEAK WITH YOU.  GO THROUGH THE SOUTH DOOR OF THE TRAITOR CADORNA'S OLD QUARTERS./h"
+                  "  LORD URSLINGEN WISHES URGENTLY TO SPEAK WITH YOU.  GO THROUGH THE SOUTH DOOR OF THE TRAITOR CADORNA'S OLD QUARTERS."
                ],
                "chainEventHappen":"23"
             },
@@ -3748,7 +3748,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOUR CLEARING OF THE SLUM AREAS PERMITS US TO EXPAND.  HERE IS YOUR REWARD./h"
+                  "  YOUR CLEARING OF THE SLUM AREAS PERMITS US TO EXPAND.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"30"
             },
@@ -3811,7 +3811,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SPEAKS.  /hTHE COUNCIL HAS AWARDED A BONUS FOR YOUR ELIMINATING NORRIS THE GRAY.  HERE IS YOUR REWARD./h"
+                  "  THE CLERK SPEAKS.  THE COUNCIL HAS AWARDED A BONUS FOR YOUR ELIMINATING NORRIS THE GRAY.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"32"
             },
@@ -3872,7 +3872,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WITH SOKAL KEEP IN OUR HANDS, WE CAN USE BOATS TO BYPASS THE BARREN RIVER.  HERE IS YOUR REWARD./h"
+                  "  WITH SOKAL KEEP IN OUR HANDS, WE CAN USE BOATS TO BYPASS THE BARREN RIVER.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"34"
             },
@@ -3937,7 +3937,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THERE IS A REWARD FOR CLEARING THE LIBRARY.  HERE IS YOUR REWARD./h"
+                  "  THERE IS A REWARD FOR CLEARING THE LIBRARY.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"36"
             },
@@ -3998,7 +3998,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE FIND THESE DISCOURSES VALUABLE.  HERE IS YOUR REWARD./h"
+                  "  WE FIND THESE DISCOURSES VALUABLE.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"38"
             },
@@ -4120,7 +4120,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THESE MAPS SHOULD HELP US TO LOCATE SEVERAL LEGENDARY BUILDINGS.  HERE IS YOUR REWARD./h"
+                  "  THESE MAPS SHOULD HELP US TO LOCATE SEVERAL LEGENDARY BUILDINGS.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"42"
             },
@@ -4181,7 +4181,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THESE HISTORIES CONTAIN MUCH USEFUL INFORMATION.  HERE IS YOUR REWARD./h"
+                  "  THESE HISTORIES CONTAIN MUCH USEFUL INFORMATION.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"44"
             },
@@ -4242,7 +4242,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THE RECORD PROVIDE INSIGHT INTO MUCH THAT WAS PUZZLING.  HERE IS YOUR REWARD./h"
+                  "  THE RECORD PROVIDE INSIGHT INTO MUCH THAT WAS PUZZLING.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"46"
             },
@@ -4303,7 +4303,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  COUNCILMAN CADORNA LEFT THIS PAYMENT FOR SOME SERVICE YOU HAD RENDERED.  HERE IS YOUR REWARD./h"
+                  "  COUNCILMAN CADORNA LEFT THIS PAYMENT FOR SOME SERVICE YOU HAD RENDERED.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"48"
             },
@@ -4405,7 +4405,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOUR SUCCESS AT PODAL PLAZA IS NOTED.  HERE IS YOUR REWARD./h"
+                  "  YOUR SUCCESS AT PODAL PLAZA IS NOTED.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"51"
             },
@@ -4466,7 +4466,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SPEAKS.  /hYOU HAVE CLEARED THE AREA NEXT TO THE EVIL TEMPLE.  HERE IS YOUR REWARD./h"
+                  "  THE CLERK SPEAKS.  YOU HAVE CLEARED THE AREA NEXT TO THE EVIL TEMPLE.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"53"
             },
@@ -4531,7 +4531,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SPEAKS, /hCONGRATULATIONS, YOU MAY KEEP ALL YOU FOUND IN THE TEMPLE OF BANE AS A REWARD./h"
+                  "  THE CLERK SPEAKS, CONGRATULATIONS, YOU MAY KEEP ALL YOU FOUND IN THE TEMPLE OF BANE AS A REWARD."
                ],
                "chainEventHappen":"55"
             },
@@ -4569,7 +4569,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SPEAKS, /hTHE COUNCIL WAS PLEASED BY THE ELIMINATION OF THE THIEVES IN KOVEL MANSION.  HERE IS YOUR REWARD./h"
+                  "  THE CLERK SPEAKS, THE COUNCIL WAS PLEASED BY THE ELIMINATION OF THE THIEVES IN KOVEL MANSION.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"56"
             },
@@ -4697,7 +4697,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WHEN OLD PHLAN WAS OVERRUN, A FAMILY TREASURE WAS HIDDEN IN THE WESTERN BUILDING OF THE TEXTILE COMPLEX./h/h  THE FAITHFUL SERVANT SENT TO FETCH IT NEVER RETURNED.  THE COMPLEX IS JUST SOUTH OF PODAL PLAZA.  BRING THE TREASURE TO ME AND YOU WILL BE WELL REWARDED./h"
+                  "  WHEN OLD PHLAN WAS OVERRUN, A FAMILY TREASURE WAS HIDDEN IN THE WESTERN BUILDING OF THE TEXTILE COMPLEX.  THE FAITHFUL SERVANT SENT TO FETCH IT NEVER RETURNED.  THE COMPLEX IS JUST SOUTH OF PODAL PLAZA.  BRING THE TREASURE TO ME AND YOU WILL BE WELL REWARDED."
                ],
                "chainEventHappen":"61"
             },
@@ -4967,7 +4967,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  COUNCILMAN CADORNA CONFRONTS YOU.  /hYOU HAVE TAKEN MY FAMILY TREASURE.  I DON'T FORGET SUCH THINGS./h  HE STRIDES OFF."
+                  "  COUNCILMAN CADORNA CONFRONTS YOU.  YOU HAVE TAKEN MY FAMILY TREASURE.  I DON'T FORGET SUCH THINGS.  HE STRIDES OFF."
                ],
                "chainEventHappen":"71"
             },
@@ -5025,7 +5025,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED SOME OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD./h"
+                  "  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED SOME OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"73"
             },
@@ -5088,7 +5088,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED MORE OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD./h"
+                  "  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED MORE OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"75"
             },
@@ -5151,7 +5151,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED MORE OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD./h"
+                  "  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED MORE OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"77"
             },
@@ -5214,7 +5214,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE HAVE BEEN INFORMED YOU HAVE ELIMINATED MORE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD./h"
+                  "  WE HAVE BEEN INFORMED YOU HAVE ELIMINATED MORE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"79"
             },
@@ -5288,7 +5288,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED STILL MORE OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD./h"
+                  "  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED STILL MORE OF THE UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"81"
             },
@@ -5363,7 +5363,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SPEAKS, /hTHE COUNCIL HAS VOTED A SPECIAL PRIZE FOR ENDING THE GRAVEYARD MENACE.  HERE IS YOUR PRIZE./h"
+                  "  THE CLERK SPEAKS, THE COUNCIL HAS VOTED A SPECIAL PRIZE FOR ENDING THE GRAVEYARD MENACE.  HERE IS YOUR PRIZE."
                ],
                "chainEventHappen":"83"
             },
@@ -5465,7 +5465,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE WERE MUCH RELIEVED BY THE NEWS YOU BRING FROM THE NOMAD CAMP.  HERE IS YOUR REWARD./h"
+                  "  WE WERE MUCH RELIEVED BY THE NEWS YOU BRING FROM THE NOMAD CAMP.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"85"
             },
@@ -5535,7 +5535,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WE WERE MUCH RELIEVED BY THE NEWS YOU BRING FROM THE NOMAD CAMP.  HERE IS YOUR REWARD./h"
+                  "  WE WERE MUCH RELIEVED BY THE NEWS YOU BRING FROM THE NOMAD CAMP.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"87"
             },
@@ -5605,7 +5605,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CLERK SPEAKS, /hTHE LOSS OF THE KOBOLD FORCES WILL BE A MAJOR BLOW TO THE ENEMY.  HERE IS YOUR REWARD./h"
+                  "  THE CLERK SPEAKS, THE LOSS OF THE KOBOLD FORCES WILL BE A MAJOR BLOW TO THE ENEMY.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"89"
             },
@@ -5691,7 +5691,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WITH THE CLEARING OF THE STOJANOW RIVER, WE CAN OPEN UP THE HINTERLANDS FOR TRADE.  HERE IS YOUR REWARD./h"
+                  "  WITH THE CLEARING OF THE STOJANOW RIVER, WE CAN OPEN UP THE HINTERLANDS FOR TRADE.  HERE IS YOUR REWARD."
                ],
                "chainEventHappen":"91"
             },
@@ -5777,7 +5777,7 @@
                   "specialKey":"2"
                },
                "mtext":[
-                  "/h  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED SOME UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD./h"
+                  "  WE HAVE BEEN INFORMED THAT YOU HAVE ELIMINATED SOME UNDEAD FROM THE GRAVEYARD.  HERE IS YOUR REWARD."
                ]
             },
             "particular":{

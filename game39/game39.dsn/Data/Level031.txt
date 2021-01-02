@@ -2142,7 +2142,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THIS IS A SMALL CELL. CHAINED TO THE WALL IS A MAN BEATEN TO WITHIN AN INCH OF HIS LIFE.  AS YOU OPEN THE DOOR HE LOOKS UP AND YOU FEEL A SHOCK.  THE MAN IS PORHPYRIS CADORNA./h  IN THE NAME OF CHAUNTEA, HELP ME, PLEASE.  BY ALL THAT IS MERCIFUL, HELP ME!/h"
+                  "  THIS IS A SMALL CELL. CHAINED TO THE WALL IS A MAN BEATEN TO WITHIN AN INCH OF HIS LIFE.  AS YOU OPEN THE DOOR HE LOOKS UP AND YOU FEEL A SHOCK.  THE MAN IS PORHPYRIS CADORNA.  IN THE NAME OF CHAUNTEA, HELP ME, PLEASE.  BY ALL THAT IS MERCIFUL, HELP ME!"
                ],
                "chainEventHappen":"5"
             },
@@ -2212,7 +2212,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THANK YOU!  THANK YOU! I JUST THOUGHT THAT THE POOL WAS HERE.  THERE WAS NOWHERE ELSE TO GO.  I HAVE NOWHERE TO GO!/h"
+                  "  THANK YOU!  THANK YOU! I JUST THOUGHT THAT THE POOL WAS HERE.  THERE WAS NOWHERE ELSE TO GO.  I HAVE NOWHERE TO GO!"
                ],
                "chainEventHappen":"7"
             },
@@ -2370,7 +2370,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WAIT!  DON'T LEAVE ME!  IF YOU DO, I'LL SOUND THE ALARM!/h"
+                  "  WAIT!  DON'T LEAVE ME!  IF YOU DO, I'LL SOUND THE ALARM!"
                ],
                "chainEventNotHappen":"13"
             },
@@ -2407,7 +2407,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WAIT! /hHE SHRIEKS.  /hI KNOW HOW TO GET THROUGH THE MAIN GATES.  I CAN HELP YOU!/h"
+                  "  WAIT! HE SHRIEKS.  I KNOW HOW TO GET THROUGH THE MAIN GATES.  I CAN HELP YOU!"
                ],
                "chainEventNotHappen":"14"
             },
@@ -2444,7 +2444,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I KNOW THE WAY THROUGH THE HEDGE.  LEFT, RIGHT, RIGHT...FOR CHAUNTEA' SAKE, DON'T LEAVE ME!/h"
+                  "  I KNOW THE WAY THROUGH THE HEDGE.  LEFT, RIGHT, RIGHT...FOR CHAUNTEA' SAKE, DON'T LEAVE ME!"
                ],
                "chainEventNotHappen":"15"
             },
@@ -2529,7 +2529,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WAIT!  /hHE SHRIEKS.  /hI KNOW HOW TO GET THROUGH THE MAIN GATES.  I CAN HELP YOU!/h"
+                  "  WAIT!  HE SHRIEKS.  I KNOW HOW TO GET THROUGH THE MAIN GATES.  I CAN HELP YOU!"
                ],
                "chainEventNotHappen":"18"
             },
@@ -2652,7 +2652,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  /hTHAT'S THEM!/h"
+                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  THAT'S THEM!"
                ],
                "chainEventHappen":"23"
             },
@@ -2946,7 +2946,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  FOUR GIANTS COME BOUNDING OUT OF THE DOOR.  /h  WHAT PASSWORD?/h"
+                  "  FOUR GIANTS COME BOUNDING OUT OF THE DOOR.    WHAT PASSWORD?"
                ],
                "chainEventHappen":"30"
             },
@@ -3193,7 +3193,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  ALL RIGHT, BUT NO HANGING AROUND./h"
+                  "  ALL RIGHT, BUT NO HANGING AROUND."
                ]
             },
             "particular":{

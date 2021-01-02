@@ -1879,7 +1879,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  QUICKLY LOOKING AWAY, ^ SAYS, /hI SAW THE BROKEN REMAINS OF STATUES...HEADS WITH FACES FULL OF TERROR./h"
+                  "  QUICKLY LOOKING AWAY, ^ SAYS, I SAW THE BROKEN REMAINS OF STATUES...HEADS WITH FACES FULL OF TERROR."
                ],
                "chainEventHappen":"4"
             },
@@ -2089,7 +2089,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  HEY, LOOK.  COULD YOU KEEP IT QUIET? I JUST GOT BACK FROM THE NORTH, AND I'M TIRED, OKAY?/h  A MOMENT LATER A VOICE CALLS FROM THE OTHER DOORWAY, /hMESSENGER!/h  THE MAN GETS UP WITH A SIGH AND GOES INTO THE OFFICE.  A MINUTE LATER HE COMES OUT, PUTTING PAPERS INTO A POUCH, AND GOES OUT THE DOOR.  THE VOICE CALLS, /hMESSENGER!/h"
+                  "  HEY, LOOK.  COULD YOU KEEP IT QUIET? I JUST GOT BACK FROM THE NORTH, AND I'M TIRED, OKAY?  A MOMENT LATER A VOICE CALLS FROM THE OTHER DOORWAY, MESSENGER!  THE MAN GETS UP WITH A SIGH AND GOES INTO THE OFFICE.  A MINUTE LATER HE COMES OUT, PUTTING PAPERS INTO A POUCH, AND GOES OUT THE DOOR.  THE VOICE CALLS, MESSENGER!"
                ]
             },
             "particular":{
@@ -2124,7 +2124,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU ENTER A ROOM FURNISHED AS THE APARTMENT OF A WEALTHY, IF ECCENTRIC, MERCHANT.  A MIDDLE-AGED MAN IN ROBES LOOKS UP FROM A DESK./h  SO WHAT'S THE MESSAGE FROM TYRANTHRAXUS THAT REQUIRES ALL OF YOU TO DELIVER IT?/h  A SUDDEN LOOK OF FEAR COMES OVER HIS FACE.  /h  IF YOU'VE COME FROM TYRANTHRAXUS, I CAN OFFER A BETTER DEAL.  IF YOU KILL HIM INSTEAD OF ME, I WILL MAKE YOU ALL GENERALS!/h/h  IN FACT, I WILL JOIN YOU.  IS IT A DEAL?/h"
+                  "  YOU ENTER A ROOM FURNISHED AS THE APARTMENT OF A WEALTHY, IF ECCENTRIC, MERCHANT.  A MIDDLE-AGED MAN IN ROBES LOOKS UP FROM A DESK.  SO WHAT'S THE MESSAGE FROM TYRANTHRAXUS THAT REQUIRES ALL OF YOU TO DELIVER IT?  A SUDDEN LOOK OF FEAR COMES OVER HIS FACE.    IF YOU'VE COME FROM TYRANTHRAXUS, I CAN OFFER A BETTER DEAL.  IF YOU KILL HIM INSTEAD OF ME, I WILL MAKE YOU ALL GENERALS!  IN FACT, I WILL JOIN YOU.  IS IT A DEAL?"
                ],
                "chainEventHappen":"12"
             },
@@ -2232,7 +2232,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  GOOD./h"
+                  "  GOOD."
                ]
             },
             "particular":{
@@ -2387,7 +2387,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  TWO GUARDS MOVE TO BAR YOUR PATH.  THE DRAGON LOOKS AT YOU WITH MALEVOLENCE./h  GUARDS, KILL THESE PESTS./h"
+                  "  TWO GUARDS MOVE TO BAR YOUR PATH.  THE DRAGON LOOKS AT YOU WITH MALEVOLENCE.  GUARDS, KILL THESE PESTS."
                ],
                "chainEventHappen":"21"
             },
@@ -2527,7 +2527,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE DRAGON LOOKS AT YOU WITH INTEREST./h  YOU ARE INDEED MIGHTY WARRIORS.  EVEN SO, THERE IS NO HOPE OF YOUR SUCCESS.  BUT YOU INTEREST ME./h/h  IF YOU JOIN ME, I WILL MAKE YOU THE COMMANDERS OF THE ARMIES THAT WILL SWEEP THE MOONSEA.  I CANNOT BE DEFEATED, YOU KNOW.  WILL YOU JOIN ME?/h"
+                  "  THE DRAGON LOOKS AT YOU WITH INTEREST.  YOU ARE INDEED MIGHTY WARRIORS.  EVEN SO, THERE IS NO HOPE OF YOUR SUCCESS.  BUT YOU INTEREST ME.  IF YOU JOIN ME, I WILL MAKE YOU THE COMMANDERS OF THE ARMIES THAT WILL SWEEP THE MOONSEA.  I CANNOT BE DEFEATED, YOU KNOW.  WILL YOU JOIN ME?"
                ],
                "chainEventHappen":"24"
             },
@@ -2797,7 +2797,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  FOOLS!  YOU HAVE BUT SLAIN THE BODY I POSSESSED!  I CANNOT BE DEFEATED!  BY THE POWER OF THE POOL OF RADIANCE, WHICH I MOVED HERE, TO MY LAIR, I WILL STILL RULE BY POSSESSING ONE OF YOU!/h"
+                  "  FOOLS!  YOU HAVE BUT SLAIN THE BODY I POSSESSED!  I CANNOT BE DEFEATED!  BY THE POWER OF THE POOL OF RADIANCE, WHICH I MOVED HERE, TO MY LAIR, I WILL STILL RULE BY POSSESSING ONE OF YOU!"
                ],
                "chainEventHappen":"30"
             },
@@ -2833,7 +2833,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  NO, LORD BANE!  I CAN STILL RULE HERE!  I HAVE NOT FAILED!  DO NOT PULL ME BACK THROUGH THE POOL!/h"
+                  "  NO, LORD BANE!  I CAN STILL RULE HERE!  I HAVE NOT FAILED!  DO NOT PULL ME BACK THROUGH THE POOL!"
                ],
                "chainEventHappen":"31"
             },
@@ -2869,7 +2869,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  NOOOOOOOOOOOOOOOOOO!/h"
+                  "  NOOOOOOOOOOOOOOOOOO!"
                ],
                "chainEventHappen":"32"
             },
@@ -2952,7 +2952,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THE MONSTERS REJOICE, BECAUSE THE PARTY HAS BEEN DEFEATED!/h"
+                  "  THE MONSTERS REJOICE, BECAUSE THE PARTY HAS BEEN DEFEATED!"
                ],
                "chainEventHappen":"35"
             },
@@ -2987,27 +2987,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",

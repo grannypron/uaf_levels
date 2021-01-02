@@ -2257,7 +2257,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU SEE A HARMLESS, MIDDLE-AGED MAN./h  WAIT!  I WAS JUST A MAGE SEARCHING FOR KNOWLEDGE WHEN TYRANTHRAXUS CAPTURED ME.  I'VE BEEN FORCED TO WORK FOR HIM.  SPARE ME AND I WILL LEAVE, NEVER TO RETURN!/h"
+                  "  YOU SEE A HARMLESS, MIDDLE-AGED MAN.  WAIT!  I WAS JUST A MAGE SEARCHING FOR KNOWLEDGE WHEN TYRANTHRAXUS CAPTURED ME.  I'VE BEEN FORCED TO WORK FOR HIM.  SPARE ME AND I WILL LEAVE, NEVER TO RETURN!"
                ],
                "chainEventHappen":"10"
             },
@@ -2411,7 +2411,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  HE QUICKLY LEAVES.  YOU ARE LEFT WITH THE NOTES OF AL-HYAM DHAZID, WHICH TELL QUITE A LOT ABOUT THE POOL OF RADIANCE./h  NOTE 1: TYRANTHRAXUS IS DEFINITELY A PRODUCT OF IMMERSION IN THE POOL OF RADIANCE.  HIS EXTRAORDINARY VIGOR,  BRILLIANCE, CHARISMA, AND POWER OF COMMAND MUST BE A DIRECT RESULT OF EXPOSURE TO THE EFFECTS OF THE POOL./h/h  NOTE 2: THE POOL OF RADIANCE MAY GRANT SPECIAL MAGICAL ABILITIES.  TYRANTHRAXUS EXHIBITS A FIERY AURA.  HE ALSO SEEMS TO HAVE EXTRAORDINARY MEANS OF OBTAINING INFORMATION./h/h  NOTE 3: TYRANTHRAXUS TELLS STORIES ABOUT MOVING DOWN FROM THE NORTH.  THOUGH HE NEVER MENTIONS THE POOL, I GATHER THAT IT IS NORTHWEST OF THE DRAGONSPINE MOUNTAINS./h/h  STRANGELY, HE OCCASIONALLY LETS SLIP THAT HE IS NEVER FAR FROM THE POOL, BUT THAT MUST BE A PARENTHETICAL REFERENCE./h"
+                  "  HE QUICKLY LEAVES.  YOU ARE LEFT WITH THE NOTES OF AL-HYAM DHAZID, WHICH TELL QUITE A LOT ABOUT THE POOL OF RADIANCE.  NOTE 1: TYRANTHRAXUS IS DEFINITELY A PRODUCT OF IMMERSION IN THE POOL OF RADIANCE.  HIS EXTRAORDINARY VIGOR,  BRILLIANCE, CHARISMA, AND POWER OF COMMAND MUST BE A DIRECT RESULT OF EXPOSURE TO THE EFFECTS OF THE POOL.  NOTE 2: THE POOL OF RADIANCE MAY GRANT SPECIAL MAGICAL ABILITIES.  TYRANTHRAXUS EXHIBITS A FIERY AURA.  HE ALSO SEEMS TO HAVE EXTRAORDINARY MEANS OF OBTAINING INFORMATION.  NOTE 3: TYRANTHRAXUS TELLS STORIES ABOUT MOVING DOWN FROM THE NORTH.  THOUGH HE NEVER MENTIONS THE POOL, I GATHER THAT IT IS NORTHWEST OF THE DRAGONSPINE MOUNTAINS.  STRANGELY, HE OCCASIONALLY LETS SLIP THAT HE IS NEVER FAR FROM THE POOL, BUT THAT MUST BE A PARENTHETICAL REFERENCE."
                ],
                "chainEventHappen":"14"
             },
@@ -2467,7 +2467,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WAIT!  PLEASE!  I'LL GIVE YOU ALL OF MY NOTES!  HERE THEY ARE!/h"
+                  "  WAIT!  PLEASE!  I'LL GIVE YOU ALL OF MY NOTES!  HERE THEY ARE!"
                ],
                "chainEventNotHappen":"16"
             },
@@ -3024,7 +3024,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  HEY, WAIT DO YOU THINK YOU'RE DOING?/h"
+                  "  HEY, WAIT DO YOU THINK YOU'RE DOING?"
                ],
                "chainEventHappen":"29"
             },
@@ -3096,7 +3096,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH...OKAY./h  THEY TURN AND LEAVE."
+                  "  OH...OKAY.  THEY TURN AND LEAVE."
                ]
             },
             "particular":{
@@ -3130,7 +3130,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH...OKAY./h"
+                  "  OH...OKAY."
                ]
             },
             "particular":{
@@ -3164,7 +3164,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH...OKAY./h"
+                  "  OH...OKAY."
                ]
             },
             "particular":{
@@ -3198,7 +3198,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH...OKAY./h"
+                  "  OH...OKAY."
                ]
             },
             "particular":{
@@ -3232,7 +3232,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH...OKAY./h"
+                  "  OH...OKAY."
                ]
             },
             "particular":{
@@ -3525,7 +3525,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  /hTHAT'S THEM!/h"
+                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  THAT'S THEM!"
                ],
                "chainEventHappen":"46"
             },
@@ -3852,7 +3852,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  CADORNA WHISPERS, /hTHE PASSWORD FOR THE GATE IS \"RHODIA.\"/h"
+                  "  CADORNA WHISPERS, THE PASSWORD FOR THE GATE IS \"RHODIA.\""
                ],
                "chainEventHappen":"54"
             },

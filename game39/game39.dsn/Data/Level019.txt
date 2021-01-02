@@ -2465,27 +2465,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -2599,27 +2599,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -2815,7 +2815,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  A MAN HURRIES FORWARD.  /hI AM SORRY, NOBLE ONES, BUT I HAVE NOTHING TO SELL./h"
+                  "  A MAN HURRIES FORWARD.  I AM SORRY, NOBLE ONES, BUT I HAVE NOTHING TO SELL."
                ],
                "chainEventHappen":"18"
             },
@@ -2930,7 +2930,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WAIT A MOMENT, /hTHE MAN SAYS.  HE HURRIES TO THE BACK OF THE BOOTH AND RETURNS WITH A PACKAGE.  /hHERE, /hHE SAYS."
+                  "  WAIT A MOMENT, THE MAN SAYS.  HE HURRIES TO THE BACK OF THE BOOTH AND RETURNS WITH A PACKAGE.  HERE, HE SAYS."
                ],
                "chainEventHappen":"21"
             },
@@ -2986,7 +2986,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I AM SORRY, /hTHE MAN SAYS.  /hI CANNOT HELP YOU NOW./h"
+                  "  I AM SORRY, THE MAN SAYS.  I CANNOT HELP YOU NOW."
                ]
             },
             "particular":{
@@ -3021,27 +3021,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3109,7 +3109,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH, NO!  WHAT CAN WE THROW NOW?/h  ONE LOOKS YOUR WAY.  /hI KNOW, /hHE SAYS."
+                  "  OH, NO!  WHAT CAN WE THROW NOW?  ONE LOOKS YOUR WAY.  I KNOW, HE SAYS."
                ],
                "chainEventHappen":"73"
             },
@@ -3267,7 +3267,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU ARE USHERED INTO THE BISHOP'S STUDY.  THE BISHOP SPEAKS.  /hALLOW ME TO INTRODUCE DIRTEN, PRIEST OF IL-MATER./h"
+                  "  YOU ARE USHERED INTO THE BISHOP'S STUDY.  THE BISHOP SPEAKS.  ALLOW ME TO INTRODUCE DIRTEN, PRIEST OF IL-MATER."
                ],
                "chainEventHappen":"31"
             },
@@ -3303,7 +3303,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  HE IS BOUND TO RECOVER THE TEMPLE WHICH HAS BEEN DESECRATED TO BANE.  GO WITH HIM ACROSS THE RIVER AND HELP HIM TO CLEANSE THE TEMPLE.  IN PAYMENT, YOU MAY KEEP THE HIDDEN TREASURES./h"
+                  "  HE IS BOUND TO RECOVER THE TEMPLE WHICH HAS BEEN DESECRATED TO BANE.  GO WITH HIM ACROSS THE RIVER AND HELP HIM TO CLEANSE THE TEMPLE.  IN PAYMENT, YOU MAY KEEP THE HIDDEN TREASURES."
                ],
                "chainEventHappen":"32"
             },
@@ -3376,7 +3376,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU ARE USHERED INTO THE BISHOP'S STUDY, WHERE DIRTEN AWAITS./h  I AM ABOUT TO JOURNEY TO THE TEMPLE; WILL YOU COME WITH ME?/h"
+                  "  YOU ARE USHERED INTO THE BISHOP'S STUDY, WHERE DIRTEN AWAITS.  I AM ABOUT TO JOURNEY TO THE TEMPLE; WILL YOU COME WITH ME?"
                ],
                "chainEventHappen":"34"
             },
@@ -3725,27 +3725,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3844,27 +3844,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3896,27 +3896,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4102,27 +4102,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4308,27 +4308,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4612,27 +4612,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",

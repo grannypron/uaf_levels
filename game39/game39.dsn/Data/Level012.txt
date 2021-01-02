@@ -2298,27 +2298,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -2469,27 +2469,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -2787,7 +2787,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WHY SURE I'LL SELL YOU MY WAGON.  ALL IT'LL COST YOU IS 250 GOLD PIECES.  WHAT DO YOU SAY?/h"
+                  "  WHY SURE I'LL SELL YOU MY WAGON.  ALL IT'LL COST YOU IS 250 GOLD PIECES.  WHAT DO YOU SAY?"
                ],
                "chainEventHappen":"24"
             },
@@ -2901,7 +2901,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  OH, BY THE WAY.  BETTER BEWARE OF THE GUARDS.  EVER SINCE GIANTS MOVED INTO THE CASTLE AREA, BUGBEARS HAVE BEEN STUCK GUARDING THE GATE.  AND THEY HATE IT./h/h  NOT ONLY THAT BUT THEY'RE AFRAID OF THEM ETTIN.  MAKES THEM REAL JUMPY.  I WOULDN'T GIVE THEM ANY BACKTALK IF I WERE YOU./h"
+                  "  OH, BY THE WAY.  BETTER BEWARE OF THE GUARDS.  EVER SINCE GIANTS MOVED INTO THE CASTLE AREA, BUGBEARS HAVE BEEN STUCK GUARDING THE GATE.  AND THEY HATE IT.  NOT ONLY THAT BUT THEY'RE AFRAID OF THEM ETTIN.  MAKES THEM REAL JUMPY.  I WOULDN'T GIVE THEM ANY BACKTALK IF I WERE YOU."
                ],
                "chainEventHappen":"27"
             },
@@ -2956,7 +2956,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  SORRY, THAT'S MY FINAL OFFER.  TAKE IT OR LEAVE IT./h"
+                  "  SORRY, THAT'S MY FINAL OFFER.  TAKE IT OR LEAVE IT."
                ],
                "chainEventHappen":"29"
             },
@@ -3180,7 +3180,7 @@
                   "facing":"North, West,  East"
                },
                "mtext":[
-                  "  A VOICE CRIES, /hSTAY AWAY FROM THE WALL!/h"
+                  "  A VOICE CRIES, STAY AWAY FROM THE WALL!"
                ],
                "chainEventNotHappen":"38"
             },
@@ -3202,7 +3202,7 @@
                   "facing":"North, West,  East"
                },
                "mtext":[
-                  "  THE GROUP OF BUGBEARS COMES OVER.  /hWE WARNED YOU!  WHAT'S THE MATTER.  CAN'T YOU UNDERSTAND COMMON?  I GUESS I'LL HAVE TO TEACH YOU./h"
+                  "  THE GROUP OF BUGBEARS COMES OVER.  WE WARNED YOU!  WHAT'S THE MATTER.  CAN'T YOU UNDERSTAND COMMON?  I GUESS I'LL HAVE TO TEACH YOU."
                ],
                "chainEventHappen":"39"
             },
@@ -3494,7 +3494,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  A BUGBEAR WALKS UP TO YOU./h  OKAY, LET'S HAVE THE FIFTEEN GOLD./h"
+                  "  A BUGBEAR WALKS UP TO YOU.  OKAY, LET'S HAVE THE FIFTEEN GOLD."
                ],
                "chainEventHappen":"48"
             },
@@ -3537,7 +3537,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  HEY, WAIT A MINUTE!  THEY'RE IMPOSTERS!  ALL RIGHT, THROW DOWN YOUR WEAPONS!/h"
+                  "  HEY, WAIT A MINUTE!  THEY'RE IMPOSTERS!  ALL RIGHT, THROW DOWN YOUR WEAPONS!"
                ],
                "chainEventHappen":"50"
             },
@@ -3789,7 +3789,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  ALL RIGHT, GET OUT OF HERE THEN.  COME BACK WHEN YOU'VE LEARNED THE RULES./h"
+                  "  ALL RIGHT, GET OUT OF HERE THEN.  COME BACK WHEN YOU'VE LEARNED THE RULES."
                ]
             },
             "particular":{

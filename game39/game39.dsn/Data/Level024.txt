@@ -2199,7 +2199,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU SEE A BOY THAT HAS A HEART-SHAPED BIRTHMARK ON HIS LEFT SHOULDER.  AS YOU LOOK AT THE BOY, A SLEAZY, FAT MERCHANT APPROACHES YOU AND SAYS, /hTHAT LITTLE BOY WILL BRING A GOOD PRICE AT ZHENTIL KEEP. I WILL BUY HIM./h"
+                  "  YOU SEE A BOY THAT HAS A HEART-SHAPED BIRTHMARK ON HIS LEFT SHOULDER.  AS YOU LOOK AT THE BOY, A SLEAZY, FAT MERCHANT APPROACHES YOU AND SAYS, THAT LITTLE BOY WILL BRING A GOOD PRICE AT ZHENTIL KEEP. I WILL BUY HIM."
                ],
                "chainEventHappen":"6"
             },
@@ -2341,7 +2341,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  AFTER YOU DEFEAT THE GUARDS, YOU SEE A CROWD HAS FORMED.  FROM WITHIN THE CROWD A MAN IN GLEAMING CHAINMAIL STEPS OUT./h  THAT WAS AMUSING, BUT DO NOT CAUSE ANYMORE TROUBLE, /hHE SAYS.  THE MAN THEN LEAVES, AND BEFORE YOU IS THE SLEAZY MERCHANT.  HE BEGS FORGIVENESS THEN WHIMPERS AWAY."
+                  "  AFTER YOU DEFEAT THE GUARDS, YOU SEE A CROWD HAS FORMED.  FROM WITHIN THE CROWD A MAN IN GLEAMING CHAINMAIL STEPS OUT.  THAT WAS AMUSING, BUT DO NOT CAUSE ANYMORE TROUBLE, HE SAYS.  THE MAN THEN LEAVES, AND BEFORE YOU IS THE SLEAZY MERCHANT.  HE BEGS FORGIVENESS THEN WHIMPERS AWAY."
                ]
             },
             "particular":{
@@ -2375,7 +2375,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU AGREE WITH THE MERCHANT THAT THE YOUNG BOY IS VALUABLE.  THE MERCHANT LAUGHS, THEN SAYS, /hYOU HAVE TO OUTBID ME FOR THE WAIF./h  THE SLEAZY MERCHANT THEN WALKS AWAY."
+                  "  YOU AGREE WITH THE MERCHANT THAT THE YOUNG BOY IS VALUABLE.  THE MERCHANT LAUGHS, THEN SAYS, YOU HAVE TO OUTBID ME FOR THE WAIF.  THE SLEAZY MERCHANT THEN WALKS AWAY."
                ]
             },
             "particular":{
@@ -2562,7 +2562,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THERE IS A SEEDY LITTLE MAN HERE WHO WHISPERS, /hPSST!  HEY, BUDDY!  WANT TO BUY A PASS TO SEE THE CAPTAIN?/h"
+                  "  THERE IS A SEEDY LITTLE MAN HERE WHO WHISPERS, PSST!  HEY, BUDDY!  WANT TO BUY A PASS TO SEE THE CAPTAIN?"
                ],
                "chainEventHappen":"18"
             },
@@ -2678,7 +2678,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  STANDING IN FRONT OF THE DOOR ARE TWO LARGE GUARDS.  ONE OF THEM SAYS, /hDO YOU HAVE A PASS TO SEE THE CAPTAIN?/h"
+                  "  STANDING IN FRONT OF THE DOOR ARE TWO LARGE GUARDS.  ONE OF THEM SAYS, DO YOU HAVE A PASS TO SEE THE CAPTAIN?"
                ],
                "chainEventHappen":"22"
             },
@@ -2845,7 +2845,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU OFFER THE GUARDS SOME MONEY, BUT THEY REFUSE.  ONE OF THE GUARDS SAYS, /hGET OUTTA HERE, YOU SCUM!/h"
+                  "  YOU OFFER THE GUARDS SOME MONEY, BUT THEY REFUSE.  ONE OF THE GUARDS SAYS, GET OUTTA HERE, YOU SCUM!"
                ]
             },
             "particular":{
@@ -3712,7 +3712,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU MENTION THE BOY, AND THE CAPTAIN SEEMS INTERESTED.  HE SAYS, /hI WILL SELL YOU THE BOY, BUT IT WILL COST YOU A LOT./h"
+                  "  YOU MENTION THE BOY, AND THE CAPTAIN SEEMS INTERESTED.  HE SAYS, I WILL SELL YOU THE BOY, BUT IT WILL COST YOU A LOT."
                ],
                "chainEventHappen":"46"
             },
@@ -3820,7 +3820,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOU HAVE MADE A GOOD DEAL./h  AFTER TALKING, THE CAPTAIN MAKES A MOTION, AND THE BOY IS BROUGHT TO YOU."
+                  "  YOU HAVE MADE A GOOD DEAL.  AFTER TALKING, THE CAPTAIN MAKES A MOTION, AND THE BOY IS BROUGHT TO YOU."
                ],
                "chainEventHappen":"49"
             },
@@ -4417,7 +4417,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE CAPTAIN SAYS, /hYOU HAVE FOUGHT WELL.  YOU MAY RANSOM YOURSELVES OR DIE!/h"
+                  "  THE CAPTAIN SAYS, YOU HAVE FOUGHT WELL.  YOU MAY RANSOM YOURSELVES OR DIE!"
                ],
                "chainEventHappen":"63"
             },
@@ -4525,7 +4525,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  YOU HAVE CHOSEN WISELY./h  ONE OF THE BUCCANEERS COMES FORWARD TO STRIP YOU OF FIFTEEN PIECES OF JEWELRY."
+                  "  YOU HAVE CHOSEN WISELY.  ONE OF THE BUCCANEERS COMES FORWARD TO STRIP YOU OF FIFTEEN PIECES OF JEWELRY."
                ],
                "chainEventHappen":"66"
             },
@@ -4964,7 +4964,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU HAVE ENTERED ONE OF THE GUARD TOWERS.  INSIDE ARE FOUR BUCCANEERS.  ONE OF THEM SAYS, /hTHIS IS A RESTRICTED AREA!  LEAVE NOW!/h"
+                  "  YOU HAVE ENTERED ONE OF THE GUARD TOWERS.  INSIDE ARE FOUR BUCCANEERS.  ONE OF THEM SAYS, THIS IS A RESTRICTED AREA!  LEAVE NOW!"
                ]
             },
             "particular":{
@@ -5023,7 +5023,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU ENTER A BARRACKS FILLED WITH TWENTY BUCCANEERS.  ONE OF THEM SAYS, /hTHIS AREA IS OFF LIMITS!  LEAVE NOW!/h"
+                  "  YOU ENTER A BARRACKS FILLED WITH TWENTY BUCCANEERS.  ONE OF THEM SAYS, THIS AREA IS OFF LIMITS!  LEAVE NOW!"
                ]
             },
             "particular":{

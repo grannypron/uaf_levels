@@ -2844,7 +2844,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  GREETINGS, COURAGEOUS ONES, I AM ROLF, APPOINTED BY THE COUNCIL TO INTRODUCE NEWCOMERS TO THE FAIR CITY OF PHLAN.  IF YOU WILL ACCOMPANY ME, I WILL START THE TOUR./h"
+                  "  GREETINGS, COURAGEOUS ONES, I AM ROLF, APPOINTED BY THE COUNCIL TO INTRODUCE NEWCOMERS TO THE FAIR CITY OF PHLAN.  IF YOU WILL ACCOMPANY ME, I WILL START THE TOUR."
                ],
                "chainEventHappen":"2"
             },
@@ -2921,7 +2921,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  YOU NOW FACE AN ENTRANCE TO THE TEMPLE OF TYR.  THERE ARE THREE TEMPLES IN PHLAN: TYR'S, SUNE'S AND TEMPUS'.  TYR'S IS THE LARGEST AND HOUSES BISHOP BRACCIO.  IF YOU WILL TURN AROUND NOW.../h"
+                  "  YOU NOW FACE AN ENTRANCE TO THE TEMPLE OF TYR.  THERE ARE THREE TEMPLES IN PHLAN: TYR'S, SUNE'S AND TEMPUS'.  TYR'S IS THE LARGEST AND HOUSES BISHOP BRACCIO.  IF YOU WILL TURN AROUND NOW..."
                ],
                "chainEventHappen":"5"
             },
@@ -2966,7 +2966,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  YOU WILL SEE THE ENTRANCE TO THE PASSENGER DOCK AREA WE JUST DEPARTED.  FEW SHIPS DARE THE PERILOUS PASSAGE HERE, BUT THE COUNCIL IS DEVELOPING A PLAN TO OPEN UP THE SEA LANES.  PLEASE FOLLOW ME./h"
+                  "  YOU WILL SEE THE ENTRANCE TO THE PASSENGER DOCK AREA WE JUST DEPARTED.  FEW SHIPS DARE THE PERILOUS PASSAGE HERE, BUT THE COUNCIL IS DEVELOPING A PLAN TO OPEN UP THE SEA LANES.  PLEASE FOLLOW ME."
                ],
                "chainEventHappen":"7"
             },
@@ -3042,7 +3042,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  BEHIND THESE DOORS ARE THE SPECIAL TRAINING SCHOOLS WHERE ADVENTURERS INCREASE THEIR SKILLS.  LET US NOW GO TO THE CITY'S MOST IMPORTANT BUILDING./h"
+                  "  BEHIND THESE DOORS ARE THE SPECIAL TRAINING SCHOOLS WHERE ADVENTURERS INCREASE THEIR SKILLS.  LET US NOW GO TO THE CITY'S MOST IMPORTANT BUILDING."
                ],
                "chainEventHappen":"10"
             },
@@ -3087,7 +3087,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WE ARE JUST OUTSIDE THE CITY HALL.  PROCLAMATIONS ARE POSTED ON THESE WALLS.  INSIDE, THE CITY CLERK AWARDS THE COUNCIL'S COMMISSIONS.  COMMISSIONS ARE THE QUICKEST WAY TO FAME AND FORTUNE./h"
+                  "  WE ARE JUST OUTSIDE THE CITY HALL.  PROCLAMATIONS ARE POSTED ON THESE WALLS.  INSIDE, THE CITY CLERK AWARDS THE COUNCIL'S COMMISSIONS.  COMMISSIONS ARE THE QUICKEST WAY TO FAME AND FORTUNE."
                ],
                "chainEventHappen":"12"
             },
@@ -3134,7 +3134,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  ON YOUR RIGHT IS ONE OF THE ENTRANCES TO SUNE'S TEMPLE.  AS WITH ALL PHLAN'S TEMPLES, VARIOUS CLERICAL SERVICES ARE OFFERED INSIDE.  ON YOUR LEFT IS AN ENTRANCE TO THE CITY PARK./h"
+                  "  ON YOUR RIGHT IS ONE OF THE ENTRANCES TO SUNE'S TEMPLE.  AS WITH ALL PHLAN'S TEMPLES, VARIOUS CLERICAL SERVICES ARE OFFERED INSIDE.  ON YOUR LEFT IS AN ENTRANCE TO THE CITY PARK."
                ],
                "chainEventHappen":"14"
             },
@@ -3542,7 +3542,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WE TRAIN ONLY CLERICS HERE.  DO YOU WANT TO TRAIN?/h"
+                  "  WE TRAIN ONLY CLERICS HERE.  DO YOU WANT TO TRAIN?"
                ],
                "chainEventHappen":"24"
             },
@@ -3583,7 +3583,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WE TRAIN ONLY MAGIC-USERS HERE.  DO YOU WANT TO TRAIN?/h"
+                  "  WE TRAIN ONLY MAGIC-USERS HERE.  DO YOU WANT TO TRAIN?"
                ],
                "chainEventHappen":"26"
             },
@@ -3624,7 +3624,7 @@
                   "facing":"North, West,  East"
                },
                "mtext":[
-                  "  A SIGN ON THE NORTH DOOR READS, /hFIGHTERS./h"
+                  "  A SIGN ON THE NORTH DOOR READS, FIGHTERS."
                ]
             },
             "particular":{
@@ -3643,7 +3643,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WE TRAIN ONLY FIGHTERS HERE.  DO YOU WANT TO TRAIN?/h"
+                  "  WE TRAIN ONLY FIGHTERS HERE.  DO YOU WANT TO TRAIN?"
                ],
                "chainEventHappen":"29"
             },
@@ -3686,7 +3686,7 @@
                   "facing":"North, West,  East"
                },
                "mtext":[
-                  "  A SIGN ON THE NORTH DOOR READS, /hROGUES./h"
+                  "  A SIGN ON THE NORTH DOOR READS, ROGUES."
                ]
             },
             "particular":{
@@ -3706,7 +3706,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WE TRAIN ONLY THIEVES HERE.  DO YOU WANT TO TRAIN?/h"
+                  "  WE TRAIN ONLY THIEVES HERE.  DO YOU WANT TO TRAIN?"
                ],
                "chainEventHappen":"32"
             },
@@ -3853,7 +3853,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THIS SHOP SELLS SPECIAL ITEMS.  /hWOULD YOU LIKE TO SEE OUR SELECTION?/h"
+                  "  THIS SHOP SELLS SPECIAL ITEMS.  WOULD YOU LIKE TO SEE OUR SELECTION?"
                ],
                "chainEventHappen":"36"
             },
@@ -3976,7 +3976,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE SHOPKEEPER GREETS YOU AND OFFERS YOU ITEMS FOR SALE.  /hCAN I SHOW YOU SOMETHING?/h"
+                  "  THE SHOPKEEPER GREETS YOU AND OFFERS YOU ITEMS FOR SALE.  CAN I SHOW YOU SOMETHING?"
                ],
                "chainEventHappen":"39"
             },
@@ -4069,7 +4069,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE SHOPKEEPER OFFERS JEWELRY FOR SALE.  /hCAN I SHOW YOU SOMETHING?/h"
+                  "  THE SHOPKEEPER OFFERS JEWELRY FOR SALE.  CAN I SHOW YOU SOMETHING?"
                ],
                "chainEventHappen":"42"
             },
@@ -4148,7 +4148,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  BEYOND THIS GATE ARE THE MONSTER-RIDDEN AREAS OF THE OLD CITY WE ARE SLOWLY PREPARING FOR SETTLEMENT.  THE COUNCIL OFFERS A GENEROUS REWARD FOR THOSE WHO CLEAR AREAS OF MONSTERS./h/h  OUR TOUR IS ENDED.  AGAIN, LET ME URGE YOU TO APPLY TO THE CITY CLERK FOR A COMMISSION.  GOOD-BYE AND GOOD FORTUNE./h     (YOU ARE ON YOUR OWN NOW)"
+                  "  BEYOND THIS GATE ARE THE MONSTER-RIDDEN AREAS OF THE OLD CITY WE ARE SLOWLY PREPARING FOR SETTLEMENT.  THE COUNCIL OFFERS A GENEROUS REWARD FOR THOSE WHO CLEAR AREAS OF MONSTERS.  OUR TOUR IS ENDED.  AGAIN, LET ME URGE YOU TO APPLY TO THE CITY CLERK FOR A COMMISSION.  GOOD-BYE AND GOOD FORTUNE.     (YOU ARE ON YOUR OWN NOW)"
                ],
                "chainEventNotHappen":"46"
             },
@@ -4240,7 +4240,7 @@
                   "facing":"North"
                },
                "mtext":[
-                  "/h  BY ORDER OF THE CITY COUNCIL, /hTHE HARBOR MASTER SAYS, /hTHE ONLY BOAT OUT IS GOING TO SOKAL KEEP.  YOU CAN CATCH IT AT THE END OF THE PIER./h"
+                  "  BY ORDER OF THE CITY COUNCIL, THE HARBOR MASTER SAYS, THE ONLY BOAT OUT IS GOING TO SOKAL KEEP.  YOU CAN CATCH IT AT THE END OF THE PIER."
                ]
             },
             "particular":{
@@ -4520,7 +4520,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE SHOP SPECIALIZES IN ARMS AND ARMOR.  /hCAN I SHOW YOU OUR WARES?/h"
+                  "  THE SHOP SPECIALIZES IN ARMS AND ARMOR.  CAN I SHOW YOU OUR WARES?"
                ],
                "chainEventHappen":"62"
             },
@@ -4998,7 +4998,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?/h"
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
                ],
                "chainEventHappen":"65"
             },
@@ -5118,7 +5118,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE SHOPKEEPER GREETS YOU AND OFFERS YOU ITEMS FOR SALE.  /hCAN I SHOW YOU SOMETHING?/h"
+                  "  THE SHOPKEEPER GREETS YOU AND OFFERS YOU ITEMS FOR SALE.  CAN I SHOW YOU SOMETHING?"
                ],
                "chainEventHappen":"70"
             },
@@ -5269,7 +5269,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  THE GAME WORKS LIKE THIS.  WE SPIN THIS TOP.  IF THE GREEN SIDE COMES UP, YOU GET DOUBLE YOUR MONEY BACK.  IF A BLUE SIDE COMES UP, YOU GET YOUR MONEY BACK.  IF A RED SIDE COMES UP YOU LOSE./h"
+                  "  THE GAME WORKS LIKE THIS.  WE SPIN THIS TOP.  IF THE GREEN SIDE COMES UP, YOU GET DOUBLE YOUR MONEY BACK.  IF A BLUE SIDE COMES UP, YOU GET YOUR MONEY BACK.  IF A RED SIDE COMES UP YOU LOSE."
                ],
                "chainEventHappen":"76"
             },
@@ -5334,7 +5334,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  RED.  YOU LOSE./h"
+                  "  RED.  YOU LOSE."
                ],
                "chainEventNotHappen":"78"
             },
@@ -5374,7 +5374,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  IT'S GREEN.  YOU GET 10 GOLD PIECES BACK./h"
+                  "  IT'S GREEN.  YOU GET 10 GOLD PIECES BACK."
                ],
                "chainEventHappen":"80"
             },
@@ -5415,7 +5415,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  IT'S BLUE.  YOU WIN./h"
+                  "  IT'S BLUE.  YOU WIN."
                ],
                "chainEventHappen":"82"
             },
@@ -5460,7 +5460,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  FAR TO THE NORTHEAST, IN THE MIDST OF A VAST SWAMP, LIE THE UNINHABITED RUINS OF A POWERFUL WIZARD'S CASTLE./h"
+                  "  FAR TO THE NORTHEAST, IN THE MIDST OF A VAST SWAMP, LIE THE UNINHABITED RUINS OF A POWERFUL WIZARD'S CASTLE."
                ],
                "chainEventNotHappen":"84"
             },
@@ -5510,7 +5510,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WELLS THROUGHOUT THE CITY OFTEN PROVIDE ACCESS TO HIDDEN DENS AND UNDERGROUND PASSAGES./h"
+                  "  WELLS THROUGHOUT THE CITY OFTEN PROVIDE ACCESS TO HIDDEN DENS AND UNDERGROUND PASSAGES."
                ],
                "chainEventNotHappen":"86"
             },
@@ -5560,7 +5560,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  TO THE EAST OF PHLAN LIES A GLEAMING CASTLE OF GOLD THAT SHIFTS ITS LOCATION FROM TIME TO TIME./h"
+                  "  TO THE EAST OF PHLAN LIES A GLEAMING CASTLE OF GOLD THAT SHIFTS ITS LOCATION FROM TIME TO TIME."
                ],
                "chainEventNotHappen":"88"
             },
@@ -5585,7 +5585,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  A WEIRD-LOOKING WIZARD, DRESSED ALL IN BLACK, SITS ALONE AND MUMBLES INTO HIS BEER, /hI'LL RETURN NEXT TIME AND SHOW THEM ALL!/h"
+                  "  A WEIRD-LOOKING WIZARD, DRESSED ALL IN BLACK, SITS ALONE AND MUMBLES INTO HIS BEER, I'LL RETURN NEXT TIME AND SHOW THEM ALL!"
                ],
                "chainEventNotHappen":"89"
             },
@@ -5610,7 +5610,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  GREAT TREASURES ARE TO BE FOUND ON THE BANKS OF THE BARREN RIVER AS ONE VENTURES NORTHWARD./h"
+                  "  GREAT TREASURES ARE TO BE FOUND ON THE BANKS OF THE BARREN RIVER AS ONE VENTURES NORTHWARD."
                ],
                "chainEventNotHappen":"90"
             },
@@ -5635,7 +5635,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  THE GRAVEYARD IS CONTROLLED BY A VERY POWERFUL AND CLEVER UNDEAD CREATURE./h"
+                  "  THE GRAVEYARD IS CONTROLLED BY A VERY POWERFUL AND CLEVER UNDEAD CREATURE."
                ],
                "chainEventNotHappen":"91"
             },
@@ -5660,7 +5660,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  TO THE WEST LIVES A TRIBE OF INSECT-MEN WHO WORSHIP NORMAL MEN AND GIVE VALUABLE GIFTS TO ALL WHO VISIT THEM./h"
+                  "  TO THE WEST LIVES A TRIBE OF INSECT-MEN WHO WORSHIP NORMAL MEN AND GIVE VALUABLE GIFTS TO ALL WHO VISIT THEM."
                ],
                "chainEventNotHappen":"92"
             },
@@ -5685,7 +5685,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  THE DRAGONSPINE MOUNTAINS ARE INHABITED BY A RACE OF EVIL DRAGONS WHO LURE TRAVELERS TO THEIR LAIRS AND SLAY THEM./h"
+                  "  THE DRAGONSPINE MOUNTAINS ARE INHABITED BY A RACE OF EVIL DRAGONS WHO LURE TRAVELERS TO THEIR LAIRS AND SLAY THEM."
                ],
                "chainEventNotHappen":"93"
             },
@@ -5710,7 +5710,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  A MASTER THIEF SET UP A HIDDEN TRAINING GROUND DEEP IN THE OLD CITY, RIGHT UNDER THE NOSES OF MONSTERS./h"
+                  "  A MASTER THIEF SET UP A HIDDEN TRAINING GROUND DEEP IN THE OLD CITY, RIGHT UNDER THE NOSES OF MONSTERS."
                ],
                "chainEventNotHappen":"94"
             },
@@ -5735,7 +5735,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  THE MERCHANTS OF ZHENTIL KEEP ARE SETTING UP A TRADING BASE FAR TO THE WEST OF PHLAN.  THEY'RE HIRING CARAVAN GUARDS FOR GOOD WAGES./h"
+                  "  THE MERCHANTS OF ZHENTIL KEEP ARE SETTING UP A TRADING BASE FAR TO THE WEST OF PHLAN.  THEY'RE HIRING CARAVAN GUARDS FOR GOOD WAGES."
                ],
                "chainEventNotHappen":"95"
             },
@@ -5760,7 +5760,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  BUCCANEERS OPERATE A SLAVE AUCTION OUT OF A HIDDEN CAMP NEAR STORMY BAY./h"
+                  "  BUCCANEERS OPERATE A SLAVE AUCTION OUT OF A HIDDEN CAMP NEAR STORMY BAY."
                ],
                "chainEventNotHappen":"96"
             },
@@ -5785,7 +5785,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  AN ANCIENT SILVER DRAGON STILL LIVES UP IN THE DRAGONSPINE MOUNTAINS.  THE DRAGON IS NOT EVIL AND WILL HELP TRAVELERS WHO BATTLE EVIL./h"
+                  "  AN ANCIENT SILVER DRAGON STILL LIVES UP IN THE DRAGONSPINE MOUNTAINS.  THE DRAGON IS NOT EVIL AND WILL HELP TRAVELERS WHO BATTLE EVIL."
                ],
                "chainEventNotHappen":"97"
             },
@@ -6014,7 +6014,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?/h"
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
                ],
                "chainEventHappen":"103"
             },
@@ -6145,7 +6145,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?/h"
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
                ],
                "chainEventHappen":"108"
             },
@@ -6293,7 +6293,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?/h"
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
                ],
                "chainEventHappen":"114"
             },

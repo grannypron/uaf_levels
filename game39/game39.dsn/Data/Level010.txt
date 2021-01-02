@@ -2182,7 +2182,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  IN A POUCH ON THE REMAINS IS A CRUMBLING PARCHMENT SCROLL WITH THE WORDS: /hLUX, SHESTNI, SAMOSUD./h  THE LAST PART IS EATEN AWAY."
+                  "  IN A POUCH ON THE REMAINS IS A CRUMBLING PARCHMENT SCROLL WITH THE WORDS: LUX, SHESTNI, SAMOSUD.  THE LAST PART IS EATEN AWAY."
                ]
             },
             "particular":{
@@ -2540,7 +2540,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  WOE, OH WOOOE, OH WOE!  /hTHE FIGURES CRY PITEOUSLY."
+                  "  WOE, OH WOOOE, OH WOE!  THE FIGURES CRY PITEOUSLY."
                ]
             },
             "particular":{
@@ -2619,7 +2619,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  BEFORE THE CLERIC'S SPELLS INADVERTENTLY BOUND THEM TO THIS PLACE.  ONE SPIRIT'S VOICE RISES ABOVE THE REST, /hAN ACCOUNT OF OUR TRIALS IS WITHIN THE DIARY./h  HE POINTS TO A FLOORBOARD."
+                  "  BEFORE THE CLERIC'S SPELLS INADVERTENTLY BOUND THEM TO THIS PLACE.  ONE SPIRIT'S VOICE RISES ABOVE THE REST, AN ACCOUNT OF OUR TRIALS IS WITHIN THE DIARY.  HE POINTS TO A FLOORBOARD."
                ],
                "chainEventHappen":"25"
             },
@@ -2681,7 +2681,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  BENEATH THE FLOORBOARDS, YOU FIND SOME GEMS AND A FEW PAGES OF A DIARY./h  THE HORDES CAME AGAIN LAST NIGHT.  THEIR COORDINATION WAS FRIGHTENING.  UNDER THE COVER OF DARKNESS, GOBLINS AND KOBOLDS PUSHED BUNDLES OF STICKS TO WITHIN BOW RANGE. /h/h  THESE BUNDLES FORMED A WALL THAT PROTECTED THE SMALL ONES FROM OUR ARCHERS.  ONCE THE WALL WAS ERECTED, ORC ARCHERS TOOK UP SAFE POSITIONS THERE AND BEGAN PELTING THE CASTLE WALLS WITH ARROWS./h/h  WE TRIED SHOOTING FLAMING ARROWS AT THE WALLS OF STICKS TO SET IT AFIRE.  MONSTERS ARE NORMALLY AFRAID OF FIRE.  BUT THESE MONSTERS SHOWED NO FEAR.  THEY SIMPLY SCOOPED DIRT ON THE FLAMES TO PUT THEM OUT./h/h  BEFORE ALL THE FIRES WERE OUT THEY HAD RESUMED FIRING AT US.  SURELY, SOME UNNATURAL FORCE MUST HAVE BEEN AT WORK TO WELD THESE QUARRELSOME BEASTS INTO AN ORGANIZED FIGHTING FORCE./h"
+                  "  BENEATH THE FLOORBOARDS, YOU FIND SOME GEMS AND A FEW PAGES OF A DIARY.  THE HORDES CAME AGAIN LAST NIGHT.  THEIR COORDINATION WAS FRIGHTENING.  UNDER THE COVER OF DARKNESS, GOBLINS AND KOBOLDS PUSHED BUNDLES OF STICKS TO WITHIN BOW RANGE.   THESE BUNDLES FORMED A WALL THAT PROTECTED THE SMALL ONES FROM OUR ARCHERS.  ONCE THE WALL WAS ERECTED, ORC ARCHERS TOOK UP SAFE POSITIONS THERE AND BEGAN PELTING THE CASTLE WALLS WITH ARROWS.  WE TRIED SHOOTING FLAMING ARROWS AT THE WALLS OF STICKS TO SET IT AFIRE.  MONSTERS ARE NORMALLY AFRAID OF FIRE.  BUT THESE MONSTERS SHOWED NO FEAR.  THEY SIMPLY SCOOPED DIRT ON THE FLAMES TO PUT THEM OUT.  BEFORE ALL THE FIRES WERE OUT THEY HAD RESUMED FIRING AT US.  SURELY, SOME UNNATURAL FORCE MUST HAVE BEEN AT WORK TO WELD THESE QUARRELSOME BEASTS INTO AN ORGANIZED FIGHTING FORCE."
                ],
                "chainEventHappen":"28"
             },
@@ -2703,7 +2703,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  I DO NOT KNOW IF WE CAN COMBAT THE MONSTERS' ONSLAUGHT MUCH LONGER.  WE LOST 12 MORE MEN LAST NIGHT.  THE MONSTERS SEEM TO HAVE AN UNLIMITED NUMBER OF REINFORCEMENTS.  /h/h  THE LAST PRIEST OF TYR, FERRAN MARTINEZ, SAYS HE HAS A WAY TO PROTECT THE KEEP, BUT HE SAYS THAT IT'S SO TERRIBLE THAT IT MAY ONLY BE USED AS A LAST RESORT./h/h  UNLESS WE RECEIVE REINFORCEMENTS, FERRAN MARTINEZ IS OUR ONLY HOPE./h"
+                  "  I DO NOT KNOW IF WE CAN COMBAT THE MONSTERS' ONSLAUGHT MUCH LONGER.  WE LOST 12 MORE MEN LAST NIGHT.  THE MONSTERS SEEM TO HAVE AN UNLIMITED NUMBER OF REINFORCEMENTS.    THE LAST PRIEST OF TYR, FERRAN MARTINEZ, SAYS HE HAS A WAY TO PROTECT THE KEEP, BUT HE SAYS THAT IT'S SO TERRIBLE THAT IT MAY ONLY BE USED AS A LAST RESORT.  UNLESS WE RECEIVE REINFORCEMENTS, FERRAN MARTINEZ IS OUR ONLY HOPE."
                ],
                "chainEventHappen":"29"
             },
@@ -2972,27 +2972,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3327,27 +3327,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3457,27 +3457,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3792,7 +3792,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  ON A HOBGOBLIN BODY YOU FIND A RATTY PIECE OF PARCHMENT WITH LARGE WRITING ON ONE SIDE./h  OUR SPIES IN THE CITY INFORM US THAT A PARTY OF INVADERS WILL TRAVEL TO SOKAL KEEP TO FREE IT.  TO COMBAT THESE INVADERS, ASSEMBLE A FORCE OF NO LESS THAN THREE SQUADS./h/h  TRAVEL BY BOAT FROM THE SMALL DOCKS AT THE WEST OF TOWN TO THORN ISLAND.  MOVE UNDETECTED TO SOKAL KEEP.  FIND THE ADVENTURERS IN OR AROUND SOKAL KEEP.  /h/h  KILL THEM BEFORE THEY CAN RETURN TO THE CITY COUNCIL WITH INFORMATION ABOUT THE TRUE SITUATION AT THE KEEP.  RETURN WITH THE INVADERS' HEADS AS PROOF OF COMPLETION OF YOUR MISSION./h/h  UPON COMPLETION YOU WILL BE REWARDED WITH FOOD, TREASURE, AND MANY SLAVES. SIGNED,                                   THE BOSS/h"
+                  "  ON A HOBGOBLIN BODY YOU FIND A RATTY PIECE OF PARCHMENT WITH LARGE WRITING ON ONE SIDE.  OUR SPIES IN THE CITY INFORM US THAT A PARTY OF INVADERS WILL TRAVEL TO SOKAL KEEP TO FREE IT.  TO COMBAT THESE INVADERS, ASSEMBLE A FORCE OF NO LESS THAN THREE SQUADS.  TRAVEL BY BOAT FROM THE SMALL DOCKS AT THE WEST OF TOWN TO THORN ISLAND.  MOVE UNDETECTED TO SOKAL KEEP.  FIND THE ADVENTURERS IN OR AROUND SOKAL KEEP.    KILL THEM BEFORE THEY CAN RETURN TO THE CITY COUNCIL WITH INFORMATION ABOUT THE TRUE SITUATION AT THE KEEP.  RETURN WITH THE INVADERS' HEADS AS PROOF OF COMPLETION OF YOUR MISSION.  UPON COMPLETION YOU WILL BE REWARDED WITH FOOD, TREASURE, AND MANY SLAVES. SIGNED,                                   THE BOSS"
                ]
             },
             "particular":{
@@ -4055,7 +4055,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE SHAPE SPEAKS, /hI AM THE LIFE FORM OF FERRAN MARTINEZ, BOUND WITH THE UNDEAD SPIRITS OF ALL WHO DIE WITHIN THESE WALLS TO GUARD THE KEEP.  TELL ME, HAS THE CITY BEEN FREED?/h"
+                  "  THE SHAPE SPEAKS, I AM THE LIFE FORM OF FERRAN MARTINEZ, BOUND WITH THE UNDEAD SPIRITS OF ALL WHO DIE WITHIN THESE WALLS TO GUARD THE KEEP.  TELL ME, HAS THE CITY BEEN FREED?"
                ],
                "chainEventHappen":"68"
             },
@@ -4099,7 +4099,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  FERRAN SPEAKS: /hTHE CITY FELL LONG AGO TO THE UNBLESSED CREATURES IMBUED WITH THE MIGHT OF A MAGICAL POOL.  CHIEF AMONG THESE WERE TYRANTHRAXUS, EDRANKA AND TORATH./h/h  WITH THEIR POWERS, THEY UNITED ALL ELSE, DRIVING FORWARD TO DESTROY US ALL.  THE SAGE MENDOR WORKED HARD TO GATHER RECORD OF ALL THESE THINGS, BUT THEY ARE LOST NOW, HIS LIBRARY OVERRUN./h/h  TO FIND HELP FOR YOUR BATTLES, YOU SHOULD PASS THROUGH THE ILLUSIONARY WALL IN THE ARMORY OF THIS KEEP.  TO PASS MY GUARDS ON THE WAY OUT, SPEAK THE WORD, \"SAMOSUD.\"  NOW WE ARE FREED, OUR DUTY DONE!/h"
+                  "  FERRAN SPEAKS: THE CITY FELL LONG AGO TO THE UNBLESSED CREATURES IMBUED WITH THE MIGHT OF A MAGICAL POOL.  CHIEF AMONG THESE WERE TYRANTHRAXUS, EDRANKA AND TORATH.  WITH THEIR POWERS, THEY UNITED ALL ELSE, DRIVING FORWARD TO DESTROY US ALL.  THE SAGE MENDOR WORKED HARD TO GATHER RECORD OF ALL THESE THINGS, BUT THEY ARE LOST NOW, HIS LIBRARY OVERRUN.  TO FIND HELP FOR YOUR BATTLES, YOU SHOULD PASS THROUGH THE ILLUSIONARY WALL IN THE ARMORY OF THIS KEEP.  TO PASS MY GUARDS ON THE WAY OUT, SPEAK THE WORD, \"SAMOSUD.\"  NOW WE ARE FREED, OUR DUTY DONE!"
                ],
                "chainEventHappen":"70"
             },
@@ -4165,7 +4165,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "/h  YOU LIE, /hTHE SPIRIT MOANS AS IT FADES AWAY."
+                  "  YOU LIE, THE SPIRIT MOANS AS IT FADES AWAY."
                ]
             },
             "particular":{

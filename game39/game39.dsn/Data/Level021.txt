@@ -2335,7 +2335,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE KOBOLD BOWS AND SAYS, /hYOU ARE QUITE DANGEROUS.  WE WILL PAY FOR A TRUCE./h"
+                  "  THE KOBOLD BOWS AND SAYS, YOU ARE QUITE DANGEROUS.  WE WILL PAY FOR A TRUCE."
                ],
                "chainEventHappen":"12"
             },
@@ -2405,7 +2405,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I AM TO ESCORT YOU TO OUR TREASURE./h"
+                  "  I AM TO ESCORT YOU TO OUR TREASURE."
                ],
                "chainEventHappen":"14"
             },
@@ -2602,7 +2602,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE KOBOLD CRIES OUT, /hI'LL NOT GO ALONE!/h"
+                  "  THE KOBOLD CRIES OUT, I'LL NOT GO ALONE!"
                ],
                "chainEventHappen":"19"
             },
@@ -3390,7 +3390,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  WHEN YOU GIVE IT WATER, IT CRAWLS OUT AND TELLS YOU ITS TALE IN A PAINED VOICE./h  WE JUST GOT THE CUT THROUGH TO THE BEASTIE'S LAIR WHEN I INJURED MY LEG.  KING DECIDED THERE WASN'T MUCH USE FER ME ANYMORE.  MADE ME A PROPOSITION, THOUGH./h/h  SAID IF I WENT INTO THE LAIR AND BROUGHT OUT THE TREASURE, HE'D FEED ME TILL I STOPPED BREATHIN'.  BEST DEAL I HAD, SO THEY TOSSED ME DOWN HERE.  NOT BEIN' THE FOOL, I LIT OUT FOR THE DEEPEST HIDEY-HOLE./h/h  THANKFULLY, THE BEASTIE WAS ASLEEP.  I CAN STILL MOVE REAL QUIET WHEN I MUST./h/h  ANYWAY, IF THERE HASN'T BEEN MUCH OF AN ALARM, THEN DRUNKEN FERD MUST BE ON WATCH AT THE ROCK.  HE'S THE KING'S SON, SO HE AIN'T HERE WITH ME--WORTHLESS SOT./h"
+                  "  WHEN YOU GIVE IT WATER, IT CRAWLS OUT AND TELLS YOU ITS TALE IN A PAINED VOICE.  WE JUST GOT THE CUT THROUGH TO THE BEASTIE'S LAIR WHEN I INJURED MY LEG.  KING DECIDED THERE WASN'T MUCH USE FER ME ANYMORE.  MADE ME A PROPOSITION, THOUGH.  SAID IF I WENT INTO THE LAIR AND BROUGHT OUT THE TREASURE, HE'D FEED ME TILL I STOPPED BREATHIN'.  BEST DEAL I HAD, SO THEY TOSSED ME DOWN HERE.  NOT BEIN' THE FOOL, I LIT OUT FOR THE DEEPEST HIDEY-HOLE.  THANKFULLY, THE BEASTIE WAS ASLEEP.  I CAN STILL MOVE REAL QUIET WHEN I MUST.  ANYWAY, IF THERE HASN'T BEEN MUCH OF AN ALARM, THEN DRUNKEN FERD MUST BE ON WATCH AT THE ROCK.  HE'S THE KING'S SON, SO HE AIN'T HERE WITH ME--WORTHLESS SOT."
                ],
                "chainEventHappen":"43"
             },
@@ -3425,7 +3425,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  IF HE'S THERE, HE'S GOT LESS BRAINS THAN A FERMENTED RAT, JUST ACT OFFICIOUS AND HE'LL TAKE YA TA THE KING.  WOULDN'T MIND HEARIN' OF THAT TYRANT'S DEMISE.  YA SEEM JUST THE TYPES TA DO IT, TOO./h"
+                  "  IF HE'S THERE, HE'S GOT LESS BRAINS THAN A FERMENTED RAT, JUST ACT OFFICIOUS AND HE'LL TAKE YA TA THE KING.  WOULDN'T MIND HEARIN' OF THAT TYRANT'S DEMISE.  YA SEEM JUST THE TYPES TA DO IT, TOO."
                ],
                "chainEventHappen":"44"
             },
@@ -3648,7 +3648,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  HE LOOKS CONFUSED.  /hOH, THE ENVOYS.  DO YOU WISH AN ESCORT TO THE KING?/h"
+                  "  HE LOOKS CONFUSED.  OH, THE ENVOYS.  DO YOU WISH AN ESCORT TO THE KING?"
                ],
                "chainEventHappen":"53"
             },
@@ -3718,7 +3718,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  THEN FOLLOW ME./h"
+                  "  THEN FOLLOW ME."
                ],
                "chainEventHappen":"55"
             },
@@ -3844,7 +3844,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  IN THIS ROOM IS A YOUNG WOMAN IN BARBARIAN FINERY.  SHE DROPS A KOBOLD SHE WAS STRANGLING WHEN SHE SEES YOU./h  I AM PRINCESS FATIMA, /hSHE TELLS YOU IN A PROUD, HAUGHTY VOICE./h  I AM A PRINCESS OF A TRIBE OF NOMADS TO THE NORTHWEST.  MY FATHER IS AN OLD FOOL.  HE WANTED ME TO MARRY KING AL RASID, TO CEMENT AN ALLIANCE.  I HAD MORE IMPORTANT THINGS TO DO THAN BE TIED DOWN TO AN AGING MONARCH./h/h  WHEN I MARRY, IT SHALL BE TO SOMEONE WHO HAS THE SAME TASTE OF ADVENTURE AND THE SAME SKILL WITH A SWORD./h"
+                  "  IN THIS ROOM IS A YOUNG WOMAN IN BARBARIAN FINERY.  SHE DROPS A KOBOLD SHE WAS STRANGLING WHEN SHE SEES YOU.  I AM PRINCESS FATIMA, SHE TELLS YOU IN A PROUD, HAUGHTY VOICE.  I AM A PRINCESS OF A TRIBE OF NOMADS TO THE NORTHWEST.  MY FATHER IS AN OLD FOOL.  HE WANTED ME TO MARRY KING AL RASID, TO CEMENT AN ALLIANCE.  I HAD MORE IMPORTANT THINGS TO DO THAN BE TIED DOWN TO AN AGING MONARCH.  WHEN I MARRY, IT SHALL BE TO SOMEONE WHO HAS THE SAME TASTE OF ADVENTURE AND THE SAME SKILL WITH A SWORD."
                ],
                "chainEventHappen":"60"
             },
@@ -3880,7 +3880,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WELL, FATHER WAS INSISTENT AND HIS SUBJECTS SUPPORTED HIM, SO I LEFT TO SEEK MY FORTUNE.  KOBOLDS HAD BEEN RAIDING OUR TENTS UPON OCCASION, SO I HEADED THIS WAY./h/h  IF I COULD END THE THREAT, THEN I'D HAVE MORE LEVERAGE WITH MY TRIBE.  HOWEVER, TWO NIGHTS AGO, I WAS AMBUSHED BY THESE WORMS--KNOCKED OUT AND BOUND UP./h/h  I FINALLY GOT MYSELF UNTIED A LITTLE WHILE AGO AND WAS WORKING MY OUT OF THESE CAVES, WHEN YOU SHOWED UP./h"
+                  "  WELL, FATHER WAS INSISTENT AND HIS SUBJECTS SUPPORTED HIM, SO I LEFT TO SEEK MY FORTUNE.  KOBOLDS HAD BEEN RAIDING OUR TENTS UPON OCCASION, SO I HEADED THIS WAY.  IF I COULD END THE THREAT, THEN I'D HAVE MORE LEVERAGE WITH MY TRIBE.  HOWEVER, TWO NIGHTS AGO, I WAS AMBUSHED BY THESE WORMS--KNOCKED OUT AND BOUND UP.  I FINALLY GOT MYSELF UNTIED A LITTLE WHILE AGO AND WAS WORKING MY OUT OF THESE CAVES, WHEN YOU SHOWED UP."
                ],
                "chainEventHappen":"61"
             },
@@ -3966,7 +3966,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  SHE SMILES.  /h/hSO I SHALL CUT MY OWN WAY OUT./h  SHE LEAVES."
+                  "  SHE SMILES.  SO I SHALL CUT MY OWN WAY OUT.  SHE LEAVES."
                ]
             },
             "particular":{
@@ -4575,7 +4575,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE KING, FROTHING AT THE MOUTH, CRIES, /hUSE THE SECRET WEAPONS!/h"
+                  "  THE KING, FROTHING AT THE MOUTH, CRIES, USE THE SECRET WEAPONS!"
                ],
                "chainEventHappen":"80"
             },
@@ -4730,7 +4730,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE MEN SNEER AT THE KING, AND ONE OF THEM SAYS, /hLET US SHOW THEM HOW TRUE WARRIORS FIGHT./h"
+                  "  THE MEN SNEER AT THE KING, AND ONE OF THEM SAYS, LET US SHOW THEM HOW TRUE WARRIORS FIGHT."
                ],
                "chainEventHappen":"83"
             },

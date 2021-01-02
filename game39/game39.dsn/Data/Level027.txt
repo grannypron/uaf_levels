@@ -2500,7 +2500,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  YOU ENTER A BUILDING WHERE WOMEN ARE WASHING CLOTHES.  AS YOU COME IN, THEY RETREAT TO THE CORNER, LOOKING FEARFULLY AT YOU.  YOU HEAR ONE OF THEM WHISPER, /hTHEY DON'T BELONG HERE.  THEY MUST HAVE COME TO KILL TYRANTHRAXUS./h  A HALF ORC WOMAN STEPS FORWARD.  /hWHAT DO YOU WANT OF US?/h"
+                  "  YOU ENTER A BUILDING WHERE WOMEN ARE WASHING CLOTHES.  AS YOU COME IN, THEY RETREAT TO THE CORNER, LOOKING FEARFULLY AT YOU.  YOU HEAR ONE OF THEM WHISPER, THEY DON'T BELONG HERE.  THEY MUST HAVE COME TO KILL TYRANTHRAXUS.  A HALF ORC WOMAN STEPS FORWARD.  WHAT DO YOU WANT OF US?"
                ],
                "chainEventHappen":"14"
             },
@@ -2544,7 +2544,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE WOMAN SAYS, /hTYRANTHRAXUS IS LEADING OUR MEN TO THEIR DEATHS.  IF YOU INTEND TO KILL HIM WE WILL HELP.  USE THESE CLOTHES AS A DISGUISE AND YOU WILL ESCAPE NOTICE./h"
+                  "  THE WOMAN SAYS, TYRANTHRAXUS IS LEADING OUR MEN TO THEIR DEATHS.  IF YOU INTEND TO KILL HIM WE WILL HELP.  USE THESE CLOTHES AS A DISGUISE AND YOU WILL ESCAPE NOTICE."
                ]
             },
             "particular":{
@@ -2853,7 +2853,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE SMITH WIPES HIS BROW AS HE LOOKS UP AT YOU.  /hWHAT DO YOU NEED?/h"
+                  "  THE SMITH WIPES HIS BROW AS HE LOOKS UP AT YOU.  WHAT DO YOU NEED?"
                ],
                "chainEventHappen":"27"
             },
@@ -2925,7 +2925,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I'M SORRY, I CAN'T TAKE ANYMORE ORDERS RIGHT NOW.  IF IT'S IMPORTANT GET AUTHORIZATION.  NOW, IF YOU'LL EXCUSE ME, I HAVE TO GET BACK TO WORK./h"
+                  "  I'M SORRY, I CAN'T TAKE ANYMORE ORDERS RIGHT NOW.  IF IT'S IMPORTANT GET AUTHORIZATION.  NOW, IF YOU'LL EXCUSE ME, I HAVE TO GET BACK TO WORK."
                ]
             },
             "particular":{
@@ -2993,7 +2993,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  NO, YOU NEVER GET TOTALLY USED TO THE HEAT, BUT IT'S NOT THAT BAD.  NOW, IF YOU'LL EXCUSE ME, I NEED TO GET BACK TO WORK./h"
+                  "  NO, YOU NEVER GET TOTALLY USED TO THE HEAT, BUT IT'S NOT THAT BAD.  NOW, IF YOU'LL EXCUSE ME, I NEED TO GET BACK TO WORK."
                ]
             },
             "particular":{
@@ -3027,7 +3027,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  WHAT?  EVERYONE KNOWS THAT.  HEY, YOU DON'T BELONG HERE.../h"
+                  "  WHAT?  EVERYONE KNOWS THAT.  HEY, YOU DON'T BELONG HERE..."
                ],
                "chainEventHappen":"32"
             },
@@ -3304,7 +3304,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  A PRIEST AND TWO ACOLYTES TURN FROM THE ALTAR.  /hWELCOME, MY CHILDREN.  COME FORWARD AND ACCEPT THE BLESSING OF BANE./h"
+                  "  A PRIEST AND TWO ACOLYTES TURN FROM THE ALTAR.  WELCOME, MY CHILDREN.  COME FORWARD AND ACCEPT THE BLESSING OF BANE."
                ],
                "chainEventHappen":"39"
             },
@@ -3397,7 +3397,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU GO FORWARD AND KNEEL./h  IN THE NAME OF LORD BANE, GOD OF GODS, I BLESS YOU./h"
+                  "  YOU GO FORWARD AND KNEEL.  IN THE NAME OF LORD BANE, GOD OF GODS, I BLESS YOU."
                ],
                "chainEventHappen":"42"
             },
@@ -3472,7 +3472,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE PRIEST SHOUTS, /hWHAT'S THIS?  YOU AREN'T WORSHIPERS OF LORD BANE?  DIE, IMPOSTERS!/h  HE GRABS THE LAST RHINESTONE FROM A NECKLACE AND THROWS IT AT YOU.  A FIREBALL EXPLODES!"
+                  "  THE PRIEST SHOUTS, WHAT'S THIS?  YOU AREN'T WORSHIPERS OF LORD BANE?  DIE, IMPOSTERS!  HE GRABS THE LAST RHINESTONE FROM A NECKLACE AND THROWS IT AT YOU.  A FIREBALL EXPLODES!"
                ],
                "chainEventHappen":"44"
             },
@@ -3627,7 +3627,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  HIS IMMENSITY, LORD TYRANTHRAXUS, HAS SEEN FIT TO ESTABLISH THIS TEMPLE TO OUR LORD BANE.  THEREFORE, IT IS RIGHT THAT YOU ACCEPT THE LORD BANE'S BLESSING./h"
+                  "  HIS IMMENSITY, LORD TYRANTHRAXUS, HAS SEEN FIT TO ESTABLISH THIS TEMPLE TO OUR LORD BANE.  THEREFORE, IT IS RIGHT THAT YOU ACCEPT THE LORD BANE'S BLESSING."
                ],
                "chainEventNotHappen":"47"
             },
@@ -3662,7 +3662,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  I HAVE NO MORE TIME TO TALK WITH YOU.  THE LORD BANE REQUIRES MY CONSTANT DEVOTION.  BEFORE YOU LEAVE ACCEPT THE BLESSING OF OUR LORD./h"
+                  "  I HAVE NO MORE TIME TO TALK WITH YOU.  THE LORD BANE REQUIRES MY CONSTANT DEVOTION.  BEFORE YOU LEAVE ACCEPT THE BLESSING OF OUR LORD."
                ]
             },
             "particular":{
@@ -3696,7 +3696,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE PRIEST SHOUTS, /hWHAT'S THIS?  YOU AREN'T WORSHIPERS OF LORD BANE?  DIE, IMPOSTERS!/h  THE PRIEST GRABS THE LAST RHINESTONE FROM HIS NECKLACE AND HURLS IT AT YOU.  A FIREBALL EXPLODES!"
+                  "  THE PRIEST SHOUTS, WHAT'S THIS?  YOU AREN'T WORSHIPERS OF LORD BANE?  DIE, IMPOSTERS!  THE PRIEST GRABS THE LAST RHINESTONE FROM HIS NECKLACE AND HURLS IT AT YOU.  A FIREBALL EXPLODES!"
                ],
                "chainEventHappen":"49"
             },
@@ -4142,7 +4142,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  /hTHAT'S THEM!/h"
+                  "  YOU SEE A PATROL OF GIANTS LED BY A HUMAN FIGHTER.  THE LEADER SEES YOU.  THAT'S THEM!"
                ],
                "chainEventHappen":"63"
             },

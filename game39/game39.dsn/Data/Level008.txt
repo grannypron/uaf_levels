@@ -4457,7 +4457,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  YOU FIND A PIECE OF PAPER ON THE FLOOR OF THE ROOM.  IT IS FULL OF RUB OUTS AND SCRATCH OVERS./hPRIESTS: 1, ACOLYTES: 4, OGRES: 1, HOBGOBLINS: 40, ORCS: 90, GOBLIN SLAVES: 20./h"
+                  "  YOU FIND A PIECE OF PAPER ON THE FLOOR OF THE ROOM.  IT IS FULL OF RUB OUTS AND SCRATCH OVERS.PRIESTS: 1, ACOLYTES: 4, OGRES: 1, HOBGOBLINS: 40, ORCS: 90, GOBLIN SLAVES: 20."
                ]
             },
             "particular":{
@@ -4695,7 +4695,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  ON THE WALL HERE IS A POORLY SCRATCHED MESSAGE.  YOU CAN BARELY MAKE OUT THE WORDS./hNORTH WALL.  RI  T FRONT GLAS . SE/h"
+                  "  ON THE WALL HERE IS A POORLY SCRATCHED MESSAGE.  YOU CAN BARELY MAKE OUT THE WORDS.NORTH WALL.  RI  T FRONT GLAS . SE"
                ]
             },
             "particular":{
@@ -4750,27 +4750,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4943,27 +4943,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -5116,27 +5116,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  }{
+                  },{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -5844,7 +5844,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, /hTHE MONSTERS YELL.  /hAND YOU WON'T COME BACK IF YOU KNOW WHAT'S GOOD FOR YA./h  THE MONSTERS THEN LEAVE."
+                  "  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, THE MONSTERS YELL.  AND YOU WON'T COME BACK IF YOU KNOW WHAT'S GOOD FOR YA.  THE MONSTERS THEN LEAVE."
                ]
             },
             "particular":{
@@ -5878,7 +5878,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, /hTHE MONSTERS YELL.  /hAND YOU WON'T COME BACK YOU KNOW WHAT'S GOOD FOR YA!/h  THE MONSTERS THEN LEAVE."
+                  "  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, THE MONSTERS YELL.  AND YOU WON'T COME BACK YOU KNOW WHAT'S GOOD FOR YA!  THE MONSTERS THEN LEAVE."
                ]
             },
             "particular":{
@@ -5912,7 +5912,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, /hTHE MONSTERS YELL.  /hAND YOU WON'T COME BACK IF YOU KNOW WHAT'S GOOD FOR YA!/h  THE MONSTERS THEN LEAVE."
+                  "  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, THE MONSTERS YELL.  AND YOU WON'T COME BACK IF YOU KNOW WHAT'S GOOD FOR YA!  THE MONSTERS THEN LEAVE."
                ]
             },
             "particular":{
@@ -6018,7 +6018,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  IN A DEEP, THREATENING VOICE, ONE OF THE ORCS SAYS, /hYOU MOLES BETTER WATCH YOUR STEP OR YOU SHALL FEEL THE WRATH OF BANE!/h  AFTER SAYING THIS, HE SPITS AND LEAVES."
+                  "  IN A DEEP, THREATENING VOICE, ONE OF THE ORCS SAYS, YOU MOLES BETTER WATCH YOUR STEP OR YOU SHALL FEEL THE WRATH OF BANE!  AFTER SAYING THIS, HE SPITS AND LEAVES."
                ]
             },
             "particular":{
@@ -6216,7 +6216,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  ONE OF THE ORCS SAYS, /hOH, YEAH.  YOUSE THEM GUYS WHO KNOW WHERE DE TREASURE IS.  WE'RE NOT SUPPOSED TO KILL YOU YET./h  THE ORCS THEN WANDER AWAY."
+                  "  ONE OF THE ORCS SAYS, OH, YEAH.  YOUSE THEM GUYS WHO KNOW WHERE DE TREASURE IS.  WE'RE NOT SUPPOSED TO KILL YOU YET.  THE ORCS THEN WANDER AWAY."
                ]
             },
             "particular":{
@@ -6250,7 +6250,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE ORCS YELL OUT, /hWE HAVE ORDERS TO CHECK OUT SUSPICIOUS INDIVIDUALS, BUT YOURSE GUYS LOOK HARMLESS ENOUGH./h  AFTER TALKING THE FOUR ORCS WANDER AWAY."
+                  "  THE ORCS YELL OUT, WE HAVE ORDERS TO CHECK OUT SUSPICIOUS INDIVIDUALS, BUT YOURSE GUYS LOOK HARMLESS ENOUGH.  AFTER TALKING THE FOUR ORCS WANDER AWAY."
                ]
             },
             "particular":{
@@ -6269,7 +6269,7 @@
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
-                  "  THE ORCS YELL OUT, /hWE HAVE ORDERS TO CHECK OUT SUSPICIOUS INDIVIDUALS, BUT YOUSE GUYS LOOK HARMLESS ENOUGH./h  AFTER SPEAKING, THE FOUR ORCS WANDER OFF."
+                  "  THE ORCS YELL OUT, WE HAVE ORDERS TO CHECK OUT SUSPICIOUS INDIVIDUALS, BUT YOUSE GUYS LOOK HARMLESS ENOUGH.  AFTER SPEAKING, THE FOUR ORCS WANDER OFF."
                ]
             },
             "particular":{
@@ -6749,7 +6749,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  ON THE HALF-ORC'S BODY YOU FIND AN OFFICIAL-LOOKING NOTICE./h  THE NUMBER OF UNDEAD CREEPING OUT OF VALHINGEN GRAVEYARD IS INCREASING.  THESE UNDEAD HAVE DISRUPTED TRAINING, DESTROYED PROPERTY, AND KILLED MANY OF OUR TROOPS./h/h  PATROLS HAVE BEEN SENT INTO THE GRAVEYARD TO RECONNOITER AND DETERMINE THE SOURCE OF THE UNDEAD.  NONE HAVE RETURNED.  UNDER YOUR RESPONSIBILITIES AS A PRIEST OF BANE IN THE CITY, YOU MUST HELP COMBAT THE MENACE./h/h  LEAD A GROUP OF ACOLYTES INTO THE GRAVEYARD WITH THE PURPOSE OF DISCOVERING THE SOURCE AND LEADER OF THE UNDEAD.  IF YOUR GROUP CAN ENGAGE AND DEFEAT THE LEADER, OR DESTROY THE SOURCE, DO SO./h/h  IF YOUR GROUP IS OUTMATCHED, RETURN WITH YOUR INFORMATION SO THAT WE CAN FORM AN ASSAULT GROUP WITH CLERICS AND TROOPS./h"
+                  "  ON THE HALF-ORC'S BODY YOU FIND AN OFFICIAL-LOOKING NOTICE.  THE NUMBER OF UNDEAD CREEPING OUT OF VALHINGEN GRAVEYARD IS INCREASING.  THESE UNDEAD HAVE DISRUPTED TRAINING, DESTROYED PROPERTY, AND KILLED MANY OF OUR TROOPS.  PATROLS HAVE BEEN SENT INTO THE GRAVEYARD TO RECONNOITER AND DETERMINE THE SOURCE OF THE UNDEAD.  NONE HAVE RETURNED.  UNDER YOUR RESPONSIBILITIES AS A PRIEST OF BANE IN THE CITY, YOU MUST HELP COMBAT THE MENACE.  LEAD A GROUP OF ACOLYTES INTO THE GRAVEYARD WITH THE PURPOSE OF DISCOVERING THE SOURCE AND LEADER OF THE UNDEAD.  IF YOUR GROUP CAN ENGAGE AND DEFEAT THE LEADER, OR DESTROY THE SOURCE, DO SO.  IF YOUR GROUP IS OUTMATCHED, RETURN WITH YOUR INFORMATION SO THAT WE CAN FORM AN ASSAULT GROUP WITH CLERICS AND TROOPS."
                ],
                "chainEventHappen":"75"
             },
@@ -6785,7 +6785,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "/h  UPON COMPLETION OF THIS ASSIGNMENT YOU WILL BE IN LINE FOR PROMOTION TO THE NEXT HIGHER RANK IN THE HIERARCHY OF THE TEMPLE OF BANE IN PHLAN.                       SIGNED,                                      THE BOSS/h"
+                  "  UPON COMPLETION OF THIS ASSIGNMENT YOU WILL BE IN LINE FOR PROMOTION TO THE NEXT HIGHER RANK IN THE HIERARCHY OF THE TEMPLE OF BANE IN PHLAN.                       SIGNED,                                      THE BOSS"
                ],
                "chainEventHappen":"76"
             },
@@ -6820,7 +6820,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  DIRTEN SAYS, /hTHANK YOU FOR HELPING US REGAIN OUR TEMPLE.  I MUST REMAIN HERE NOW.  I BID YOU FAREWELL./h"
+                  "  DIRTEN SAYS, THANK YOU FOR HELPING US REGAIN OUR TEMPLE.  I MUST REMAIN HERE NOW.  I BID YOU FAREWELL."
                ],
                "chainEventHappen":"77"
             },

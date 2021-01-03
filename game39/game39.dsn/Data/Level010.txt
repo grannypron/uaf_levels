@@ -797,15 +797,15 @@
          },
          {
             "xy":[7,6],"zone":"6",
-            "N":{"wall":"6","background":"16"},
+            "N":{"wall":"12","background":"16"},
             "E":{"wall":"256","background":"16"},
             "S":{"wall":"256","background":"16"},
-            "W":{"wall":"15","block":"Blocked","background":"16"}
+            "W":{"wall":"16","background":"16"}
          },
          {
             "xy":[8,6],"zone":"6",
-            "N":{"wall":"6","background":"16"},
-            "E":{"wall":"15","block":"Blocked","background":"16"},
+            "N":{"wall":"12","background":"16"},
+            "E":{"wall":"16","background":"16"},
             "S":{"wall":"256","background":"16"},
             "W":{"wall":"256","background":"16"}
          },
@@ -814,7 +814,7 @@
             "N":{"wall":"256","background":"14"},
             "E":{"wall":"256","background":"14"},
             "S":{"wall":"2","block":"Blocked","background":"14"},
-            "W":{"wall":"2","block":"Blocked","background":"14"}
+            "W":{"wall":"16","background":"14"}
          },
          {
             "xy":[10,6],"zone":"1",
@@ -919,12 +919,12 @@
             "N":{"wall":"256","background":"16"},
             "E":{"wall":"256","background":"16"},
             "S":{"wall":"256","background":"16"},
-            "W":{"wall":"2","block":"Blocked","background":"16"}
+            "W":{"wall":"16","background":"16"}
          },
          {
             "xy":[8,7],"zone":"8",
             "N":{"wall":"256","background":"16"},
-            "E":{"wall":"2","block":"Blocked","background":"16"},
+            "E":{"wall":"16","background":"16"},
             "S":{"wall":"256","background":"16"},
             "W":{"wall":"256","background":"16"}
          },
@@ -932,8 +932,8 @@
             "xy":[9,7],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"16"},
             "E":{"wall":"2","block":"Blocked","background":"16"},
-            "S":{"wall":"2","block":"Blocked","background":"16"},
-            "W":{"wall":"2","block":"Blocked","background":"16"}
+            "S":{"wall":"16","background":"16"},
+            "W":{"wall":"16","background":"16"}
          },
          {
             "xy":[10,7],"zone":"1",
@@ -1028,10 +1028,10 @@
          },
          {
             "xy":[6,8],"zone":"8",
-            "N":{"wall":"15","block":"Blocked","background":"16"},
+            "N":{"wall":"16","background":"16"},
             "E":{"wall":"256","background":"16"},
             "S":{"wall":"256","background":"16"},
-            "W":{"wall":"15","block":"Blocked","background":"16"}
+            "W":{"wall":"16","background":"16"}
          },
          {
             "xy":[7,8],"zone":"8",
@@ -1049,8 +1049,8 @@
          },
          {
             "xy":[9,8],"zone":"8",
-            "N":{"wall":"2","block":"Blocked","background":"16"},
-            "E":{"wall":"15","block":"Blocked","background":"16"},
+            "N":{"wall":"16","background":"16"},
+            "E":{"wall":"16","background":"16"},
             "S":{"wall":"256","background":"16"},
             "W":{"wall":"256","background":"16"}
          },
@@ -1059,7 +1059,7 @@
             "N":{"wall":"256","background":"14"},
             "E":{"wall":"256","background":"14"},
             "S":{"wall":"256","background":"14"},
-            "W":{"wall":"2","block":"Blocked","background":"14"}
+            "W":{"wall":"16","background":"14"}
          },
          {
             "xy":[11,8],"zone":"1",
@@ -1149,8 +1149,8 @@
             "xy":[6,9],"zone":"8",
             "N":{"wall":"256","background":"16"},
             "E":{"wall":"256","background":"16"},
-            "S":{"wall":"15","block":"Blocked","background":"16"},
-            "W":{"wall":"2","block":"Blocked","background":"16"}
+            "S":{"wall":"16","background":"16"},
+            "W":{"wall":"16","background":"16"}
          },
          {
             "xy":[7,9],"zone":"8",
@@ -1169,8 +1169,8 @@
          {
             "xy":[9,9],"zone":"8",
             "N":{"wall":"256","background":"16"},
-            "E":{"wall":"2","block":"Blocked","background":"16"},
-            "S":{"wall":"15","block":"Blocked","background":"16"},
+            "E":{"wall":"16","background":"16"},
+            "S":{"wall":"16","background":"16"},
             "W":{"wall":"256","background":"16"}
          },
          {
@@ -1178,7 +1178,7 @@
             "N":{"wall":"256","background":"14"},
             "E":{"wall":"256","background":"14"},
             "S":{"wall":"256","background":"14"},
-            "W":{"wall":"2","block":"Blocked","background":"14"}
+            "W":{"wall":"16","background":"14"}
          },
          {
             "xy":[11,9],"zone":"1",
@@ -1287,7 +1287,7 @@
          },
          {
             "xy":[9,10],"zone":"1",
-            "N":{"wall":"2","block":"Blocked","background":"16"},
+            "N":{"wall":"16","background":"16"},
             "E":{"wall":"2","block":"Blocked","background":"16"},
             "S":{"wall":"2","block":"Blocked","background":"16"},
             "W":{"wall":"2","block":"Blocked","background":"16"}
@@ -7103,9 +7103,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
-            "doorFile":"",
-            "overlayFile":"",
+            "wallFile":"wa_wall_chapel.png",
+            "doorFile":"dr_door10.png",
+            "overlayFile":"ov_overlay_chapel_cracks.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",
@@ -7116,9 +7116,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"wa_wall_chapel.png",
             "doorFile":"",
-            "overlayFile":"",
+            "overlayFile":"ov_StainedGlass.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",
@@ -7129,9 +7129,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"wa_wall_chapel.png",
             "doorFile":"",
-            "overlayFile":"",
+            "overlayFile":"overlay_StainedGlassWindow.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",
@@ -7155,9 +7155,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"wa_wall_chapel.png",
             "doorFile":"dr_Door5.png",
-            "overlayFile":"",
+            "overlayFile":"ov_overlay_chapel_cracks.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",

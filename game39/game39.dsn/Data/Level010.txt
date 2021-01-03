@@ -1028,7 +1028,7 @@
          },
          {
             "xy":[6,8],"zone":"8",
-            "N":{"wall":"16","background":"16"},
+            "N":{"wall":"16","block":"Blocked","background":"16"},
             "E":{"wall":"256","background":"16"},
             "S":{"wall":"256","background":"16"},
             "W":{"wall":"16","background":"16"}
@@ -1049,7 +1049,7 @@
          },
          {
             "xy":[9,8],"zone":"8",
-            "N":{"wall":"16","background":"16"},
+            "N":{"wall":"16","block":"Blocked","background":"16"},
             "E":{"wall":"16","background":"16"},
             "S":{"wall":"256","background":"16"},
             "W":{"wall":"256","background":"16"}
@@ -1149,7 +1149,7 @@
             "xy":[6,9],"zone":"8",
             "N":{"wall":"256","background":"16"},
             "E":{"wall":"256","background":"16"},
-            "S":{"wall":"16","background":"16"},
+            "S":{"wall":"16","block":"Blocked","background":"16"},
             "W":{"wall":"16","background":"16"}
          },
          {
@@ -1170,7 +1170,7 @@
             "xy":[9,9],"zone":"8",
             "N":{"wall":"256","background":"16"},
             "E":{"wall":"16","background":"16"},
-            "S":{"wall":"16","background":"16"},
+            "S":{"wall":"16","block":"Blocked","background":"16"},
             "W":{"wall":"256","background":"16"}
          },
          {

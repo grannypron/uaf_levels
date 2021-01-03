@@ -613,6 +613,16 @@ name = Competing
 -	{$RETURN $RANDOM(10) +# 9 +# adj -# 18;}
 -$ELSE {$RETURN 5;}; // set to surprised
 [AutoAction] = $RETURN $GET_COMBATANT_SA($CombatantContext(),"playerControl");
+[CanTurn] = $VAR par5;
+-$VAR com;
+-$VAR clrc;
+-$VAR pldn;
+-par5 = $GET_HOOK_PARAM(5);
+-com = $IndexOf($CombatantContext());
+-clrc = $GET_CHAR_Lvl(com,"cleric");
+-pldn = $GET_CHAR_Lvl(com,"paladin");
+-$RETURN "Y";
+-$IF (clrc ># 0 || pldn ># 2){$RETURN par5;}; // turning undead table - DMG 25
 [CombatMainMenu] = $VAR adj; $VAR count; $VAR t; $VAR tgt; $VAR bc; $VAR lvl;
 -bc = $GET_CHARACTER_SA($CharacterContext(),"class_Sweep");
 -$IF (bc != "-?-?-") {lvl = $GET_CHAR_Lvl($MyIndex(),bc);};
@@ -747,6 +757,15 @@ name = Competing
 -class = $GET_CHAR_CLASS(char);
 -$IF (class == "Paladin") {$RETURN par5 +# 10000;};
 [StartCombatRound] = $RETURN;
+[TurnAttempt] = $VAR par5;
+-$VAR par6;
+-$VAR num;
+-$VAR turn;
+-par5 = $GET_HOOK_PARAM(5);
+-par6 = $GET_HOOK_PARAM(6);
+-num = $DelimitedStringCount(par5);
+-turn = $DelimitedStringSubstring(par5,num);
+-$RETURN par5;
 \(END)
 
 \(BEGIN)

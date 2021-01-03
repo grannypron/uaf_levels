@@ -261,7 +261,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -1679,7 +1679,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -2053,7 +2053,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -3586,7 +3586,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -4169,7 +4169,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -4698,7 +4698,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -9986,7 +9986,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -11138,7 +11138,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -11405,7 +11405,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)
@@ -11928,7 +11928,7 @@ savingThrowScript =
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
-end script = 
+end script = $IF (($GET_CHAR_HITPOINTS($IndexOf($TargetContext())) ># 0) && ($GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 9 || $GET_CHAR_STATUS($IndexOf($TargetContext())) \=\= 1)) {$SET_CHAR_STATUS($IndexOf($TargetContext()), 0);};
 initiation script = 
 termination script = 
 \(END)

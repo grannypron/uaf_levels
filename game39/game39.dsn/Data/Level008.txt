@@ -5912,8 +5912,7 @@
                },
                "mtext":[
                   "  THE ORCS READY THEIR SPEARS."
-               ],
-               "chainEventHappen":"52"
+               ]
             },
             "particular":{
                "buttonList":[
@@ -5922,40 +5921,6 @@
                   {"present":"true","label":"FLEE","postChainAction":"Backup One Step","chain":"56"},
                   {"present":"true","label":"PARLAY","postChainAction":"Do Nothing","chain":"57"}
                ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Text Statement",
-               "eventID":"52",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_Orc.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  IN A DEEP, THREATENING VOICE, ONE OF THE ORCS SAYS, YOU MOLES BETTER WATCH YOUR STEP OR YOU SHALL FEEL THE WRATH OF BANE!  AFTER SAYING THIS, HE SPITS AND LEAVES."
-               ]
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
             }
          },
          {
@@ -6014,7 +5979,6 @@
                "eventID":"54",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[

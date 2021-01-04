@@ -4616,9 +4616,9 @@
                },
                "monsters":[
                   {
-                     "number":"2",
+                     "number":"6",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Orc",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -4629,9 +4629,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"6",
+                     "number":"2",
                      "type":"MONSTER",
-                     "name":"Orc",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -6180,7 +6180,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE ORCS YELL OUT, WE HAVE ORDERS TO CHECK OUT SUSPICIOUS INDIVIDUALS, BUT YOURSE GUYS LOOK HARMLESS ENOUGH.  AFTER TALKING THE FOUR ORCS WANDER AWAY."
+                  "  THE ORCS YELL OUT, WE HAVE ORDERS TO CHECK OUT SUSPICIOUS INDIVIDUALS, BUT YOUSE GUYS LOOK HARMLESS ENOUGH.  AFTER TALKING THE FOUR ORCS WANDER AWAY."
                ]
             },
             "particular":{

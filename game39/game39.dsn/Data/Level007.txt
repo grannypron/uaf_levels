@@ -911,7 +911,7 @@
             "xy":[6,7],"eventExists":"true","zone":"1",
             "N":{"wall":"256","background":"2"},
             "E":{"wall":"256","background":"2"},
-            "S":{"wall":"2","block":"Blocked","background":"2"},
+            "S":{"wall":"10","block":"Blocked","background":"2"},
             "W":{"wall":"256","background":"2"}
          },
          {
@@ -7684,9 +7684,9 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"wa_wall66.png",
             "doorFile":"dr_Door5.png",
-            "overlayFile":"",
+            "overlayFile":"ov_overlay_table.png",
             "soundFile":"",
             "avArtFile":"",
             "used":"false",

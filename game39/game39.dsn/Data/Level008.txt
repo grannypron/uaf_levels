@@ -5738,8 +5738,7 @@
                },
                "mtext":[
                   "  YOU ARE TALKING WITH A GROUP OF ORCS."
-               ],
-               "chainEventHappen":"46"
+               ]
             },
             "particular":{
                "buttonList":[
@@ -5748,73 +5747,6 @@
                   {"present":"true","label":"NICE","postChainAction":"Do Nothing","chain":"48"},
                   {"present":"true","label":"MEEK","postChainAction":"Do Nothing","chain":"49"},
                   {"present":"true","label":"ABUSIVE","postChainAction":"Do Nothing","chain":"0"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Combat",
-               "eventID":"46",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_Orc.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  THE ORCS SHOUT THAT THEY WILL HAVE TO TEACH YOU A LESSON."
-               ]
-            },
-            "particular":{
-               "deathSound":"sound_CharDeath.wav",
-               "moveSound":"sound_CharMove.wav",
-               "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
-               "surprise":"Neither",
-               "autoApproach":"false",
-               "outdoors":"false",
-               "monsterTreasure":"true",
-               "partyNeverDies":"false",
-               "noMagic":"false",
-               "monsterMorale":"75",
-               "turnModifier":"None",
-               "randomMonster":"false",
-               "partyGainsExp":"true",
-               "sounds":{
-                  "backgroundSounds":{},
-                  "nightSounds":{},
-                  "useNightMusic":"false",
-                  "startTime":"1800",
-                  "endTime":"600"
-               },
-               "monsters":[
-                  {
-                     "number":"12",
-                     "type":"MONSTER",
-                     "name":"Orc",
-                     "friendly":"false",
-                     "moraleAdjustment":"0",
-                     "fixedNumberOfMonsters":"true",
-                     "money":{
-                        "gems":[],
-                        "jewels":[]
-                     },
-                     "possessions":[]
-                  }
                ]
             }
          },
@@ -6983,7 +6915,6 @@
                "eventID":"84",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },

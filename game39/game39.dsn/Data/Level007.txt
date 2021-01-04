@@ -2072,9 +2072,9 @@
                "destroyDrow":"false",
                "activateBeforeEntry":"true",
                "transferLocation":{
-                  "executeEventAtDestination":"false",
+                  "executeEventAtDestination":"true",
                   "level":"1",
-                  "xy":[0,0],
+                  "xy":[23,12],
                   "facing":"East"
                }
             }
@@ -2094,9 +2094,9 @@
                "destroyDrow":"false",
                "activateBeforeEntry":"true",
                "transferLocation":{
-                  "executeEventAtDestination":"false",
+                  "executeEventAtDestination":"true",
                   "level":"1",
-                  "xy":[0,0],
+                  "xy":[23,12],
                   "facing":"East"
                }
             }

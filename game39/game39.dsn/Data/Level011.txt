@@ -5193,7 +5193,7 @@
                   {
                      "number":"1",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -5272,9 +5272,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"1",
+                     "number":"3",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Ogre",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -5285,9 +5285,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"3",
+                     "number":"1",
                      "type":"MONSTER",
-                     "name":"Ogre",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -5325,7 +5325,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  MANY CREATURES HAVE GATHERED.  THE ORC TELLS THEM, TO PROOF THEIR DEVOTION, TO KILL THE NON-BELIEVERS.  HE POINTS AT YOU."
+                  "  MANY CREATURES HAVE GATHERED.  THE ORC TELLS THEM, TO PROVE THEIR DEVOTION, TO KILL THE NON-BELIEVERS.  HE POINTS AT YOU."
                ]
             },
             "particular":{
@@ -5366,9 +5366,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"1",
+                     "number":"3",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Ogre",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -5379,9 +5379,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"3",
+                     "number":"1",
                      "type":"MONSTER",
-                     "name":"Ogre",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -5446,7 +5446,7 @@
                   {
                      "number":"1",
                      "type":"MONSTER",
-                     "name":"Orc Chieftain",
+                     "name":"Orc Leader",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

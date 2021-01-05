@@ -6563,7 +6563,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  THE TEMPLE DOORS FLY OPEN, A VERY LARGE GROUP OF ORCS CHARGING THROUGH.  THEY ARE LED BY A HALF-ORC WHO SCREAMS AT THE TO KILL THE NON-BELIEVERS OR SUFFER HIS WRATH!"
+                  "  THE TEMPLE DOORS FLY OPEN, A VERY LARGE GROUP OF ORCS CHARGING THROUGH.  THEY ARE LED BY A HALF-ORC WHO SCREAMS AT THEM TO KILL THE NON-BELIEVERS OR SUFFER HIS WRATH!"
                ],
                "chainEventHappen":"74"
             },
@@ -6572,7 +6572,7 @@
                "moveSound":"sound_CharMove.wav",
                "turnUdeadSound":"sound_Cast.wav",
                "distance":"Up Close",
-               "direction":"In Front Of",
+               "direction":"Any/All Side(s)",
                "surprise":"Neither",
                "autoApproach":"false",
                "outdoors":"false",
@@ -6852,7 +6852,6 @@
                "eventID":"82",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "chainEventHappen":"83"

@@ -5808,7 +5808,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, THE MONSTERS YELL.  AND YOU WON'T COME BACK YOU KNOW WHAT'S GOOD FOR YA!  THE MONSTERS THEN LEAVE."
+                  "  GET OUTA HERE BEFORE WE MAKE YOU LEAVE, THE MONSTERS YELL.  AND YOU WON'T COME BACK IF YOU KNOW WHAT'S GOOD FOR YA!  THE MONSTERS THEN LEAVE."
                ]
             },
             "particular":{
@@ -5970,7 +5970,22 @@
                   "useNightMusic":"false",
                   "startTime":"1800",
                   "endTime":"600"
-               }
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Orc",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
             }
          },
          {

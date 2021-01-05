@@ -6207,7 +6207,6 @@ item = Mace|1,1
 item = monsterClericCauseDisease,1
 item = monsterClericCauseLightWounds,1
 item = monsterClericCureLightWounds,1
-item = monsterClericCurse,1
 item = monsterClericCureSeriousWounds,1
 item = monsterClericHoldPerson,1
 item = monsterClericHoldPerson,1

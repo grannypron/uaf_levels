@@ -3967,7 +3967,6 @@
                "eventID":"1",
                "xy":[11,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -5614,7 +5613,8 @@
                "xy":[-1,-1],
                "control":{
                   "facing":"Any/All Side(s)"
-               }
+               },
+               "chainEventHappen":"100"
             },
             "particular":{
                "xy":[7,6],
@@ -5704,9 +5704,9 @@
                "eventID":"48",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
-               }
+               },
+               "chainEventHappen":"101"
             },
             "particular":{
                "xy":[7,6],
@@ -5745,7 +5745,8 @@
                "xy":[-1,-1],
                "control":{
                   "facing":"Any/All Side(s)"
-               }
+               },
+               "chainEventHappen":"102"
             },
             "particular":{
                "xy":[7,6],
@@ -5979,7 +5980,6 @@
                "eventID":"56",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -6000,7 +6000,6 @@
                "eventID":"57",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -6022,12 +6021,12 @@
                "eventID":"58",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  THE OGRE IS TACKLED AND SEARCHED.  HE DOESN'T HAVE THE ITEM ON HIM.  THE MONSTERS LOOK FOR A SCAPEGOAT.  THEIR EYES FALL UPON YOUR PARTY.  THEN THEY GRUMBLE AND TURN AWAY.  THE AUCTION IS OVER.  THE MONSTERS GRUMBLE AND TURN AWAY."
-               ]
+               ],
+               "chainEventHappen":"103"
             },
             "particular":{
                "waitForReturn":"true",
@@ -6042,12 +6041,12 @@
                "eventID":"59",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  YOU SLIP AWAY IN THE CONFUSION."
-               ]
+               ],
+               "chainEventHappen":"104"
             },
             "particular":{
                "waitForReturn":"true",
@@ -6062,12 +6061,12 @@
                "eventID":"60",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  GARWIN, I'LL GET YOU!  CRIES THE AUCTIONEER.  HOWEVER, THE MAN HAS ESCAPED IN THE CONFUSION.  THE AUCTION OVER, THE MONSTERS GRUMBLE AND TURN AWAY."
-               ]
+               ],
+               "chainEventHappen":"105"
             },
             "particular":{
                "waitForReturn":"true",
@@ -6082,12 +6081,12 @@
                "eventID":"61",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  GOING...GOING...GONE!  THE AUCTIONEER CRIES.  A MAN AND OGRE EXCHANGE THE WAND AND A LARGE BAG, THEN DISAPPEAR INTO THE CROWD.  THE AUCTION OVER, THE MONSTERS GRUMBLE AND TURN AWAY."
-               ]
+               ],
+               "chainEventHappen":"106"
             },
             "particular":{
                "waitForReturn":"true",
@@ -6102,12 +6101,12 @@
                "eventID":"62",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  THE MONSTERS GRUMBLE AND TURN AWAY.  THE AUCTION ENDS.  YOU DON'T SEE WHO BOUGHT THE ITEM."
-               ]
+               ],
+               "chainEventHappen":"107"
             },
             "particular":{
                "waitForReturn":"true",
@@ -6122,7 +6121,6 @@
                "eventID":"63",
                "xy":[11,32],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -6145,7 +6143,6 @@
                "eventID":"64",
                "xy":[4,32],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -7484,6 +7481,182 @@
                      "possessions":[]
                   }
                ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"100",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[8,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"101",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[8,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"102",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[8,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"103",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[7,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"104",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[7,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"105",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[7,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"106",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[7,6],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"107",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"true",
+                  "level":"11",
+                  "xy":[7,6],
+                  "facing":"East"
+               }
             }
          }
       ],

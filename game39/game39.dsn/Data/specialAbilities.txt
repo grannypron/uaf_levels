@@ -4565,17 +4565,16 @@ name = class_MageScribe
 -sLvl = $IntegerTable("class_Spells","magicUserLvl",muLvl -# 1,"Index");
 -par4 = $GET_HOOK_PARAM(4);
 -par6 = $GET_HOOK_PARAM(6);
+-$IF (par6 ==# 0) {$SET_HOOK_PARAM(8, 0); $RETURN;};
 -spl = $DelimitedStringSubstring(lvl,par6 -# 1);
 -$IF (par4 == "I")
 -	{
--		$IF (par6 ==# 0) {$RETURN;};
 -		$SET_HOOK_PARAM(8,spl);
 -		$SET_HOOK_PARAM(9,1);
 -		$RETURN "1";
 -	};
--$IF (par4 != "I")
+-$IF (par4 == "L")
 -	{
--		$IF (par6 ==# 0) {$SET_HOOK_PARAM(8,1); $RETURN;};
 -		$IF (par6 <=# sLvl)
 -			{
 -				$SET_HOOK_PARAM(8,1);
@@ -4588,11 +4587,6 @@ name = class_MageScribe
 -		$RETURN "1";
 -	};
 [ScribeOrWhatever] = $SET_HOOK_PARAM(5, "Scribe");
-TrainingCharacter = $VAR me; $VAR lvl;
--me = $IndexOf($CharacterContext());
--lvl = $GET_CHAR_Lvl(me,"magicUser");
--$IF ($GET_CHARACTER_SA($CharacterContext(),"class_NoSpells") == "-?-?-") {$RETURN;};
--$IF (lvl ># 0){$DELETE_CHARACTER_SA($CharacterContext(),"class_NoSpells");};
 \(END)
 
 \(BEGIN)

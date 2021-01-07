@@ -6173,6 +6173,10 @@ item = Necklace,1
 item = Potion,1
 item = Quarter Staff,1
 item = Bracers,1
+item = monsterClericCauseLightWounds,1
+item = monsterMageMagicMissile,1
+item = monsterMageMagicMissile,1
+item = monsterClericHoldPerson,1
 attack = 8,1,1,attacks,
 Undead = 
 \(END)

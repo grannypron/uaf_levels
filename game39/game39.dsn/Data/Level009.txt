@@ -7296,9 +7296,9 @@
                },
                "monsters":[
                   {
-                     "number":"1",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "number":"3",
+                     "type":"MONSTER",
+                     "name":"Large Scorpion",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -7309,9 +7309,9 @@
                      "possessions":[]
                   },
                   {
-                     "number":"3",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
+                     "number":"1",
+                     "type":"MONSTER",
+                     "name":"Huge Scorpion",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

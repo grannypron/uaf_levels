@@ -3799,9 +3799,9 @@
             "W":{"wall":"256","background":"19"}
          },
          {
-            "xy":[11,31],"zone":"8",
+            "xy":[11,31],"eventExists":"true","zone":"8",
             "N":{"wall":"12","block":"Blocked","background":"19"},
-            "E":{"wall":"12","block":"Open, Secret","background":"19"},
+            "E":{"wall":"12","background":"19"},
             "S":{"wall":"12","block":"Blocked","background":"19"},
             "W":{"wall":"256","background":"19"}
          },
@@ -3810,7 +3810,7 @@
             "N":{"wall":"12","block":"Blocked","background":"19"},
             "E":{"wall":"12","block":"Blocked","background":"19"},
             "S":{"wall":"256","background":"19"},
-            "W":{"wall":"15","background":"19"}
+            "W":{"wall":"12","background":"19"}
          },
          {
             "xy":[13,31],"zone":"1",
@@ -4666,7 +4666,7 @@
                "deathSound":"sound_CharDeath.wav",
                "moveSound":"sound_CharMove.wav",
                "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Nearby",
+               "distance":"Up Close",
                "direction":"In Front Of",
                "surprise":"Neither",
                "autoApproach":"false",
@@ -4801,7 +4801,6 @@
                "xy":[-1,-1],
                "control":{
                   "onceOnly":"1",
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4824,7 +4823,6 @@
                "eventID":"27",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "chainEventHappen":"28"
@@ -7430,6 +7428,42 @@
                   "xy":[2,31],
                   "facing":"South"
                }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"92",
+               "xy":[11,31],
+               "control":{
+                  "eventTrigger":"NPC in Party",
+                  "character":"Skullcrusher",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_NPC_HumanMale3.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "Skullcrusher whispers \"To the east is the secret door I was telling you about.  It leads right to the headquarters of the hobgoblins.  A good friend of mine named Jeans told me about it.\""
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
             }
          }
       ],

@@ -7436,6 +7436,7 @@
                "eventID":"92",
                "xy":[11,31],
                "control":{
+                  "onceOnly":"1",
                   "eventTrigger":"NPC in Party",
                   "character":"Skullcrusher",
                   "facing":"Any/All Side(s)"

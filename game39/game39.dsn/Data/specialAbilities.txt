@@ -2829,9 +2829,6 @@ name = IsParalyzed
 -$ELSE {$RETURN "N";};
 [GetItemTargetHitBonus] = $RETURN $GET_CHAR_HITPOINTS($IndexOf($TargetContext())) +# 1;
 [IsCombatReady] = $RETURN "N";
-[StartCombatRound] = $VAR exp;
--exp = $SA_PARAM_GET();
--$IF ($GET_PARTY_TIME() ># exp) {$RETURN $SA_REMOVE();};
 \(END)
 
 \(BEGIN)
@@ -9084,15 +9081,15 @@ name = spell_NeutralizePoison
 name = spell_Paralysis
 [InvokeSpellOnTarget] = $VAR atk; // attacker
 -$VAR tgt; // target
--$VAR nm;
+-$VAR name;
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
--nm = $GET_CHAR_NAME(tgt);
+-name = $GET_CHAR_NAME(tgt);
 -$IF ($GET_CHARACTER_SA($TargetContext(),"IsImmuneParalysis") != "-?-?-"){$RETURN;};
--$IF ($GET_MONSTERTYPE_SA(nm,"monster_ImmuneParalysis") != "-?-?-"){$RETURN;};
+-$IF ($GET_MONSTERTYPE_SA(name,"monster_ImmuneParalysis") != "-?-?-"){$RETURN;};
 -$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
 -$IF ($GET_CHAR_NAME(atk) == "Ghoul" && $GET_CHAR_RACE(tgt) == "Elf"){$RETURN;};
--$SET_COMBATANT_SA($TargetContext(),"IsParalyzed","Paralyzed");
+-$SET_CHARACTER_SA($TargetContext(),"IsParalyzed","Paralyzed");
 \(END)
 
 \(BEGIN)

@@ -3872,7 +3872,6 @@
                "eventID":"2",
                "xy":[16,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -4249,7 +4248,6 @@
                "eventID":"17",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4325,37 +4323,16 @@
                },
                "mtext":[
                   "  YOU ARE TALKING WITH A PRIEST."
-               ],
-               "chainEventHappen":"20"
+               ]
             },
             "particular":{
                "buttonList":[
-                  {"present":"true","label":"HAUGHTY","postChainAction":"Do Nothing","chain":"0"},
-                  {"present":"true","label":"SLY","postChainAction":"Do Nothing","chain":"0"},
+                  {"present":"true","label":"HAUGHTY","postChainAction":"Do Nothing","chain":"59"},
+                  {"present":"true","label":"SLY","postChainAction":"Do Nothing","chain":"65"},
                   {"present":"true","label":"NICE","postChainAction":"Do Nothing","chain":"21"},
-                  {"present":"true","label":"MEEK","postChainAction":"Do Nothing","chain":"0"},
-                  {"present":"true","label":"ABUSIVE","postChainAction":"Do Nothing","chain":"0"}
+                  {"present":"true","label":"MEEK","postChainAction":"Do Nothing","chain":"68"},
+                  {"present":"true","label":"ABUSIVE","postChainAction":"Do Nothing","chain":"67"}
                ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Text Statement",
-               "eventID":"20",
-               "xy":[-1,-1],
-               "control":{
-                  "class":"Cleric",
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  PEACE, BROTHER, FOR YOU ALSO ARE A PART OF MY FLOCK.  I HAVE RECENTLY PRAYED FOR ANOTHER OF MY FLOCK AND CAN PRAY NO MORE."
-               ]
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
             }
          },
          {
@@ -4474,7 +4451,7 @@
                "control":{
                   "facing":"Any/All Side(s)"
                },
-               "chainEventHappen":"25"
+               "chainEventHappen":"58"
             },
             "particular":{
                "acceptType":"Automatic (No Question)",
@@ -4484,25 +4461,6 @@
                "questStage":"1",
                "acceptChain":"0",
                "rejectChain":"0"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Guided Tour",
-               "eventID":"25",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "xy":[0,0],
-               "facing":"0",
-               "useStartLocation":"false",
-               "executeEvent":"false",
-               "steps":[
-                  {"stepNum":"0","step":"Pause"}
-               ]
             }
          },
          {
@@ -5982,6 +5940,286 @@
                      "possessions":[]
                   }
                ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"58",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"false",
+                  "level":"22",
+                  "xy":[30,7],
+                  "facing":"North"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"59",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "chainTrigger":"If Event does not happen",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_PC_hm_Cleric.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  PEACE, BROTHER, FOR YOU ARE ALSO A PART OF MY FLOCK.  I HAVE RECENTLY PRAYED FOR ANOTHER MEMBER OF MY FLOCK AND CAN PRAY NO MORE."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"65",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "chainTrigger":"If Event does not happen",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_PC_hm_Cleric.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  PEACE, BROTHER, FOR YOU ARE ALSO A PART OF MY FLOCK.  I HAVE RECENTLY PRAYED FOR ANOTHER MEMBER OF MY FLOCK AND CAN PRAY NO MORE."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"67",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "chainTrigger":"If Event does not happen",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_PC_hm_Cleric.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  PEACE, BROTHER, FOR YOU ARE ALSO A PART OF MY FLOCK.  I HAVE RECENTLY PRAYED FOR ANOTHER MEMBER OF MY FLOCK AND CAN PRAY NO MORE."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"68",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "chainTrigger":"If Event does not happen",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_PC_hm_Cleric.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  PEACE, BROTHER, FOR YOU ARE ALSO A PART OF MY FLOCK.  I HAVE RECENTLY PRAYED FOR ANOTHER MEMBER OF MY FLOCK AND CAN PRAY NO MORE."
+               ],
+               "chainEventNotHappen":"69"
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"69",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_PC_hm_Cleric.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  I HAVE A SECRET.  I HAVE CHISELED ALMOST ALL THE WAY THROUGH TO THE OUTSIDE.  BUT I NO LONGER HAVE THE STRENGTH TO BREAK THROUGH.  WILL YOU TRY?"
+               ],
+               "chainEventHappen":"70"
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Question Yes/No",
+               "eventID":"70",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_PC_hm_Cleric.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  HOW DO YOU ANSWER?"
+               ],
+               "mtext2":[
+                  "  YOU BREAK THROUGH.  THE PRIEST TEARFULLY THANKS YOU AND GOES OUT THROUGH THE HOLE."
+               ]
+            },
+            "particular":{
+               "yesChainAction":"Do Nothing",
+               "yesChain":"71",
+               "noChainAction":"Do Nothing"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Quest Stage",
+               "eventID":"71",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "chainEventHappen":"72"
+            },
+            "particular":{
+               "acceptType":"Automatic (No Question)",
+               "failOnReject":"false",
+               "completeOnAccept":"true",
+               "questNum":"1073741853",
+               "questStage":"1",
+               "acceptChain":"0",
+               "rejectChain":"0"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"72",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"false",
+                  "level":"22",
+                  "xy":[30,7],
+                  "facing":"North"
+               }
             }
          }
       ],

@@ -3088,7 +3088,58 @@
                   "jewels":[]
                },
                "silentGiveToActiveChar":"false",
-               "items":[]
+               "items":[
+                  {
+                     "key":"1",
+                     "itemID":"Two-Handed Sword|1",
+                     "ready":"2036836250",
+                     "quantity":"1",
+                     "identified":"1",
+                     "charges":"0",
+                     "cursed":"0",
+                     "paid":"-1"
+                  },
+                  {
+                     "key":"2",
+                     "itemID":"Scroll|10",
+                     "ready":"2036836250",
+                     "quantity":"1",
+                     "identified":"1",
+                     "charges":"1",
+                     "cursed":"0",
+                     "paid":"-1"
+                  },
+                  {
+                     "key":"3",
+                     "itemID":"Scroll|10",
+                     "ready":"2036836250",
+                     "quantity":"1",
+                     "identified":"1",
+                     "charges":"1",
+                     "cursed":"0",
+                     "paid":"-1"
+                  },
+                  {
+                     "key":"4",
+                     "itemID":"Scroll|9",
+                     "ready":"2036836250",
+                     "quantity":"1",
+                     "identified":"1",
+                     "charges":"1",
+                     "cursed":"0",
+                     "paid":"-1"
+                  },
+                  {
+                     "key":"5",
+                     "itemID":"Scroll|9",
+                     "ready":"2036836250",
+                     "quantity":"1",
+                     "identified":"1",
+                     "charges":"1",
+                     "cursed":"0",
+                     "paid":"-1"
+                  }
+               ]
             }
          },
          {

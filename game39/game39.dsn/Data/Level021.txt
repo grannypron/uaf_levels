@@ -442,21 +442,21 @@
             "xy":[7,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"3"},
             "E":{"wall":"2","block":"Blocked","background":"3"},
-            "S":{"wall":"2","block":"Open, Secret","background":"3"},
+            "S":{"wall":"2","background":"3"},
             "W":{"wall":"2","block":"Blocked","background":"3"}
          },
          {
             "xy":[8,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"3"},
             "E":{"wall":"2","block":"Blocked","background":"3"},
-            "S":{"wall":"2","block":"Open, Secret","background":"3"},
+            "S":{"wall":"2","background":"3"},
             "W":{"wall":"2","block":"Blocked","background":"3"}
          },
          {
             "xy":[9,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"3"},
             "E":{"wall":"2","block":"Blocked","background":"3"},
-            "S":{"wall":"2","block":"Open, Secret","background":"3"},
+            "S":{"wall":"2","background":"3"},
             "W":{"wall":"2","block":"Blocked","background":"3"}
          },
          {

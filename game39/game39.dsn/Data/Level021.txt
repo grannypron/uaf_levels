@@ -2063,12 +2063,14 @@
                "eventID":"1",
                "xy":[6,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
-               }
+               },
+               "mtext":[
+                  "Leave the cave?"
+               ]
             },
             "particular":{
-               "askYesNo":"false",
+               "askYesNo":"true",
                "transfer":"true",
                "destroyDrow":"false",
                "activateBeforeEntry":"true",
@@ -2087,12 +2089,14 @@
                "eventID":"2",
                "xy":[10,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
-               }
+               },
+               "mtext":[
+                  "Leave the cave?"
+               ]
             },
             "particular":{
-               "askYesNo":"false",
+               "askYesNo":"true",
                "transfer":"true",
                "destroyDrow":"false",
                "activateBeforeEntry":"true",
@@ -7546,7 +7550,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"C:\Users\Shadow\Desktop\uaf.git\uaf_levels\game39\game39.dsn\Resources\wa_wall67.png",
+            "wallFile":"wa_wall67.png",
             "doorFile":"",
             "overlayFile":"",
             "soundFile":"",

@@ -3170,7 +3170,6 @@
                "eventID":"34",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4597,7 +4596,6 @@
                "xy":[-1,-1],
                "control":{
                   "onceOnly":"1",
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4825,6 +4823,19 @@
                      "number":"8",
                      "type":"MONSTER",
                      "name":"Kobold",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  },
+                  {
+                     "number":"2",
+                     "type":"MONSTER",
+                     "name":"Envoy",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

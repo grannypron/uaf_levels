@@ -8194,6 +8194,7 @@ name = spell_Drain
 -$VAR bLvl; // level of baseclasses
 -$VAR bDie; // type of die used for HP for baseclass
 -$VAR bNum; // number of baseclasses in class
+-$VAR name;
 -$VAR monHit; // monster THAC0
 -$VAR rand;
 -$VAR drain; // amount of HP drained
@@ -8201,6 +8202,7 @@ name = spell_Drain
 -trgt = $IndexOf($TargetContext());
 -bName = $GetHighestLevelBaseclass(trgt);
 -bLvl = $GetBaseclassLevel(trgt,bName);
+-name = $GET_CHAR_NAME(trgt);
 -$SET_CHAR_Lvl(trgt,bName,bLvl -# 1);
 -$IF ((bLvl -# 1) <=# 0)
 -	{

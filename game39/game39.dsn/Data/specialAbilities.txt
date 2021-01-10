@@ -576,10 +576,10 @@ name = ChangeClassThief
 name = CombatPlacement
 [PlaceMonsterClose] = $IF($GET_PARTY_FACING() >=#2){$MonsterPlacement("FbPV500E");}
 -$ELSE{$MonsterPlacement("bPV500E");};
-[PlaceMonsterFar] = $IF($GET_PARTY_FACING() >=#2){$MonsterPlacement("17FbPV500E");}
--$ELSE{$MonsterPlacement("16FbPV500E");};
-[PlaceMonsterNear] = $IF($GET_PARTY_FACING() >=#2){$MonsterPlacement("10FbPV500E");}
--$ELSE{$MonsterPlacement("9FbPV500E");};
+[PlaceMonsterFar] = $IF($GET_PARTY_FACING() >=#2){$MonsterPlacement("8FbPV500E");}
+-$ELSE{$MonsterPlacement("7FbPV500E");};
+[PlaceMonsterNear] = $IF($GET_PARTY_FACING() >=#2){$MonsterPlacement("4FbPV500E");}
+-$ELSE{$MonsterPlacement("3FbPV500E");};
 \(END)
 
 \(BEGIN)

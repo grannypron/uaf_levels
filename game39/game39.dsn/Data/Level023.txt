@@ -4471,6 +4471,7 @@
                "eventID":"24",
                "xy":[-1,-1],
                "control":{
+                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -4493,6 +4494,7 @@
                "eventID":"25",
                "xy":[-1,-1],
                "control":{
+                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -6259,6 +6261,7 @@
                "eventID":"81",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{
@@ -6277,7 +6280,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  I CATEGORICALLY REFUSE YOUR DEMAND THAT I SUBMIT MY ISLAND AND MY POWERS TO YOUR CONTROL.  I AM A FREE MAN, AND I WILL REMAIN FREE.  NO PETTY TYRANT CAN ORDER ABOUT A TRUE MAGE.  IF YOU OR YOUR TROOPS MAKE ANY MOVE TOWARD SORCERER'S ISLAND, I SHALL SEND AN ARMY OF UNSTOPPABLE AQUATIC CREATIONS DOWN THE BARREN RIVER AND SINK YOUR PRECIOUS CASTLE.    UNTIL NOW YOU HAVE BEEN BENEATH MY NOTICE.  IF YOU VALUE YOUR EMPIRE, LET US KEEP IT THAT WAY.                     SIGNED,                                           YARASH, THE SORCERER  ALSO ON THE DESK IS AN IMPRESSIVE ANNOUNCEMENT.  BOUNTY OF 10,000 GOLD!                    I WILL PAY 10,000 GOLD PIECES FOR A LIVE SAHUAGIN!  I WILL PAY 1,000 GOLD PIECES FOR A RECENTLY DEAD SAHUAGIN IN GOOD CONDITION."
+                  "  I CATEGORICALLY REFUSE YOUR DEMAND THAT I SUBMIT MY ISLAND AND MY POWERS TO YOUR CONTROL.  I AM A FREE MAN, AND I WILL REMAIN FREE.  NO PETTY TYRANT CAN ORDER ABOUT A TRUE MAGE.  IF YOU OR YOUR TROOPS MAKE ANY MOVE TOWARD SORCERER'S ISLAND, I SHALL SEND AN ARMY OF UNSTOPPABLE AQUATIC CREATIONS DOWN THE BARREN RIVER AND SINK YOUR PRECIOUS CASTLE.    UNTIL NOW YOU HAVE BEEN BENEATH MY NOTICE.  IF YOU VALUE YOUR EMPIRE, LET US KEEP IT THAT WAY.                     SIGNED,                                           YARASH, THE SORCERER  /nALSO ON THE DESK IS AN IMPRESSIVE ANNOUNCEMENT.  BOUNTY OF 10,000 GOLD!                    I WILL PAY 10,000 GOLD PIECES FOR A LIVE SAHUAGIN!  I WILL PAY 1,000 GOLD PIECES FOR A RECENTLY DEAD SAHUAGIN IN GOOD CONDITION."
                ],
                "chainEventHappen":"82"
             },
@@ -6294,6 +6297,7 @@
                "eventID":"82",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{
@@ -6329,6 +6333,7 @@
                "eventID":"83",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{
@@ -6347,7 +6352,7 @@
                   "restartFrame":"1"
                },
                "mtext":[
-                  "  AN ACTIVE DRAGON HAS MADE ITS HOME IN THE DRAGONSPINE MOUNTAINS TO THE NORTHWEST.  KEEP SEARCH PARTIES AWAY FROM THE AREA SO AS NOT TO CATCH THE DRAGON'S ATTENTION.  AND, FINALLY, YOU FIND ONE LAST SHORT NOTE ON AN OFTEN-USED PIECE OF PAPER.  BOTH KOBOLDS AND HOBGOBLINS EXIST IN LARGE NUMBERS TO THE EAST.  EXPERIMENTS SHOW NEITHER MAKES GOOD BREEDING MATERIAL."
+                  "  AN ACTIVE DRAGON HAS MADE ITS HOME IN THE DRAGONSPINE MOUNTAINS TO THE NORTHWEST.  KEEP SEARCH PARTIES AWAY FROM THE AREA SO AS NOT TO CATCH THE DRAGON'S ATTENTION.  /n  AND, FINALLY, YOU FIND ONE LAST SHORT NOTE ON AN OFTEN-USED PIECE OF PAPER.  BOTH KOBOLDS AND HOBGOBLINS EXIST IN LARGE NUMBERS TO THE EAST.  EXPERIMENTS SHOW NEITHER MAKES GOOD BREEDING MATERIAL."
                ]
             },
             "particular":{

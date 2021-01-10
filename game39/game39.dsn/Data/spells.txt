@@ -1524,7 +1524,7 @@ savingThrowFailedScript =
 begin script = 
 end script = 
 initiation script = 
-termination script = 
+termination script = $ForEachPartyMember("deleteSA", "IsPraying");
 \(END)
 
 \(BEGIN)

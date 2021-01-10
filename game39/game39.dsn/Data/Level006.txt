@@ -2874,7 +2874,7 @@
                "chainEventNotHappen":"3"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"
@@ -5074,7 +5074,7 @@
                "chainEventNotHappen":"51"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"

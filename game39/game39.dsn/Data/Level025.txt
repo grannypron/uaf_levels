@@ -2063,7 +2063,6 @@
                "eventID":"1",
                "xy":[7,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2086,7 +2085,6 @@
                "eventID":"2",
                "xy":[8,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2587,7 +2585,8 @@
                "xy":[-1,-1],
                "control":{
                   "facing":"Any/All Side(s)"
-               }
+               },
+               "chainEventHappen":"74"
             },
             "particular":{
                "xy":[0,0],
@@ -4624,6 +4623,43 @@
                      },
                      "possessions":[]
                   }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Guided Tour",
+               "eventID":"74",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "xy":[6,8],
+               "facing":"0",
+               "useStartLocation":"true",
+               "executeEvent":"false",
+               "steps":[
+                  {"stepNum":"0","step":"Forward"},
+                  {"stepNum":"1","step":"Turn Right"},
+                  {"stepNum":"2","step":"Forward"},
+                  {"stepNum":"3","step":"Turn Left"},
+                  {"stepNum":"4","step":"Forward"},
+                  {"stepNum":"5","step":"Forward"},
+                  {"stepNum":"6","step":"Forward"},
+                  {"stepNum":"7","step":"Forward"},
+                  {"stepNum":"8","step":"Forward"},
+                  {"stepNum":"9","step":"Turn Left"},
+                  {"stepNum":"10","step":"Forward"},
+                  {"stepNum":"11","step":"Forward"},
+                  {"stepNum":"12","step":"Forward"},
+                  {"stepNum":"13","step":"Turn Right"},
+                  {"stepNum":"14","step":"Forward"},
+                  {"stepNum":"15","step":"Forward"},
+                  {"stepNum":"16","step":"Turn Right"},
+                  {"stepNum":"17","step":"Forward"}
                ]
             }
          }

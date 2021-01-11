@@ -259,7 +259,7 @@
          {
             "xy":[12,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"19"},
-            "E":{"wall":"8","background":"19"},
+            "E":{"wall":"9","background":"19"},
             "S":{"wall":"7","block":"Blocked","background":"19"},
             "W":{"wall":"256","background":"19"}
          },
@@ -268,7 +268,7 @@
             "N":{"wall":"13","block":"Blocked","background":"14"},
             "E":{"wall":"256","background":"14"},
             "S":{"wall":"13","block":"Blocked","background":"14"},
-            "W":{"wall":"8","background":"14"}
+            "W":{"wall":"9","background":"14"}
          },
          {
             "xy":[14,1],"zone":"1",

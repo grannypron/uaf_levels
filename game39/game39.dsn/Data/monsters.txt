@@ -6281,7 +6281,6 @@ item = Ring|3,1
 item = monsterMageMagicMissile,1
 item = monsterMageMagicMissile,1
 item = monsterMageSleep,1
-item = monsterMageShield,1
 item = monsterMageStinkingCloud,1
 item = monsterMageLightningBolt,1
 item = monsterMageHoldPerson,1

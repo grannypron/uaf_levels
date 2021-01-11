@@ -2864,7 +2864,10 @@ name = IsPoisoned
 
 \(BEGIN)
 name = IsPraying
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Praying"); $SET_HOOK_PARAM( 6,""); $RETURN 1;
+[CharDisplayStatus] = $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
+-$SET_HOOK_PARAM( 7,"Praying"); $SET_HOOK_PARAM( 6,""); $RETURN 1;
 [Dispel] = $SA_REMOVE();
 \(END)
 
@@ -10099,9 +10102,4 @@ name = turnUndead
 -num = $DelimitedStringCount(par5);
 -turn = $DelimitedStringSubstring(par5,num);
 -$RETURN par5;
-\(END)
-
-\(BEGIN)
-name = deleteSA
-[IsPraying] = $DELETE_CHARACTER_SA($CharacterContext(), "IsPraying");
 \(END)

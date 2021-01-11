@@ -6382,7 +6382,7 @@
                "chainEventNotHappen":"76"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"

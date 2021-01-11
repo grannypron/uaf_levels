@@ -5980,7 +5980,8 @@ form = mammal + none
 penalty = none
 immunity = none
 Misc Options = can be held/charmed + none
-item = none
+item = Long Sword|1,1
+item = Chain Mail|1,1
 attack = 8,1,1,attacks,
 Undead = 
 \(END)
@@ -6474,7 +6475,9 @@ form = mammal + none
 penalty = none
 immunity = none
 Misc Options = can be held/charmed + none
-item = none
+item = Long Sword|2,1
+item = Shield|1,1
+item = Scale Mail|2,1
 attack = 8,1,2,attacks,
 Undead = 
 \(END)

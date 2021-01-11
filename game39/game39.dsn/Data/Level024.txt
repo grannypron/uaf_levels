@@ -1126,8 +1126,10 @@
          },
          {
             "xy":[3,9],"zone":"1",
-            "N":{"wall":"2","block":"Blocked"},
-            "S":{"wall":"2","block":"Blocked"}
+            "N":{"wall":"2","block":"Blocked","background":"12"},
+            "E":{"background":"12"},
+            "S":{"wall":"2","block":"Blocked","background":"12"},
+            "W":{"background":"12"}
          },
          {
             "xy":[4,9],"zone":"1",

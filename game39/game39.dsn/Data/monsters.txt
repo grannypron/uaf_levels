@@ -6753,7 +6753,6 @@ item = monsterMageStinkingCloud,1
 item = monsterMageMagicMissile,1
 item = monsterMageMagicMissile,1
 item = monsterMageRayofEnfeeblement,1
-item = monsterMageHaste,1
 item = monsterMageFireball,1
 attack = 6,1,0,attacks,
 Undead = 

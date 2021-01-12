@@ -1461,14 +1461,14 @@
             "W":{"wall":"4","background":"14"}
          },
          {
-            "xy":[0,12],"zone":"1",
+            "xy":[0,12],"zone":"4",
             "N":{"wall":"12","block":"Blocked","background":"19"},
             "E":{"wall":"256","background":"19"},
             "S":{"wall":"256","background":"19"},
             "W":{"wall":"12","block":"Blocked","background":"19"}
          },
          {
-            "xy":[1,12],"zone":"1",
+            "xy":[1,12],"zone":"4",
             "N":{"wall":"12","block":"Blocked","background":"19"},
             "E":{"wall":"12","block":"Blocked","background":"19"},
             "S":{"wall":"256","background":"19"},
@@ -1580,14 +1580,14 @@
             "W":{"wall":"4","background":"14"}
          },
          {
-            "xy":[0,13],"zone":"1",
+            "xy":[0,13],"zone":"4",
             "N":{"wall":"256","background":"19"},
             "E":{"wall":"256","background":"19"},
             "S":{"wall":"12","block":"Blocked","background":"19"},
             "W":{"wall":"12","block":"Blocked","background":"19"}
          },
          {
-            "xy":[1,13],"eventExists":"true","zone":"1",
+            "xy":[1,13],"eventExists":"true","zone":"4",
             "N":{"wall":"256","background":"19"},
             "E":{"wall":"15","background":"19"},
             "S":{"wall":"12","block":"Blocked","background":"19"},

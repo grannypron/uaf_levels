@@ -2226,7 +2226,6 @@
                "eventID":"3",
                "xy":[16,12],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2249,7 +2248,6 @@
                "eventID":"4",
                "xy":[16,11],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2991,7 +2989,6 @@
                "xy":[0,6],
                "control":{
                   "eventTrigger":"Facing dir, only when arrive",
-                  "class":"Cleric",
                   "facing":"North"
                },
                "mtext":[
@@ -3009,10 +3006,10 @@
             "general":{
                "eventType":"Text Statement",
                "eventID":"37",
-               "xy":[1,3],
+               "xy":[-1,-1],
                "control":{
                   "eventTrigger":"Facing dir, only when arrive",
-                  "facing":"West"
+                  "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  YOU ENTER A BUILDING THAT WAS ONCE A BARRACKS BUT HAS NOW BEEN CONVERTED TO A TEMPLE OF BANE.  AT THE FAR END OF THE ROOM IS A CRUDE ALTAR."
@@ -3300,8 +3297,8 @@
                "deathSound":"sound_CharDeath.wav",
                "moveSound":"sound_CharMove.wav",
                "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
+               "distance":"Nearby",
+               "direction":"North",
                "surprise":"Party",
                "autoApproach":"false",
                "outdoors":"false",
@@ -3544,7 +3541,7 @@
                "moveSound":"sound_CharMove.wav",
                "turnUdeadSound":"sound_Cast.wav",
                "distance":"Nearby",
-               "direction":"In Front Of",
+               "direction":"North",
                "surprise":"Neither",
                "autoApproach":"false",
                "outdoors":"false",
@@ -3641,8 +3638,8 @@
                "deathSound":"sound_CharDeath.wav",
                "moveSound":"sound_CharMove.wav",
                "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
+               "distance":"Nearby",
+               "direction":"North",
                "surprise":"Monster",
                "autoApproach":"false",
                "outdoors":"false",
@@ -4127,7 +4124,6 @@
                "xy":[-1,-1],
                "control":{
                   "eventTrigger":"Facing dir, only when arrive",
-                  "class":"Cleric",
                   "facing":"North"
                }
             },
@@ -4164,7 +4160,6 @@
                "eventID":"69",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4843,6 +4838,27 @@
                "questStage":"1",
                "acceptChain":"0",
                "rejectChain":"0"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Guided Tour",
+               "eventID":"101",
+               "xy":[1,3],
+               "control":{
+                  "eventTrigger":"Facing dir, only when arrive",
+                  "facing":"West"
+               },
+               "chainEventHappen":"37"
+            },
+            "particular":{
+               "xy":[0,0],
+               "facing":"0",
+               "useStartLocation":"false",
+               "executeEvent":"false",
+               "steps":[
+                  {"stepNum":"0","step":"Turn Right"}
+               ]
             }
          }
       ],

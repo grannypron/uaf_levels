@@ -5034,18 +5034,20 @@
                "eventID":"89",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  WHAT DO YOU SAY?"
+               ],
+               "mtext3":[
+                  "NAH.  GET OUTTA HERE!"
                ]
             },
             "particular":{
                "password":"RHODIA",
                "numberOfTries":"1",
-               "successChain":"90",
-               "failChain":"91",
+               "successChain":"101",
+               "failChain":"0",
                "successAction":"Chain Event",
                "failAction":"Chain Event",
                "matchCase":"false",
@@ -5061,75 +5063,6 @@
                   "xy":[0,0],
                   "facing":"North"
                }
-            }
-         },
-         {
-            "general":{
-               "eventType":"Guided Tour",
-               "eventID":"90",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "xy":[12,8],
-               "facing":"3",
-               "useStartLocation":"true",
-               "executeEvent":"false",
-               "steps":[
-                  {"stepNum":"0","mtext":["  THE GATES SWING OPEN, AND YOU ENTER THE CASTLE."],"step":"Forward"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Special Item",
-               "eventID":"91",
-               "xy":[-1,-1],
-               "control":{
-                  "class":"Cleric",
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  AN ALARM STARTS RINGING!"
-               ],
-               "chainEventHappen":"92"
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceExit":"false",
-               "specialItems":[{
-                     "type":"key",
-                     "operation":"give",
-                     "index":"7",
-                     "itemID":"0"
-                  }]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Damage",
-               "eventID":"92",
-               "xy":[-1,-1],
-               "control":{
-                  "class":"Cleric",
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  A VOLLEY OF BOULDERS RAINS DOWN ON YOU!"
-               ]
-            },
-            "particular":{
-               "numberOfAttacks":"1",
-               "chancePerAttack":"50",
-               "damageDice":"2d6+0",
-               "saveBonus":"0",
-               "attackTHAC0":"0",
-               "eventSave":"No Save",
-               "spellSave":"Paralysis/Poison/Death Magic",
-               "affects":"Entire Party",
-               "distance":"Up Close"
             }
          },
          {
@@ -5449,6 +5382,31 @@
                      "possessions":[]
                   }
                ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"101",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext2":[
+                  "  THE GATES SWING OPEN, AND YOU ENTER THE CASTLE."
+               ]
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"false",
+                  "level":"28",
+                  "xy":[11,8],
+                  "facing":"North"
+               }
             }
          }
       ],

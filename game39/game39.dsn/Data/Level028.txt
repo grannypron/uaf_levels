@@ -1762,14 +1762,14 @@
             "W":{"wall":"256","background":"19"}
          },
          {
-            "xy":[9,14],"zone":"1",
+            "xy":[9,14],"zone":"7",
             "N":{"wall":"12","block":"Blocked","background":"19"},
             "E":{"wall":"256","background":"19"},
             "S":{"wall":"256","background":"19"},
             "W":{"wall":"12","block":"Blocked","background":"19"}
          },
          {
-            "xy":[10,14],"eventExists":"true","zone":"1",
+            "xy":[10,14],"eventExists":"true","zone":"7",
             "N":{"wall":"15","background":"19"},
             "E":{"wall":"12","block":"Blocked","background":"19"},
             "S":{"wall":"256","background":"19"},
@@ -1881,14 +1881,14 @@
             "W":{"wall":"256","background":"19"}
          },
          {
-            "xy":[9,15],"zone":"1",
+            "xy":[9,15],"zone":"7",
             "N":{"wall":"256","background":"19"},
             "E":{"wall":"256","background":"19"},
             "S":{"wall":"12","block":"Blocked","background":"19"},
             "W":{"wall":"12","block":"Blocked","background":"19"}
          },
          {
-            "xy":[10,15],"zone":"1",
+            "xy":[10,15],"zone":"7",
             "N":{"wall":"256","background":"19"},
             "E":{"wall":"12","block":"Blocked","background":"19"},
             "S":{"wall":"12","block":"Blocked","background":"19"},
@@ -4374,7 +4374,6 @@
                "eventID":"70",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -4641,7 +4640,6 @@
                "eventID":"77",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -5833,7 +5831,7 @@
                "restartFrame":"1"
             },
             "restEvent":{
-               "allowResting":"0",
+               "allowResting":"1",
                "restEvent":"0",
                "chance":"0",
                "everyMin":"1",

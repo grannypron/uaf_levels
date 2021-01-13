@@ -3755,7 +3755,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Random Chance",
-                  "class":"Cleric",
                   "chance":"30",
                   "facing":"Any/All Side(s)"
                },
@@ -3780,10 +3779,12 @@
                "eventID":"58",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
+                  "chainTrigger":"If Event does not happen",
+                  "eventTrigger":"Random Chance",
+                  "chance":"30",
                   "facing":"Any/All Side(s)"
                },
-               "chainEventHappen":"59"
+               "chainEventNotHappen":"59"
             },
             "particular":{
                "askYesNo":"false",
@@ -3804,7 +3805,6 @@
                "eventID":"59",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },

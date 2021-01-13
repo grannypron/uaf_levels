@@ -2063,7 +2063,6 @@
                "eventID":"1",
                "xy":[16,15],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -2089,7 +2088,6 @@
                "eventID":"2",
                "xy":[16,11],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2134,7 +2132,6 @@
                "eventID":"4",
                "xy":[16,3],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2157,7 +2154,6 @@
                "eventID":"5",
                "xy":[4,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2180,7 +2176,6 @@
                "eventID":"6",
                "xy":[11,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2203,7 +2198,6 @@
                "eventID":"7",
                "xy":[12,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2226,7 +2220,6 @@
                "eventID":"8",
                "xy":[0,13],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -2254,7 +2247,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Facing dir, only when arrive",
-                  "class":"Cleric",
                   "facing":"East"
                },
                "mtext":[
@@ -3519,7 +3511,6 @@
                "xy":[9,1],
                "control":{
                   "onceOnly":"1",
-                  "chainTrigger":"If Event Happens",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{
@@ -3539,80 +3530,14 @@
                },
                "mtext":[
                   "  YOU ENTER A ROOM THAT MORE RESEMBLES A PIGSTY THAN THE BARRACKS IT IS.  IN THE ROOM ARE FOUR GIANTS.  THEY LOOK UP AT YOU."
-               ],
-               "chainEventHappen":"38"
+               ]
             },
             "particular":{
                "buttonList":[
-                  {"present":"true","label":"COMBAT","postChainAction":"Do Nothing","chain":"0"},
-                  {"present":"true","label":"WAIT","postChainAction":"Do Nothing","chain":"0"},
-                  {"present":"true","label":"FLEE","postChainAction":"Do Nothing","chain":"0"},
+                  {"present":"true","label":"COMBAT","postChainAction":"Do Nothing","chain":"61"},
+                  {"present":"true","label":"WAIT","postChainAction":"Do Nothing","chain":"62"},
+                  {"present":"true","label":"FLEE","postChainAction":"Do Nothing","chain":"63"},
                   {"present":"true","label":"PARLAY","postChainAction":"Do Nothing","chain":"39"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Combat",
-               "eventID":"38",
-               "xy":[-1,-1],
-               "control":{
-                  "onceOnly":"1",
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_FireGiant.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               }
-            },
-            "particular":{
-               "deathSound":"sound_CharDeath.wav",
-               "moveSound":"sound_CharMove.wav",
-               "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
-               "surprise":"Neither",
-               "autoApproach":"false",
-               "outdoors":"false",
-               "monsterTreasure":"true",
-               "partyNeverDies":"false",
-               "noMagic":"false",
-               "monsterMorale":"75",
-               "turnModifier":"None",
-               "randomMonster":"false",
-               "partyGainsExp":"true",
-               "sounds":{
-                  "backgroundSounds":{},
-                  "nightSounds":{},
-                  "useNightMusic":"false",
-                  "startTime":"1800",
-                  "endTime":"600"
-               },
-               "monsters":[
-                  {
-                     "number":"4",
-                     "type":"MONSTER",
-                     "name":"Fire Giant",
-                     "friendly":"false",
-                     "moraleAdjustment":"0",
-                     "fixedNumberOfMonsters":"true",
-                     "money":{
-                        "gems":[],
-                        "jewels":[]
-                     },
-                     "possessions":[]
-                  }
                ]
             }
          },
@@ -3641,81 +3566,15 @@
                },
                "mtext":[
                   "  HOW?"
-               ],
-               "chainEventHappen":"40"
+               ]
             },
             "particular":{
                "buttonList":[
-                  {"present":"true","label":"HAUGHTY","postChainAction":"Do Nothing","chain":"0"},
-                  {"present":"true","label":"MEEK","postChainAction":"Do Nothing","chain":"0"},
-                  {"present":"true","label":"NICE","postChainAction":"Do Nothing","chain":"0"},
+                  {"present":"true","label":"HAUGHTY","postChainAction":"Do Nothing","chain":"64"},
+                  {"present":"true","label":"MEEK","postChainAction":"Do Nothing","chain":"65"},
+                  {"present":"true","label":"NICE","postChainAction":"Do Nothing","chain":"66"},
                   {"present":"true","label":"SLY","postChainAction":"Do Nothing","chain":"41"},
-                  {"present":"true","label":"ABUSIVE","postChainAction":"Do Nothing","chain":"0"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Combat",
-               "eventID":"40",
-               "xy":[-1,-1],
-               "control":{
-                  "onceOnly":"1",
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_FireGiant.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               }
-            },
-            "particular":{
-               "deathSound":"sound_CharDeath.wav",
-               "moveSound":"sound_CharMove.wav",
-               "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
-               "surprise":"Neither",
-               "autoApproach":"false",
-               "outdoors":"false",
-               "monsterTreasure":"true",
-               "partyNeverDies":"false",
-               "noMagic":"false",
-               "monsterMorale":"75",
-               "turnModifier":"None",
-               "randomMonster":"false",
-               "partyGainsExp":"true",
-               "sounds":{
-                  "backgroundSounds":{},
-                  "nightSounds":{},
-                  "useNightMusic":"false",
-                  "startTime":"1800",
-                  "endTime":"600"
-               },
-               "monsters":[
-                  {
-                     "number":"4",
-                     "type":"UNKNOWN",
-                     "name":"Air Elemental",
-                     "friendly":"false",
-                     "moraleAdjustment":"0",
-                     "fixedNumberOfMonsters":"true",
-                     "money":{
-                        "gems":[],
-                        "jewels":[]
-                     },
-                     "possessions":[]
-                  }
+                  {"present":"true","label":"ABUSIVE","postChainAction":"Do Nothing","chain":"67"}
                ]
             }
          },
@@ -3821,7 +3680,7 @@
                   {
                      "number":"1",
                      "type":"MONSTER",
-                     "name":"Corporal",
+                     "name":"6th Lvl Fighter",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",
@@ -4124,7 +3983,7 @@
                "chainEventHappen":"54"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"
@@ -4324,7 +4183,7 @@
                },
                "monsters":[
                   {
-                     "number":"1",
+                     "number":"4",
                      "type":"MONSTER",
                      "name":"Fire Giant",
                      "friendly":"false",
@@ -4493,6 +4352,461 @@
                      "number":"4",
                      "type":"MONSTER",
                      "name":"Giant Poisonous Snake",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"61",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"62",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"63",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"64",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"65",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"66",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"67",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_FireGiant.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               }
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"4",
+                     "type":"MONSTER",
+                     "name":"Fire Giant",
                      "friendly":"false",
                      "moraleAdjustment":"0",
                      "fixedNumberOfMonsters":"true",

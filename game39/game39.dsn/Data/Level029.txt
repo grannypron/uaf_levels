@@ -2107,7 +2107,6 @@
                "eventID":"3",
                "xy":[16,11],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2130,7 +2129,6 @@
                "eventID":"4",
                "xy":[11,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2153,7 +2151,6 @@
                "eventID":"5",
                "xy":[4,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2176,7 +2173,6 @@
                "eventID":"6",
                "xy":[3,16],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -2199,7 +2195,6 @@
                "eventID":"7",
                "xy":[14,15],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -2239,6 +2234,7 @@
                "eventID":"9",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{
@@ -2293,151 +2289,12 @@
                },
                "mtext":[
                   "  WHAT WILL YOU DO?"
-               ],
-               "chainEventHappen":"11"
-            },
-            "particular":{
-               "buttonList":[
-                  {"present":"true","label":"ATTACK HIM","postChainAction":"Return To Question","chain":"15"},
-                  {"present":"true","label":"LET HIM GO","postChainAction":"Do Nothing","chain":"0"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Question Button",
-               "eventID":"11",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"portrait_NPC_GnomeMale.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  WHAT WILL YOU DO?"
                ]
             },
             "particular":{
                "buttonList":[
-                  {"present":"true","label":"ATTACK HIM","postChainAction":"Do Nothing","chain":"12"},
-                  {"present":"true","label":"LET HIM GO","postChainAction":"Do Nothing","chain":"13"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Combat",
-               "eventID":"12",
-               "xy":[-1,-1],
-               "control":{
-                  "onceOnly":"1",
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"portrait_NPC_GnomeMale.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               }
-            },
-            "particular":{
-               "deathSound":"sound_CharDeath.wav",
-               "moveSound":"sound_CharMove.wav",
-               "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
-               "surprise":"Neither",
-               "autoApproach":"false",
-               "outdoors":"false",
-               "monsterTreasure":"true",
-               "partyNeverDies":"false",
-               "noMagic":"false",
-               "monsterMorale":"75",
-               "turnModifier":"None",
-               "randomMonster":"false",
-               "partyGainsExp":"true",
-               "sounds":{
-                  "backgroundSounds":{},
-                  "nightSounds":{},
-                  "useNightMusic":"false",
-                  "startTime":"1800",
-                  "endTime":"600"
-               },
-               "monsters":[
-                  {
-                     "number":"1",
-                     "type":"MONSTER",
-                     "name":"Al-Hyam Dazid",
-                     "friendly":"false",
-                     "moraleAdjustment":"0",
-                     "fixedNumberOfMonsters":"true",
-                     "money":{
-                        "gems":[],
-                        "jewels":[]
-                     },
-                     "possessions":[]
-                  }
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Text Statement",
-               "eventID":"13",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  HE QUICKLY LEAVES.  YOU ARE LEFT WITH THE NOTES OF AL-HYAM DHAZID, WHICH TELL QUITE A LOT ABOUT THE POOL OF RADIANCE.  NOTE 1: TYRANTHRAXUS IS DEFINITELY A PRODUCT OF IMMERSION IN THE POOL OF RADIANCE.  HIS EXTRAORDINARY VIGOR,  BRILLIANCE, CHARISMA, AND POWER OF COMMAND MUST BE A DIRECT RESULT OF EXPOSURE TO THE EFFECTS OF THE POOL.  NOTE 2: THE POOL OF RADIANCE MAY GRANT SPECIAL MAGICAL ABILITIES.  TYRANTHRAXUS EXHIBITS A FIERY AURA.  HE ALSO SEEMS TO HAVE EXTRAORDINARY MEANS OF OBTAINING INFORMATION.  NOTE 3: TYRANTHRAXUS TELLS STORIES ABOUT MOVING DOWN FROM THE NORTH.  THOUGH HE NEVER MENTIONS THE POOL, I GATHER THAT IT IS NORTHWEST OF THE DRAGONSPINE MOUNTAINS.  STRANGELY, HE OCCASIONALLY LETS SLIP THAT HE IS NEVER FAR FROM THE POOL, BUT THAT MUST BE A PARENTHETICAL REFERENCE."
-               ],
-               "chainEventHappen":"14"
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Guided Tour",
-               "eventID":"14",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "xy":[0,0],
-               "facing":"0",
-               "useStartLocation":"false",
-               "executeEvent":"true",
-               "steps":[
-                  {"stepNum":"0","step":"Pause"}
+                  {"present":"true","label":"ATTACK HIM","postChainAction":"Do Nothing","chain":"15"},
+                  {"present":"true","label":"LET HIM GO","postChainAction":"Do Nothing","chain":"69"}
                ]
             }
          },
@@ -2447,8 +2304,6 @@
                "eventID":"15",
                "xy":[-1,-1],
                "control":{
-                  "onceOnly":"1",
-                  "chainTrigger":"If Event does not happen",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{
@@ -2469,98 +2324,13 @@
                "mtext":[
                   "  WAIT!  PLEASE!  I'LL GIVE YOU ALL OF MY NOTES!  HERE THEY ARE!"
                ],
-               "chainEventNotHappen":"16"
+               "chainEventHappen":"74"
             },
             "particular":{
                "waitForReturn":"true",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Combat",
-               "eventID":"16",
-               "xy":[-1,-1],
-               "control":{
-                  "onceOnly":"1",
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"portrait_NPC_GnomeMale.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "chainEventHappen":"17"
-            },
-            "particular":{
-               "deathSound":"sound_CharDeath.wav",
-               "moveSound":"sound_CharMove.wav",
-               "turnUdeadSound":"sound_Cast.wav",
-               "distance":"Up Close",
-               "direction":"In Front Of",
-               "surprise":"Neither",
-               "autoApproach":"false",
-               "outdoors":"false",
-               "monsterTreasure":"true",
-               "partyNeverDies":"false",
-               "noMagic":"false",
-               "monsterMorale":"75",
-               "turnModifier":"None",
-               "randomMonster":"false",
-               "partyGainsExp":"true",
-               "sounds":{
-                  "backgroundSounds":{},
-                  "nightSounds":{},
-                  "useNightMusic":"false",
-                  "startTime":"1800",
-                  "endTime":"600"
-               },
-               "monsters":[
-                  {
-                     "number":"1",
-                     "type":"MONSTER",
-                     "name":"Al-Hyam Dazid",
-                     "friendly":"false",
-                     "moraleAdjustment":"0",
-                     "fixedNumberOfMonsters":"true",
-                     "money":{
-                        "gems":[],
-                        "jewels":[]
-                     },
-                     "possessions":[]
-                  }
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Guided Tour",
-               "eventID":"17",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "xy":[0,0],
-               "facing":"0",
-               "useStartLocation":"false",
-               "executeEvent":"false",
-               "steps":[
-                  {"stepNum":"0","step":"Pause"}
-               ]
             }
          },
          {
@@ -3392,7 +3162,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Random Chance",
-                  "class":"Cleric",
                   "chance":"30",
                   "facing":"Any/All Side(s)"
                },
@@ -3419,7 +3188,6 @@
                "control":{
                   "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Random Chance",
-                  "class":"Cleric",
                   "chance":"30",
                   "facing":"Any/All Side(s)"
                },
@@ -3444,7 +3212,6 @@
                "eventID":"42",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -3773,7 +3540,6 @@
                "eventID":"50",
                "xy":[-1,-1],
                "control":{
-                  "chainTrigger":"If Event Happens",
                   "eventTrigger":"Facing dir, only when arrive",
                   "facing":"North, South, East"
                },
@@ -3795,7 +3561,6 @@
                "eventID":"51",
                "xy":[-1,-1],
                "control":{
-                  "chainTrigger":"If Event does not happen",
                   "eventTrigger":"Party NOT have Special Key",
                   "facing":"Any/All Side(s)",
                   "specialKey":"7"
@@ -3854,8 +3619,8 @@
             "particular":{
                "password":"RHODIA",
                "numberOfTries":"1",
-               "successChain":"55",
-               "failChain":"56",
+               "successChain":"68",
+               "failChain":"0",
                "successAction":"Chain Event",
                "failAction":"Chain Event",
                "matchCase":"false",
@@ -3871,45 +3636,6 @@
                   "xy":[0,0],
                   "facing":"North"
                }
-            }
-         },
-         {
-            "general":{
-               "eventType":"Guided Tour",
-               "eventID":"55",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "xy":[3,8],
-               "facing":"1",
-               "useStartLocation":"true",
-               "executeEvent":"false",
-               "steps":[
-                  {"stepNum":"0","mtext":["  THE GATES SWING OPEN, AND PASS INTO THE CASTLE."],"step":"Forward"}
-               ]
-            }
-         },
-         {
-            "general":{
-               "eventType":"Special Item",
-               "eventID":"56",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceExit":"false",
-               "specialItems":[{
-                     "type":"key",
-                     "operation":"give",
-                     "index":"7",
-                     "itemID":"0"
-                  }]
             }
          },
          {
@@ -4199,8 +3925,9 @@
                "xy":[-1,-1],
                "control":{
                   "chainTrigger":"If Event does not happen",
-                  "eventTrigger":"Party NOT have Special Key",
-                  "facing":"Any/All Side(s)"
+                  "eventTrigger":"Party has Special Key",
+                  "facing":"Any/All Side(s)",
+                  "specialKey":"7"
                },
                "chainEventNotHappen":"51"
             },
@@ -4229,6 +3956,188 @@
                "eventSave":"No Save",
                "spellSave":"Paralysis/Poison/Death Magic",
                "affects":"Entire Party",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"68",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext2":[
+                  "  THE GATES SWING OPEN, AND YOU PASS INTO THE CASTLE."
+               ]
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"false",
+                  "level":"29",
+                  "xy":[4,8],
+                  "facing":"East"
+               }
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"69",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  HE QUICKLY LEAVES.  YOU ARE LEFT WITH THE NOTES OF AL-HYAM DHAZID, WHICH TELL QUITE A LOT ABOUT THE POOL OF RADIANCE.  NOTE 1: TYRANTHRAXUS IS DEFINITELY A PRODUCT OF IMMERSION IN THE POOL OF RADIANCE.  HIS EXTRAORDINARY VIGOR,  BRILLIANCE, CHARISMA, AND POWER OF COMMAND MUST BE A DIRECT RESULT OF EXPOSURE TO THE EFFECTS OF THE POOL.  NOTE 2: THE POOL OF RADIANCE MAY GRANT SPECIAL MAGICAL ABILITIES.  TYRANTHRAXUS EXHIBITS A FIERY AURA.  HE ALSO SEEMS TO HAVE EXTRAORDINARY MEANS OF OBTAINING INFORMATION.  NOTE 3: TYRANTHRAXUS TELLS STORIES ABOUT MOVING DOWN FROM THE NORTH.  THOUGH HE NEVER MENTIONS THE POOL, I GATHER THAT IT IS NORTHWEST OF THE DRAGONSPINE MOUNTAINS.  STRANGELY, HE OCCASIONALLY LETS SLIP THAT HE IS NEVER FAR FROM THE POOL, BUT THAT MUST BE A PARENTHETICAL REFERENCE."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Question Button",
+               "eventID":"74",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_NPC_GnomeMale.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  WHAT WILL YOU DO?"
+               ]
+            },
+            "particular":{
+               "buttonList":[
+                  {"present":"true","label":"ATTACK HIM","postChainAction":"Do Nothing","chain":"79"},
+                  {"present":"true","label":"LET HIM GO","postChainAction":"Do Nothing","chain":"76"}
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"76",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  HE QUICKLY LEAVES.  YOU ARE LEFT WITH THE NOTES OF AL-HYAM DHAZID, WHICH TELL QUITE A LOT ABOUT THE POOL OF RADIANCE.  NOTE 1: TYRANTHRAXUS IS DEFINITELY A PRODUCT OF IMMERSION IN THE POOL OF RADIANCE.  HIS EXTRAORDINARY VIGOR,  BRILLIANCE, CHARISMA, AND POWER OF COMMAND MUST BE A DIRECT RESULT OF EXPOSURE TO THE EFFECTS OF THE POOL.  NOTE 2: THE POOL OF RADIANCE MAY GRANT SPECIAL MAGICAL ABILITIES.  TYRANTHRAXUS EXHIBITS A FIERY AURA.  HE ALSO SEEMS TO HAVE EXTRAORDINARY MEANS OF OBTAINING INFORMATION.  NOTE 3: TYRANTHRAXUS TELLS STORIES ABOUT MOVING DOWN FROM THE NORTH.  THOUGH HE NEVER MENTIONS THE POOL, I GATHER THAT IT IS NORTHWEST OF THE DRAGONSPINE MOUNTAINS.  STRANGELY, HE OCCASIONALLY LETS SLIP THAT HE IS NEVER FAR FROM THE POOL, BUT THAT MUST BE A PARENTHETICAL REFERENCE."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Combat",
+               "eventID":"79",
+               "xy":[-1,-1],
+               "control":{
+                  "onceOnly":"1",
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"portrait_NPC_GnomeMale.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "chainEventHappen":"80"
+            },
+            "particular":{
+               "deathSound":"sound_CharDeath.wav",
+               "moveSound":"sound_CharMove.wav",
+               "turnUdeadSound":"sound_Cast.wav",
+               "distance":"Up Close",
+               "direction":"In Front Of",
+               "surprise":"Neither",
+               "autoApproach":"false",
+               "outdoors":"false",
+               "monsterTreasure":"true",
+               "partyNeverDies":"false",
+               "noMagic":"false",
+               "monsterMorale":"75",
+               "turnModifier":"None",
+               "randomMonster":"false",
+               "partyGainsExp":"true",
+               "sounds":{
+                  "backgroundSounds":{},
+                  "nightSounds":{},
+                  "useNightMusic":"false",
+                  "startTime":"1800",
+                  "endTime":"600"
+               },
+               "monsters":[
+                  {
+                     "number":"1",
+                     "type":"MONSTER",
+                     "name":"Al-Hyam Dazid",
+                     "friendly":"false",
+                     "moraleAdjustment":"0",
+                     "fixedNumberOfMonsters":"true",
+                     "money":{
+                        "gems":[],
+                        "jewels":[]
+                     },
+                     "possessions":[]
+                  }
+               ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"80",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  YOU ARE LEFT WITH THE NOTES OF AL-HYAM DHAZID, WHICH TELL QUITE A LOT ABOUT THE POOL OF RADIANCE.  NOTE 1: TYRANTHRAXUS IS DEFINITELY A PRODUCT OF IMMERSION IN THE POOL OF RADIANCE.  HIS EXTRAORDINARY VIGOR,  BRILLIANCE, CHARISMA, AND POWER OF COMMAND MUST BE A DIRECT RESULT OF EXPOSURE TO THE EFFECTS OF THE POOL.  NOTE 2: THE POOL OF RADIANCE MAY GRANT SPECIAL MAGICAL ABILITIES.  TYRANTHRAXUS EXHIBITS A FIERY AURA.  HE ALSO SEEMS TO HAVE EXTRAORDINARY MEANS OF OBTAINING INFORMATION.  NOTE 3: TYRANTHRAXUS TELLS STORIES ABOUT MOVING DOWN FROM THE NORTH.  THOUGH HE NEVER MENTIONS THE POOL, I GATHER THAT IT IS NORTHWEST OF THE DRAGONSPINE MOUNTAINS.  STRANGELY, HE OCCASIONALLY LETS SLIP THAT HE IS NEVER FAR FROM THE POOL, BUT THAT MUST BE A PARENTHETICAL REFERENCE."
+               ]
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
                "distance":"Up Close"
             }
          }

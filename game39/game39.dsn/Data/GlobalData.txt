@@ -1151,6 +1151,12 @@
          "state":"Not Started",
          "stage":"0",
          "id":"44"
+      },
+      {
+         "name":"Kuto's Well Wandering Monsters",
+         "state":"Not Started",
+         "stage":"0",
+         "id":"45"
       }
    ],
    "weight":"10",
@@ -1240,7 +1246,28 @@
    "events":[],
    "journal":[],
    "spellbook":{
-      "useLimits":"true",
-      "spellList":[]
+      "useLimits":"false",
+      "spellList":[
+         {"name":"Cure Light Wounds","memorized":"0","level":"1","selected":"0"},
+         {"name":"Cure Light Wounds|Paladin","memorized":"0","level":"1","selected":"0"},
+         {"name":"Cure Blindness","memorized":"0","level":"3","selected":"0"},
+         {"name":"Cure Blindness|Paladin","memorized":"0","level":"3","selected":"0"},
+         {"name":"Cure Disease","memorized":"0","level":"3","selected":"0"},
+         {"name":"Cure Disease|Paladin","memorized":"0","level":"3","selected":"0"},
+         {"name":"Cure Serious Wounds","memorized":"0","level":"4","selected":"0"},
+         {"name":"Cure Serious Wounds|Paladin","memorized":"0","level":"4","selected":"0"},
+         {"name":"Neutralize Poison","memorized":"0","level":"4","selected":"0"},
+         {"name":"Neutralize Poison|Paladin","memorized":"0","level":"4","selected":"0"},
+         {"name":"Cure Critical Wounds","memorized":"0","level":"5","selected":"0"},
+         {"name":"Heal","memorized":"0","level":"6","selected":"0"},
+         {"name":"Restoration","memorized":"0","level":"7","selected":"0"},
+         {"name":"Cure Light Wounds|Ranger","memorized":"0","level":"2","selected":"0"},
+         {"name":"Cure Disease|Druid","memorized":"0","level":"3","selected":"0"},
+         {"name":"Cure Disease|Ranger","memorized":"0","level":"3","selected":"0"},
+         {"name":"Neutralize Poison|Druid","memorized":"0","level":"3","selected":"0"},
+         {"name":"Neutralize Poison|Ranger","memorized":"0","level":"3","selected":"0"},
+         {"name":"Cure Serious Wounds|Druid","memorized":"0","level":"4","selected":"0"},
+         {"name":"Cure Critical Wounds|Druid","memorized":"0","level":"6","selected":"0"}
+      ]
    }
 }

@@ -3780,10 +3780,10 @@
                "mtext":[
                   " "
                ],
-               "chainEventHappen":"51"
+               "chainEventHappen":"66"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"
@@ -3799,8 +3799,7 @@
                   "eventTrigger":"Party NOT have Special Key",
                   "facing":"Any/All Side(s)",
                   "specialKey":"7"
-               },
-               "chainEventNotHappen":"52"
+               }
             },
             "particular":{
                "title":"A GRUFF VOICE DEMANDS THE PASSWORD.",
@@ -3816,38 +3815,12 @@
          },
          {
             "general":{
-               "eventType":"Damage",
-               "eventID":"52",
-               "xy":[-1,-1],
-               "control":{
-                  "class":"Cleric",
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "A VOLLEY OF BOULDERS RAINS DOWN UPON YOU!"
-               ]
-            },
-            "particular":{
-               "numberOfAttacks":"1",
-               "chancePerAttack":"50",
-               "damageDice":"2d6+0",
-               "saveBonus":"0",
-               "attackTHAC0":"0",
-               "eventSave":"No Save",
-               "spellSave":"Paralysis/Poison/Death Magic",
-               "affects":"Entire Party",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
                "eventType":"Text Statement",
                "eventID":"53",
                "xy":[-1,-1],
                "control":{
                   "onceOnly":"1",
                   "eventTrigger":"Quest is complete",
-                  "class":"Cleric",
                   "quest":"41",
                   "facing":"Any/All Side(s)"
                },
@@ -3869,11 +3842,13 @@
                "eventID":"54",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
                   "  WHAT DO YOU SAY?"
+               ],
+               "mtext3":[
+                  "NAH.  GET OUTTA HERE!"
                ]
             },
             "particular":{
@@ -3923,10 +3898,8 @@
                "eventID":"56",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
-               },
-               "chainEventHappen":"57"
+               }
             },
             "particular":{
                "waitForReturn":"true",
@@ -3941,36 +3914,10 @@
          },
          {
             "general":{
-               "eventType":"Damage",
-               "eventID":"57",
-               "xy":[-1,-1],
-               "control":{
-                  "class":"Cleric",
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  A VOLLEY OF BOULDERS RAINS DOWN ON YOU!"
-               ]
-            },
-            "particular":{
-               "numberOfAttacks":"1",
-               "chancePerAttack":"50",
-               "damageDice":"2d6+0",
-               "saveBonus":"0",
-               "attackTHAC0":"0",
-               "eventSave":"Save Negates",
-               "spellSave":"Petrification/Polymorph",
-               "affects":"Entire Party",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
                "eventType":"Special Item",
                "eventID":"58",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -3995,7 +3942,6 @@
                "eventID":"59",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4244,6 +4190,46 @@
                      "possessions":[]
                   }
                ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Chain",
+               "eventID":"66",
+               "xy":[-1,-1],
+               "control":{
+                  "chainTrigger":"If Event does not happen",
+                  "eventTrigger":"Party NOT have Special Key",
+                  "facing":"Any/All Side(s)"
+               },
+               "chainEventNotHappen":"51"
+            },
+            "particular":{
+               "chain":"67"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Damage",
+               "eventID":"67",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "A VOLLEY OF BOULDERS RAINS DOWN UPON YOU!"
+               ]
+            },
+            "particular":{
+               "numberOfAttacks":"1",
+               "chancePerAttack":"50",
+               "damageDice":"2d6+0",
+               "saveBonus":"0",
+               "attackTHAC0":"0",
+               "eventSave":"No Save",
+               "spellSave":"Paralysis/Poison/Death Magic",
+               "affects":"Entire Party",
+               "distance":"Up Close"
             }
          }
       ],

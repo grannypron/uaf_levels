@@ -9069,7 +9069,7 @@ name = spell_MirrorImage
 
 \(BEGIN)
 name = spell_MummyRot
-[InvokeSpellOnTarget] = $SET_CHARACTER_SA($CharacterContext(),"IsMummyDiseased",$GET_PARTY_DAYS() +# 30);
+[InvokeSpellOnTarget] = $SET_CHARACTER_SA($TargetContext(),"IsMummyDiseased",$GET_PARTY_DAYS() +# 30);
 \(END)
 
 \(BEGIN)

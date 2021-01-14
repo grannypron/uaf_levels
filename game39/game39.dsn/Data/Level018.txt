@@ -3934,6 +3934,7 @@
                "eventID":"37",
                "xy":[9,7],
                "control":{
+                  "onceOnly":"1",
                   "eventTrigger":"Quest is complete",
                   "quest":"28",
                   "facing":"Any/All Side(s)"
@@ -3971,6 +3972,7 @@
                "eventID":"38",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "eventTrigger":"Quest is complete",
                   "quest":"28",
                   "facing":"Any/All Side(s)"
@@ -4025,7 +4027,6 @@
                "xy":[-1,-1],
                "control":{
                   "eventTrigger":"Quest is complete",
-                  "class":"Cleric",
                   "quest":"28",
                   "facing":"Any/All Side(s)"
                },
@@ -4048,6 +4049,7 @@
                "eventID":"40",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "eventTrigger":"Quest is complete",
                   "quest":"31",
                   "facing":"Any/All Side(s)"
@@ -4085,6 +4087,7 @@
                "eventID":"41",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "eventTrigger":"Quest is complete",
                   "quest":"31",
                   "facing":"Any/All Side(s)"
@@ -4121,7 +4124,6 @@
                "xy":[-1,-1],
                "control":{
                   "eventTrigger":"Quest is complete",
-                  "class":"Cleric",
                   "quest":"31",
                   "facing":"Any/All Side(s)"
                },

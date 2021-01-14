@@ -3538,7 +3538,6 @@
                "eventID":"23",
                "xy":[5,0],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4977,120 +4976,6 @@
          {
             "general":{
                "eventType":"Text Statement",
-               "eventID":"64",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_Innkeep.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
-               ],
-               "chainEventHappen":"65"
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Question Yes/No",
-               "eventID":"65",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  DO YOU?"
-               ],
-               "mtext3":[
-                  "  THEN YOU MUST LEAVE."
-               ]
-            },
-            "particular":{
-               "yesChainAction":"Do Nothing",
-               "yesChain":"66",
-               "noChainAction":"Backup One Step"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Who Pays",
-               "eventID":"66",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_Innkeep.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  WHO WILL PAY?"
-               ],
-               "mtext3":[
-                  "  YOU DON'T HAVE ENOUGH."
-               ]
-            },
-            "particular":{
-               "possible":"true",
-               "gems":"0",
-               "jewels":"0",
-               "platinum":"5",
-               "successChain":"67",
-               "successAction":"Chain Event",
-               "failChain":"0",
-               "failAction":"Backup one step",
-               "moneyType":"ItemType01"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Camp",
-               "eventID":"67",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  THE PARTY MAKES CAMP."
-               ]
-            },
-            "particular":{
-               "forceExit":"true"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Text Statement",
                "eventID":"68",
                "xy":[-1,-1],
                "control":{
@@ -5976,137 +5861,6 @@
          {
             "general":{
                "eventType":"Text Statement",
-               "eventID":"101",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               }
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Text Statement",
-               "eventID":"102",
-               "xy":[4,12],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_Innkeep.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
-               ],
-               "chainEventHappen":"103"
-            },
-            "particular":{
-               "waitForReturn":"true",
-               "forceBackup":"false",
-               "highLightText":"false",
-               "distance":"Up Close"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Question Yes/No",
-               "eventID":"103",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  DO YOU?"
-               ],
-               "mtext3":[
-                  "  THEN YOU MUST LEAVE."
-               ],
-               "chainEventHappen":"101"
-            },
-            "particular":{
-               "yesChainAction":"Do Nothing",
-               "yesChain":"104",
-               "noChainAction":"Backup One Step"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Who Pays",
-               "eventID":"104",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "picture1":{
-                  "picType":["SmallPicDib"],
-                  "filename":"smallpic_Innkeep.png",
-                  "timeDelay":"0",
-                  "numFrame":"1",
-                  "width":"176",
-                  "height":"211",
-                  "flags":"0",
-                  "maxLoops":"1",
-                  "style":"0",
-                  "allowCentering":"true",
-                  "useAlpha":"false",
-                  "alpha":"0",
-                  "restartFrame":"1"
-               },
-               "mtext":[
-                  "  WHO WILL PAY?"
-               ],
-               "mtext3":[
-                  "  YOU DON'T HAVE ENOUGH."
-               ]
-            },
-            "particular":{
-               "possible":"true",
-               "gems":"0",
-               "jewels":"0",
-               "platinum":"5",
-               "successChain":"105",
-               "successAction":"Chain Event",
-               "failChain":"0",
-               "failAction":"Backup one step",
-               "moneyType":"ItemType01"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Camp",
-               "eventID":"105",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  THE PARTY MAKES CAMP."
-               ]
-            },
-            "particular":{
-               "forceExit":"true"
-            }
-         },
-         {
-            "general":{
-               "eventType":"Text Statement",
                "eventID":"106",
                "xy":[-1,-1],
                "control":{
@@ -6415,6 +6169,460 @@
             },
             "particular":{
                "forceExit":"true"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Question Yes/No",
+               "eventID":"122",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  DO YOU?"
+               ],
+               "mtext3":[
+                  "  THEN YOU MUST LEAVE."
+               ],
+               "chainEventHappen":"123"
+            },
+            "particular":{
+               "yesChainAction":"Do Nothing",
+               "yesChain":"124",
+               "noChainAction":"Backup One Step"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"123",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Who Pays",
+               "eventID":"124",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  WHO WILL PAY?"
+               ],
+               "mtext3":[
+                  "  YOU DON'T HAVE ENOUGH."
+               ]
+            },
+            "particular":{
+               "possible":"true",
+               "gems":"0",
+               "jewels":"0",
+               "platinum":"5",
+               "successChain":"0",
+               "successAction":"Chain Event",
+               "failChain":"0",
+               "failAction":"Backup one step",
+               "moneyType":"ItemType01"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"130",
+               "xy":[2,14],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
+               ],
+               "chainEventHappen":"131"
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Question Yes/No",
+               "eventID":"131",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  DO YOU?"
+               ],
+               "mtext3":[
+                  "  THEN YOU MUST LEAVE."
+               ],
+               "chainEventHappen":"132"
+            },
+            "particular":{
+               "yesChainAction":"Do Nothing",
+               "yesChain":"133",
+               "noChainAction":"Backup One Step"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"132",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Who Pays",
+               "eventID":"133",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  WHO WILL PAY?"
+               ],
+               "mtext3":[
+                  "  YOU DON'T HAVE ENOUGH."
+               ]
+            },
+            "particular":{
+               "possible":"true",
+               "gems":"0",
+               "jewels":"0",
+               "platinum":"5",
+               "successChain":"0",
+               "successAction":"Chain Event",
+               "failChain":"0",
+               "failAction":"Backup one step",
+               "moneyType":"ItemType01"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"135",
+               "xy":[6,12],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
+               ],
+               "chainEventHappen":"136"
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Question Yes/No",
+               "eventID":"136",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  DO YOU?"
+               ],
+               "mtext3":[
+                  "  THEN YOU MUST LEAVE."
+               ],
+               "chainEventHappen":"137"
+            },
+            "particular":{
+               "yesChainAction":"Do Nothing",
+               "yesChain":"139",
+               "noChainAction":"Backup One Step"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"137",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "chainEventHappen":"138"
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"138",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Who Pays",
+               "eventID":"139",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  WHO WILL PAY?"
+               ],
+               "mtext3":[
+                  "  YOU DON'T HAVE ENOUGH."
+               ]
+            },
+            "particular":{
+               "possible":"true",
+               "gems":"0",
+               "jewels":"0",
+               "platinum":"5",
+               "successChain":"140",
+               "successAction":"Chain Event",
+               "failChain":"0",
+               "failAction":"Backup one step",
+               "moneyType":"ItemType01"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Camp",
+               "eventID":"140",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  THE PARTY MAKES CAMP."
+               ]
+            },
+            "particular":{
+               "forceExit":"true"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Text Statement",
+               "eventID":"142",
+               "xy":[4,12],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  IT WILL COST YOU ONE PLATINUM PIECE TO REST HERE.  DO YOU WANT TO STAY?"
+               ],
+               "chainEventHappen":"143"
+            },
+            "particular":{
+               "waitForReturn":"true",
+               "forceBackup":"false",
+               "highLightText":"false",
+               "distance":"Up Close"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Question Yes/No",
+               "eventID":"143",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  DO YOU?"
+               ],
+               "mtext3":[
+                  "  THEN YOU MUST LEAVE."
+               ]
+            },
+            "particular":{
+               "yesChainAction":"Do Nothing",
+               "yesChain":"146",
+               "noChainAction":"Backup One Step"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Who Pays",
+               "eventID":"146",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "picture1":{
+                  "picType":["SmallPicDib"],
+                  "filename":"smallpic_Innkeep.png",
+                  "timeDelay":"0",
+                  "numFrame":"1",
+                  "width":"176",
+                  "height":"211",
+                  "flags":"0",
+                  "maxLoops":"1",
+                  "style":"0",
+                  "allowCentering":"true",
+                  "useAlpha":"false",
+                  "alpha":"0",
+                  "restartFrame":"1"
+               },
+               "mtext":[
+                  "  WHO WILL PAY?"
+               ],
+               "mtext3":[
+                  "  YOU DON'T HAVE ENOUGH."
+               ]
+            },
+            "particular":{
+               "possible":"true",
+               "gems":"0",
+               "jewels":"0",
+               "platinum":"5",
+               "successChain":"150",
+               "successAction":"Chain Event",
+               "failChain":"0",
+               "failAction":"Backup one step",
+               "moneyType":"ItemType01"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Camp",
+               "eventID":"150",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "forceExit":"false"
             }
          }
       ],
@@ -7319,7 +7527,7 @@
          },
          {
             "triggers":["0","0","1","0","0","0","0","0","0","0","0","0","0","0","0","0"],
-            "event":"64",
+            "event":"0",
             "steps":"1",
             "name":""
          },
@@ -7379,7 +7587,7 @@
          },
          {
             "triggers":["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],
-            "event":"0",
+            "event":"122",
             "steps":"0",
             "name":""
          },

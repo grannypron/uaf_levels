@@ -34,31 +34,31 @@
       "map_grid":[
          {
             "xy":[0,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[1,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,0],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"7","block":"Blocked","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,0],"eventExists":"true","zone":"1",
@@ -69,45 +69,45 @@
          },
          {
             "xy":[5,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
             "W":{"wall":"7","block":"Blocked","background":"8"}
          },
          {
             "xy":[6,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,0],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"7","block":"Blocked","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,0],"eventExists":"true","zone":"1",
@@ -118,380 +118,380 @@
          },
          {
             "xy":[12,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
             "W":{"wall":"7","block":"Blocked","background":"8"}
          },
          {
             "xy":[13,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"7","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,0],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[3,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[4,1],"zone":"1",
             "N":{"wall":"9","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[5,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[6,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[7,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[8,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[9,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[10,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[11,1],"zone":"1",
             "N":{"wall":"9","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[12,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[13,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[14,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[15,1],"zone":"1",
             "N":{"wall":"7","block":"Blocked","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[16,1],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,1],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,1],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,1],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,1],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[3,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[4,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[5,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[6,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[7,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[8,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"5","block":"Locked, Wizard","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[9,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[10,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[11,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[12,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[13,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[14,2],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"2","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[15,2],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[16,2],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,2],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,2],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,2],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,2],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,3],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,3],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
@@ -504,65 +504,65 @@
          {
             "xy":[4,3],"zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[5,3],"zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,3],"zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[8,3],"eventExists":"true","zone":"8",
             "N":{"wall":"5","block":"Locked, Wizard","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,3],"eventExists":"true","zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[11,3],"eventExists":"true","zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,3],"zone":"4",
             "N":{"wall":"3","block":"Blocked","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,3],"zone":"2",
@@ -575,70 +575,70 @@
             "xy":[14,3],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[15,3],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,3],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,3],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,3],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,3],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,3],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,4],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,4],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,4],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
@@ -650,9 +650,9 @@
          },
          {
             "xy":[4,4],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
@@ -664,37 +664,37 @@
          },
          {
             "xy":[6,4],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[7,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[8,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,4],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,4],"zone":"4",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
@@ -706,9 +706,9 @@
          },
          {
             "xy":[12,4],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
@@ -720,72 +720,72 @@
          },
          {
             "xy":[14,4],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[15,4],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,4],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,5],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"9","background":"10"}
          },
          {
             "xy":[1,5],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,5],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
@@ -797,66 +797,66 @@
          },
          {
             "xy":[4,5],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[5,5],"eventExists":"true","zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,5],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,5],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[8,5],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,5],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,5],"zone":"4",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[11,5],"eventExists":"true","zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,5],"zone":"4",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,5],"zone":"2",
@@ -867,234 +867,234 @@
          },
          {
             "xy":[14,5],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[15,5],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,5],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,5],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,5],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,5],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,5],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,6],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,6],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,6],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[3,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,6],"zone":"1",
             "N":{"wall":"5","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,6],"zone":"1",
             "N":{"wall":"5","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,6],"zone":"1",
             "N":{"wall":"5","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,6],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,6],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,6],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,6],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,6],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,6],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,6],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,6],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,7],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,7],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,7],"zone":"7",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[3,7],"eventExists":"true","zone":"1",
             "N":{"wall":"5","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,7],"zone":"7",
             "N":{"wall":"3","block":"Blocked","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,7],"zone":"2",
@@ -1119,9 +1119,9 @@
          },
          {
             "xy":[8,7],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
@@ -1148,85 +1148,85 @@
          {
             "xy":[12,7],"zone":"6",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[13,7],"eventExists":"true","zone":"1",
             "N":{"wall":"5","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,7],"zone":"6",
             "N":{"wall":"3","block":"Blocked","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,7],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,7],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,7],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,7],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,7],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,7],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,8],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,8],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,8],"zone":"7",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
@@ -1238,65 +1238,65 @@
          },
          {
             "xy":[4,8],"zone":"7",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[5,8],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[6,8],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,8],"eventExists":"true","zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,8],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[9,8],"eventExists":"true","zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[10,8],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,8],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,8],"zone":"6",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
@@ -1308,274 +1308,274 @@
          },
          {
             "xy":[14,8],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[15,8],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,8],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,8],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,8],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,8],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,8],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,9],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,9],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,9],"zone":"7",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[3,9],"zone":"7",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,9],"zone":"7",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[6,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,9],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,9],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"5","block":"Locked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[9,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[10,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,9],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,9],"zone":"6",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
             "W":{"wall":"3","block":"Blocked","background":"8"}
          },
          {
             "xy":[13,9],"eventExists":"true","zone":"1",
             "N":{"wall":"3","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,9],"zone":"6",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"3","block":"Blocked","background":"8"},
             "S":{"wall":"3","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,9],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,9],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,10],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,10],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,10],"zone":"5",
             "N":{"wall":"2","block":"Blocked","background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
             "W":{"wall":"2","block":"Blocked","background":"17"}
          },
          {
             "xy":[3,10],"zone":"5",
             "N":{"wall":"2","block":"Blocked","background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[4,10],"zone":"5",
             "N":{"wall":"2","block":"Blocked","background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[5,10],"zone":"5",
             "N":{"wall":"2","block":"Blocked","background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[6,10],"eventExists":"true","zone":"5",
             "N":{"wall":"2","block":"Blocked","background":"17"},
             "E":{"wall":"5","background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[7,10],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[8,10],"zone":"1",
             "N":{"wall":"5","block":"Locked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,10],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,10],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
@@ -1584,124 +1584,124 @@
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,10],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[13,10],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,10],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,10],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,10],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,10],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,10],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,10],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,10],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,11],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,11],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,11],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
             "W":{"wall":"2","block":"Blocked","background":"17"}
          },
          {
             "xy":[3,11],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[4,11],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[5,11],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[6,11],"zone":"5",
-            "N":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
             "E":{"wall":"2","block":"Blocked","background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[7,11],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
@@ -1710,452 +1710,452 @@
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"5","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,11],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[10,11],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,11],"zone":"1",
             "N":{"wall":"5","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,11],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[13,11],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,11],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,11],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,11],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,11],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,11],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,11],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,11],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,12],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"9","background":"10"}
          },
          {
             "xy":[1,12],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,12],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
             "W":{"wall":"2","block":"Blocked","background":"17"}
          },
          {
             "xy":[3,12],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[4,12],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[5,12],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[6,12],"zone":"5",
-            "N":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
             "E":{"wall":"2","block":"Blocked","background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[7,12],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[8,12],"eventExists":"true","zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"5","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","block":"Locked","background":"8"}
          },
          {
             "xy":[10,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,12],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[13,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,12],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,12],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,12],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,12],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,13],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,13],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,13],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
             "W":{"wall":"2","block":"Blocked","background":"17"}
          },
          {
             "xy":[3,13],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[4,13],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[5,13],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[6,13],"zone":"5",
-            "N":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
             "E":{"wall":"2","block":"Blocked","background":"17"},
-            "S":{"background":"17"},
-            "W":{"background":"17"}
+            "S":{"wall":"256","background":"17"},
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[7,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[8,13],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,13],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[10,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"5","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,13],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"5","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,13],"eventExists":"true","zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"5","background":"8"}
          },
          {
             "xy":[13,13],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,13],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,13],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,13],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,14],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,14],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"2","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,14],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
             "S":{"wall":"2","block":"Blocked","background":"17"},
             "W":{"wall":"2","block":"Blocked","background":"17"}
          },
          {
             "xy":[3,14],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
             "S":{"wall":"2","block":"Blocked","background":"17"},
-            "W":{"background":"17"}
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[4,14],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
             "S":{"wall":"2","block":"Blocked","background":"17"},
-            "W":{"background":"17"}
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[5,14],"zone":"5",
-            "N":{"background":"17"},
-            "E":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
+            "E":{"wall":"256","background":"17"},
             "S":{"wall":"2","block":"Blocked","background":"17"},
-            "W":{"background":"17"}
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[6,14],"zone":"5",
-            "N":{"background":"17"},
+            "N":{"wall":"256","background":"17"},
             "E":{"wall":"2","block":"Blocked","background":"17"},
             "S":{"wall":"2","block":"Blocked","background":"17"},
-            "W":{"background":"17"}
+            "W":{"wall":"256","background":"17"}
          },
          {
             "xy":[7,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[8,14],"eventExists":"true","zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,14],"zone":"8",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"5","block":"Locked, Wizard","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
@@ -2163,7 +2163,7 @@
          {
             "xy":[10,14],"zone":"1",
             "N":{"wall":"5","background":"8"},
-            "E":{"background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
@@ -2172,1246 +2172,1246 @@
             "N":{"wall":"2","block":"Blocked","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
             "W":{"wall":"2","block":"Blocked","background":"8"}
          },
          {
             "xy":[13,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,14],"zone":"1",
-            "N":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
             "E":{"wall":"2","block":"Blocked","background":"8"},
             "S":{"wall":"2","block":"Blocked","background":"8"},
-            "W":{"background":"8"}
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,14],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"2","block":"Blocked","background":"10"}
          },
          {
             "xy":[16,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,14],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,15],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,15],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[3,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[4,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[5,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[6,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[7,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[8,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[9,15],"zone":"1",
             "N":{"wall":"5","block":"Locked, Wizard","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[10,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[11,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[12,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[13,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[14,15],"zone":"1",
             "N":{"wall":"2","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[15,15],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[16,15],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,15],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,15],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,15],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,15],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
             "W":{"wall":"7","block":"Blocked","background":"10"}
          },
          {
             "xy":[1,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[2,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[3,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[4,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[5,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[6,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[7,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[8,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[9,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[10,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[11,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[12,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[13,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[14,16],"zone":"1",
-            "N":{"background":"10"},
-            "E":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
+            "E":{"wall":"256","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[15,16],"zone":"1",
-            "N":{"background":"10"},
+            "N":{"wall":"256","background":"10"},
             "E":{"wall":"13","block":"Blocked","background":"10"},
             "S":{"wall":"13","block":"Blocked","background":"10"},
-            "W":{"background":"10"}
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[16,16],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
             "W":{"wall":"13","block":"Blocked","background":"8"}
          },
          {
             "xy":[17,16],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,16],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,16],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,16],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"10"},
-            "E":{"background":"10"},
-            "S":{"background":"10"},
-            "W":{"background":"10"}
+            "E":{"wall":"256","background":"10"},
+            "S":{"wall":"256","background":"10"},
+            "W":{"wall":"256","background":"10"}
          },
          {
             "xy":[1,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,17],"zone":"1",
             "N":{"wall":"13","block":"Blocked","background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,17],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,17],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,17],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,17],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,17],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[1,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,18],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[1,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,19],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[1,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,20],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[1,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,21],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[0,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[1,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[2,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[3,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[4,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[5,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[6,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[7,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[8,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[9,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[10,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[11,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[12,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[13,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[14,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[15,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[16,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[17,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[18,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[19,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          },
          {
             "xy":[20,22],"zone":"1",
-            "N":{"background":"8"},
-            "E":{"background":"8"},
-            "S":{"background":"8"},
-            "W":{"background":"8"}
+            "N":{"wall":"256","background":"8"},
+            "E":{"wall":"256","background":"8"},
+            "S":{"wall":"256","background":"8"},
+            "W":{"wall":"256","background":"8"}
          }
       ],
       "events":[
@@ -3565,27 +3565,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3674,27 +3674,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -3783,27 +3783,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4001,27 +4001,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -4110,27 +4110,27 @@
                      "operation":"",
                      "index":"1",
                      "itemID":"0"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"1"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"2"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"3"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
                      "itemID":"4"
-                  },{
+                  }{
                      "type":"key",
                      "operation":"",
                      "index":"1",
@@ -8002,7 +8002,7 @@
             "used":"false",
             "doorFirst":"false",
             "drawAV":"true",
-            "unlockSpellID":"",
+            "unlockSpellID":"Knock",
             "blendOverlay":"0",
             "blendAmount":"0"
          },

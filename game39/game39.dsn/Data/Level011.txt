@@ -10270,7 +10270,7 @@
             "used":"false",
             "doorFirst":"false",
             "drawAV":"true",
-            "unlockSpellID":"",
+            "unlockSpellID":"Knock",
             "blendOverlay":"0",
             "blendAmount":"0"
          },

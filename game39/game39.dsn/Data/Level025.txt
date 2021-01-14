@@ -1937,7 +1937,7 @@
             "W":{"wall":"2","block":"Blocked","background":"14"}
          },
          {
-            "xy":[0,16],"zone":"1",
+            "xy":[0,16],"eventExists":"true","zone":"3",
             "N":{"wall":"2","block":"Blocked","background":"14"},
             "E":{"wall":"256","background":"14"},
             "S":{"wall":"256","background":"14"},
@@ -4488,7 +4488,7 @@
                "mtext":[
                   "  AFTER KILLING THE COMMANDANT, THE REST OF THE OUTPOST EITHER SURRENDERS OR RUNS AWAY."
                ],
-               "chainEventHappen":"70"
+               "chainEventHappen":"71"
             },
             "particular":{
                "waitForReturn":"true",
@@ -4499,28 +4499,10 @@
          },
          {
             "general":{
-               "eventType":"Camp",
-               "eventID":"70",
-               "xy":[-1,-1],
-               "control":{
-                  "facing":"Any/All Side(s)"
-               },
-               "mtext":[
-                  "  YOU REST IN THE OUTPOST BEFORE LEAVING IT BEHIND."
-               ],
-               "chainEventHappen":"71"
-            },
-            "particular":{
-               "forceExit":"false"
-            }
-         },
-         {
-            "general":{
                "eventType":"Transfer Module",
                "eventID":"71",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                }
             },
@@ -4530,9 +4512,9 @@
                "destroyDrow":"false",
                "activateBeforeEntry":"false",
                "transferLocation":{
-                  "executeEventAtDestination":"false",
-                  "level":"1",
-                  "xy":[3,14],
+                  "executeEventAtDestination":"true",
+                  "level":"25",
+                  "xy":[0,16],
                   "facing":"East"
                }
             }
@@ -4661,6 +4643,45 @@
                   {"stepNum":"16","step":"Turn Right"},
                   {"stepNum":"17","step":"Forward"}
                ]
+            }
+         },
+         {
+            "general":{
+               "eventType":"Camp",
+               "eventID":"76",
+               "xy":[0,16],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               },
+               "mtext":[
+                  "  YOU REST IN THE OUTPOST BEFORE LEAVING IT BEHIND."
+               ],
+               "chainEventHappen":"77"
+            },
+            "particular":{
+               "forceExit":"false"
+            }
+         },
+         {
+            "general":{
+               "eventType":"Transfer Module",
+               "eventID":"77",
+               "xy":[-1,-1],
+               "control":{
+                  "facing":"Any/All Side(s)"
+               }
+            },
+            "particular":{
+               "askYesNo":"false",
+               "transfer":"true",
+               "destroyDrow":"false",
+               "activateBeforeEntry":"false",
+               "transferLocation":{
+                  "executeEventAtDestination":"false",
+                  "level":"1",
+                  "xy":[3,14],
+                  "facing":"East"
+               }
             }
          }
       ],
@@ -4823,7 +4844,7 @@
                "restartFrame":"1"
             },
             "restEvent":{
-               "allowResting":"0",
+               "allowResting":"1",
                "restEvent":"0",
                "chance":"0",
                "everyMin":"1",

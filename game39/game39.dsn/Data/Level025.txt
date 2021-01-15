@@ -68,14 +68,14 @@
             "W":{"wall":"256","background":"16"}
          },
          {
-            "xy":[5,0],"eventExists":"true","zone":"1",
+            "xy":[5,0],"eventExists":"true","zone":"4",
             "N":{"wall":"2","block":"Blocked","background":"16"},
             "E":{"wall":"256","background":"16"},
             "S":{"wall":"256","background":"16"},
             "W":{"wall":"6","background":"16"}
          },
          {
-            "xy":[6,0],"zone":"1",
+            "xy":[6,0],"zone":"4",
             "N":{"wall":"2","block":"Blocked","background":"16"},
             "E":{"wall":"2","block":"Blocked","background":"16"},
             "S":{"wall":"256","background":"16"},
@@ -187,14 +187,14 @@
             "W":{"wall":"256","background":"14"}
          },
          {
-            "xy":[5,1],"zone":"1",
+            "xy":[5,1],"zone":"4",
             "N":{"wall":"256","background":"16"},
             "E":{"wall":"256","background":"16"},
             "S":{"wall":"2","block":"Blocked","background":"16"},
             "W":{"wall":"2","block":"Blocked","background":"16"}
          },
          {
-            "xy":[6,1],"zone":"1",
+            "xy":[6,1],"zone":"4",
             "N":{"wall":"256","background":"16"},
             "E":{"wall":"2","block":"Blocked","background":"16"},
             "S":{"wall":"2","block":"Blocked","background":"16"},
@@ -3686,7 +3686,7 @@
                "useStartLocation":"true",
                "executeEvent":"true",
                "steps":[
-                  {"stepNum":"0","step":"Forward"},
+                  {"stepNum":"0","mtext":["AT THE APPOINTED HOUR, GUARDS ESCORT YOU TO THE DINING AREA."],"step":"Forward"},
                   {"stepNum":"1","step":"Turn Left"},
                   {"stepNum":"2","step":"Forward"},
                   {"stepNum":"3","step":"Forward"},
@@ -3864,7 +3864,6 @@
                "eventID":"59",
                "xy":[-1,-1],
                "control":{
-                  "class":"Cleric",
                   "facing":"Any/All Side(s)"
                },
                "mtext":[
@@ -4899,7 +4898,7 @@
                "restartFrame":"1"
             },
             "restEvent":{
-               "allowResting":"0",
+               "allowResting":"1",
                "restEvent":"0",
                "chance":"0",
                "everyMin":"1",
@@ -5573,7 +5572,7 @@
       ],
       "stepEvents":[
          {
-            "triggers":["1","1","1","1","1","1","1","1","0","0","0","0","0","0","0","0"],
+            "triggers":["1","1","1","0","1","1","1","1","0","0","0","0","0","0","0","0"],
             "event":"64",
             "steps":"5",
             "name":""

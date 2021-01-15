@@ -8140,11 +8140,11 @@ name = spell_Dispel
 -dLvl = $GET_CHAR_Lvl(atk,cls);
 -rndm = $RANDOM(100) +# 1;
 -// potions
--$IF (dLvl ># 21){$ForEachPossession($CharacterContext(),"item_Potion");};
+-$IF (dLvl ># 21){$ForEachPossession($TargetContext(),"item_Potion");};
 -$IF (iLvl != "-?-?-"){cLvl = iLvl;};
 -$IF (dLvl ># cLvl){percent = (dLvl -# cLvl) *# 5 +# 50;}
 -$ELSE{percent = 50 -# (cLvl -# dLvl) *# 2;};
--$IF (rndm <=# percent){$ForEachPossession($CharacterContext(),"item_Potion");};
+-$IF (rndm <=# percent){$ForEachPossession($TargetContext(),"item_Potion");};
 -// spells and spell effects
 -$IF (dLvl ># cLvl){percent = (dLvl -# cLvl) *# 5 +# 50;}
 -$ELSE{percent = 50 -# (cLvl -# dLvl) *# 2;};

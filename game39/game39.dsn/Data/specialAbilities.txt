@@ -1173,12 +1173,12 @@ name = Global_Display
 -mvmt = $GET_CHAR_MAXMOVE(char);
 -weight = $GET_CHARACTER_SA($CharacterContext(),"charWeight");
 -height = $GET_CHARACTER_SA($CharacterContext(),"charHeight");
--$IF (weight == "")
+-$IF (weight == "-?-?-")
 -	{
 -		$SET_CHARACTER_SA($CharacterContext(),"charWeight",$DAT_Race_Weight($CharacterContext()));
 -		weight = $GET_CHARACTER_SA($CharacterContext(),"charWeight");
 -	};
--$IF (height == "")
+-$IF (height == "-?-?-")
 -	{
 -		$SET_CHARACTER_SA($CharacterContext(),"charHeight",$DAT_Race_Height($CharacterContext()));
 -		height = $GET_CHARACTER_SA($CharacterContext(),"charHeight");

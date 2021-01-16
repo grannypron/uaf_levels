@@ -7602,11 +7602,14 @@ name = spell_CharmPerson
 -$VAR cls;
 -$VAR lvl;
 -$VAR tgtSetFriendlyTo;
+-$VAR targetName;
 -tgt = $IndexOf($TargetContext());
+-targetName = $GET_CHAR_NAME(tgt);
 -atk = $IndexOf($AttackerContext());
 -$IF ($GET_CHARACTER_SA($TargetContext(),"saved") == "1"){$RETURN;};
--$IF ($GET_CANBEHELDORCHARMED($TargetContext()) != 1){$RETURN;};
+-$IF ($GET_CANBEHELDORCHARMED($TargetContext()) !=# 1){$RETURN;};
 -$IF ($GET_COMBATANT_SA($TargetContext(),"monster_ImmuneCharm") != "-?-?-"){$RETURN;};
+-$IF ($GET_MONSTERTYPE_SA(targetName,"IsPerson") == "-?-?-"){$RETURN;};
 -cls = $SA_PARAM_GET();
 -lvl = $GET_CHAR_Lvl(atk,cls);
 -tgtSetFriendlyTo = 2;    // Enemy of the party

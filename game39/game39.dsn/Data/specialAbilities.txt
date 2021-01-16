@@ -2947,7 +2947,11 @@ name = IsProtectedAcidTarget1
 
 \(BEGIN)
 name = IsProtectedEvil
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Protected from Evil"); $SET_HOOK_PARAM( 6,""); $RETURN 1;
+[CharDisplayStatus] =  $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
+-$SET_HOOK_PARAM( 7,"Protected from Evil"); 
+-$SET_HOOK_PARAM( 6,""); $RETURN 1;
 [Dispel] = $SA_REMOVE();
 -$SkillAdj($TargetContext(),"Save Vs BR","protectedEvil","D","");
 -$SkillAdj($TargetContext(),"Save Vs PP","protectedEvil","D","");
@@ -9208,7 +9212,6 @@ name = spell_ProtectionFromEvil
 -$SkillAdj($TargetContext(),"Save Vs PPDM","protectedEvil","-","2");
 -$SkillAdj($TargetContext(),"Save Vs RSW","protectedEvil","-","2");
 -$SkillAdj($TargetContext(),"Save Vs SP","protectedEvil","-","2");
-[SpellDuration] = $SA_PARAM_SET($GET_HOOK_PARAM(5));
 \(END)
 
 \(BEGIN)

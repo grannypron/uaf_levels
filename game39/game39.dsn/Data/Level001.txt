@@ -3,7 +3,7 @@
       "height":"18",
       "width":"38",
       "overland":"1",
-      "avStyle":"Area/Large View Only",
+      "avStyle":"3D/Small View Only",
       "name":"Overland Map",
       "entryPoints":[
          {"index":"0","xy":[23,12],"facing":"North"},

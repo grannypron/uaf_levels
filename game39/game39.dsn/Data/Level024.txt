@@ -7568,7 +7568,7 @@
             "blendAmount":"0"
          },
          {
-            "wallFile":"wa_Wall1.png",
+            "wallFile":"dr_door42.png",
             "doorFile":"dr_door42.png",
             "overlayFile":"",
             "soundFile":"",

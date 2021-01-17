@@ -9700,7 +9700,7 @@ name = spell_StinkingCloud
 -$IF ($GET_CHARACTER_SA($TargetContext(),"StinkingSave") == 1)
 -  {$SET_CHARACTER_SA($TargetContext(),"IsStinkingCloudy",$GetCombatRound());};
 [RemoveLinger] = $RETURN "AREA";
-[SpellLingerBlockage] = $IF ($GET_CHARACTER_SA($CharacterContext(),"IsImmunePoison") != "-?-?-" || $GET_HASPOISONIMMUNITY($CombatantContext()) == 1 || $SA_CHARACTER_GET("IsProtectedPoisonCaster") != "-?-?-" || $SA_CHARACTER_GET("IsProtectedPoisonTarget") != "-?-?-"){$RETURN;};
+[SpellLingerBlockage] = $IF ($GET_CHARACTER_SA($CombatantContext(),"IsImmunePoison") != "-?-?-" || $GET_HASPOISONIMMUNITY($CombatantContext()) == 1 || $SA_CHARACTER_GET("IsProtectedPoisonCaster") != "-?-?-" || $SA_CHARACTER_GET("IsProtectedPoisonTarget") != "-?-?-"){$RETURN;};
 -$IF ($GET_CHARACTER_SA($CombatantContext(),"StinkingSave") != "-?-?-")
 -  {$RETURN "N";};
 [StinkAdjust] = $SET_HOOK_PARAM(6, "N");

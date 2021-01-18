@@ -3217,27 +3217,31 @@ name = IsProtectedPoisonTarget1
 name = IsReduced
 [CanCastSpells] = $VAR me;
 -me = $IndexOf($CharacterContext());
--$IF ($GET_PARTY_TIME() ># $GET_CHARACTER_SA($CharacterContext(),"reduced"))
+-$IF ($GET_PARTY_TIME() ># $SA_PARAM_GET())
 -	{
 -		$DELETE_CHARACTER_SA($CharacterContext(),"reduced");
 -		$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
--		$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
+-		$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STR");
+-		$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STRMOD");
 -		$SA_REMOVE();
 -	};
+[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [CharDisplayStatus] = $SET_HOOK_PARAM( 7, "Reduced");
 -$SET_HOOK_PARAM( 6, "");
 -$RETURN 1;
 [Dispel] = $VAR me;
 -me = $IndexOf($CharacterContext());
 -$DELETE_CHARACTER_SA($CharacterContext(),"reduced");
--$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce *");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STR");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STRMOD");
 -$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
 -$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
 -$SA_REMOVE();
 [Dispel reduced] = $VAR me;
 -me = $IndexOf($CharacterContext());
 -$DELETE_CHARACTER_SA($CharacterContext(),"reduced");
--$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce *");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STR");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STRMOD");
 -$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
 -$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
 -$SA_REMOVE();
@@ -9366,8 +9370,11 @@ name = spell_Reduce
 -$VAR str;
 -$VAR strMod;
 -$VAR adjStr;
--$IF (($GET_CHARACTER_SA($TargetContext(),"enlarged")  != "-?-?-") || ($GET_MONSTERTYPE_SA($MonsterTypeContext(),"enlarged") != "-?-?-"))
+-$IF ($GET_CHARACTER_SA($TargetContext(),"enlarged") != "-?-?-")
 -	{$RETURN $RUN_CHAR_SCRIPTS(tgt,"Dispel enlarged");};
+-$IF ($GET_CHAR_TYPE(tgt) != "@PC@" && $GET_CHAR_TYPE(tgt) != "@NPC@") {
+-	$IF ($GET_MONSTERTYPE_SA($MonsterTypeContext(),"enlarged") != "-?-?-")
+-		{$RETURN $RUN_CHAR_SCRIPTS(tgt,"Dispel enlarged");};};
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
 -cls = $SA_PARAM_GET();
@@ -9390,7 +9397,7 @@ name = spell_Reduce
 -		$MODIFY_CHAR_ATTRIBUTE(tgt,"STR",adjStr,"MINUTES",10 *# lvl,"Reduce STR","SPELL Reduce STR");
 -		$MODIFY_CHAR_ATTRIBUTE(tgt,"STRMOD",-#strMod,"MINUTES",10 *# lvl,"Reduce STRMOD","SPELL Reduce STRMOD");
 -	};
--$SET_CHARACTER_SA($TargetContext(),"IsReduced",lvl);
+-$SET_CHARACTER_SA($TargetContext(),"IsReduced",$GET_PARTY_TIME() +# lvl);
 -$SET_CHARACTER_SA($TargetContext(),"reduced",1);
 \(END)
 

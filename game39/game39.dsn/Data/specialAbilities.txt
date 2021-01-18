@@ -2176,27 +2176,33 @@ name = IsEnfeebledHit
 name = IsEnlarged
 [CanCastSpells] = $VAR me;
 -me = $IndexOf($CharacterContext());
--$IF ($GET_PARTY_TIME() ># $GET_CHARACTER_SA($CharacterContext(),"enlarged"))
+-$DebugWrite("DebugWrite: SA_PARAM_GET(): ");
+-$DebugWrite($SA_PARAM_GET());
+-$IF ($GET_PARTY_TIME() ># $SA_PARAM_GET())
 -	{
 -		$DELETE_CHARACTER_SA($CharacterContext(),"enlarged");
 -		$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
--		$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
+-       $REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STR");
+-       $REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STRMOD");
 -		$SA_REMOVE();
 -	};
+[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [CharDisplayStatus] = $SET_HOOK_PARAM( 7, "Enlarged");
 -$SET_HOOK_PARAM( 6, "");
 -$RETURN 1;
 [Dispel] = $VAR me;
 -me = $IndexOf($CharacterContext());
 -$DELETE_CHARACTER_SA($CharacterContext(),"enlarged");
--$REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge *");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STR");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STRMOD");
 -$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
 -$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
 -$SA_REMOVE();
 [Dispel enlarged] = $VAR me;
 -me = $IndexOf($CharacterContext());
 -$DELETE_CHARACTER_SA($CharacterContext(),"enlarged");
--$REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge *");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STR");
+-$REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STRMOD");
 -$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
 -$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
 -$SA_REMOVE();
@@ -8300,7 +8306,14 @@ name = spell_Enfeeble
 
 \(BEGIN)
 name = spell_Enlarge
-[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(), $GET_HOOK_PARAM(5));
+[DoesSpellAttackSucceed] = $VAR atk; $VAR tgt;
+-atk = $IndexOf($AttackerContext());
+-tgt = $IndexOf($TargetContext());
+-//PC casting on another PC should always succeed - saving throw doesn't matter
+-$IF (($GET_CHAR_TYPE(atk) == "@PC@" || $GET_CHAR_TYPE(atk) == "@NPC@") && ($GET_CHAR_TYPE(tgt) == "@PC@" || $GET_CHAR_TYPE(tgt) == "@NPC@"))
+-	{
+-		$RETURN "Y";
+-	};
 [InvokeSpellOnTarget] = $VAR atk; // attacker/caster
 -$VAR tgt; // target
 -$VAR str;
@@ -8312,8 +8325,11 @@ name = spell_Enlarge
 -$VAR lvl;
 -$VAR list1;
 -$VAR list2;
--$IF (($GET_CHARACTER_SA($TargetContext(),"reduced") || $GET_MONSTERTYPE_SA($MonsterTypeContext(),"reduced")) != "-?-?-")
+-$IF ($GET_CHARACTER_SA($TargetContext(),"reduced") != "-?-?-")
 -	{$RETURN $RUN_CHAR_SCRIPTS(tgt,"Dispel reduced");};
+-$IF ($GET_CHAR_TYPE(tgt) != "@PC@" && $GET_CHAR_TYPE(tgt) != "@NPC@") {
+-	$IF ($GET_MONSTERTYPE_SA($MonsterTypeContext(),"reduced") != "-?-?-")
+-		{$RETURN $RUN_CHAR_SCRIPTS(tgt,"Dispel reduced");};};
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
 -str = $GET_CHAR_LIMITED_STR(tgt);
@@ -8345,7 +8361,7 @@ name = spell_Enlarge
 -	}
 -$ELSE {$MODIFY_CHAR_ATTRIBUTE(tgt,"STRMOD",strMod -# strMod,"MINUTES",10 *# lvl,"Enlarge STRMOD","SPELL Enlarge STRMOD");};
 -$IF (lvl ># 4) {$SET_CHAR_SIZE(tgt,2);};
--$SET_CHARACTER_SA($TargetContext(),"IsEnlarged",lvl);
+-$SET_CHARACTER_SA($TargetContext(),"IsEnlarged",$GET_PARTY_TIME() +# lvl);
 -$SET_CHARACTER_SA($TargetContext(),"enlarged",1);
 \(END)
 

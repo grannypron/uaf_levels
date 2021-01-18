@@ -2176,8 +2176,6 @@ name = IsEnfeebledHit
 name = IsEnlarged
 [CanCastSpells] = $VAR me;
 -me = $IndexOf($CharacterContext());
--$DebugWrite("DebugWrite: SA_PARAM_GET(): ");
--$DebugWrite($SA_PARAM_GET());
 -$IF ($GET_PARTY_TIME() ># $SA_PARAM_GET())
 -	{
 -		$DELETE_CHARACTER_SA($CharacterContext(),"enlarged");

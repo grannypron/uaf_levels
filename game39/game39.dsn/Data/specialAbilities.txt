@@ -8304,14 +8304,7 @@ name = spell_Enfeeble
 
 \(BEGIN)
 name = spell_Enlarge
-[DoesSpellAttackSucceed] = $VAR atk; $VAR tgt;
--atk = $IndexOf($AttackerContext());
--tgt = $IndexOf($TargetContext());
--//PC casting on another PC should always succeed - saving throw doesn't matter
--$IF (($GET_CHAR_TYPE(atk) == "@PC@" || $GET_CHAR_TYPE(atk) == "@NPC@") && ($GET_CHAR_TYPE(tgt) == "@PC@" || $GET_CHAR_TYPE(tgt) == "@NPC@"))
--	{
--		$RETURN "Y";
--	};
+[DoesSpellAttackSucceed] = $RETURN "Y";  // Always - who would not want to be enlarged?
 [InvokeSpellOnTarget] = $VAR atk; // attacker/caster
 -$VAR tgt; // target
 -$VAR str;

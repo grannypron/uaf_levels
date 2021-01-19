@@ -3429,12 +3429,12 @@ name = IsSleepResistantMin
 \(BEGIN)
 name = IsSleeping
 [CanCastSpells] = $RETURN "N";
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7,$SA_PARAM_GET()); $SET_HOOK_PARAM( 6,""); $RETURN 1;
+[CharDisplayStatus] = $SET_HOOK_PARAM(7,"Sleeping"); $SET_HOOK_PARAM(6,""); $RETURN 1;
 [Dispel] = $SA_REMOVE();
 [DoesAttackSucceed] = $RETURN "Y";
 [GetAdjMaxMovement] = $RETURN 0;
 [GetItemTargetHitBonus] = $RETURN $GET_CHAR_HITPOINTS($IndexOf($TargetContext())) +# 15;
-[IsCombatReady] = $RETURN "N";
+[IsCombatReady] = $IF ($SA_PARAM_GET() <# $GET_PARTY_TIME()) {$SA_REMOVE(); $RETURN "Y";}; $RETURN "N";
 \(END)
 
 \(BEGIN)
@@ -9656,6 +9656,9 @@ name = spell_Sleep
 -$VAR lvl;
 -$VAR monLvlMon;
 -$VAR bCls; // baseclass
+-$VAR exp;
+-$VAR atk;
+-$VAR cls;
 -tgt = $IndexOf($TargetContext());
 -type = $GET_CHAR_TYPE(tgt);
 -nomTgt = $GET_CHAR_NAME(tgt);
@@ -9666,7 +9669,9 @@ name = spell_Sleep
 -$IF ($GET_CHARACTER_SA($TargetContext(),"IsSleeping") != "-?-?-") {$RETURN;};
 -$IF (monLvlMon != "-?-?-") {lvl = monLvlMon;}
 -$ELSE {bCls = $GetHighestLevelBaseclass(tgt);lvl = $GetBaseclassLevel(tgt,bCls);};
--$IF (lvl <# 5) {$SET_CHARACTER_SA($TargetContext(),"IsSleeping","Sleeping");};
+-atk = $IndexOf($AttackerContext());
+-exp = $GET_PARTY_TIME() +# (lvl *# 5);
+-$IF (lvl <# 5) {$SET_CHARACTER_SA($TargetContext(),"IsSleeping",exp);};
 \(END)
 
 \(BEGIN)

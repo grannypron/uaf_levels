@@ -2219,6 +2219,8 @@
                "xy":[-1,-1],
                "control":{
                   "onceOnly":"1",
+                  "eventTrigger":"Quest in Progress",
+                  "quest":"28",
                   "facing":"Any/All Side(s)"
                },
                "picture1":{

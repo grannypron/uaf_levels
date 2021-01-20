@@ -29,7 +29,7 @@
    "levelData":{
       "width":"17",
       "height":"17",
-      "version":"5.260000",
+      "version":"5.270000",
       "prevZone":"-1",
       "map_grid":[
          {
@@ -2284,50 +2284,9 @@
          },
          {
             "general":{
-               "eventType":"Guided Tour",
-               "eventID":"10",
-               "xy":[6,8],
-               "control":{
-                  "onceOnly":"1",
-                  "chainTrigger":"If Event does not happen",
-                  "eventTrigger":"Quest is complete",
-                  "quest":"31",
-                  "facing":"Any/All Side(s)"
-               },
-               "chainEventNotHappen":"11"
-            },
-            "particular":{
-               "xy":[6,8],
-               "facing":"0",
-               "useStartLocation":"true",
-               "executeEvent":"true",
-               "steps":[
-                  {"stepNum":"0","step":"Forward"},
-                  {"stepNum":"1","step":"Turn Right"},
-                  {"stepNum":"2","step":"Forward"},
-                  {"stepNum":"3","step":"Turn Left"},
-                  {"stepNum":"4","step":"Forward"},
-                  {"stepNum":"5","step":"Forward"},
-                  {"stepNum":"6","step":"Forward"},
-                  {"stepNum":"7","step":"Forward"},
-                  {"stepNum":"8","step":"Forward"},
-                  {"stepNum":"9","step":"Turn Left"},
-                  {"stepNum":"10","step":"Forward"},
-                  {"stepNum":"11","step":"Forward"},
-                  {"stepNum":"12","step":"Forward"},
-                  {"stepNum":"13","step":"Turn Right"},
-                  {"stepNum":"14","step":"Forward"},
-                  {"stepNum":"15","step":"Forward"},
-                  {"stepNum":"16","step":"Turn Right"},
-                  {"stepNum":"17","step":"Forward"}
-               ]
-            }
-         },
-         {
-            "general":{
                "eventType":"Text Statement",
                "eventID":"11",
-               "xy":[-1,-1],
+               "xy":[6,8],
                "control":{
                   "onceOnly":"1",
                   "facing":"Any/All Side(s)"
@@ -2406,7 +2365,7 @@
                "chainEventHappen":"14"
             },
             "particular":{
-               "waitForReturn":"true",
+               "waitForReturn":"false",
                "forceBackup":"false",
                "highLightText":"false",
                "distance":"Up Close"
@@ -2584,6 +2543,7 @@
                "eventID":"19",
                "xy":[-1,-1],
                "control":{
+                  "onceOnly":"1",
                   "facing":"Any/All Side(s)"
                },
                "chainEventHappen":"74"

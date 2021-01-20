@@ -2070,6 +2070,7 @@ name = IsDragonFlee
 \(BEGIN)
 name = IsDrained
 [TrainingCharacter] = $SA_REMOVE();
+[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Drained"); $SET_HOOK_PARAM( 6,""); $RETURN 1;
 \(END)
 
 \(BEGIN)

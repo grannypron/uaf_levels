@@ -2069,8 +2069,8 @@ name = IsDragonFlee
 
 \(BEGIN)
 name = IsDrained
-[TrainingCharacter] = $SA_REMOVE();
 [CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Drained"); $SET_HOOK_PARAM( 6,""); $RETURN 1;
+[TrainingCharacter] = $SA_REMOVE();
 \(END)
 
 \(BEGIN)
@@ -2185,7 +2185,6 @@ name = IsEnlarged
 -       $REMOVE_CHAR_MODIFICATION(me,"SPELL Enlarge STRMOD");
 -		$SA_REMOVE();
 -	};
-[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [CharDisplayStatus] = $SET_HOOK_PARAM( 7, "Enlarged");
 -$SET_HOOK_PARAM( 6, "");
 -$RETURN 1;
@@ -2197,6 +2196,7 @@ name = IsEnlarged
 -$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
 -$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
 -$SA_REMOVE();
+[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [Dispel enlarged] = $VAR me;
 -me = $IndexOf($CharacterContext());
 -$DELETE_CHARACTER_SA($CharacterContext(),"enlarged");
@@ -2952,7 +2952,7 @@ name = IsProtectedAcidTarget1
 
 \(BEGIN)
 name = IsProtectedEvil
-[CharDisplayStatus] =  $VAR prm; $VAR exp;
+[CharDisplayStatus] = $VAR prm; $VAR exp;
 -prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
 -$IF (prm <# exp) {$RETURN $SA_REMOVE();};
 -$SET_HOOK_PARAM( 7,"Protected from Evil"); 
@@ -3226,7 +3226,6 @@ name = IsReduced
 -		$REMOVE_CHAR_MODIFICATION(me,"SPELL Reduce STRMOD");
 -		$SA_REMOVE();
 -	};
-[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [CharDisplayStatus] = $SET_HOOK_PARAM( 7, "Reduced");
 -$SET_HOOK_PARAM( 6, "");
 -$RETURN 1;
@@ -3238,6 +3237,7 @@ name = IsReduced
 -$SET_CHAR_SIZE(me,$GET_CHARACTER_SA($CharacterContext(),"mySize"));
 -$RUN_CHAR_SE_SCRIPTS($CharacterContext(),"Dispel SE");
 -$SA_REMOVE();
+[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [Dispel reduced] = $VAR me;
 -me = $IndexOf($CharacterContext());
 -$DELETE_CHARACTER_SA($CharacterContext(),"reduced");

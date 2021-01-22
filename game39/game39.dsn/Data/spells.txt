@@ -22039,7 +22039,7 @@ termination script =
 \(BEGIN)
 name = monsterUndeadDrainLevel
 casting sound = none
-cast msg = /t feels diminished.
+cast msg = /c attempts to drain /t
 missile sound = none
 coverage sound = none
 hit sound = none
@@ -22079,7 +22079,7 @@ priority = 500
 spell effect 1 = none
 savingThrowScript = 
 savingThrowSucceededScript = $SET_HOOK_PARAM(5,"/t is unaffected.");
-savingThrowFailedScript = 
+savingThrowFailedScript = $SET_HOOK_PARAM(5,"/t feels diminished.");
 begin script = 
 end script = 
 initiation script = 
@@ -22089,7 +22089,7 @@ termination script =
 \(BEGIN)
 name = monsterVampireCharmGaze
 casting sound = sound_Cast.wav
-cast msg = /c charms /t.
+cast msg = /c gazes at /t.
 missile sound = none
 coverage sound = none
 hit sound = none
@@ -22143,7 +22143,7 @@ termination script =
 \(BEGIN)
 name = monsterVampireDrainLevel
 casting sound = none
-cast msg = /t feels diminished
+cast msg = 
 missile sound = none
 coverage sound = none
 hit sound = none

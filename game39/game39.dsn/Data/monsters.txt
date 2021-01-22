@@ -5280,16 +5280,17 @@ Special Ability = monster_ImmuneSleep,monster
 Special Ability = monster_Regeneration,3
 Special Ability = monster_VulnerableToHolyWater,monster
 Special Ability = monster_WeaponImmunity,1
-Class = Fighter
+Class = Magic User
 Race = Monster
 form = none
 penalty = none
 immunity = poison + death magic + confusion + none
 Misc Options = none
-item = none
+item = monsterVampireCharmGaze,1
+item = monsterVampireCharmGaze,1
+item = monsterVampireCharmGaze,1
 money = none
 attack = 6,1,4,attacks,monsterVampireDrainLevel
-attack = 1,1,0,gazes,monsterVampireCharmGaze
 Undead = Vampire
 \(END)
 

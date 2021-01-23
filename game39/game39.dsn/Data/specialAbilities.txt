@@ -9523,7 +9523,7 @@ name = spell_Restoration
 -						done = 2;
 -					};
 -				$SET_CHARACTER_SA($TargetContext(),"IsDrained",$DelimitedStringTail(drained));
--				$IF ($GET_CHARACTER_SA($TargetContext(),"IsDrained") == "$|99")
+-				$IF ($GET_CHARACTER_SA($TargetContext(),"IsDrained") == "#$99")
 -					{
 -						$DELETE_CHARACTER_SA($TargetContext(),"IsDrained");
 -						done = 3;

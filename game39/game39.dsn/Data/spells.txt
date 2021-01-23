@@ -21021,7 +21021,7 @@ termination script =
 \(BEGIN)
 name = monsterParalysis
 casting sound = none
-cast msg = /c paralyzes /t.
+cast msg = /c attempts to paralyze /t.
 missile sound = none
 coverage sound = none
 hit sound = none

@@ -2824,7 +2824,10 @@ name = IsPaladinProtectedFromEvil
 
 \(BEGIN)
 name = IsParalyzed
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Paralyzed");
+[CharDisplayStatus] = $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
+-$SET_HOOK_PARAM( 7,"Paralyzed");
 -$SET_HOOK_PARAM( 6,"");
 -$RETURN 1;
 [Dispel] = $SA_REMOVE();
@@ -9150,6 +9153,7 @@ name = spell_NeutralizePoison
 name = spell_Paralysis
 [InvokeSpellOnTarget] = $VAR atk; // attacker
 -$VAR tgt; // target
+-$VAR exp;
 -$VAR name;
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
@@ -9158,7 +9162,8 @@ name = spell_Paralysis
 -$IF ($GET_MONSTERTYPE_SA(name,"monster_ImmuneParalysis") != "-?-?-"){$RETURN;};
 -$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
 -$IF ($GET_CHAR_NAME(atk) == "Ghoul" && $GET_CHAR_RACE(tgt) == "Elf"){$RETURN;};
--$SET_CHARACTER_SA($TargetContext(),"IsParalyzed","Paralyzed");
+-exp = $GET_PARTY_TIME() +# $RANDOM(6) +# 2;   // Paralysis lasts for 1d6+2
+-$SET_CHARACTER_SA($TargetContext(),"IsParalyzed",exp);
 \(END)
 
 \(BEGIN)

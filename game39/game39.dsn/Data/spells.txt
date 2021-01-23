@@ -2806,7 +2806,7 @@ termination script =
 
 \(BEGIN)
 name = Restoration
-casting sound = none
+casting sound = sound_Cast.wav
 cast msg = /t feels restored.
 missile sound = none
 coverage sound = none

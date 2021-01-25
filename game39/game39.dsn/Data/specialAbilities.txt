@@ -3058,7 +3058,13 @@ name = IsProtectedFireTarget1
 
 \(BEGIN)
 name = IsProtectedGood
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Protected from Good"); $SET_HOOK_PARAM( 6,""); $[DoesAttackSucceed] = $VAR p5; $VAR p6; $VAR smn; $VAR gd;
+[CharDisplayStatus] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET())
+-	{
+-		$RETURN $SA_REMOVE();
+-   };
+-$SET_HOOK_PARAM( 7,"Protected from Good"); $SET_HOOK_PARAM( 6,""); 
+-$RETURN 1;
+[DoesAttackSucceed] = $VAR p5; $VAR p6; $VAR smn; $VAR gd;
 -p5 = $GET_HOOK_PARAM(5); p6 = $GET_HOOK_PARAM(6);
 -smn = $GET_COMBATANT_SA($AttackerContext(),"Summoned");
 -gd = $GET_COMBATANT_SA($AttackerContext(),"monsterCombatantAlignment")

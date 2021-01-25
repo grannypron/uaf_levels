@@ -3319,7 +3319,10 @@ name = IsResistantAcid
 
 \(BEGIN)
 name = IsResistantCold
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7, "Cold Resistant"); $SET_HOOK_PARAM( 6, ""); $RETURN 1;
+[CharDisplayStatus] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET()){$RETURN $SA_REMOVE();};
+-$SET_HOOK_PARAM( 7, "Cold Resistant");
+-$SET_HOOK_PARAM( 6, ""); 
+-$RETURN 1;
 [ComputeDamage] = $VAR item; $VAR itmNon; $VAR monster; $VAR monNon; $VAR resist; $VAR par5;
 -item = $SA_ITEM_GET("DamageMagical");
 -itmNon = $SA_ITEM_GET("DamageNonMagical");
@@ -3371,7 +3374,10 @@ name = IsResistantElectricity
 
 \(BEGIN)
 name = IsResistantFire
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7, "Fire Resistant"); $SET_HOOK_PARAM( 6, ""); $RETURN 1;
+[CharDisplayStatus] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET()){$RETURN $SA_REMOVE();};
+-$SET_HOOK_PARAM( 7, "Fire Resistant");
+-$SET_HOOK_PARAM( 6, "");
+-$RETURN 1;
 [ComputeDamage] = $VAR item; $VAR itmNon; $VAR monster; $VAR monNon; $VAR resist; $VAR par5;
 -item = $SA_ITEM_GET("DamageMagical");
 -itmNon = $SA_ITEM_GET("DamageNonMagical");
@@ -7742,18 +7748,24 @@ name = spell_ColdResistant
 -$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");
 [Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [InvokeSpellOnTarget] = $VAR atk; // attacker
+-$VAR tgt;
 -$VAR cls;
 -$VAR adj;
 -$VAR lvl;
 -$VAR exp; // expiration time
 -atk = $IndexOf($AttackerContext());
+-tgt = $IndexOf($TargetContext());
 -cls = $SA_PARAM_GET();
--adj = $GET_MONSTERTYPE_SA($AttackerContext(),"casterLevel");
--lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
+-adj = $GET_CHARACTER_SA($AttackerContext(),"casterLevel");
+-$IF ($GET_CHAR_TYPE(tgt) != "@PC@" && $GET_CHAR_TYPE(tgt) != "@NPC@") {
+-    lvl = $GET_MONSTERTYPE_SA($MonsterTypeContext(),"monsterLevel");
+-}
+-$ELSE {
+-    lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
+-};
 -$SET_CHARACTER_SA($TargetContext(),"DispelLevel",lvl);
 -exp = $GET_PARTY_TIME() +# lvl;
 -$SET_CHARACTER_SA($TargetContext(),"IsResistantCold",exp);
-[SpellDuration] = $SA_PARAM_SET($GET_HOOK_PARAM(5));
 \(END)
 
 \(BEGIN)
@@ -8471,19 +8483,25 @@ name = spell_FireResistant
 -$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");
 [Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [InvokeSpellOnTarget] = $VAR atk; // attacker
+-$VAR tgt;
 -$VAR cls;
 -$VAR adj;
 -$VAR lvl;
 -$VAR exp; // expiration time
 -atk = $IndexOf($AttackerContext());
+-tgt = $IndexOf($TargetContext());
 -cls = $SA_PARAM_GET();
 -adj = $GET_CHARACTER_SA($AttackerContext(),"casterLevel");
--lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
+-$IF ($GET_CHAR_TYPE(tgt) != "@PC@" && $GET_CHAR_TYPE(tgt) != "@NPC@") {
+-    lvl = $GET_MONSTERTYPE_SA($MonsterTypeContext(),"monsterLevel");
+-}
+-$ELSE {
+-    lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
+-};
 -$SET_CHARACTER_SA($TargetContext(),"DispelLevel",lvl);
 -exp = $GET_PARTY_TIME() +# lvl;
 -$SET_CHARACTER_SA($TargetContext(),"IsResistantFire",exp);
 [RemoveLinger] = $RETURN "TARGETS";
-[SpellDuration] = $SA_PARAM_SET($GET_HOOK_PARAM(5));
 \(END)
 
 \(BEGIN)

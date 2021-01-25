@@ -45,7 +45,7 @@ target duration = 0
 price = 0
 priority = 500
 spell effect 1 = $CHAR_MORALE,1,delta,target,yes
-activate script 1 = $VAR mySide;mySide \= $GET_COMBATANT_SA($AttackerContext(),"side");$IF (mySide !\= "-?-?-")  {   $IF (mySide !\=# $GET_COMBATANT_SA($TargetContext(),"side"))     {$RETURN;};   $IF ($VisualDistance($IndexOf($TargetContext()),$IndexOf($NEAREST_ENEMY_TO($TargetContext()))) <# 2)     {$RETURN;};  };$RETURN 1;
+activate script 1 =
 savingThrowScript = 
 savingThrowSucceededScript = 
 savingThrowFailedScript = 

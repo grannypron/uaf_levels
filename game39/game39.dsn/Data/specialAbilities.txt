@@ -7504,16 +7504,8 @@ name = spell_Bless
 [Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [InvokeSpellOnTarget] = $VAR mySide;
 -$VAR tgt; // target
--mySide = $GET_CHARACTER_SA($AttackerContext(),"side");
 -tgt = $IndexOf($TargetContext());
--$IF (mySide != "-?-?-")
--	{
--		$IF (mySide !=# $GET_CHARACTER_SA($TargetContext(),"side")){$RETURN;};
--		$IF ($VisualDistance(tgt, $IndexOf($NEAREST_ENEMY_TO($TargetContext()))) <# 2){$RETURN;};
--		$SET_CHARACTER_SA($TargetContext(),"IsBlessed",$GET_PARTY_TIME() +# 6);
--		$SET_COMBATANT_SA($TargetContext(),"IsBlessed1",1);
--	}
--$ELSE {$SET_CHARACTER_SA($TargetContext(),"IsBlessed",$GET_PARTY_TIME() +# 6);};
+-$SET_CHARACTER_SA($TargetContext(),"IsBlessed",$GET_PARTY_TIME() +# 6);
 \(END)
 
 \(BEGIN)

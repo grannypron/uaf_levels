@@ -654,6 +654,7 @@ name = Competing
 -rangeWpn = $GET_ITEM_SA($GET_CHAR_Ready($AttackerContext(), "WEAPON", 0),"item_CombatAim");
 -par8 = $GET_HOOK_PARAM(8);
 -$IF (rangeWpn != "-?-?-"){$RETURN "N";};
+-$SET_COMBATANT_SA($AttackerContext(),"OwedFreeAttack",1);      // Assign SA to give the attacker "back" their free attack see bug #66
 -$RETURN par8;
 [GetNumberOfAttacks] = $VAR com; $VAR bc; $VAR lvl; $VAR adj; $VAR adjLvl;
 -com = $IndexOf($CombatantContext());
@@ -695,7 +696,12 @@ name = Competing
 -par5 = $GET_HOOK_PARAM(5);
 -par6 = $GET_HOOK_PARAM(6);
 -$IF (par5 ==# 3){$SET_HOOK_PARAM(6,"G");};
-[IsCombatReady] = $RETURN;
+[IsCombatReady] = $IF ($GET_COMBATANT_SA($CombatantContext(),"OwedFreeAttack") != "-?-?-")      // Give the attacker "back" their free attack see bug #66
+-{
+-    $COMBATANT_AVAILATTACKS($CombatantContext(), 1, 1);
+-    $DELETE_COMBATANT_SA($CombatantContext(),"OwedFreeAttack");
+-};
+-$RETURN;
 [OnStartCombat] = $VAR nm; $VAR nml; $VAR me;
 -$VAR lvl; $VAR lead; $VAR controlNPC;
 -$VAR idx1; $VAR idx4; $VAR modCha;

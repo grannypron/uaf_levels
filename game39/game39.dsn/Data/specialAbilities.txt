@@ -1397,8 +1397,6 @@ name = Global_Display
 -$GrPrtLF(mvmt);
 -
 -skilled = $GET_CHARACTER_SA($CharacterContext(),"class_ThievingSkills");
--$IF (skilled != "-?-?-")
--	{
 -		$GrMoveTo("Skills");
 -		$GrColor("WHITE");
 -		$GrPrtLF("SKILLS");
@@ -1422,7 +1420,6 @@ name = Global_Display
 -		$GrPrtLF($SkillAdj($CharacterContext(),"HearNoise","","F",""));
 -		$GrPrtLF($SkillAdj($CharacterContext(),"ClimbWalls","","F",""));
 -		$GrPrtLF($SkillAdj($CharacterContext(),"ReadLanguages","","F",""));
--	};
 -
 -//$GrMoveTo("ManaPool");
 -//$GrColor("GREEN");$GrPrint("Mana Pool ");$GrColor("YELLOW");$GrPrint(mpc);$GrColor("GREEN");$GrPrint(" / ");$GrColor("YELLOW");$GrPrtLF(mp);

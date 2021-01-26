@@ -1,5 +1,5 @@
 {
-   "version":"5.260000",
+   "version":"5.270000",
    "designName":"game 39 pool of radiance",
    "startLevel":"16",
    "startXY":[15,1],
@@ -19,7 +19,7 @@
    "startDarken":"0",
    "endDarken":"0",
    "minPCs":"1",
-   "maxPCs":"8",
+   "maxPCs":"6",
    "maxPartySize":"10",
    "allowCharCreate":"1",
    "deadAtZeroHP":"0",

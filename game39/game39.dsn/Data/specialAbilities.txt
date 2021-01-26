@@ -696,7 +696,7 @@ name = Competing
 -par5 = $GET_HOOK_PARAM(5);
 -par6 = $GET_HOOK_PARAM(6);
 -$IF (par5 ==# 3){$SET_HOOK_PARAM(6,"G");};
-[IsCombatReady] = $IF ($GET_COMBATANT_SA($CombatantContext(),"OwedFreeAttack") != "-?-?-")      // Give the attacker "back" their free attack see bug #66
+[IsCombatReady] = $IF ($GET_COMBATANT_SA($CombatantContext(),"OwedFreeAttack") ==# 1)      // Give the attacker "back" their free attack see bug #66
 -{
 -    $COMBATANT_AVAILATTACKS($CombatantContext(), 1, 1);
 -    $DELETE_COMBATANT_SA($CombatantContext(),"OwedFreeAttack");

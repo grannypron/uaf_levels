@@ -8,9 +8,10 @@
 : Gone? He C:State C:S:Gone = ; 1 SP+-
 : Dead? He C:State C:S:Dead = ; 1 SP+-
 : Dying? He C:State C:S:Dying = ; 1 SP+-
+: Unconscious? He C:State C:S:Unconscious = ; 1 SP+-
 : Petrified? He C:State C:S:Petrified = ; 1 SP+-
 \ FGDP Friendly Gone Dead Dying or Petrified Targets should not be attacked
-: FGDP? Friendly? ?EXIT Gone? Dead? Dying? Petrified? OR OR OR ; 1 SP+-
+: FGDP? Friendly? ?EXIT Gone? Dead? Dying? Petrified? Unconscious? OR OR OR OR ; 1 SP+-
 \
 : SpellCasterFilter \ Remove actions against invalid targets  
     FGDP? ?EXIT TooFar? ; 1 SP+-

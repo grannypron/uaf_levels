@@ -1644,6 +1644,21 @@ name = IsBlessed
 \(END)
 
 \(BEGIN)
+name = IsFindingTraps
+[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Finding Traps");
+-$SET_HOOK_PARAM( 6,"");
+-$RETURN 1;
+[Dispel] = $SA_REMOVE();
+\(END)
+
+\(BEGIN)
+name = deleteSA
+[IsFindingTraps] = $SkillAdj($CharacterContext(),"FindTraps","findTraps","D","");  // Delete the adjustment called "findTraps" that granted 100 skill
+- $DELETE_CHARACTER_SA($CharacterContext(), "IsFindingTraps");
+\(END)
+
+
+\(BEGIN)
 name = IsBlind
 [CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Blind");
 -$SET_HOOK_PARAM( 6,"");
@@ -8475,6 +8490,17 @@ name = spell_Fear
 -lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
 -$SET_CHARACTER_SA($TargetContext(),"DispelLevel",lvl);
 -$SET_CHARACTER_SA($TargetContext(),"IsAfraid",atk);
+\(END)
+
+\(BEGIN)
+name = spell_FindTraps
+[Dispel] = $SA_REMOVE();
+-$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");
+[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
+[InvokeSpellOnTarget] = $VAR tgt; // target
+-tgt = $IndexOf($TargetContext());
+-$SkillAdj($TargetContext(),"FindTraps","findTraps","=","100");  // Create a skill adjustment called "findTraps" that grants 100 skill
+-$SET_CHARACTER_SA($TargetContext(),"IsFindingTraps",$GET_PARTY_TIME() +# 30);
 \(END)
 
 \(BEGIN)

@@ -22487,7 +22487,8 @@ save versus = spell
 save result = none
 Special Ability = StandardDisplaySpellEffect
 Special Ability = casterLevel,$cleric$2
-targeting type = self
+Special Ability = spell_FindTraps,$cleric$2
+targeting type = party
 level = 2
 casting time = 5
 casting time units = initiative
@@ -22496,13 +22497,13 @@ duration units = rounds
 target duration = 0
 price = 0
 priority = 500
-spell effect 1 = $CHAR_DETECTTRAPS,1,absolute,target,yes
+spell effect 1 =
 savingThrowScript = 
 savingThrowSucceededScript = 
 savingThrowFailedScript = 
 begin script = 
 end script = 
 initiation script = 
-termination script = 
+termination script = $ForEachPartyMember("deleteSA", "IsFindingTraps");
 \(END)
 

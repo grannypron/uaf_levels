@@ -2357,6 +2357,7 @@ name = IsGreenSlimed
 
 \(BEGIN)
 name = IsHeld
+[Dispel] = $RETURN $SA_REMOVE();
 [CharDisplayStatus] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET()){$RETURN $SA_REMOVE();};
 -$SET_HOOK_PARAM( 7,"Held ");
 -$SET_HOOK_PARAM( 6,"");
@@ -7502,7 +7503,7 @@ name = spell_Aid
 
 \(BEGIN)
 name = spell_Attack
-[InvokeSpellOnTarget] = $IF ($GET_CHARACTER_SA($AttackerContext(),"IsInvisible"))
+[InvokeSpellOnTarget] = $IF ($GET_CHARACTER_SA($AttackerContext(),"IsInvisible") != "-?-?-")
 -  {
 -   $DELETE_CHARACTER_SA($AttackerContext(),"IsInvisibleSpell");
 -   $DELETE_CHARACTER_SA($AttackerContext(),"IsInvisiblePotion");
@@ -8221,6 +8222,9 @@ name = spell_Dispel
 -$VAR dLvl; // caster's level (destroyer)
 -$VAR percent;
 -$VAR rndm;
+-$VAR castSameSide;
+-$VAR castByFriendly;
+-$VAR castAtFriendly;
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
 -cls = $SA_PARAM_GET();
@@ -8237,7 +8241,13 @@ name = spell_Dispel
 -// spells and spell effects
 -$IF (dLvl ># cLvl){percent = (dLvl -# cLvl) *# 5 +# 50;}
 -$ELSE{percent = 50 -# (cLvl -# dLvl) *# 2;};
--$IF (rndm <=# percent)
+-castSameSide = 0;
+-castByFriendly = 0;
+-castAtFriendly = 0;
+-$IF ($GET_CHAR_TYPE(atk) == "@PC@" || $GET_CHAR_TYPE(atk) == "@NPC@") {castByFriendly = 1;};
+-$IF ($GET_CHAR_TYPE(tgt) == "@PC@" || $GET_CHAR_TYPE(tgt) == "@NPC@") {castAtFriendly = 1;};
+-$IF (castByFriendly == castAtFriendly) {castSameSide = 1;};
+-$IF (rndm <=# percent || castSameSide == 1)
 -	{
 -		$RUN_CHAR_SCRIPTS(tgt,"Dispel");
 -		$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");

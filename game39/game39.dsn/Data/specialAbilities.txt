@@ -1601,7 +1601,6 @@ name = IsBestowedCurse
 [Dispel] = $VAR tgt; // target
 -tgt = $IndexOf($TargetContext());
 -$SA_REMOVE();
--$SetFriendly(tgt,$GET_COMBATANT_SA($TargetContext(),"side"));
 -$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");
 [Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
 [DoesAttackSucceed] = $IF ($GET_COMBATANT_SA($AttackerContext(),"IsBestowedCurse") != "-?-?-")
@@ -7545,8 +7544,7 @@ name = spell_Blind
 -$VAR tgt; // target
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
--$IF ($RANDOM(20) +# 1 <# $GET_CHAR_THAC0(atk) -# $GET_CHAR_AC(tgt)){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -$SET_CHARACTER_SA($TargetContext(),"IsBlind","Blind");
 \(END)
 
@@ -7606,7 +7604,7 @@ name = spell_ChainLightning
 
 \(BEGIN)
 name = spell_Charm
-[InvokeSpellOnTarget] = $IF ($GET_CHARACTER_SA($TargetContext(),"saved")) {$RETURN;};
+[InvokeSpellOnTarget] = $IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1) {$RETURN;};
 -$IF ($GET_CANBEHELDORCHARMED($TargetContext()) !=# 1){$RETURN;};
 -$IF ($GET_COMBATANT_SA($TargetContext(),"monster_ImmuneCharm") != "-?-?-"){$RETURN;};
 -$SetFriendly($IndexOf($TargetContext()), $GET_COMBATANT_SA($Myself(),"side"));
@@ -7629,7 +7627,7 @@ name = spell_CharmMonster
 -$VAR rnd; // value of point pool
 -$VAR tgtnum;// target number
 -$IF ($GET_CANBEHELDORCHARMED($TargetContext()) !=# 1){$RETURN;};
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -$IF ($GET_COMBATANT_SA($TargetContext(),"monster_ImmuneCharm") != "-?-?-"){$RETURN;};
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
@@ -8015,10 +8013,9 @@ name = spell_Curse
 -$VAR adj;
 -$VAR lvl;
 -$VAR exp; // expiration time
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -atk = $IndexOf($AttackerContext());
 -tgt = $IndexOf($TargetContext());
--$IF ($RANDOM(20) +# 1 <# $GET_CHAR_THAC0(atk) -# $GET_CHAR_AC(tgt)){$RETURN;};
 -cls = $SA_PARAM_GET();
 -adj = $GET_CHARACTER_SA($AttackerContext(),"casterLevel");
 -lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
@@ -8192,7 +8189,8 @@ name = spell_Disease
 [InvokeSpellOnTarget] = $VAR tgt; // target
 -tgt = $IndexOf($TargetContext());
 -$IF ($GET_CHAR_Lvl(tgt,"paladin") >=# 1){$RETURN;};
--$IF($GET_CHARACTER_SA($TargetContext(),"IsImmuneDisease") != "-?-?-"){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"IsImmuneDisease") != "-?-?-"){$RETURN;};
 -$SET_CHARACTER_SA($TargetContext(),"IsDiseased","Diseased");
 \(END)
 
@@ -8381,7 +8379,7 @@ name = spell_Enfeeble
 [InvokeSpellOnTarget] = $VAR atk; // attacker
 -$VAR lvl; // caster's level
 -$VAR cls; // caster's class
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -atk = $IndexOf($AttackerContext()); cls = $SA_PARAM_GET(); lvl = $GET_CHAR_Lvl(atk,cls);
 -$SET_CHARACTER_SA($TargetContext(),"enfeebled",25 +# (lvl -# 3) *# 2);
 -$SET_CHARACTER_SA($TargetContext(),"IsEnfeebled",$GET_PARTY_TIME() +# lvl);
@@ -8768,7 +8766,7 @@ name = spell_HoldAnimal
 -$VAR adj;
 -$VAR lvl;
 -$VAR exp; // expiration time
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -$IF($GET_CANBEHELDORCHARMED($TargetContext()) !=# 1){$RETURN;};
 -$IF ($GET_ISANIMAL($TargetContext()) !=# 1){$RETURN;};
 -atk = $IndexOf($AttackerContext());
@@ -8785,7 +8783,7 @@ name = spell_HoldMonster
 -$VAR cls;
 -$VAR lvl;
 -$VAR exp; // expiration time
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -$IF ($GET_CANBEHELDORCHARMED($TargetContext()) !=# 1){$RETURN;};
 -atk = $IndexOf($AttackerContext());
 -cls = $SA_PARAM_GET();
@@ -9215,7 +9213,7 @@ name = spell_Paralysis
 -name = $GET_CHAR_NAME(tgt);
 -$IF ($GET_CHARACTER_SA($TargetContext(),"IsImmuneParalysis") != "-?-?-"){$RETURN;};
 -$IF ($GET_MONSTERTYPE_SA(name,"monster_ImmuneParalysis") != "-?-?-"){$RETURN;};
--$IF ($GET_CHARACTER_SA($TargetContext(),"saved")){$RETURN;};
+-$IF ($GET_CHARACTER_SA($TargetContext(),"saved") ==# 1){$RETURN;};
 -$IF ($GET_CHAR_NAME(atk) == "Ghoul" && $GET_CHAR_RACE(tgt) == "Elf"){$RETURN;};
 -exp = $GET_PARTY_TIME() +# $RANDOM(6) +# 2;   // Paralysis lasts for 1d6+2
 -$SET_CHARACTER_SA($TargetContext(),"IsParalyzed",exp);

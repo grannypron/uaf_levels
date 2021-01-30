@@ -1873,6 +1873,10 @@ name = IsDetectedGood
 
 \(BEGIN)
 name = IsDetectingMagic
+[CharDisplayStatus] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET()){$RETURN $SA_REMOVE();};
+-$SET_HOOK_PARAM( 7, "Detecting Magic");
+-$SET_HOOK_PARAM( 6, "");
+-$RETURN 1;
 [CanCharacterDetectMagic] = $RETURN "Y";
 [Dispel] = $SA_REMOVE();
 [StartCombatRound] = $VAR exp;
@@ -8148,21 +8152,15 @@ name = spell_DetectMagic
 [Dispel] = $SA_REMOVE();
 -$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");
 [Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
-[InvokeSpellOnTarget] = $SET_CHARACTER_SA($TargetContext(),"IsDetectingMagic",$GET_PARTY_TIME() +# $SA_SPELL_GET("time"));
+[InvokeSpellOnTarget] = $SET_CHARACTER_SA($TargetContext(),"IsDetectingMagic",$GET_PARTY_TIME() +# 10);
 \(END)
 
 \(BEGIN)
 name = spell_DetectMagicMage
-[InvokeSpellOnTarget] = $VAR atk; // attacker/caster
--$VAR cls;
--$VAR lvl;
--$VAR adj;
--atk = $IndexOf($AttackerContext());
--cls = $SA_PARAM_GET();
--adj = 0;
--$IF (cls == "ranger"){adj = 8;};
--lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
--$SET_CHARACTER_SA($TargetContext(),"IsDetectingMagic",$GET_PARTY_TIME() +# (lvl *# 2));
+[Dispel] = $SA_REMOVE();
+-$RUN_CHAR_SE_SCRIPTS($TargetContext(),"Dispel SE");
+[Dispel SE] = $REMOVE_SPELL_EFFECT($CharacterContext(),$GET_HOOK_PARAM(5));
+[InvokeSpellOnTarget] = $SET_CHARACTER_SA($TargetContext(),"IsDetectingMagic",$GET_PARTY_TIME() +# 10);
 \(END)
 
 \(BEGIN)

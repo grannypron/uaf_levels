@@ -2627,15 +2627,24 @@ name = IsInsectFlee
 
 \(BEGIN)
 name = IsInvisible
+[CharDisplayStatus] = $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
 [Dispel] = $SA_REMOVE();
-[DoesAttackSucceed] = $IF ($GET_COMBATANT_SA($AttackerContext(),"IsInvisible") != "-?-?-")
+[DoesAttackSucceed] = $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
+-$IF ($GET_COMBATANT_SA($AttackerContext(),"IsInvisible") != "-?-?-")
 -	{
 -		$DELETE_COMBATANT_SA($AttackerContext(),"IsInvisibleSpell");
 -		$DELETE_COMBATANT_SA($AttackerContext(),"IsInvisible");
 -	};
 -$IF ($GET_HOOK_PARAM(5) >=# $GET_HOOK_PARAM(6)){$RETURN "Y";}
 -$ELSE {$RETURN "N";};
-[IsValidTarget] = $IF ($SA_COMBATANT_GET("IsSeeingInvisible") != "-?-?-"){$RETURN "Y";};
+[IsValidTarget] = $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
+-$IF ($SA_COMBATANT_GET("IsSeeingInvisible") != "-?-?-"){$RETURN "Y";};
 -$IF ($GET_CHARACTER_SA($TargetContext(),"IsFaerieFire") != "-?-?-"){$RETURN;}
 -$ELSE {$RETURN "N";};
 \(END)
@@ -2660,7 +2669,10 @@ name = IsInvisibleRing
 
 \(BEGIN)
 name = IsInvisibleSpell
-[CharDisplayStatus] = $IF ($GET_HOOK_PARAM(5) == "DISPLAY")
+[CharDisplayStatus] = $VAR prm; $VAR exp;
+-prm = $SA_PARAM_GET(); exp = $GET_PARTY_TIME();
+-$IF (prm <# exp) {$RETURN $SA_REMOVE();};
+-$IF ($GET_HOOK_PARAM(5) == "DISPLAY")
 -	{$SET_HOOK_PARAM(7,"Invisible, spell"); $SET_HOOK_PARAM(6,2); $RETURN 1;};
 [Dispel] = $SA_REMOVE();
 [spawn] = $SET_COMBATANT_SA($CharacterContext(),"IsInvisible",1);
@@ -8987,8 +8999,8 @@ name = spell_Invisible
 -adj = $GET_CHARACTER_SA($AttackerContext(),"casterLevel");
 -lvl = $GET_CHAR_Lvl(atk,cls) -# adj;
 -$SET_CHARACTER_SA($TargetContext(),"DispelLevel",lvl);
--$SET_CHARACTER_SA($TargetContext(),"IsInvisibleSpell",2);
--$SET_CHARACTER_SA($TargetContext(),"IsInvisible",2);
+-$SET_CHARACTER_SA($TargetContext(),"IsInvisibleSpell",$GET_PARTY_TIME() +# lvl);
+-$SET_CHARACTER_SA($TargetContext(),"IsInvisible",$GET_PARTY_TIME() +# lvl);
 [RemoveLinger] = $RETURN "TARGETS";
 \(END)
 

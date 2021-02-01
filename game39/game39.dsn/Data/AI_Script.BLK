@@ -5,6 +5,7 @@
 : TooNear? He C:Distance 5 < ; 1 SP+-
 : NotAdjacent? He C:Distance 8 > ; 1 SP+- 
 : Friendly? He C:Friendly ; 1 SP+-
+: NoLineOfSight? He C:HasLineOfSight 1 < ; 1 SP+-
 : Gone? He C:State C:S:Gone = ; 1 SP+-
 : Dead? He C:State C:S:Dead = ; 1 SP+-
 : Dying? He C:State C:S:Dying = ; 1 SP+-
@@ -27,7 +28,7 @@
     Petrified?  ; 1 SP+-
 \
 : RangedWeaponFilter \ Remove actions against invalid targets  
-    FGDP? ?EXIT TooFar? TooNear? OR ; 1 SP+-
+    FGDP? ?EXIT TooFar? TooNear? NoLineOfSight? OR OR ; 1 SP+-
 \
 : MeleeWeaponFilter \ Remove actions against invalid targets  
     FGDP? ?EXIT TooFar? ; 1 SP+-

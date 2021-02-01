@@ -8898,7 +8898,6 @@ name = spell_ImmuneNormalMissiles
 -$SET_CHARACTER_SA($TargetContext(),"DispelLevel",lvl);
 -exp = $GET_PARTY_TIME() +# lvl;
 -$SET_CHARACTER_SA($TargetContext(), "IsImmuneNormalMissiles",exp);
-[SpellDuration] = $SA_PARAM_SET($GET_HOOK_PARAM(5));
 \(END)
 
 \(BEGIN)

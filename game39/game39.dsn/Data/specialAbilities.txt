@@ -1685,18 +1685,18 @@ name = IsBlindPyrotechnics
 
 \(BEGIN)
 name = IsBlinking
-[CanCastSpells] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET())
+[CharDisplayStatus] = $IF ($GET_PARTY_TIME() ># $SA_PARAM_GET())
 -	{
--		$DELETE_COMBATANT_SA($CombatantContext(),"IsBlinking1");
--		$DELETE_COMBATANT_SA($CombatantContext(),"IsBlinking2");
--		$DELETE_CHARACTER_SA($CombatantContext(),"blinking");   
+-		$DELETE_CHARACTER_SA($CharacterContext(),"IsBlinking1");
+-		$DELETE_CHARACTER_SA($CharacterContext(),"IsBlinking2");
+-		$DELETE_CHARACTER_SA($CharacterContext(),"blinking");   
 -		$SA_REMOVE();
 -	};
-[CharDisplayStatus] = $SET_HOOK_PARAM( 7,"Blinking ");
+-$SET_HOOK_PARAM( 7,"Blinking ");
 -$SET_HOOK_PARAM( 6,"");
 -$RETURN 1;
 [Dispel] = $SA_REMOVE();
-[spawn] = $SET_COMBATANT_SA($Myself(),"IsBlinking1",1);
+[spawn] = $SET_CHARACTER_SA($Myself(),"IsBlinking1",1);
 \(END)
 
 \(BEGIN)
